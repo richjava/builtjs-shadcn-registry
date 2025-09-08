@@ -1,0 +1,78 @@
+{
+  "name": "pricing-plans-standard",
+  "category": "pricing",
+  "section": "plans",
+  "template": "standard",
+  "description": "Standard pricing plans with clear tiers and feature comparisons.",
+  "useCase": "Display pricing tiers with feature lists and clear call-to-action buttons.",
+  "businessTypes": ["SaaS", "Agency", "E-commerce", "Corporate"],
+  "scenarios": ["SaaS pricing", "Service tiers", "Feature comparison", "Subscription plans"],
+  "keyFeatures": ["Pricing tiers", "Feature lists", "CTA buttons", "Clear comparison", "Professional design"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "plans": "array"
+  },
+  "data": {
+    "title": "Choose Your Plan",
+    "subtitle": "Select the perfect plan for your business needs. All plans include our core features with no hidden fees.",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$29",
+        "period": "per month",
+        "description": "Perfect for small businesses and startups",
+        "features": [
+          "Up to 5 team members",
+          "10GB storage",
+          "Basic analytics",
+          "Email support",
+          "Mobile app access"
+        ],
+        "ctaText": "Get Started",
+        "ctaLink": "#",
+        "popular": false
+      },
+      {
+        "name": "Professional",
+        "price": "$79",
+        "period": "per month",
+        "description": "Ideal for growing businesses",
+        "features": [
+          "Up to 25 team members",
+          "100GB storage",
+          "Advanced analytics",
+          "Priority support",
+          "API access",
+          "Custom integrations",
+          "Advanced reporting"
+        ],
+        "ctaText": "Start Free Trial",
+        "ctaLink": "#",
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "$199",
+        "period": "per month",
+        "description": "For large organizations",
+        "features": [
+          "Unlimited team members",
+          "Unlimited storage",
+          "Custom analytics",
+          "24/7 phone support",
+          "Full API access",
+          "White-label options",
+          "Dedicated account manager",
+          "Custom training"
+        ],
+        "ctaText": "Contact Sales",
+        "ctaLink": "#",
+        "popular": false
+      }
+    ]
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

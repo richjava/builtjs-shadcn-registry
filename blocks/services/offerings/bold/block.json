@@ -1,0 +1,75 @@
+{
+  "name": "offerings",
+  "description": "Service offerings and packages",
+  "theme": "bold",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "offerings": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Premium Service Packages",
+    "subtitle": "Transform your business with our comprehensive service offerings designed for maximum impact and growth.",
+    "offerings": [
+      {
+        "name": "Enterprise Web Development",
+        "description": "Full-stack web applications and custom solutions built with cutting-edge technologies and enterprise-grade security.",
+        "price": "Starting at $15,000",
+        "features": [
+          "Custom web applications",
+          "API development & integration",
+          "Database architecture",
+          "Security implementation",
+          "Performance optimization",
+          "Ongoing maintenance"
+        ],
+        "icon": "code"
+      },
+      {
+        "name": "Strategic Digital Marketing",
+        "description": "Comprehensive digital marketing strategies that drive growth, engagement, and measurable ROI for your business.",
+        "price": "Starting at $8,000",
+        "features": [
+          "Multi-channel campaigns",
+          "Content strategy & creation",
+          "Social media management",
+          "SEO & SEM optimization",
+          "Analytics & reporting",
+          "Conversion optimization"
+        ],
+        "icon": "trending-up"
+      },
+      {
+        "name": "Complete Brand Identity",
+        "description": "End-to-end brand development from concept to implementation, creating memorable and impactful brand experiences.",
+        "price": "Starting at $12,000",
+        "features": [
+          "Brand strategy & positioning",
+          "Logo & visual identity",
+          "Brand guidelines & standards",
+          "Marketing collateral design",
+          "Website design & development",
+          "Brand implementation support"
+        ],
+        "icon": "palette"
+      }
+    ],
+    "ctaText": "Start Your Project",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

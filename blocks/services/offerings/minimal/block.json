@@ -1,0 +1,66 @@
+{
+  "name": "offerings",
+  "description": "Service offerings and packages",
+  "theme": "minimal",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "offerings": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Service Packages",
+    "subtitle": "Choose the right package for your business needs.",
+    "offerings": [
+      {
+        "name": "Web Development",
+        "description": "Custom websites and applications built with modern technologies.",
+        "price": "From $5,000",
+        "features": [
+          "Responsive design",
+          "SEO optimization",
+          "Content management"
+        ],
+        "icon": "code"
+      },
+      {
+        "name": "Digital Marketing",
+        "description": "Strategic marketing campaigns to grow your online presence.",
+        "price": "From $2,500",
+        "features": [
+          "Social media management",
+          "Content creation",
+          "Analytics tracking"
+        ],
+        "icon": "trending-up"
+      },
+      {
+        "name": "Brand Design",
+        "description": "Complete brand identity and visual design solutions.",
+        "price": "From $3,000",
+        "features": [
+          "Logo design",
+          "Brand guidelines",
+          "Marketing materials"
+        ],
+        "icon": "palette"
+      }
+    ],
+    "ctaText": "Get Quote",
+    "ctaLink": "/quote"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

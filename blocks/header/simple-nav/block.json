@@ -1,0 +1,13 @@
+{
+  "name": "simple-nav",
+  "description": "A simple navigation header with logo and menu items",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

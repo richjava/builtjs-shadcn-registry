@@ -1,0 +1,44 @@
+{
+  "name": "grid",
+  "description": "Company values section with icons and descriptions",
+  "fields": {
+    "title": "string",
+    "subtitle": "text",
+    "values": "array"
+  },
+  "data": {
+    "title": "Our Values",
+    "subtitle": "The principles that guide everything we do and shape our company culture.",
+    "values": [
+      {
+        "icon": "Heart",
+        "title": "Passion-Driven",
+        "description": "We believe in the power of passion to drive innovation and create meaningful impact."
+      },
+      {
+        "icon": "Users",
+        "title": "People-First",
+        "description": "Our team and customers are at the heart of everything we do. Their success is our success."
+      },
+      {
+        "icon": "Target",
+        "title": "Purpose-Led",
+        "description": "Every decision we make is guided by our mission to make technology more accessible."
+      },
+      {
+        "icon": "Award",
+        "title": "Excellence",
+        "description": "We strive for excellence in every project, pushing boundaries to deliver exceptional results."
+      }
+    ]
+  },
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["card"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

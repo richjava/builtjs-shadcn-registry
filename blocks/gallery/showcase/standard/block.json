@@ -1,0 +1,83 @@
+{
+  "name": "gallery-showcase-standard",
+  "category": "gallery",
+  "section": "showcase",
+  "template": "standard",
+  "description": "Standard showcase gallery with featured content and visual highlights.",
+  "useCase": "Display featured content, achievements, or highlights in an organized showcase format.",
+  "businessTypes": ["Agency", "Corporate", "SaaS", "Startup", "E-commerce"],
+  "scenarios": ["Achievement showcase", "Featured content", "Visual highlights", "Success stories"],
+  "keyFeatures": ["Featured content", "Visual highlights", "Achievement display", "Clean layout", "Professional design"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "featuredItems": "array",
+    "otherItems": "array"
+  },
+  "data": {
+    "title": "Our Showcase",
+    "subtitle": "Discover our most impressive work, achievements, and success stories that define our expertise.",
+    "featuredItems": [
+      {
+        "title": "Award-Winning Mobile App",
+        "category": "Mobile Development",
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop",
+        "description": "Revolutionary mobile application that won the Best App Award 2024 for its innovative user experience and cutting-edge technology.",
+        "achievement": "Best App Award 2024",
+        "tags": ["Mobile", "Award Winner", "Innovation"],
+        "link": "#"
+      },
+      {
+        "title": "Global Brand Campaign",
+        "category": "Branding",
+        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=500&fit=crop",
+        "description": "Comprehensive brand campaign that reached over 10 million users worldwide and increased brand recognition by 300%.",
+        "achievement": "10M+ Users Reached",
+        "tags": ["Branding", "Global", "Campaign"],
+        "link": "#"
+      }
+    ],
+    "otherItems": [
+      {
+        "title": "E-commerce Platform",
+        "category": "Web Development",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+        "description": "Complete e-commerce solution with advanced features and seamless user experience.",
+        "achievement": "50% Conversion Increase",
+        "tags": ["E-commerce", "Web Development"],
+        "link": "#"
+      },
+      {
+        "title": "AI-Powered Analytics",
+        "category": "Data Science",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+        "description": "Advanced analytics platform using machine learning to provide actionable insights.",
+        "achievement": "99.9% Accuracy",
+        "tags": ["AI", "Analytics", "Machine Learning"],
+        "link": "#"
+      },
+      {
+        "title": "Sustainable Design System",
+        "category": "Design",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        "description": "Comprehensive design system focused on sustainability and environmental responsibility.",
+        "achievement": "Carbon Neutral",
+        "tags": ["Design", "Sustainability", "System"],
+        "link": "#"
+      },
+      {
+        "title": "Cloud Infrastructure",
+        "category": "DevOps",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
+        "description": "Scalable cloud infrastructure solution supporting millions of concurrent users.",
+        "achievement": "99.99% Uptime",
+        "tags": ["Cloud", "Infrastructure", "Scalability"],
+        "link": "#"
+      }
+    ]
+  },
+  "dependencies": [
+    "next/image",
+    "lucide-react"
+  ]
+}

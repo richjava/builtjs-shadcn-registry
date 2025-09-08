@@ -1,0 +1,59 @@
+{
+  "name": "faq-support-minimal",
+  "category": "faq",
+  "section": "support",
+  "template": "minimal",
+  "description": "Minimal support section with essential contact options.",
+  "useCase": "Simple support contact for minimalist websites.",
+  "businessTypes": ["SaaS", "E-commerce", "Agency", "Corporate", "Startup"],
+  "scenarios": ["Simple support page", "Minimal contact options", "Clean support section"],
+  "keyFeatures": ["Simple design", "Essential contacts", "Minimal styling", "Easy access"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "contactMethods": "array",
+    "supportHours": "object",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Support",
+    "subtitle": "Get help when you need it.",
+    "contactMethods": [
+      {
+        "name": "Email",
+        "description": "Send us a message",
+        "icon": "mail",
+        "status": "available",
+        "responseTime": "2-4 hours",
+        "link": "mailto:support@company.com"
+      },
+      {
+        "name": "Live Chat",
+        "description": "Chat with support",
+        "icon": "message-circle",
+        "status": "online",
+        "responseTime": "2-5 minutes",
+        "link": "/live-chat"
+      },
+      {
+        "name": "Help Center",
+        "description": "Browse articles",
+        "icon": "book-open",
+        "status": "available",
+        "responseTime": "Self-service",
+        "link": "/help"
+      }
+    ],
+    "supportHours": {
+      "weekdays": "Mon-Fri: 9AM-6PM EST",
+      "weekends": "Sat-Sun: 10AM-4PM EST",
+      "emergency": "24/7 for critical issues"
+    },
+    "ctaText": "Need urgent help?",
+    "ctaLink": "/emergency"
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

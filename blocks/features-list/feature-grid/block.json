@@ -1,0 +1,13 @@
+{
+  "name": "feature-grid",
+  "description": "A responsive grid of features with icons, titles, and descriptions",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["card"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

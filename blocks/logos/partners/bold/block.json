@@ -1,0 +1,85 @@
+{
+  "name": "logos-partners-bold",
+  "category": "logos",
+  "section": "partners",
+  "template": "bold",
+  "description": "Bold partner logo showcase with striking design and animations.",
+  "useCase": "Eye-catching partner showcase for modern, dynamic websites.",
+  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup"],
+  "scenarios": ["Premium partnership page", "Dynamic business showcase", "Bold homepage section"],
+  "keyFeatures": ["Bold design", "Smooth animations", "Gradient backgrounds", "Interactive elements"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "partners": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Strategic Partnerships",
+    "subtitle": "We collaborate with industry leaders to create innovative solutions that drive success and growth.",
+    "partners": [
+      {
+        "name": "Microsoft",
+        "logo": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=200&h=100&fit=crop",
+        "website": "https://microsoft.com",
+        "type": "Technology Partner",
+        "description": "Cloud & Enterprise Solutions"
+      },
+      {
+        "name": "Amazon Web Services",
+        "logo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop",
+        "website": "https://aws.amazon.com",
+        "type": "Cloud Partner",
+        "description": "Scalable Cloud Infrastructure"
+      },
+      {
+        "name": "Google Cloud",
+        "logo": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=100&fit=crop",
+        "website": "https://cloud.google.com",
+        "type": "Cloud Partner",
+        "description": "AI & Machine Learning"
+      },
+      {
+        "name": "Salesforce",
+        "logo": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=100&fit=crop",
+        "website": "https://salesforce.com",
+        "type": "CRM Partner",
+        "description": "Customer Relationship Management"
+      },
+      {
+        "name": "HubSpot",
+        "logo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=100&fit=crop",
+        "website": "https://hubspot.com",
+        "type": "Marketing Partner",
+        "description": "Inbound Marketing Platform"
+      },
+      {
+        "name": "Slack",
+        "logo": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=200&h=100&fit=crop",
+        "website": "https://slack.com",
+        "type": "Productivity Partner",
+        "description": "Team Communication"
+      },
+      {
+        "name": "Zapier",
+        "logo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=100&fit=crop",
+        "website": "https://zapier.com",
+        "type": "Integration Partner",
+        "description": "Workflow Automation"
+      },
+      {
+        "name": "Stripe",
+        "logo": "https://images.unsplash.com/photo-1519389950473-47ba0277781a?w=200&h=100&fit=crop",
+        "website": "https://stripe.com",
+        "type": "Payment Partner",
+        "description": "Online Payment Processing"
+      }
+    ],
+    "ctaText": "Join our partner ecosystem",
+    "ctaLink": "/partnerships"
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

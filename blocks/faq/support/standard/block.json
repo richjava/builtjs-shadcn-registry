@@ -1,0 +1,67 @@
+{
+  "name": "faq-support-standard",
+  "category": "faq",
+  "section": "support",
+  "template": "standard",
+  "description": "Standard support section with contact options and resources.",
+  "useCase": "Customer support contact and assistance options.",
+  "businessTypes": ["SaaS", "E-commerce", "Agency", "Corporate", "Startup"],
+  "scenarios": ["Support contact page", "Customer assistance", "Help resources"],
+  "keyFeatures": ["Multiple contact methods", "Support hours", "Resource links", "Status indicators"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "contactMethods": "array",
+    "supportHours": "object",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Get Support",
+    "subtitle": "We're here to help you succeed. Choose the best way to reach us.",
+    "contactMethods": [
+      {
+        "name": "Live Chat",
+        "description": "Get instant help from our support team",
+        "icon": "message-circle",
+        "status": "online",
+        "responseTime": "2-5 minutes",
+        "link": "/live-chat"
+      },
+      {
+        "name": "Email Support",
+        "description": "Send us a detailed message",
+        "icon": "mail",
+        "status": "available",
+        "responseTime": "2-4 hours",
+        "link": "mailto:support@company.com"
+      },
+      {
+        "name": "Phone Support",
+        "description": "Speak directly with our team",
+        "icon": "phone",
+        "status": "available",
+        "responseTime": "Immediate",
+        "link": "tel:+1-555-0123"
+      },
+      {
+        "name": "Help Center",
+        "description": "Browse our knowledge base",
+        "icon": "book-open",
+        "status": "available",
+        "responseTime": "Self-service",
+        "link": "/help"
+      }
+    ],
+    "supportHours": {
+      "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM EST",
+      "weekends": "Saturday - Sunday: 10:00 AM - 4:00 PM EST",
+      "emergency": "24/7 for critical issues"
+    },
+    "ctaText": "Need immediate assistance?",
+    "ctaLink": "/emergency"
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

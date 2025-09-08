@@ -1,0 +1,27 @@
+{
+  "name": "newsletter-opt-in-minimal",
+  "category": "newsletter",
+  "section": "opt-in",
+  "template": "minimal",
+  "description": "Minimal opt-in form with clean design and simple lead magnet.",
+  "useCase": "Simple lead magnet conversion with minimal visual elements.",
+  "businessTypes": ["SaaS", "Agency", "E-commerce", "Corporate", "Startup", "Blog"],
+  "scenarios": ["Blog sidebar", "Minimal landing page", "Clean design preference", "Simple conversion"],
+  "keyFeatures": ["Clean design", "Simple form", "Minimal styling", "Essential elements only"],
+  "fields": {
+    "title": "string",
+    "leadMagnet": "string",
+    "placeholder": "string",
+    "buttonText": "string"
+  },
+  "data": {
+    "title": "Free Resource",
+    "leadMagnet": "Marketing Checklist",
+    "placeholder": "Your email",
+    "buttonText": "Get It"
+  },
+  "dependencies": [
+    "@radix-ui/react-label",
+    "lucide-react"
+  ]
+}

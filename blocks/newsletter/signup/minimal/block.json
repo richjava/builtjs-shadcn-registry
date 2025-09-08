@@ -1,0 +1,27 @@
+{
+  "name": "newsletter-signup-minimal",
+  "category": "newsletter",
+  "section": "signup",
+  "template": "minimal",
+  "description": "Minimal newsletter signup form with clean design.",
+  "useCase": "Simple email collection with minimal visual elements.",
+  "businessTypes": ["SaaS", "Agency", "E-commerce", "Corporate", "Startup", "Blog"],
+  "scenarios": ["Blog footer", "Sidebar widget", "Minimal landing page", "Clean design preference"],
+  "keyFeatures": ["Clean design", "Minimal styling", "Simple form", "Subtle colors"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "placeholder": "string",
+    "buttonText": "string"
+  },
+  "data": {
+    "title": "Newsletter",
+    "subtitle": "Get updates delivered to your inbox.",
+    "placeholder": "Your email",
+    "buttonText": "Subscribe"
+  },
+  "dependencies": [
+    "@radix-ui/react-label",
+    "lucide-react"
+  ]
+}

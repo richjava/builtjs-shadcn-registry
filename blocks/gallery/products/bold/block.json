@@ -1,0 +1,92 @@
+{
+  "name": "gallery-products-bold",
+  "category": "gallery",
+  "section": "products",
+  "template": "bold",
+  "description": "Bold product gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
+  "useCase": "Create an impactful product showcase with bold visual elements and modern e-commerce design trends.",
+  "businessTypes": ["E-commerce", "Retail", "SaaS", "Corporate", "Startup"],
+  "scenarios": ["Bold product catalog", "Dynamic showcase", "Eye-catching gallery", "Modern e-commerce"],
+  "keyFeatures": ["Bold colors", "Dynamic layouts", "Modern design", "Visual impact", "E-commerce focus"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "products": "array"
+  },
+  "data": {
+    "title": "Featured Products",
+    "subtitle": "Discover our most popular and innovative products that are revolutionizing the market.",
+    "products": [
+      {
+        "name": "Premium Wireless Headphones",
+        "price": "$299.99",
+        "originalPrice": "$399.99",
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=400&fit=crop",
+        "description": "High-quality wireless headphones with noise cancellation and premium sound quality.",
+        "rating": 4.8,
+        "reviews": 124,
+        "badge": "Best Seller",
+        "link": "#"
+      },
+      {
+        "name": "Smart Fitness Tracker",
+        "price": "$199.99",
+        "originalPrice": null,
+        "image": "https://images.unsplash.com/photo-1576243345690-4e4b79b63288?w=600&h=400&fit=crop",
+        "description": "Advanced fitness tracker with heart rate monitoring and sleep tracking capabilities.",
+        "rating": 4.6,
+        "reviews": 89,
+        "badge": "New",
+        "link": "#"
+      },
+      {
+        "name": "Professional Camera Lens",
+        "price": "$899.99",
+        "originalPrice": "$1099.99",
+        "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop",
+        "description": "Professional-grade camera lens perfect for portrait and landscape photography.",
+        "rating": 4.9,
+        "reviews": 67,
+        "badge": "Sale",
+        "link": "#"
+      },
+      {
+        "name": "Ergonomic Office Chair",
+        "price": "$449.99",
+        "originalPrice": null,
+        "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop",
+        "description": "Comfortable ergonomic office chair designed for long work sessions and optimal posture.",
+        "rating": 4.7,
+        "reviews": 156,
+        "badge": null,
+        "link": "#"
+      },
+      {
+        "name": "Wireless Charging Pad",
+        "price": "$79.99",
+        "originalPrice": "$99.99",
+        "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=400&fit=crop",
+        "description": "Fast wireless charging pad compatible with all Qi-enabled devices.",
+        "rating": 4.5,
+        "reviews": 203,
+        "badge": "Popular",
+        "link": "#"
+      },
+      {
+        "name": "Bluetooth Speaker",
+        "price": "$149.99",
+        "originalPrice": null,
+        "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&h=400&fit=crop",
+        "description": "Portable Bluetooth speaker with 360-degree sound and waterproof design.",
+        "rating": 4.4,
+        "reviews": 98,
+        "badge": null,
+        "link": "#"
+      }
+    ]
+  },
+  "dependencies": [
+    "next/image",
+    "lucide-react"
+  ]
+}

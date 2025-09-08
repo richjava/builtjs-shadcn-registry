@@ -1,0 +1,57 @@
+{
+  "name": "highlights",
+  "description": "Key feature highlights with benefits",
+  "theme": "minimal",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "highlights": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Why Choose Us",
+    "subtitle": "Simple, powerful features that make a difference.",
+    "highlights": [
+      {
+        "title": "Fast Performance",
+        "description": "Optimized for speed with modern architecture.",
+        "icon": "zap",
+        "benefit": "3x faster"
+      },
+      {
+        "title": "Secure Platform",
+        "description": "Enterprise-grade security and compliance.",
+        "icon": "shield-check",
+        "benefit": "SOC 2 certified"
+      },
+      {
+        "title": "24/7 Support",
+        "description": "Round-the-clock assistance from our team.",
+        "icon": "headphones",
+        "benefit": "2min response"
+      },
+      {
+        "title": "Scalable Growth",
+        "description": "Grows with your business needs.",
+        "icon": "trending-up",
+        "benefit": "10M+ requests"
+      }
+    ],
+    "ctaText": "Get Started",
+    "ctaLink": "/signup"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

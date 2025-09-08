@@ -1,0 +1,41 @@
+{
+  "name": "call-to-action",
+  "description": "Minimal conversion section with clean typography and subtle presentation",
+  "theme": "minimal",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "primaryCtaText": "string",
+    "primaryCtaLink": "url",
+    "secondaryCtaText": "string",
+    "secondaryCtaLink": "url",
+    "backgroundType": "string",
+    "backgroundImage": "object"
+  },
+  "data": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Join thousands of developers who are already building the future with our platform.",
+    "primaryCtaText": "Start Free Trial",
+    "primaryCtaLink": "/signup",
+    "secondaryCtaText": "Schedule Demo",
+    "secondaryCtaLink": "/demo",
+    "backgroundType": "white",
+    "backgroundImage": {
+      "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop",
+      "alt": "Modern development workspace"
+    }
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

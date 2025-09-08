@@ -1,0 +1,28 @@
+{
+  "name": "bold-statement",
+  "description": "Bold mission statement section with vibrant typography and dynamic elements",
+  "theme": "bold",
+  "fields": {
+    "title": "string",
+    "mission": "text",
+    "ctaText": "string",
+    "ctaLink": "url",
+    "backgroundStyle": "string"
+  },
+  "data": {
+    "title": "Our Mission",
+    "mission": "To democratize web development by providing powerful, intuitive tools that enable anyone to build beautiful, performant applications without traditional complexity barriers.",
+    "ctaText": "Join Our Mission",
+    "ctaLink": "/join",
+    "backgroundStyle": "gradient"
+  },
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

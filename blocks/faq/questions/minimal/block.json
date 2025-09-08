@@ -1,0 +1,54 @@
+{
+  "name": "faq-questions-minimal",
+  "category": "faq",
+  "section": "questions",
+  "template": "minimal",
+  "description": "Minimal FAQ questions section with simple expandable design.",
+  "useCase": "Clean and simple FAQ display for minimalist websites.",
+  "businessTypes": ["SaaS", "E-commerce", "Agency", "Corporate", "Startup"],
+  "scenarios": ["Simple FAQ page", "Minimal support section", "Clean help center"],
+  "keyFeatures": ["Simple design", "Minimal animations", "Clean typography", "Subtle interactions"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "questions": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Common Questions",
+    "subtitle": "Quick answers to help you get started.",
+    "questions": [
+      {
+        "question": "How do I get started?",
+        "answer": "Sign up, complete your profile, and follow our simple onboarding guide.",
+        "category": "Getting Started"
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards and PayPal for your convenience.",
+        "category": "Billing"
+      },
+      {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes, cancel anytime from your account settings with no penalties.",
+        "category": "Billing"
+      },
+      {
+        "question": "Is support available?",
+        "answer": "Yes, we provide email and chat support during business hours.",
+        "category": "Support"
+      },
+      {
+        "question": "How secure is my data?",
+        "answer": "All data is encrypted and we're SOC 2 compliant for maximum security.",
+        "category": "Security"
+      }
+    ],
+    "ctaText": "Need more help?",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

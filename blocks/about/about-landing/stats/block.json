@@ -1,0 +1,32 @@
+{
+  "name": "stats",
+  "description": "Hero section for About pages with company introduction and stats",
+  "fields": {
+    "title": "string",
+    "subtitle": "text",
+    "ctaText": "string",
+    "ctaLink": "url",
+    "stats": "array"
+  },
+  "data": {
+    "title": "We're building the future of web development",
+    "subtitle": "Join thousands of developers who are already building amazing things with our platform. Experience the power of modern web development tools.",
+    "ctaText": "Get Started",
+    "ctaLink": "/signup",
+    "stats": [
+      { "number": "50K+", "label": "Developers" },
+      { "number": "75+", "label": "Countries" },
+      { "number": "99.9%", "label": "Uptime" },
+      { "number": "4.9/5", "label": "Rating" }
+    ]
+  },
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

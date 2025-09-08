@@ -1,0 +1,41 @@
+{
+  "name": "newsletter-subscription-minimal",
+  "category": "newsletter",
+  "section": "subscription",
+  "template": "minimal",
+  "description": "Minimal subscription management with clean design.",
+  "useCase": "Simple subscription preferences with minimal visual elements.",
+  "businessTypes": ["SaaS", "Agency", "E-commerce", "Corporate", "Startup", "Blog"],
+  "scenarios": ["Simple settings page", "Minimal dashboard", "Clean preference center", "Subtle design preference"],
+  "keyFeatures": ["Clean design", "Simple toggles", "Minimal styling", "Essential options only"],
+  "fields": {
+    "title": "string",
+    "preferences": "array",
+    "unsubscribeText": "string"
+  },
+  "data": {
+    "title": "Email Settings",
+    "preferences": [
+      {
+        "id": "weekly-digest",
+        "name": "Weekly Digest",
+        "enabled": true
+      },
+      {
+        "id": "product-updates",
+        "name": "Product Updates",
+        "enabled": true
+      },
+      {
+        "id": "marketing",
+        "name": "Marketing",
+        "enabled": false
+      }
+    ],
+    "unsubscribeText": "Unsubscribe"
+  },
+  "dependencies": [
+    "@radix-ui/react-switch",
+    "@radix-ui/react-label"
+  ]
+}

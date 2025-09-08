@@ -1,0 +1,29 @@
+{
+  "name": "newsletter-signup-bold",
+  "category": "newsletter",
+  "section": "signup",
+  "template": "bold",
+  "description": "Bold newsletter signup form with eye-catching design.",
+  "useCase": "High-conversion email collection with bold visual elements.",
+  "businessTypes": ["SaaS", "Agency", "E-commerce", "Corporate", "Startup", "Blog"],
+  "scenarios": ["Landing page hero", "High-conversion page", "Bold brand design", "Attention-grabbing signup"],
+  "keyFeatures": ["Bold colors", "Gradient backgrounds", "Large typography", "High contrast"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "placeholder": "string",
+    "buttonText": "string",
+    "privacyText": "string"
+  },
+  "data": {
+    "title": "Join Our Community",
+    "subtitle": "Get exclusive access to premium content, early releases, and insider tips.",
+    "placeholder": "Enter your email address",
+    "buttonText": "Get Started Free",
+    "privacyText": "No spam, ever. Unsubscribe with one click."
+  },
+  "dependencies": [
+    "@radix-ui/react-label",
+    "lucide-react"
+  ]
+}

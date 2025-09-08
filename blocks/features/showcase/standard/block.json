@@ -1,0 +1,70 @@
+{
+  "name": "showcase",
+  "description": "Feature showcase with visual demonstrations",
+  "theme": "standard",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Powerful Features",
+    "subtitle": "Discover the capabilities that make our platform the perfect choice for your business.",
+    "ctaText": "Explore All Features",
+    "ctaLink": "/features"
+  },
+  "collectionsData": {
+    "featureItem": [
+      {
+        "_id": "featureItem-1",
+        "_type": "featureItem",
+        "slug": "advanced-analytics",
+        "title": "Advanced Analytics",
+        "description": "Get deep insights into your data with our comprehensive analytics dashboard.",
+        "icon": "bar-chart",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+          "alt": "Analytics dashboard interface"
+        }
+      },
+      {
+        "_id": "featureItem-2",
+        "_type": "featureItem",
+        "slug": "real-time-collaboration",
+        "title": "Real-time Collaboration",
+        "description": "Work together seamlessly with real-time updates and instant notifications.",
+        "icon": "users",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
+          "alt": "Team collaboration workspace"
+        }
+      },
+      {
+        "_id": "featureItem-3",
+        "_type": "featureItem",
+        "slug": "secure-infrastructure",
+        "title": "Secure Infrastructure",
+        "description": "Enterprise-grade security with 99.9% uptime and data encryption.",
+        "icon": "shield",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+          "alt": "Security and infrastructure"
+        }
+      }
+    ]
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

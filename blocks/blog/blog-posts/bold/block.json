@@ -1,0 +1,56 @@
+{
+  "name": "blog-blog-posts-bold",
+  "category": "blog",
+  "section": "blog-posts",
+  "template": "bold",
+  "description": "Bold blog posts listing with eye-catching design and modern styling.",
+  "useCase": "High-impact blog post listings with bold visual elements and engaging design.",
+  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup", "E-commerce"],
+  "scenarios": ["Bold brand blog", "High-impact content", "Modern design", "Engaging listings"],
+  "keyFeatures": ["Bold typography", "Gradient backgrounds", "Modern styling", "High contrast", "Visual impact"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "posts": "array"
+  },
+  "data": {
+    "title": "Featured Articles",
+    "subtitle": "Discover insights, trends, and innovations that shape the future of technology.",
+    "posts": [
+      {
+        "title": "Revolutionizing Digital Experiences: The Next Wave of Innovation",
+        "excerpt": "Discover how cutting-edge technologies are transforming the way we interact with digital products.",
+        "author": "Maria Rodriguez",
+        "publishedDate": "2024-01-20",
+        "readingTime": "7 min read",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+        "tags": ["Innovation", "Digital Transformation"],
+        "slug": "revolutionizing-digital-experiences"
+      },
+      {
+        "title": "The Future of AI in Web Development",
+        "excerpt": "Exploring how artificial intelligence is reshaping the landscape of web development.",
+        "author": "Sarah Johnson",
+        "publishedDate": "2024-01-18",
+        "readingTime": "6 min read",
+        "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+        "tags": ["AI", "Web Development"],
+        "slug": "future-ai-web-development"
+      },
+      {
+        "title": "Building the Next Generation of User Interfaces",
+        "excerpt": "Learn about the latest trends and techniques in modern UI/UX design and development.",
+        "author": "Alex Chen",
+        "publishedDate": "2024-01-15",
+        "readingTime": "5 min read",
+        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop",
+        "tags": ["UI/UX", "Design"],
+        "slug": "next-generation-user-interfaces"
+      }
+    ]
+  },
+  "dependencies": [
+    "next/image",
+    "lucide-react"
+  ]
+}

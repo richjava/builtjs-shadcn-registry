@@ -1,0 +1,69 @@
+{
+  "name": "services",
+  "description": "Service descriptions and capabilities",
+  "theme": "standard",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "services": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "What We Do",
+    "subtitle": "Professional services designed to help your business thrive in the digital age.",
+    "services": [
+      {
+        "name": "Consulting",
+        "description": "Strategic guidance to help you make informed decisions and achieve your goals.",
+        "icon": "users",
+        "duration": "Ongoing",
+        "deliverables": [
+          "Strategic planning",
+          "Market analysis",
+          "Process review",
+          "Implementation roadmap"
+        ]
+      },
+      {
+        "name": "Development",
+        "description": "Custom software solutions built with the latest technologies and best practices.",
+        "icon": "code",
+        "duration": "2-12 weeks",
+        "deliverables": [
+          "Custom applications",
+          "API development",
+          "Database design",
+          "Quality assurance"
+        ]
+      },
+      {
+        "name": "Support",
+        "description": "Ongoing maintenance and support to keep your systems running smoothly.",
+        "icon": "headphones",
+        "duration": "24/7",
+        "deliverables": [
+          "Technical support",
+          "System monitoring",
+          "Updates & patches",
+          "Performance optimization"
+        ]
+      }
+    ],
+    "ctaText": "Start a Project",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

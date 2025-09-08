@@ -1,0 +1,57 @@
+{
+  "name": "blog-featured-posts-standard",
+  "category": "blog",
+  "section": "featured-posts",
+  "template": "standard",
+  "description": "Standard featured posts section with professional layout and clear hierarchy.",
+  "useCase": "Showcase important blog posts, featured content, and content marketing highlights.",
+  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup", "E-commerce"],
+  "scenarios": ["Homepage featured content", "Content marketing", "Important posts", "Professional showcase"],
+  "keyFeatures": ["Featured post layout", "Clear hierarchy", "Professional styling", "Content highlights"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "featuredPost": "object",
+    "otherPosts": "array"
+  },
+  "data": {
+    "title": "Featured Content",
+    "subtitle": "Discover our most popular and impactful articles that are shaping the industry.",
+    "featuredPost": {
+      "title": "The Complete Guide to Modern Web Development in 2024",
+      "excerpt": "A comprehensive guide covering all the latest trends, tools, and best practices in modern web development.",
+      "author": "Sarah Johnson",
+      "publishedDate": "2024-01-20",
+      "readingTime": "12 min read",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop",
+      "tags": ["Web Development", "Guide", "2024"],
+      "slug": "complete-guide-modern-web-development-2024"
+    },
+    "otherPosts": [
+      {
+        "title": "Building Scalable React Applications",
+        "excerpt": "Best practices for creating maintainable and scalable React applications.",
+        "author": "Maria Rodriguez",
+        "publishedDate": "2024-01-15",
+        "readingTime": "8 min read",
+        "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cce?w=400&h=300&fit=crop",
+        "tags": ["React", "Best Practices"],
+        "slug": "scalable-react-applications"
+      },
+      {
+        "title": "CSS Grid vs Flexbox: When to Use What",
+        "excerpt": "A comprehensive guide to choosing the right layout method for your projects.",
+        "author": "David Kim",
+        "publishedDate": "2024-01-10",
+        "readingTime": "6 min read",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+        "tags": ["CSS", "Layout"],
+        "slug": "css-grid-vs-flexbox"
+      }
+    ]
+  },
+  "dependencies": [
+    "next/image",
+    "lucide-react"
+  ]
+}

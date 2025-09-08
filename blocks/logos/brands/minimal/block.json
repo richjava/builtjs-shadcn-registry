@@ -1,0 +1,59 @@
+{
+  "name": "logos-brands-minimal",
+  "category": "logos",
+  "section": "brands",
+  "template": "minimal",
+  "description": "Minimal brand logo showcase with clean, simple design.",
+  "useCase": "Simple brand logo display for minimalist websites.",
+  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup"],
+  "scenarios": ["Minimal brand showcase", "Simple recognition", "Clean about section"],
+  "keyFeatures": ["Simple grid", "Minimal styling", "Clean typography", "Subtle interactions"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "brands": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Brand Partners",
+    "subtitle": "Working with recognized brands worldwide.",
+    "brands": [
+      {
+        "name": "Nike",
+        "logo": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=150&h=75&fit=crop",
+        "website": "https://nike.com"
+      },
+      {
+        "name": "Apple",
+        "logo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=75&fit=crop",
+        "website": "https://apple.com"
+      },
+      {
+        "name": "Coca-Cola",
+        "logo": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=75&fit=crop",
+        "website": "https://coca-cola.com"
+      },
+      {
+        "name": "McDonald's",
+        "logo": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=150&h=75&fit=crop",
+        "website": "https://mcdonalds.com"
+      },
+      {
+        "name": "Samsung",
+        "logo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=150&h=75&fit=crop",
+        "website": "https://samsung.com"
+      },
+      {
+        "name": "Adidas",
+        "logo": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=75&fit=crop",
+        "website": "https://adidas.com"
+      }
+    ],
+    "ctaText": "Partner with us",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

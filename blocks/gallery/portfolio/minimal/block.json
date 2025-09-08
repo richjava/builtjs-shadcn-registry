@@ -1,0 +1,74 @@
+{
+  "name": "gallery-portfolio-minimal",
+  "category": "gallery",
+  "section": "portfolio",
+  "template": "minimal",
+  "description": "Minimal portfolio gallery with clean, simple design and subtle interactions.",
+  "useCase": "Showcase portfolio work with a clean, minimalist approach that focuses on the content.",
+  "businessTypes": ["Agency", "Portfolio", "Creative", "Design", "Photography"],
+  "scenarios": ["Minimal portfolio", "Clean showcase", "Simple gallery", "Focused display"],
+  "keyFeatures": ["Minimal design", "Clean typography", "Subtle interactions", "Focus on content", "Simple layout"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "projects": "array"
+  },
+  "data": {
+    "title": "Selected Work",
+    "subtitle": "A curated collection of our most impactful projects and creative solutions.",
+    "projects": [
+      {
+        "title": "E-commerce Platform Redesign",
+        "category": "Web Design",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+        "description": "Complete redesign of a modern e-commerce platform with focus on user experience and conversion optimization.",
+        "tags": ["UI/UX", "E-commerce", "React"],
+        "link": "#"
+      },
+      {
+        "title": "Brand Identity System",
+        "category": "Branding",
+        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop",
+        "description": "Comprehensive brand identity design including logo, color palette, and brand guidelines.",
+        "tags": ["Branding", "Logo Design", "Identity"],
+        "link": "#"
+      },
+      {
+        "title": "Mobile App Interface",
+        "category": "Mobile Design",
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
+        "description": "Intuitive mobile app design with focus on accessibility and user engagement.",
+        "tags": ["Mobile", "UI/UX", "iOS"],
+        "link": "#"
+      },
+      {
+        "title": "Corporate Website",
+        "category": "Web Development",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        "description": "Modern corporate website with clean design and seamless user experience.",
+        "tags": ["Corporate", "Web Design", "Responsive"],
+        "link": "#"
+      },
+      {
+        "title": "Product Photography",
+        "category": "Photography",
+        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
+        "description": "Professional product photography for e-commerce and marketing materials.",
+        "tags": ["Photography", "Product", "E-commerce"],
+        "link": "#"
+      },
+      {
+        "title": "Social Media Campaign",
+        "category": "Marketing",
+        "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+        "description": "Creative social media campaign with engaging visuals and consistent branding.",
+        "tags": ["Social Media", "Marketing", "Creative"],
+        "link": "#"
+      }
+    ]
+  },
+  "dependencies": [
+    "next/image",
+    "lucide-react"
+  ]
+}

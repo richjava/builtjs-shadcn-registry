@@ -1,0 +1,66 @@
+{
+  "name": "problem-solution",
+  "description": "Bold problem-solution section with vibrant colors and dynamic presentation",
+  "theme": "bold",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "problems": "array",
+    "solutions": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "The Problem We Solve",
+    "subtitle": "Modern development teams face complex challenges. We provide the solutions you need to succeed.",
+    "problems": [
+      {
+        "title": "Complex Setup & Configuration",
+        "description": "Spending weeks on boilerplate code and configuration instead of building features.",
+        "icon": "settings"
+      },
+      {
+        "title": "Scaling Performance Issues",
+        "description": "Applications slow down as they grow, affecting user experience and business growth.",
+        "icon": "trending-down"
+      },
+      {
+        "title": "Security Vulnerabilities",
+        "description": "Constant worry about security breaches and compliance requirements.",
+        "icon": "alert-triangle"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Zero-Config Deployment",
+        "description": "Deploy in minutes with our pre-configured, production-ready templates.",
+        "icon": "zap"
+      },
+      {
+        "title": "Auto-Scaling Infrastructure",
+        "description": "Built-in performance optimization that scales automatically with your traffic.",
+        "icon": "trending-up"
+      },
+      {
+        "title": "Enterprise-Grade Security",
+        "description": "Bank-level security with automatic updates and compliance monitoring.",
+        "icon": "shield"
+      }
+    ],
+    "ctaText": "See How It Works",
+    "ctaLink": "/demo"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

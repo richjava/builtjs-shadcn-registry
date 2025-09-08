@@ -1,0 +1,13 @@
+{
+  "name": "pricing-cards",
+  "description": "Responsive pricing cards with features, pricing tiers, and call-to-action buttons",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button", "card"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

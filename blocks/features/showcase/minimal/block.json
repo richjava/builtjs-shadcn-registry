@@ -1,0 +1,51 @@
+{
+  "name": "showcase",
+  "description": "Feature showcase with visual demonstrations",
+  "theme": "minimal",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "features": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Our Features",
+    "subtitle": "Essential tools designed for your success.",
+    "features": [
+      {
+        "title": "Analytics",
+        "description": "Get insights into your data with our analytics dashboard.",
+        "icon": "bar-chart",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
+      },
+      {
+        "title": "Collaboration",
+        "description": "Work together seamlessly with real-time updates.",
+        "icon": "users",
+        "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop"
+      },
+      {
+        "title": "Security",
+        "description": "Enterprise-grade security with data encryption.",
+        "icon": "shield",
+        "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop"
+      }
+    ],
+    "ctaText": "Learn More",
+    "ctaLink": "/features"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

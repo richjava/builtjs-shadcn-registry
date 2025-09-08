@@ -1,0 +1,38 @@
+{
+  "name": "blog-blog-article-bold",
+  "category": "blog",
+  "section": "blog-article",
+  "template": "bold",
+  "description": "Bold blog article layout with eye-catching design and modern styling.",
+  "useCase": "High-impact blog posts with bold visual elements and engaging design.",
+  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup", "E-commerce"],
+  "scenarios": ["Bold brand blog", "High-impact content", "Modern design", "Engaging articles"],
+  "keyFeatures": ["Bold typography", "Gradient backgrounds", "Modern styling", "High contrast", "Visual impact"],
+  "fields": {
+    "entry": "object"
+  },
+  "data": {
+    "entry": {
+      "_id": "blog-article-3",
+      "_type": "blogItem",
+      "slug": "revolutionizing-digital-experiences-innovation",
+      "title": "Revolutionizing Digital Experiences: The Next Wave of Innovation",
+      "excerpt": "Discover how cutting-edge technologies are transforming the way we interact with digital products and services.",
+      "author": "Maria Rodriguez",
+      "publishedDate": "2024-01-20",
+      "readTime": "7 min read",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=400&fit=crop",
+        "alt": "Digital innovation concept"
+      },
+      "tags": ["Innovation", "Digital Transformation", "Technology", "Future"],
+      "category": "Innovation",
+      "featured": true,
+      "content": "<p>The digital landscape is undergoing a seismic shift. As we stand at the crossroads of innovation, new technologies are emerging that promise to revolutionize how we experience the digital world.</p><h2>Artificial Intelligence Integration</h2><p>AI is no longer a futuristic concept but a present reality that's reshaping user experiences across all digital touchpoints. From personalized recommendations to intelligent automation, AI is creating more intuitive and responsive digital experiences.</p><h2>Immersive Technologies</h2><p>Virtual and augmented reality technologies are breaking down the barriers between physical and digital worlds, creating unprecedented opportunities for engagement and interaction.</p><h2>The Future of Digital Interaction</h2><p>As we look ahead, the convergence of these technologies promises to create digital experiences that are more natural, intuitive, and meaningful than ever before.</p>"
+    }
+  },
+  "dependencies": [
+    "next/image",
+    "lucide-react"
+  ]
+}

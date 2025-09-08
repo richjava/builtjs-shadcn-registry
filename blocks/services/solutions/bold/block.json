@@ -1,0 +1,75 @@
+{
+  "name": "solutions",
+  "description": "Business solutions and outcomes",
+  "theme": "bold",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "solutions": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Strategic Business Solutions",
+    "subtitle": "Transform your business with our comprehensive solutions designed to drive measurable results and sustainable growth across all areas of your organization.",
+    "solutions": [
+      {
+        "name": "Enterprise Digital Transformation",
+        "description": "Complete digital overhaul of your business processes, systems, and operations using cutting-edge technologies and industry best practices.",
+        "outcome": "Up to 60% efficiency improvement",
+        "benefits": [
+          "End-to-end process automation",
+          "Advanced analytics & reporting",
+          "Cloud infrastructure migration",
+          "AI-powered decision making",
+          "Scalable system architecture",
+          "24/7 monitoring & support"
+        ],
+        "icon": "zap"
+      },
+      {
+        "name": "Customer Experience Excellence",
+        "description": "Revolutionize customer interactions through personalized experiences, omnichannel support, and data-driven customer journey optimization.",
+        "outcome": "40% increase in customer satisfaction",
+        "benefits": [
+          "Omnichannel customer support",
+          "Personalized user experiences",
+          "Real-time customer analytics",
+          "Proactive issue resolution",
+          "Customer feedback integration",
+          "Loyalty program optimization"
+        ],
+        "icon": "users"
+      },
+      {
+        "name": "Strategic Growth Acceleration",
+        "description": "Accelerate business growth through market expansion, competitive analysis, and data-driven strategic planning with measurable ROI.",
+        "outcome": "5x revenue growth potential",
+        "benefits": [
+          "Comprehensive market analysis",
+          "Competitive intelligence",
+          "Strategic roadmap development",
+          "Performance metrics & KPIs",
+          "Growth opportunity identification",
+          "Long-term sustainability planning"
+        ],
+        "icon": "trending-up"
+      }
+    ],
+    "ctaText": "Start Your Transformation",
+    "ctaLink": "/solutions"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

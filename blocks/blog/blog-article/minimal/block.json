@@ -1,0 +1,32 @@
+{
+  "name": "blog-blog-article-minimal",
+  "category": "blog",
+  "section": "blog-article",
+  "template": "minimal",
+  "description": "Minimal blog article layout with clean, content-focused design.",
+  "useCase": "Simple blog post pages with minimal visual elements and focus on content.",
+  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup", "E-commerce"],
+  "scenarios": ["Simple blog", "Minimal design", "Content-focused", "Clean layout"],
+  "keyFeatures": ["Minimal styling", "Clean typography", "Simple layout", "Content focus"],
+  "fields": {
+    "entry": "object"
+  },
+  "data": {
+    "entry": {
+      "_id": "blog-article-2",
+      "_type": "blogItem",
+      "slug": "getting-started-modern-javascript",
+      "title": "Getting Started with Modern JavaScript",
+      "excerpt": "JavaScript has evolved significantly over the years. Modern JavaScript brings powerful features that make development more efficient and code more maintainable.",
+      "author": "Alex Chen",
+      "publishedDate": "2024-01-10",
+      "readTime": "4 min read",
+      "tags": ["JavaScript", "Programming", "Web Development"],
+      "category": "Development",
+      "content": "<p>JavaScript has evolved significantly over the years. Modern JavaScript brings powerful features that make development more efficient and code more maintainable.</p><h2>ES6+ Features</h2><p>Modern JavaScript includes many powerful features like arrow functions, destructuring, template literals, and async/await that make code more readable and efficient.</p><h2>Module System</h2><p>The introduction of ES6 modules has revolutionized how we organize and structure JavaScript code, making it easier to create maintainable applications.</p><h2>Best Practices</h2><p>Following modern JavaScript best practices helps create more reliable, performant, and maintainable applications.</p>"
+    }
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

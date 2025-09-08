@@ -1,0 +1,13 @@
+{
+  "name": "simple-footer",
+  "description": "A clean footer with links, social media, and company information",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": [],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

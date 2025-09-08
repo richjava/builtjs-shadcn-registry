@@ -1,0 +1,49 @@
+{
+  "name": "image",
+  "description": "Hero section for About pages with image and text layout",
+  "fields": {
+    "badge": "string",
+    "title": "string",
+    "titleHighlight": "string",
+    "subtitle": "text",
+    "primaryCtaText": "string",
+    "primaryCtaLink": "url",
+    "secondaryCtaText": "string",
+    "secondaryCtaLink": "url",
+    "trustBadges": "array",
+    "image": "object"
+  },
+  "data": {
+    "badge": "✨ About Our Company",
+    "title": "We're building the future of",
+    "titleHighlight": "web development",
+    "subtitle": "Our team of passionate developers and designers work together to create tools that make web development more accessible, efficient, and enjoyable for everyone.",
+    "primaryCtaText": "Learn More",
+    "primaryCtaLink": "/about",
+    "secondaryCtaText": "Watch Video",
+    "secondaryCtaLink": "/video",
+    "trustBadges": [
+      {
+        "text": "Trusted by 50K+ developers",
+        "color": "green"
+      },
+      {
+        "text": "Open source",
+        "color": "blue"
+      }
+    ],
+    "image": {
+      "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=600&fit=crop",
+      "alt": "Team of developers collaborating in modern office space"
+    }
+  },
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

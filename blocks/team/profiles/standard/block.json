@@ -1,0 +1,63 @@
+{
+  "name": "profiles",
+  "description": "Team member profiles and introductions",
+  "theme": "standard",
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "profiles": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Meet Our Team",
+    "subtitle": "The talented individuals behind our success.",
+    "profiles": [
+      {
+        "name": "Sarah Johnson",
+        "role": "CEO & Founder",
+        "bio": "Visionary leader with 15+ years in tech innovation and business strategy.",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "linkedin": "https://linkedin.com/in/sarahjohnson",
+          "twitter": "https://twitter.com/sarahjohnson"
+        }
+      },
+      {
+        "name": "Michael Chen",
+        "role": "CTO",
+        "bio": "Technical architect passionate about building scalable solutions and leading engineering teams.",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "linkedin": "https://linkedin.com/in/michaelchen",
+          "github": "https://github.com/michaelchen"
+        }
+      },
+      {
+        "name": "Emily Rodriguez",
+        "role": "Head of Design",
+        "bio": "Creative director focused on user-centered design and brand experiences.",
+        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
+        "social": {
+          "linkedin": "https://linkedin.com/in/emilyrodriguez",
+          "dribbble": "https://dribbble.com/emilyrodriguez"
+        }
+      }
+    ],
+    "ctaText": "Join Our Team",
+    "ctaLink": "/careers"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

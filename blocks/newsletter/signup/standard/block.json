@@ -1,0 +1,29 @@
+{
+  "name": "newsletter-signup-standard",
+  "category": "newsletter",
+  "section": "signup",
+  "template": "standard",
+  "description": "Standard newsletter signup form with clear value proposition.",
+  "useCase": "Collect email addresses for newsletter subscriptions with professional design.",
+  "businessTypes": ["SaaS", "Agency", "E-commerce", "Corporate", "Startup", "Blog"],
+  "scenarios": ["Homepage signup", "Blog sidebar", "Footer subscription", "Landing page conversion"],
+  "keyFeatures": ["Email validation", "Clear value proposition", "Professional styling", "Responsive design"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "placeholder": "string",
+    "buttonText": "string",
+    "privacyText": "string"
+  },
+  "data": {
+    "title": "Stay Updated",
+    "subtitle": "Get the latest news, updates, and exclusive content delivered to your inbox.",
+    "placeholder": "Enter your email address",
+    "buttonText": "Subscribe",
+    "privacyText": "We respect your privacy. Unsubscribe at any time."
+  },
+  "dependencies": [
+    "@radix-ui/react-label",
+    "lucide-react"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "name": "faq-help-standard",
+  "category": "faq",
+  "section": "help",
+  "template": "standard",
+  "description": "Standard help center with organized documentation and support resources.",
+  "useCase": "Comprehensive help center with categorized documentation and support options.",
+  "businessTypes": ["SaaS", "E-commerce", "Agency", "Corporate", "Startup"],
+  "scenarios": ["Help documentation", "Support center", "Knowledge base"],
+  "keyFeatures": ["Categorized content", "Search functionality", "Contact options", "Resource links"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "categories": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Help Center",
+    "subtitle": "Find answers, guides, and resources to help you succeed.",
+    "categories": [
+      {
+        "name": "Getting Started",
+        "description": "New to our platform? Start here.",
+        "icon": "play-circle",
+        "articles": [
+          {
+            "title": "Quick Start Guide",
+            "description": "Get up and running in 5 minutes",
+            "readTime": "3 min read"
+          },
+          {
+            "title": "Account Setup",
+            "description": "Configure your account settings",
+            "readTime": "2 min read"
+          },
+          {
+            "title": "First Steps",
+            "description": "Essential first steps after signup",
+            "readTime": "5 min read"
+          }
+        ]
+      },
+      {
+        "name": "Billing & Plans",
+        "description": "Everything about pricing and billing.",
+        "icon": "credit-card",
+        "articles": [
+          {
+            "title": "Pricing Plans",
+            "description": "Compare our available plans",
+            "readTime": "2 min read"
+          },
+          {
+            "title": "Billing FAQ",
+            "description": "Common billing questions",
+            "readTime": "3 min read"
+          },
+          {
+            "title": "Upgrade/Downgrade",
+            "description": "How to change your plan",
+            "readTime": "2 min read"
+          }
+        ]
+      },
+      {
+        "name": "Features & Usage",
+        "description": "Learn how to use our features.",
+        "icon": "settings",
+        "articles": [
+          {
+            "title": "Feature Overview",
+            "description": "Complete feature documentation",
+            "readTime": "10 min read"
+          },
+          {
+            "title": "Advanced Settings",
+            "description": "Configure advanced options",
+            "readTime": "5 min read"
+          },
+          {
+            "title": "Best Practices",
+            "description": "Tips for optimal usage",
+            "readTime": "7 min read"
+          }
+        ]
+      },
+      {
+        "name": "Troubleshooting",
+        "description": "Solve common issues and problems.",
+        "icon": "wrench",
+        "articles": [
+          {
+            "title": "Common Issues",
+            "description": "Solutions to frequent problems",
+            "readTime": "4 min read"
+          },
+          {
+            "title": "Error Messages",
+            "description": "Understanding error messages",
+            "readTime": "3 min read"
+          },
+          {
+            "title": "Performance Issues",
+            "description": "Optimize your experience",
+            "readTime": "5 min read"
+          }
+        ]
+      }
+    ],
+    "ctaText": "Can't find what you're looking for?",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

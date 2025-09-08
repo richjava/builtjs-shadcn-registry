@@ -1,0 +1,13 @@
+{
+  "name": "hero-section",
+  "description": "A modern hero section with heading, description, and call-to-action buttons",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

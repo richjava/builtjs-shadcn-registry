@@ -1,0 +1,59 @@
+{
+  "name": "faq-questions-bold",
+  "category": "faq",
+  "section": "questions",
+  "template": "bold",
+  "description": "Bold FAQ questions section with striking design and animations.",
+  "useCase": "Eye-catching FAQ display for modern, dynamic websites.",
+  "businessTypes": ["SaaS", "E-commerce", "Agency", "Corporate", "Startup"],
+  "scenarios": ["Modern FAQ page", "Dynamic support section", "Bold help center"],
+  "keyFeatures": ["Bold design", "Smooth animations", "Gradient backgrounds", "Interactive elements"],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "questions": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our platform and services.",
+    "questions": [
+      {
+        "question": "How do I get started with your platform?",
+        "answer": "Getting started is incredibly easy! Simply create your account, complete our quick onboarding process, and you'll be up and running in minutes. Our intelligent setup wizard will guide you through every step.",
+        "category": "Getting Started"
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, Google Pay, and bank transfers. All transactions are processed through our bank-level security infrastructure.",
+        "category": "Billing"
+      },
+      {
+        "question": "Can I cancel my subscription anytime?",
+        "answer": "Absolutely! You have complete control over your subscription. Cancel anytime from your dashboard with just one click. No hidden fees, no questions asked, and your access continues until the end of your billing period.",
+        "category": "Billing"
+      },
+      {
+        "question": "Do you offer 24/7 customer support?",
+        "answer": "Yes! Our world-class support team is available 24/7 via live chat, email, and phone. We also offer priority support for enterprise customers with dedicated account managers.",
+        "category": "Support"
+      },
+      {
+        "question": "How secure is my data?",
+        "answer": "Security is our top priority. We use enterprise-grade encryption, are SOC 2 Type II compliant, and undergo regular security audits. Your data is protected with military-grade security measures.",
+        "category": "Security"
+      },
+      {
+        "question": "Can I integrate with my existing tools?",
+        "answer": "Definitely! We offer native integrations with 200+ popular tools including Slack, Microsoft Teams, Salesforce, HubSpot, Zapier, and many more. Our API also allows for custom integrations.",
+        "category": "Integrations"
+      }
+    ],
+    "ctaText": "Still need help?",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react"
+  ]
+}

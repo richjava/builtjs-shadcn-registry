@@ -1,0 +1,62 @@
+{
+  "name": "minimal-cards",
+  "description": "Minimal team showcase section with clean typography and subtle presentation",
+  "theme": "minimal",
+  "fields": {
+    "title": "string",
+    "subtitle": "text"
+  },
+  "data": {
+    "title": "Meet Our Team",
+    "subtitle": "The passionate individuals behind our mission to transform web development."
+  },
+  "collectionsData": {
+    "teamMemberItem": [
+      {
+        "_id": "teamMemberItem-1",
+        "_type": "teamMemberItem",
+        "slug": "sarah-chen",
+        "name": "Sarah Chen",
+        "role": "CEO & Co-Founder",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
+          "alt": "Professional woman in business attire"
+        },
+        "bio": "Former tech lead at major SaaS companies with 10+ years building scalable products."
+      },
+      {
+        "_id": "teamMemberItem-2",
+        "_type": "teamMemberItem",
+        "slug": "marcus-johnson",
+        "name": "Marcus Johnson",
+        "role": "CTO & Co-Founder",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+          "alt": "Professional man in business attire"
+        },
+        "bio": "Full-stack engineer passionate about developer tools and open-source technologies."
+      },
+      {
+        "_id": "teamMemberItem-3",
+        "_type": "teamMemberItem",
+        "slug": "emily-rodriguez",
+        "name": "Emily Rodriguez",
+        "role": "Head of Design",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+          "alt": "Creative designer woman"
+        },
+        "bio": "Design systems expert focused on creating intuitive and accessible user experiences."
+      }
+    ]
+  },
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["card"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}
