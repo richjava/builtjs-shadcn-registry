@@ -6,12 +6,10 @@ import SectionPreviewClient from '@/components/section-preview-client'
 interface Template {
   name: string
   description?: string
-  category?: string
-  section?: string
-  template?: string
-  sectionName?: string
-  templateName?: string
-  themeName?: string
+  moduleName: string
+  sectionName: string
+  templateName: string
+  themeName: string
   theme?: string
 }
 
@@ -47,14 +45,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
   
   const paths: { params: { category: string; section: string } }[] = []
   
-  // Group blocks by category and section
+  // Group blocks by module and section
   const sectionsMap = new Map<string, Set<string>>()
   registry.blocks.forEach((block: any) => {
-    if (block.category && block.section) {
-      if (!sectionsMap.has(block.category)) {
-        sectionsMap.set(block.category, new Set())
+    if (block.moduleName && block.sectionName) {
+      const moduleKey = block.moduleName.toLowerCase()
+      const sectionKey = block.sectionName.toLowerCase().replace(/\s+/g, '-')
+      if (!sectionsMap.has(moduleKey)) {
+        sectionsMap.set(moduleKey, new Set())
       }
-      sectionsMap.get(block.category)!.add(block.section)
+      sectionsMap.get(moduleKey)!.add(sectionKey)
     }
   })
   
@@ -75,14 +75,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
   
   const templates = (registry.blocks || []).filter((block: any) => 
-    block.category === category && block.section === section
+    block.moduleName.toLowerCase() === category && block.sectionName.toLowerCase().replace(/\s+/g, '-') === section
   )
   
   // Get section name from the first template (they should all have the same sectionName)
   const sectionName = templates.length > 0 ? templates[0].sectionName : undefined
   
-  // Get category label from registry
-  const categoryLabel = (registry.categories || []).find((c: any) => c.name === category)?.label
+  // Get module label from registry
+  const categoryLabel = (registry.modules || []).find((c: any) => c.name === category)?.label
   
   return { props: { category, categoryLabel, section, sectionName, templates, themes: registry.themes || [] } }
 }

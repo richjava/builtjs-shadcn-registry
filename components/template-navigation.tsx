@@ -75,7 +75,7 @@ export default function TemplateNavigation({
                 <div className="text-left">
                   <div className="text-sm font-medium">Previous</div>
                   <div className="text-xs text-muted-foreground">
-                    {previous.templateName || previous.name}
+                    {previous.templateName}
                     {previous.themeName && ` (${previous.themeName})`}
                   </div>
                 </div>
@@ -107,7 +107,7 @@ export default function TemplateNavigation({
                 <div className="text-right">
                   <div className="text-sm font-medium">Next</div>
                   <div className="text-xs text-muted-foreground">
-                    {next.templateName || next.name}
+                    {next.templateName}
                     {next.themeName && ` (${next.themeName})`}
                   </div>
                 </div>

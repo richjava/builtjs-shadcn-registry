@@ -7,7 +7,7 @@ import Header from '@/components/header'
 import ThemeSelector from '@/components/theme-selector'
 import { useState, useEffect } from 'react'
 
-interface Category {
+interface Module {
   name: string
   label: string
 }
@@ -15,12 +15,10 @@ interface Category {
 interface RegistryItem {
   name: string
   description?: string
-  category?: string
-  section?: string
-  template?: string
-  sectionName?: string
-  templateName?: string
-  themeName?: string
+  moduleName: string
+  sectionName: string
+  templateName: string
+  themeName: string
   theme?: string
 }
 
@@ -31,7 +29,7 @@ interface Theme {
 }
 
 interface RegistryClientProps {
-  categories: Category[]
+  categories: Module[]
   blocks: RegistryItem[]
   themes: Theme[]
 }
@@ -63,9 +61,9 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
     localStorage.setItem("selectedTheme", theme)
   }
 
-  // Filter categories to only show those that have templates
-  const categoriesWithTemplates = categories.filter(category => 
-    filteredBlocks.some(block => block.category === category.name)
+  // Filter modules to only show those that have templates
+  const modulesWithTemplates = categories.filter(module => 
+    filteredBlocks.some(block => block.moduleName.toLowerCase() === module.name)
   )
 
   return (
@@ -86,7 +84,7 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
             <div>
               <h1 className="text-3xl font-bold mb-2">All Templates</h1>
               <p className="text-muted-foreground">
-                Browse {filteredBlocks.length} template{filteredBlocks.length !== 1 ? 's' : ''} across {categoriesWithTemplates.length} categor{categoriesWithTemplates.length !== 1 ? 'ies' : 'y'}.
+                Browse {filteredBlocks.length} template{filteredBlocks.length !== 1 ? 's' : ''} across {modulesWithTemplates.length} module{modulesWithTemplates.length !== 1 ? 's' : ''}.
               </p>
             </div>
             <div className="flex items-center gap-4">
@@ -103,18 +101,18 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
           </div>
         </div>
 
-        {/* Categories with templates */}
+        {/* Modules with templates */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {categoriesWithTemplates.map((category) => {
-            const categoryBlocks = filteredBlocks.filter(block => block.category === category.name)
+          {modulesWithTemplates.map((module) => {
+            const moduleBlocks = filteredBlocks.filter(block => block.moduleName.toLowerCase() === module.name)
             return (
-              <div key={category.name} className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-semibold mb-2">{category.label}</h3>
+              <div key={module.name} className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-semibold mb-2">{module.label}</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {categoryBlocks.length} template{categoryBlocks.length !== 1 ? 's' : ''}
+                  {moduleBlocks.length} template{moduleBlocks.length !== 1 ? 's' : ''}
                 </p>
                 <Button variant="outline" size="sm" asChild>
-                  <Link href={`/category/${category.name}`}>
+                  <Link href={`/category/${module.name}`}>
                     View Templates
                   </Link>
                 </Button>
@@ -132,24 +130,16 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-1">
-                      {block.templateName ? `${block.sectionName} - ${block.templateName}` : block.name}
+                      {block.sectionName} - {block.templateName}
                     </h3>
                     {block.description && (
                       <p className="text-sm text-muted-foreground mb-2">{block.description}</p>
                     )}
                     <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                      {block.category && (
-                        <span className="bg-muted px-2 py-1 rounded">Category: {block.category}</span>
-                      )}
-                      {block.sectionName && (
-                        <span className="bg-muted px-2 py-1 rounded">Section: {block.sectionName}</span>
-                      )}
-                      {block.templateName && (
-                        <span className="bg-muted px-2 py-1 rounded">Template: {block.templateName}</span>
-                      )}
-                      {block.themeName && (
-                        <span className="bg-muted px-2 py-1 rounded">Theme: {block.themeName}</span>
-                      )}
+                      <span className="bg-muted px-2 py-1 rounded">Module: {block.moduleName}</span>
+                      <span className="bg-muted px-2 py-1 rounded">Section: {block.sectionName}</span>
+                      <span className="bg-muted px-2 py-1 rounded">Template: {block.templateName}</span>
+                      <span className="bg-muted px-2 py-1 rounded">Theme: {block.themeName}</span>
                     </div>
                   </div>
                   <div className="flex space-x-2 ml-4">

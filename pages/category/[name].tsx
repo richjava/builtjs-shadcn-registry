@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 import Header from '@/components/header'
 
-interface Category {
+interface Module {
   name: string
   label: string
 }
@@ -14,12 +14,10 @@ interface Category {
 interface BlockItem {
   name: string
   description?: string
-  category?: string
-  section?: string
-  template?: string
-  sectionName?: string
-  templateName?: string
-  themeName?: string
+  moduleName: string
+  sectionName: string
+  templateName: string
+  themeName: string
   theme?: string
 }
 
@@ -30,7 +28,7 @@ interface Section {
 }
 
 interface Props {
-  category: Category
+  category: Module
   sections: Section[]
 }
 
@@ -48,7 +46,7 @@ export default function CategoryPage({ category, sections }: Props) {
           </Button>
         </div>
         <h1 className="text-3xl font-bold mb-6">{category.label}</h1>
-        <p className="text-muted-foreground mb-8">Browse sections in the {category.label} category.</p>
+        <p className="text-muted-foreground mb-8">Browse sections in the {category.label} module.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {sections.map((section) => (
@@ -75,7 +73,7 @@ export default function CategoryPage({ category, sections }: Props) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const registryPath = path.join(process.cwd(), 'registry.json')
   const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
-  const paths = (registry.categories || []).map((c: Category) => ({ params: { name: c.name } }))
+  const paths = (registry.modules || []).map((c: Module) => ({ params: { name: c.name } }))
   return { paths, fallback: false }
 }
 
@@ -83,23 +81,24 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const name = params?.name as string
   const registryPath = path.join(process.cwd(), 'registry.json')
   const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
-  const category = (registry.categories || []).find((c: Category) => c.name === name) || { name, label: name }
-  const blocks = (registry.blocks || []).filter((b: BlockItem) => b.category === name)
+  const category = (registry.modules || []).find((c: Module) => c.name === name) || { name, label: name }
+  const blocks = (registry.blocks || []).filter((b: BlockItem) => b.moduleName.toLowerCase() === name)
   
   // Group blocks by section
   const sectionsMap = new Map<string, BlockItem[]>()
   blocks.forEach((block: BlockItem) => {
-    if (block.section) {
-      if (!sectionsMap.has(block.section)) {
-        sectionsMap.set(block.section, [])
+    if (block.sectionName) {
+      const sectionKey = block.sectionName.toLowerCase().replace(/\s+/g, '-')
+      if (!sectionsMap.has(sectionKey)) {
+        sectionsMap.set(sectionKey, [])
       }
-      sectionsMap.get(block.section)!.push(block)
+      sectionsMap.get(sectionKey)!.push(block)
     }
   })
   
-  const sections: Section[] = Array.from(sectionsMap.entries()).map(([sectionName, templates]) => ({
-    name: sectionName,
-    sectionName: templates[0]?.sectionName || sectionName,
+  const sections: Section[] = Array.from(sectionsMap.entries()).map(([sectionKey, templates]) => ({
+    name: sectionKey,
+    sectionName: templates[0]?.sectionName || sectionKey,
     templates
   }))
   

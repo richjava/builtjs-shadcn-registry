@@ -3,6 +3,7 @@
 import fs from "fs/promises"
 import path from "path"
 import { existsSync } from "fs"
+import { generateBlockSlug, nameToSlug } from "../lib/slug-utils"
 
 interface RegistryItem {
   name: string
@@ -16,13 +17,10 @@ interface RegistryItem {
     config?: Record<string, any>
   }
   cssVars?: Record<string, any>
-  category?: string
-  section?: string
-  template?: string
-  sectionName?: string
-  templateName?: string
-  themeName?: string
-  subcategory?: string
+  moduleName: string
+  sectionName: string
+  templateName: string
+  themeName: string
   theme?: string
   fields?: Record<string, string>
   data?: Record<string, any>
@@ -44,7 +42,7 @@ interface Registry {
     description: string
   }>
   contentTypes?: Record<string, any>
-  categories: Array<{
+  modules: Array<{
     name: string
     label: string
     description: string
@@ -73,8 +71,8 @@ async function buildRegistry() {
   // Clear existing blocks to prevent duplicates
   registry.blocks = []
 
-  // Generate enhanced category metadata
-  registry.categories = Object.entries(categoryMetadata).map(([name, meta]) => ({
+  // Generate enhanced module metadata
+  registry.modules = Object.entries(categoryMetadata).map(([name, meta]) => ({
     name,
     label: slugToName(name),
     ...meta
@@ -91,25 +89,24 @@ async function buildRegistry() {
   const blocksDir = path.join(process.cwd(), "blocks")
   
   if (existsSync(blocksDir)) {
-    const categories = await fs.readdir(blocksDir, { withFileTypes: true })
+    const modules = await fs.readdir(blocksDir, { withFileTypes: true })
     
-    for (const categoryDir of categories) {
-      if (!categoryDir.isDirectory()) continue
+    for (const moduleDir of modules) {
+      if (!moduleDir.isDirectory()) continue
       
-      const categoryPath = path.join(blocksDir, categoryDir.name)
-      const blocks = await fs.readdir(categoryPath, { withFileTypes: true })
+      const modulePath = path.join(blocksDir, moduleDir.name)
+      const blocks = await fs.readdir(modulePath, { withFileTypes: true })
       
       for (const sectionDir of blocks) {
         if (!sectionDir.isDirectory()) continue
         
-        const sectionPath = path.join(categoryPath, sectionDir.name)
+        const sectionPath = path.join(modulePath, sectionDir.name)
         const templates = await fs.readdir(sectionPath, { withFileTypes: true })
         
         for (const templateDir of templates) {
           if (!templateDir.isDirectory()) continue
           
           const templatePath = path.join(sectionPath, templateDir.name)
-          const blockName = `${categoryDir.name}-${sectionDir.name}-${templateDir.name}`
           
           // Check if template has a config file
           const configPath = path.join(templatePath, "block.json")
@@ -128,17 +125,26 @@ async function buildRegistry() {
           // Get template metadata for AI decision-making
           const templateMeta = templateMetadata[theme] || templateMetadata["standard"]
           
+          // Generate human-readable names
+          const moduleName = getModuleName(moduleDir.name)
+          const sectionName = getSectionName(sectionDir.name)
+          const templateName = getTemplateName(templateDir.name, theme)
+          const themeName = getThemeName(theme)
+          
+          // Generate the block slug dynamically
+          const blockName = generateBlockSlug(moduleName, sectionName, themeName, templateName)
+          
+          const { category, section, template, ...blockConfigWithoutOldFields } = blockConfig
+          
           const registryItem: RegistryItem = {
-            ...blockConfig,
+            ...blockConfigWithoutOldFields,
             name: blockName,
             type: "registry:block",
-            description: blockConfig.description || `${categoryDir.name} ${sectionDir.name} ${templateDir.name} template`,
-            category: categoryDir.name,
-            section: sectionDir.name,
-            template: templateDir.name,
-            sectionName: getSectionName(sectionDir.name),
-            templateName: getTemplateName(templateDir.name, theme),
-            themeName: getThemeName(theme),
+            description: blockConfig.description || `${moduleName} ${sectionName} ${templateName} template`,
+            moduleName,
+            sectionName,
+            templateName,
+            themeName,
             theme: theme,
             // Enhanced metadata for AI decision-making
             useCase: templateMeta.useCase,
@@ -205,6 +211,11 @@ function slugToName(slug: string): string {
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ')
+}
+
+// Helper function to get module name from module slug
+function getModuleName(moduleSlug: string): string {
+  return slugToName(moduleSlug)
 }
 
 // Helper function to get template name from template slug

@@ -10,12 +10,10 @@ import { useState, useEffect } from 'react'
 interface Template {
   name: string
   description?: string
-  category?: string
-  section?: string
-  template?: string
-  sectionName?: string
-  templateName?: string
-  themeName?: string
+  moduleName: string
+  sectionName: string
+  templateName: string
+  themeName: string
   theme?: string
 }
 
@@ -114,14 +112,14 @@ export default function SectionPreviewClient({ category, categoryLabel, section,
                     border: 'none'
                   }}
                   loading="lazy"
-                  title={`${template.template} preview`}
+                  title={`${template.templateName} preview`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
               </div>
               
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2">{template.templateName || template.template}</h3>
+                <h3 className="text-lg font-semibold mb-2">{template.templateName}</h3>
                 {template.description ? (
                   <p className="text-sm text-muted-foreground mb-4">{template.description}</p>
                 ) : null}

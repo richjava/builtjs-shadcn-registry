@@ -260,7 +260,7 @@
       "description": "Blog content type for blog posts and articles"
     }
   },
-  "categories": [
+  "modules": [
     {
       "name": "main",
       "label": "Main",
@@ -468,7 +468,7 @@
   ],
   "blocks": [
     {
-      "name": "about-about-company-story-bold-narrative",
+      "name": "about-company-story-bold-narrative",
       "description": "Bold company story section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -506,9 +506,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-company-story",
-      "template": "bold-narrative",
+      "moduleName": "About",
       "sectionName": "Company Story",
       "templateName": "Narrative",
       "themeName": "Bold",
@@ -540,7 +538,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-company-story-minimal-narrative",
+      "name": "about-company-story-minimal-narrative",
       "description": "Minimal company story section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -578,9 +576,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-company-story",
-      "template": "minimal-narrative",
+      "moduleName": "About",
       "sectionName": "Company Story",
       "templateName": "Narrative",
       "themeName": "Minimal",
@@ -612,7 +608,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-company-story-narrative",
+      "name": "about-company-story-standard-narrative",
       "description": "Company story section with founding narrative and journey",
       "fields": {
         "title": "string",
@@ -649,9 +645,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-company-story",
-      "template": "narrative",
+      "moduleName": "About",
       "sectionName": "Company Story",
       "templateName": "Narrative",
       "themeName": "Standard",
@@ -684,7 +678,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-landing-bold-image",
+      "name": "about-landing-bold-image",
       "description": "Bold hero section for About pages with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -737,9 +731,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-landing",
-      "template": "bold-image",
+      "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Image",
       "themeName": "Bold",
@@ -771,7 +763,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-landing-bold-stats",
+      "name": "about-landing-bold-stats",
       "description": "Bold hero section with vibrant colors and dynamic stats presentation",
       "theme": "bold",
       "fields": {
@@ -819,9 +811,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-landing",
-      "template": "bold-stats",
+      "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Stats",
       "themeName": "Bold",
@@ -853,7 +843,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-landing-image",
+      "name": "about-landing-standard-image",
       "description": "Hero section for About pages with image and text layout",
       "fields": {
         "badge": "string",
@@ -905,9 +895,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-landing",
-      "template": "image",
+      "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Image",
       "themeName": "Standard",
@@ -940,7 +928,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-landing-minimal-image",
+      "name": "about-landing-minimal-image",
       "description": "Minimal hero section for About pages with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -993,9 +981,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-landing",
-      "template": "minimal-image",
+      "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Image",
       "themeName": "Minimal",
@@ -1027,7 +1013,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-landing-minimal-stats",
+      "name": "about-landing-minimal-stats",
       "description": "Minimal hero section with clean typography and subtle stats presentation",
       "theme": "minimal",
       "fields": {
@@ -1075,9 +1061,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-landing",
-      "template": "minimal-stats",
+      "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Stats",
       "themeName": "Minimal",
@@ -1109,7 +1093,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-landing-stats",
+      "name": "about-landing-standard-stats",
       "description": "Hero section for About pages with company introduction and stats",
       "fields": {
         "title": "string",
@@ -1156,9 +1140,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-landing",
-      "template": "stats",
+      "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Stats",
       "themeName": "Standard",
@@ -1191,7 +1173,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-mission-bold-statement",
+      "name": "about-mission-bold-statement",
       "description": "Bold mission statement section with vibrant typography and dynamic elements",
       "theme": "bold",
       "fields": {
@@ -1222,9 +1204,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-mission",
-      "template": "bold-statement",
+      "moduleName": "About",
       "sectionName": "Mission",
       "templateName": "Statement",
       "themeName": "Bold",
@@ -1256,7 +1236,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-mission-minimal-statement",
+      "name": "about-mission-minimal-statement",
       "description": "Minimal mission statement section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -1287,9 +1267,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-mission",
-      "template": "minimal-statement",
+      "moduleName": "About",
       "sectionName": "Mission",
       "templateName": "Statement",
       "themeName": "Minimal",
@@ -1321,7 +1299,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-mission-statement",
+      "name": "about-mission-standard-statement",
       "description": "Mission statement section with call-to-action",
       "fields": {
         "title": "string",
@@ -1351,9 +1329,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-mission",
-      "template": "statement",
+      "moduleName": "About",
       "sectionName": "Mission",
       "templateName": "Statement",
       "themeName": "Standard",
@@ -1386,7 +1362,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-team-bold-cards",
+      "name": "about-team-bold-cards",
       "description": "Bold team showcase section with vibrant elements and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -1451,9 +1427,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-team",
-      "template": "bold-cards",
+      "moduleName": "About",
       "sectionName": "Team",
       "templateName": "Cards",
       "themeName": "Bold",
@@ -1484,7 +1458,7 @@
       "cssVars": {}
     },
     {
-      "name": "about-about-team-cards",
+      "name": "about-team-standard-cards",
       "description": "Team showcase section with member cards and bios",
       "fields": {
         "title": "string",
@@ -1548,9 +1522,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-team",
-      "template": "cards",
+      "moduleName": "About",
       "sectionName": "Team",
       "templateName": "Cards",
       "themeName": "Standard",
@@ -1582,7 +1554,7 @@
       "cssVars": {}
     },
     {
-      "name": "about-about-team-minimal-cards",
+      "name": "about-team-minimal-cards",
       "description": "Minimal team showcase section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -1647,9 +1619,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-team",
-      "template": "minimal-cards",
+      "moduleName": "About",
       "sectionName": "Team",
       "templateName": "Cards",
       "themeName": "Minimal",
@@ -1680,7 +1650,7 @@
       "cssVars": {}
     },
     {
-      "name": "about-about-values-bold-grid",
+      "name": "about-values-bold-grid",
       "description": "Bold company values section with vibrant colors and dynamic layouts",
       "theme": "bold",
       "fields": {
@@ -1728,9 +1698,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-values",
-      "template": "bold-grid",
+      "moduleName": "About",
       "sectionName": "Values",
       "templateName": "Grid",
       "themeName": "Bold",
@@ -1762,7 +1730,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-values-grid",
+      "name": "about-values-standard-grid",
       "description": "Company values section with icons and descriptions",
       "fields": {
         "title": "string",
@@ -1809,9 +1777,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-values",
-      "template": "grid",
+      "moduleName": "About",
       "sectionName": "Values",
       "templateName": "Grid",
       "themeName": "Standard",
@@ -1844,7 +1810,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-about-values-minimal-grid",
+      "name": "about-values-minimal-grid",
       "description": "Minimal company values section with subtle typography and clean spacing",
       "theme": "minimal",
       "fields": {
@@ -1892,9 +1858,7 @@
         }
       },
       "type": "registry:block",
-      "category": "about",
-      "section": "about-values",
-      "template": "minimal-grid",
+      "moduleName": "About",
       "sectionName": "Values",
       "templateName": "Grid",
       "themeName": "Minimal",
@@ -1926,10 +1890,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-article-bold",
-      "category": "blog",
-      "section": "blog-article",
-      "template": "bold",
+      "name": "blog-blog-article-standard-bold",
       "description": "Bold blog article layout with eye-catching design and modern styling.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -1983,6 +1944,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Blog Article",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -1998,10 +1960,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-article-minimal",
-      "category": "blog",
-      "section": "blog-article",
-      "template": "minimal",
+      "name": "blog-blog-article-standard-minimal",
       "description": "Minimal blog article layout with clean, content-focused design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2048,6 +2007,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Blog Article",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -2063,10 +2023,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-article-standard",
-      "category": "blog",
-      "section": "blog-article",
-      "template": "standard",
+      "name": "blog-blog-article-standard-standard",
       "description": "Standard blog article layout with professional typography and clean design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2120,6 +2077,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Blog Article",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -2135,10 +2093,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-posts-bold",
-      "category": "blog",
-      "section": "blog-posts",
-      "template": "bold",
+      "name": "blog-blog-posts-standard-bold",
       "description": "Bold blog posts listing with eye-catching design and modern styling.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2214,6 +2169,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Blog Posts",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -2229,10 +2185,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-posts-minimal",
-      "category": "blog",
-      "section": "blog-posts",
-      "template": "minimal",
+      "name": "blog-blog-posts-standard-minimal",
       "description": "Minimal blog posts listing with clean, simple design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2287,6 +2240,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Blog Posts",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -2302,10 +2256,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-posts-standard",
-      "category": "blog",
-      "section": "blog-posts",
-      "template": "standard",
+      "name": "blog-blog-posts-standard-standard",
       "description": "Standard blog posts listing with professional card layout.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2381,6 +2332,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Blog Posts",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -2396,10 +2348,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-featured-posts-bold",
-      "category": "blog",
-      "section": "featured-posts",
-      "template": "bold",
+      "name": "blog-featured-posts-standard-bold",
       "description": "Bold featured posts section with eye-catching design and modern styling.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2476,6 +2425,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Featured Posts",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -2491,10 +2441,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-featured-posts-minimal",
-      "category": "blog",
-      "section": "featured-posts",
-      "template": "minimal",
+      "name": "blog-featured-posts-standard-minimal",
       "description": "Minimal featured posts section with clean, simple design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2549,6 +2496,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Featured Posts",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -2564,10 +2512,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-featured-posts-standard",
-      "category": "blog",
-      "section": "featured-posts",
-      "template": "standard",
+      "name": "blog-featured-posts-standard-standard",
       "description": "Standard featured posts section with professional layout and clear hierarchy.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2645,6 +2590,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Blog",
       "sectionName": "Featured Posts",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -2660,10 +2606,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-help-bold",
-      "category": "faq",
-      "section": "help",
-      "template": "bold",
+      "name": "faq-help-standard-bold",
       "description": "Bold help center with striking design and interactive elements.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2791,6 +2734,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Help",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -2806,10 +2750,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-help-minimal",
-      "category": "faq",
-      "section": "help",
-      "template": "minimal",
+      "name": "faq-help-standard-minimal",
       "description": "Minimal help center with clean, simple design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2900,6 +2841,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Help",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -2915,10 +2857,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-help-standard",
-      "category": "faq",
-      "section": "help",
-      "template": "standard",
+      "name": "faq-help-standard-standard",
       "description": "Standard help center with organized documentation and support resources.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3046,6 +2985,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Help",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -3061,10 +3001,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-questions-bold",
-      "category": "faq",
-      "section": "questions",
-      "template": "bold",
+      "name": "faq-questions-standard-bold",
       "description": "Bold FAQ questions section with striking design and animations.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3134,6 +3071,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Questions",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -3149,10 +3087,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-questions-minimal",
-      "category": "faq",
-      "section": "questions",
-      "template": "minimal",
+      "name": "faq-questions-standard-minimal",
       "description": "Minimal FAQ questions section with simple expandable design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3217,6 +3152,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Questions",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -3232,10 +3168,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-questions-standard",
-      "category": "faq",
-      "section": "questions",
-      "template": "standard",
+      "name": "faq-questions-standard-standard",
       "description": "Standard FAQ questions section with expandable answers and clean design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3305,6 +3238,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Questions",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -3320,10 +3254,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-support-bold",
-      "category": "faq",
-      "section": "support",
-      "template": "bold",
+      "name": "faq-support-standard-bold",
       "description": "Bold support section with premium design and multiple contact options.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3417,6 +3348,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Support",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -3432,10 +3364,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-support-minimal",
-      "category": "faq",
-      "section": "support",
-      "template": "minimal",
+      "name": "faq-support-standard-minimal",
       "description": "Minimal support section with essential contact options.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3505,6 +3434,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Support",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -3520,10 +3450,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-support-standard",
-      "category": "faq",
-      "section": "support",
-      "template": "standard",
+      "name": "faq-support-standard-standard",
       "description": "Standard support section with contact options and resources.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3601,6 +3528,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Faq",
       "sectionName": "Support",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -3616,7 +3544,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-capabilities-bold",
+      "name": "features-capabilities-bold-bold",
       "description": "Comprehensive capability overview",
       "theme": "bold",
       "fields": {
@@ -3688,9 +3616,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "capabilities",
-      "template": "bold",
+      "moduleName": "Features",
       "sectionName": "Capabilities",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -3722,7 +3648,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-capabilities-minimal",
+      "name": "features-capabilities-minimal-minimal",
       "description": "Comprehensive capability overview",
       "theme": "minimal",
       "fields": {
@@ -3790,9 +3716,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "capabilities",
-      "template": "minimal",
+      "moduleName": "Features",
       "sectionName": "Capabilities",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -3824,7 +3748,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-capabilities-standard",
+      "name": "features-capabilities-standard-standard",
       "description": "Comprehensive capability overview",
       "theme": "standard",
       "fields": {
@@ -3896,9 +3820,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "capabilities",
-      "template": "standard",
+      "moduleName": "Features",
       "sectionName": "Capabilities",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -3930,7 +3852,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-highlights-bold",
+      "name": "features-highlights-bold-bold",
       "description": "Key feature highlights with benefits",
       "theme": "bold",
       "fields": {
@@ -3986,9 +3908,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "highlights",
-      "template": "bold",
+      "moduleName": "Features",
       "sectionName": "Highlights",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -4020,7 +3940,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-highlights-minimal",
+      "name": "features-highlights-minimal-minimal",
       "description": "Key feature highlights with benefits",
       "theme": "minimal",
       "fields": {
@@ -4076,9 +3996,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "highlights",
-      "template": "minimal",
+      "moduleName": "Features",
       "sectionName": "Highlights",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -4110,7 +4028,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-highlights-standard",
+      "name": "features-highlights-standard-standard",
       "description": "Key feature highlights with benefits",
       "theme": "standard",
       "fields": {
@@ -4179,9 +4097,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "highlights",
-      "template": "standard",
+      "moduleName": "Features",
       "sectionName": "Highlights",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -4212,7 +4128,7 @@
       "cssVars": {}
     },
     {
-      "name": "features-showcase-bold",
+      "name": "features-showcase-bold-bold",
       "description": "Feature showcase with visual demonstrations",
       "theme": "bold",
       "fields": {
@@ -4262,9 +4178,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "showcase",
-      "template": "bold",
+      "moduleName": "Features",
       "sectionName": "Showcase",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -4296,7 +4210,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-showcase-minimal",
+      "name": "features-showcase-minimal-minimal",
       "description": "Feature showcase with visual demonstrations",
       "theme": "minimal",
       "fields": {
@@ -4346,9 +4260,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "showcase",
-      "template": "minimal",
+      "moduleName": "Features",
       "sectionName": "Showcase",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -4380,7 +4292,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-showcase-standard",
+      "name": "features-showcase-standard-standard",
       "description": "Feature showcase with visual demonstrations",
       "theme": "standard",
       "fields": {
@@ -4449,9 +4361,7 @@
         }
       },
       "type": "registry:block",
-      "category": "features",
-      "section": "showcase",
-      "template": "standard",
+      "moduleName": "Features",
       "sectionName": "Showcase",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -4482,10 +4392,7 @@
       "cssVars": {}
     },
     {
-      "name": "gallery-portfolio-bold",
-      "category": "gallery",
-      "section": "portfolio",
-      "template": "bold",
+      "name": "gallery-portfolio-standard-bold",
       "description": "Bold portfolio gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4594,6 +4501,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Portfolio",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -4609,10 +4517,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-portfolio-minimal",
-      "category": "gallery",
-      "section": "portfolio",
-      "template": "minimal",
+      "name": "gallery-portfolio-standard-minimal",
       "description": "Minimal portfolio gallery with clean, simple design and subtle interactions.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4721,6 +4626,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Portfolio",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -4736,10 +4642,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-portfolio-standard",
-      "category": "gallery",
-      "section": "portfolio",
-      "template": "standard",
+      "name": "gallery-portfolio-standard-standard",
       "description": "Standard portfolio gallery with clean grid layout and hover effects.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4848,6 +4751,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Portfolio",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -4863,10 +4767,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-products-bold",
-      "category": "gallery",
-      "section": "products",
-      "template": "bold",
+      "name": "gallery-products-standard-bold",
       "description": "Bold product gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4969,6 +4870,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Products",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -4984,10 +4886,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-products-minimal",
-      "category": "gallery",
-      "section": "products",
-      "template": "minimal",
+      "name": "gallery-products-standard-minimal",
       "description": "Minimal product gallery with clean, simple design focusing on product essentials.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5090,6 +4989,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Products",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -5105,10 +5005,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-products-standard",
-      "category": "gallery",
-      "section": "products",
-      "template": "standard",
+      "name": "gallery-products-standard-standard",
       "description": "Standard product gallery with clean grid layout and product information display.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5211,6 +5108,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Products",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -5226,10 +5124,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-showcase-bold",
-      "category": "gallery",
-      "section": "showcase",
-      "template": "bold",
+      "name": "gallery-showcase-standard-bold",
       "description": "Bold showcase gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5346,6 +5241,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Showcase",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -5361,10 +5257,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-showcase-minimal",
-      "category": "gallery",
-      "section": "showcase",
-      "template": "minimal",
+      "name": "gallery-showcase-standard-minimal",
       "description": "Minimal showcase gallery with clean, simple design focusing on content.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5481,6 +5374,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Showcase",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -5496,10 +5390,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-showcase-standard",
-      "category": "gallery",
-      "section": "showcase",
-      "template": "standard",
+      "name": "gallery-showcase-standard-standard",
       "description": "Standard showcase gallery with featured content and visual highlights.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5616,6 +5507,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Gallery",
       "sectionName": "Showcase",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -5631,10 +5523,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-brands-bold",
-      "category": "logos",
-      "section": "brands",
-      "template": "bold",
+      "name": "logos-brands-standard-bold",
       "description": "Bold brand logo showcase with striking design and animations.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5730,6 +5619,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Brands",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -5745,10 +5635,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-brands-minimal",
-      "category": "logos",
-      "section": "brands",
-      "template": "minimal",
+      "name": "logos-brands-standard-minimal",
       "description": "Minimal brand logo showcase with clean, simple design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5818,6 +5705,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Brands",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -5833,10 +5721,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-brands-standard",
-      "category": "logos",
-      "section": "brands",
-      "template": "standard",
+      "name": "logos-brands-standard-standard",
       "description": "Standard brand logo showcase with professional grid layout.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5924,6 +5809,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Brands",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -5939,10 +5825,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-clients-bold",
-      "category": "logos",
-      "section": "clients",
-      "template": "bold",
+      "name": "logos-clients-standard-bold",
       "description": "Bold client logo showcase with striking design and animations.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6030,6 +5913,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Clients",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -6045,10 +5929,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-clients-minimal",
-      "category": "logos",
-      "section": "clients",
-      "template": "minimal",
+      "name": "logos-clients-standard-minimal",
       "description": "Minimal client logo showcase with simple, clean design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6118,6 +5999,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Clients",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -6133,10 +6015,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-clients-standard",
-      "category": "logos",
-      "section": "clients",
-      "template": "standard",
+      "name": "logos-clients-standard-standard",
       "description": "Standard client logo showcase with clean grid layout.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6216,6 +6095,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Clients",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -6231,10 +6111,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-partners-bold",
-      "category": "logos",
-      "section": "partners",
-      "template": "bold",
+      "name": "logos-partners-standard-bold",
       "description": "Bold partner logo showcase with striking design and animations.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6330,6 +6207,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Partners",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -6345,10 +6223,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-partners-minimal",
-      "category": "logos",
-      "section": "partners",
-      "template": "minimal",
+      "name": "logos-partners-standard-minimal",
       "description": "Minimal partner logo showcase with clean, simple design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6418,6 +6293,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Partners",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -6433,10 +6309,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-partners-standard",
-      "category": "logos",
-      "section": "partners",
-      "template": "standard",
+      "name": "logos-partners-standard-standard",
       "description": "Standard partner logo showcase with professional layout.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6524,6 +6397,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Logos",
       "sectionName": "Partners",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -6539,7 +6413,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-call-to-action-bold",
+      "name": "main-call-to-action-bold-bold",
       "description": "Bold conversion section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -6579,9 +6453,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "call-to-action",
-      "template": "bold",
+      "moduleName": "Main",
       "sectionName": "Call To Action",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -6613,7 +6485,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-call-to-action-minimal",
+      "name": "main-call-to-action-minimal-minimal",
       "description": "Minimal conversion section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -6653,9 +6525,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "call-to-action",
-      "template": "minimal",
+      "moduleName": "Main",
       "sectionName": "Call To Action",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -6687,7 +6557,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-call-to-action-standard",
+      "name": "main-call-to-action-standard-standard",
       "description": "Primary conversion section",
       "theme": "standard",
       "fields": {
@@ -6727,9 +6597,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "call-to-action",
-      "template": "standard",
+      "moduleName": "Main",
       "sectionName": "Call To Action",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -6761,7 +6629,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-contact-lead-generation-bold",
+      "name": "main-contact-lead-generation-bold-bold",
       "description": "Bold lead capture section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -6826,9 +6694,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "contact-lead-generation",
-      "template": "bold",
+      "moduleName": "Main",
       "sectionName": "Contact Lead Generation",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -6860,7 +6726,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-contact-lead-generation-minimal",
+      "name": "main-contact-lead-generation-minimal-minimal",
       "description": "Minimal lead capture section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -6925,9 +6791,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "contact-lead-generation",
-      "template": "minimal",
+      "moduleName": "Main",
       "sectionName": "Contact Lead Generation",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -6959,7 +6823,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-contact-lead-generation-standard",
+      "name": "main-contact-lead-generation-standard-standard",
       "description": "Capture leads and contact information",
       "theme": "standard",
       "fields": {
@@ -7024,9 +6888,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "contact-lead-generation",
-      "template": "standard",
+      "moduleName": "Main",
       "sectionName": "Contact Lead Generation",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -7058,7 +6920,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-hero-section-bold",
+      "name": "main-hero-section-bold-bold",
       "description": "Bold hero section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -7098,9 +6960,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "hero-section",
-      "template": "bold",
+      "moduleName": "Main",
       "sectionName": "Hero Section",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -7132,7 +6992,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-hero-section-minimal",
+      "name": "main-hero-section-minimal-minimal",
       "description": "Minimal hero section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -7172,9 +7032,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "hero-section",
-      "template": "minimal",
+      "moduleName": "Main",
       "sectionName": "Hero Section",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -7206,7 +7064,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-hero-section-standard",
+      "name": "main-hero-section-standard-standard",
       "description": "Primary landing area with headline, CTA, and hero image",
       "theme": "standard",
       "fields": {
@@ -7246,9 +7104,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "hero-section",
-      "template": "standard",
+      "moduleName": "Main",
       "sectionName": "Hero Section",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -7280,7 +7136,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-problem-solution-bold",
+      "name": "main-problem-solution-bold-bold",
       "description": "Bold problem-solution section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -7345,9 +7201,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "problem-solution",
-      "template": "bold",
+      "moduleName": "Main",
       "sectionName": "Problem Solution",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -7379,7 +7233,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-problem-solution-minimal",
+      "name": "main-problem-solution-minimal-minimal",
       "description": "Minimal problem-solution section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -7444,9 +7298,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "problem-solution",
-      "template": "minimal",
+      "moduleName": "Main",
       "sectionName": "Problem Solution",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -7478,7 +7330,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-problem-solution-standard",
+      "name": "main-problem-solution-standard-standard",
       "description": "Address pain points and present solutions",
       "theme": "standard",
       "fields": {
@@ -7543,9 +7395,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "problem-solution",
-      "template": "standard",
+      "moduleName": "Main",
       "sectionName": "Problem Solution",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -7577,7 +7427,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-social-proof-bold",
+      "name": "main-social-proof-bold-bold",
       "description": "Bold social proof section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -7653,9 +7503,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "social-proof",
-      "template": "bold",
+      "moduleName": "Main",
       "sectionName": "Social Proof",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -7687,7 +7535,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-social-proof-minimal",
+      "name": "main-social-proof-minimal-minimal",
       "description": "Minimal social proof section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -7763,9 +7611,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "social-proof",
-      "template": "minimal",
+      "moduleName": "Main",
       "sectionName": "Social Proof",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -7797,7 +7643,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-social-proof-standard",
+      "name": "main-social-proof-standard-standard",
       "description": "Trust building with logos, testimonials, and stats",
       "theme": "standard",
       "fields": {
@@ -7873,9 +7719,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "social-proof",
-      "template": "standard",
+      "moduleName": "Main",
       "sectionName": "Social Proof",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -7907,7 +7751,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-trust-indicators-bold",
+      "name": "main-trust-indicators-bold-bold",
       "description": "Bold trust indicators section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -7963,9 +7807,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "trust-indicators",
-      "template": "bold",
+      "moduleName": "Main",
       "sectionName": "Trust Indicators",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -7997,7 +7839,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-trust-indicators-minimal",
+      "name": "main-trust-indicators-minimal-minimal",
       "description": "Minimal trust indicators section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -8053,9 +7895,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "trust-indicators",
-      "template": "minimal",
+      "moduleName": "Main",
       "sectionName": "Trust Indicators",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -8087,7 +7927,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-trust-indicators-standard",
+      "name": "main-trust-indicators-standard-standard",
       "description": "Security, certifications, and guarantees",
       "theme": "standard",
       "fields": {
@@ -8143,9 +7983,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "trust-indicators",
-      "template": "standard",
+      "moduleName": "Main",
       "sectionName": "Trust Indicators",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -8177,7 +8015,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-value-proposition-bold",
+      "name": "main-value-proposition-bold-bold",
       "description": "Bold value proposition section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -8229,9 +8067,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "value-proposition",
-      "template": "bold",
+      "moduleName": "Main",
       "sectionName": "Value Proposition",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -8263,7 +8099,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-value-proposition-minimal",
+      "name": "main-value-proposition-minimal-minimal",
       "description": "Minimal value proposition section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -8315,9 +8151,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "value-proposition",
-      "template": "minimal",
+      "moduleName": "Main",
       "sectionName": "Value Proposition",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -8349,7 +8183,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-value-proposition-standard",
+      "name": "main-value-proposition-standard-standard",
       "description": "Clear value statement and key benefits",
       "theme": "standard",
       "fields": {
@@ -8401,9 +8235,7 @@
         }
       },
       "type": "registry:block",
-      "category": "main",
-      "section": "value-proposition",
-      "template": "standard",
+      "moduleName": "Main",
       "sectionName": "Value Proposition",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -8435,10 +8267,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-opt-in-bold",
-      "category": "newsletter",
-      "section": "opt-in",
-      "template": "bold",
+      "name": "newsletter-opt-in-standard-bold",
       "description": "Bold opt-in form with eye-catching lead magnet design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8480,6 +8309,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Opt In",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -8495,10 +8325,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-opt-in-minimal",
-      "category": "newsletter",
-      "section": "opt-in",
-      "template": "minimal",
+      "name": "newsletter-opt-in-standard-minimal",
       "description": "Minimal opt-in form with clean design and simple lead magnet.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8536,6 +8363,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Opt In",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -8551,10 +8379,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-opt-in-standard",
-      "category": "newsletter",
-      "section": "opt-in",
-      "template": "standard",
+      "name": "newsletter-opt-in-standard-standard",
       "description": "Standard opt-in form with lead magnet and value proposition.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8596,6 +8421,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Opt In",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -8611,10 +8437,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-signup-bold",
-      "category": "newsletter",
-      "section": "signup",
-      "template": "bold",
+      "name": "newsletter-signup-standard-bold",
       "description": "Bold newsletter signup form with eye-catching design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8654,6 +8477,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Signup",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -8669,10 +8493,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-signup-minimal",
-      "category": "newsletter",
-      "section": "signup",
-      "template": "minimal",
+      "name": "newsletter-signup-standard-minimal",
       "description": "Minimal newsletter signup form with clean design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8710,6 +8531,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Signup",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -8725,10 +8547,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-signup-standard",
-      "category": "newsletter",
-      "section": "signup",
-      "template": "standard",
+      "name": "newsletter-signup-standard-standard",
       "description": "Standard newsletter signup form with clear value proposition.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8768,6 +8587,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Signup",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -8783,10 +8603,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-subscription-bold",
-      "category": "newsletter",
-      "section": "subscription",
-      "template": "bold",
+      "name": "newsletter-subscription-standard-bold",
       "description": "Bold subscription management with eye-catching design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8844,6 +8661,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Subscription",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -8859,10 +8677,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-subscription-minimal",
-      "category": "newsletter",
-      "section": "subscription",
-      "template": "minimal",
+      "name": "newsletter-subscription-standard-minimal",
       "description": "Minimal subscription management with clean design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8914,6 +8729,7 @@
         "@radix-ui/react-label"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Subscription",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -8929,10 +8745,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-subscription-standard",
-      "category": "newsletter",
-      "section": "subscription",
-      "template": "standard",
+      "name": "newsletter-subscription-standard-standard",
       "description": "Standard subscription management form with preferences.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8992,6 +8805,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Newsletter",
       "sectionName": "Subscription",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -9007,10 +8821,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-plans-bold",
-      "category": "pricing",
-      "section": "plans",
-      "template": "bold",
+      "name": "pricing-plans-standard-bold",
       "description": "Bold pricing plans with vibrant colors, dynamic layouts, and eye-catching design elements.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9099,6 +8910,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Plans",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -9114,10 +8926,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-plans-minimal",
-      "category": "pricing",
-      "section": "plans",
-      "template": "minimal",
+      "name": "pricing-plans-standard-minimal",
       "description": "Minimal pricing plans with clean, simple design focusing on essential information.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9206,6 +9015,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Plans",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -9221,10 +9031,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-plans-standard",
-      "category": "pricing",
-      "section": "plans",
-      "template": "standard",
+      "name": "pricing-plans-standard-standard",
       "description": "Standard pricing plans with clear tiers and feature comparisons.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9313,6 +9120,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Plans",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -9328,10 +9136,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-subscription-bold",
-      "category": "pricing",
-      "section": "subscription",
-      "template": "bold",
+      "name": "pricing-subscription-standard-bold",
       "description": "Bold subscription pricing with vibrant colors, dynamic layouts, and eye-catching design elements.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9433,6 +9238,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Subscription",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -9448,10 +9254,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-subscription-minimal",
-      "category": "pricing",
-      "section": "subscription",
-      "template": "minimal",
+      "name": "pricing-subscription-standard-minimal",
       "description": "Minimal subscription pricing with clean design and essential billing information.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9553,6 +9356,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Subscription",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -9568,10 +9372,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-subscription-standard",
-      "category": "pricing",
-      "section": "subscription",
-      "template": "standard",
+      "name": "pricing-subscription-standard-standard",
       "description": "Standard subscription pricing with billing options and plan management features.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9673,6 +9474,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Subscription",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -9688,10 +9490,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-tables-bold",
-      "category": "pricing",
-      "section": "tables",
-      "template": "bold",
+      "name": "pricing-tables-standard-bold",
       "description": "Bold pricing table with vibrant colors, dynamic layouts, and eye-catching design elements.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9797,6 +9596,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Tables",
       "templateName": "Bold",
       "themeName": "Standard",
@@ -9812,10 +9612,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-tables-minimal",
-      "category": "pricing",
-      "section": "tables",
-      "template": "minimal",
+      "name": "pricing-tables-standard-minimal",
       "description": "Minimal pricing table with clean design and essential feature comparison.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9921,6 +9718,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Tables",
       "templateName": "Minimal",
       "themeName": "Standard",
@@ -9936,10 +9734,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-tables-standard",
-      "category": "pricing",
-      "section": "tables",
-      "template": "standard",
+      "name": "pricing-tables-standard-standard",
       "description": "Standard pricing table with detailed feature comparison and clear pricing structure.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -10045,6 +9840,7 @@
         "lucide-react"
       ],
       "type": "registry:block",
+      "moduleName": "Pricing",
       "sectionName": "Tables",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -10060,7 +9856,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-offerings-bold",
+      "name": "services-offerings-bold-bold",
       "description": "Service offerings and packages",
       "theme": "bold",
       "fields": {
@@ -10134,9 +9930,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "offerings",
-      "template": "bold",
+      "moduleName": "Services",
       "sectionName": "Offerings",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -10168,7 +9962,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-offerings-minimal",
+      "name": "services-offerings-minimal-minimal",
       "description": "Service offerings and packages",
       "theme": "minimal",
       "fields": {
@@ -10233,9 +10027,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "offerings",
-      "template": "minimal",
+      "moduleName": "Services",
       "sectionName": "Offerings",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -10267,7 +10059,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-offerings-standard",
+      "name": "services-offerings-standard-standard",
       "description": "Service offerings and packages",
       "theme": "standard",
       "fields": {
@@ -10335,9 +10127,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "offerings",
-      "template": "standard",
+      "moduleName": "Services",
       "sectionName": "Offerings",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -10369,7 +10159,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-services-bold",
+      "name": "services-services-bold-bold",
       "description": "Service descriptions and overview",
       "theme": "bold",
       "fields": {
@@ -10443,9 +10233,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "services",
-      "template": "bold",
+      "moduleName": "Services",
       "sectionName": "Services",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -10477,7 +10265,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-services-minimal",
+      "name": "services-services-minimal-minimal",
       "description": "Service descriptions and overview",
       "theme": "minimal",
       "fields": {
@@ -10542,9 +10330,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "services",
-      "template": "minimal",
+      "moduleName": "Services",
       "sectionName": "Services",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -10576,7 +10362,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-services-standard",
+      "name": "services-services-standard-standard",
       "description": "Service descriptions and capabilities",
       "theme": "standard",
       "fields": {
@@ -10644,9 +10430,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "services",
-      "template": "standard",
+      "moduleName": "Services",
       "sectionName": "Services",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -10678,7 +10462,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-solutions-bold",
+      "name": "services-solutions-bold-bold",
       "description": "Business solutions and outcomes",
       "theme": "bold",
       "fields": {
@@ -10752,9 +10536,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "solutions",
-      "template": "bold",
+      "moduleName": "Services",
       "sectionName": "Solutions",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -10786,7 +10568,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-solutions-minimal",
+      "name": "services-solutions-minimal-minimal",
       "description": "Business solutions and outcomes",
       "theme": "minimal",
       "fields": {
@@ -10851,9 +10633,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "solutions",
-      "template": "minimal",
+      "moduleName": "Services",
       "sectionName": "Solutions",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -10885,7 +10665,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-solutions-standard",
+      "name": "services-solutions-standard-standard",
       "description": "Business solutions and problem-solving approaches",
       "theme": "standard",
       "fields": {
@@ -10953,9 +10733,7 @@
         }
       },
       "type": "registry:block",
-      "category": "services",
-      "section": "solutions",
-      "template": "standard",
+      "moduleName": "Services",
       "sectionName": "Solutions",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -10987,7 +10765,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-culture-bold",
+      "name": "team-culture-bold-bold",
       "description": "Company culture and values",
       "theme": "bold",
       "fields": {
@@ -11039,9 +10817,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "culture",
-      "template": "bold",
+      "moduleName": "Team",
       "sectionName": "Culture",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -11073,7 +10849,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-culture-minimal",
+      "name": "team-culture-minimal-minimal",
       "description": "Company culture and values",
       "theme": "minimal",
       "fields": {
@@ -11125,9 +10901,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "culture",
-      "template": "minimal",
+      "moduleName": "Team",
       "sectionName": "Culture",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -11159,7 +10933,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-culture-standard",
+      "name": "team-culture-standard-standard",
       "description": "Company culture and values",
       "theme": "standard",
       "fields": {
@@ -11211,9 +10985,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "culture",
-      "template": "standard",
+      "moduleName": "Team",
       "sectionName": "Culture",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -11245,7 +11017,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-members-bold",
+      "name": "team-members-bold-bold",
       "description": "Team member cards and introductions",
       "theme": "bold",
       "fields": {
@@ -11341,9 +11113,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "members",
-      "template": "bold",
+      "moduleName": "Team",
       "sectionName": "Members",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -11375,7 +11145,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-members-minimal",
+      "name": "team-members-minimal-minimal",
       "description": "Team member cards and introductions",
       "theme": "minimal",
       "fields": {
@@ -11459,9 +11229,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "members",
-      "template": "minimal",
+      "moduleName": "Team",
       "sectionName": "Members",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -11493,7 +11261,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-members-standard",
+      "name": "team-members-standard-standard",
       "description": "Team member cards and introductions",
       "theme": "standard",
       "fields": {
@@ -11577,9 +11345,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "members",
-      "template": "standard",
+      "moduleName": "Team",
       "sectionName": "Members",
       "templateName": "Standard",
       "themeName": "Standard",
@@ -11611,7 +11377,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-profiles-bold",
+      "name": "team-profiles-bold-bold",
       "description": "Team member profiles and introductions",
       "theme": "bold",
       "fields": {
@@ -11673,9 +11439,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "profiles",
-      "template": "bold",
+      "moduleName": "Team",
       "sectionName": "Profiles",
       "templateName": "Bold",
       "themeName": "Bold",
@@ -11707,7 +11471,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-profiles-minimal",
+      "name": "team-profiles-minimal-minimal",
       "description": "Team member profiles and introductions",
       "theme": "minimal",
       "fields": {
@@ -11769,9 +11533,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "profiles",
-      "template": "minimal",
+      "moduleName": "Team",
       "sectionName": "Profiles",
       "templateName": "Minimal",
       "themeName": "Minimal",
@@ -11803,7 +11565,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-profiles-standard",
+      "name": "team-profiles-standard-standard",
       "description": "Team member profiles and introductions",
       "theme": "standard",
       "fields": {
@@ -11865,9 +11627,7 @@
         }
       },
       "type": "registry:block",
-      "category": "team",
-      "section": "profiles",
-      "template": "standard",
+      "moduleName": "Team",
       "sectionName": "Profiles",
       "templateName": "Standard",
       "themeName": "Standard",

@@ -6,19 +6,17 @@ import RegistryClient from '@/components/registry-client'
 interface RegistryItem {
   name: string
   description?: string
-  category?: string
-  section?: string
-  template?: string
-  sectionName?: string
-  templateName?: string
-  themeName?: string
+  moduleName: string
+  sectionName: string
+  templateName: string
+  themeName: string
   theme?: string
   files: string[]
   dependencies: string[]
   registryDependencies: string[]
 }
 
-interface Category {
+interface Module {
   name: string
   label: string
 }
@@ -30,7 +28,7 @@ interface Theme {
 }
 
 interface RegistryData {
-  categories: Category[]
+  categories: Module[]
   blocks: RegistryItem[]
   themes: Theme[]
 }
@@ -48,5 +46,12 @@ export default function RegistryPage({ registry }: { registry: RegistryData }) {
 export const getStaticProps: GetStaticProps = async () => {
   const registryPath = path.join(process.cwd(), 'registry.json')
   const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
-  return { props: { registry } }
+  
+  // Map modules to categories for backward compatibility
+  const registryData = {
+    ...registry,
+    categories: registry.modules || []
+  }
+  
+  return { props: { registry: registryData } }
 }
