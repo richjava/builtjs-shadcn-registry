@@ -120,7 +120,7 @@ async function buildRegistry() {
           // Find all files in the template directory
           const files = await getBlockFiles(templatePath, templatePath)
           
-          const theme = blockConfig.theme || "standard"
+          const theme = templateDir.name // Use the template directory name as the theme
           
           // Get template metadata for AI decision-making
           const templateMeta = templateMetadata[theme] || templateMetadata["standard"]

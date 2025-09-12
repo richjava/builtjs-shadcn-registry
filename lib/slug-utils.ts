@@ -21,8 +21,8 @@ export function nameToSlug(name: string): string {
  * @param moduleName - The module name (e.g., "About")
  * @param sectionName - The section name (e.g., "Values") 
  * @param themeName - The theme name (e.g., "Minimal")
- * @param templateName - The template name (e.g., "Grid")
- * @returns The complete block slug (e.g., "about-values-minimal-grid")
+ * @param templateName - The template name (e.g., "Grid") - not used in slug
+ * @returns The complete block slug (e.g., "about-values-minimal")
  */
 export function generateBlockSlug(
   moduleName: string,
@@ -33,9 +33,8 @@ export function generateBlockSlug(
   const moduleSlug = nameToSlug(moduleName)
   const sectionSlug = nameToSlug(sectionName)
   const themeSlug = nameToSlug(themeName)
-  const templateSlug = nameToSlug(templateName)
   
-  return `${moduleSlug}-${sectionSlug}-${themeSlug}-${templateSlug}`
+  return `${moduleSlug}-${sectionSlug}-${themeSlug}`
 }
 
 /**
@@ -66,7 +65,7 @@ export function generateTemplateSlug(themeName: string, templateName: string): s
 
 /**
  * Parses a block slug back into its component parts
- * @param blockSlug - The block slug (e.g., "about-values-minimal-grid")
+ * @param blockSlug - The block slug (e.g., "about-values-minimal")
  * @returns Object with parsed components or null if invalid format
  */
 export function parseBlockSlug(blockSlug: string): {
@@ -76,35 +75,27 @@ export function parseBlockSlug(blockSlug: string): {
   templateName: string
 } | null {
   const parts = blockSlug.split('-')
-  if (parts.length < 4) {
+  if (parts.length < 3) {
     return null
   }
   
-  // Find the split points by looking for known theme names
+  // Find the theme by looking for known theme names at the end
   const themes = ['standard', 'minimal', 'bold']
-  let themeIndex = -1
+  const lastPart = parts[parts.length - 1]
   
-  for (let i = 1; i < parts.length - 1; i++) {
-    const potentialTheme = parts.slice(0, i + 1).join('-')
-    if (themes.includes(parts[i])) {
-      themeIndex = i
-      break
-    }
-  }
-  
-  if (themeIndex === -1) {
+  if (!themes.includes(lastPart)) {
     return null
   }
   
-  const categoryParts = parts.slice(0, themeIndex - 1)
+  const themeIndex = parts.length - 1
+  const moduleParts = parts.slice(0, themeIndex - 1)
   const sectionParts = parts.slice(themeIndex - 1, themeIndex)
   const themeParts = parts.slice(themeIndex, themeIndex + 1)
-  const templateParts = parts.slice(themeIndex + 1)
   
   return {
-    moduleName: categoryParts.join(' ').replace(/\b\w/g, l => l.toUpperCase()),
+    moduleName: moduleParts.join(' ').replace(/\b\w/g, l => l.toUpperCase()),
     sectionName: sectionParts.join(' ').replace(/\b\w/g, l => l.toUpperCase()),
     themeName: themeParts.join(' ').replace(/\b\w/g, l => l.toUpperCase()),
-    templateName: templateParts.join(' ').replace(/\b\w/g, l => l.toUpperCase())
+    templateName: '' // Template name is not part of the slug anymore
   }
 }

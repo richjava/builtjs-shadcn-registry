@@ -15,29 +15,29 @@ const templatePreviews: TemplatePreview[] = [
   {
     category: "about",
     categoryLabel: "About",
-    templateName: "about-landing-standard-stats",
-    templateUrl: "/preview/about-landing-standard-stats",
+    templateName: "about-landing-standard",
+    templateUrl: "/preview/about-landing-standard",
     description: "About page landing with statistics"
   },
   {
     category: "main",
     categoryLabel: "Main",
-    templateName: "main-hero-section-standard-standard",
-    templateUrl: "/preview/main-hero-section-standard-standard",
+    templateName: "main-hero-section-standard",
+    templateUrl: "/preview/main-hero-section-standard",
     description: "Hero section for main landing pages"
   },
   {
     category: "main",
     categoryLabel: "Main",
-    templateName: "main-call-to-action-standard-standard",
-    templateUrl: "/preview/main-call-to-action-standard-standard",
+    templateName: "main-call-to-action-standard",
+    templateUrl: "/preview/main-call-to-action-standard",
     description: "Call to action section"
   },
   {
     category: "main",
     categoryLabel: "Main",
-    templateName: "main-problem-solution-standard-standard",
-    templateUrl: "/preview/main-problem-solution-standard-standard",
+    templateName: "main-problem-solution-standard",
+    templateUrl: "/preview/main-problem-solution-standard",
     description: "Problem and solution showcase"
   }
 ]

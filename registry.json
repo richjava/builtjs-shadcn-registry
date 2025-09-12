@@ -470,7 +470,7 @@
     {
       "name": "about-company-story-bold-narrative",
       "description": "Bold company story section with vibrant colors and dynamic presentation",
-      "theme": "bold",
+      "theme": "bold-narrative",
       "fields": {
         "title": "string",
         "paragraphs": "array",
@@ -508,26 +508,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Company Story",
-      "templateName": "Narrative",
-      "themeName": "Bold",
-      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
+      "templateName": "Bold Narrative",
+      "themeName": "Bold Narrative",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
+        "SaaS",
         "Agency",
-        "Startup",
-        "E-commerce",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Brand launch",
-        "Creative showcase",
-        "Attention-grabbing",
-        "Bold presentation"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Bold colors",
-        "Strong typography",
-        "Visual impact",
-        "Creative elements"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-company-story/bold-narrative/block.json",
@@ -540,7 +540,7 @@
     {
       "name": "about-company-story-minimal-narrative",
       "description": "Minimal company story section with clean typography and subtle presentation",
-      "theme": "minimal",
+      "theme": "minimal-narrative",
       "fields": {
         "title": "string",
         "paragraphs": "array",
@@ -578,26 +578,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Company Story",
-      "templateName": "Narrative",
-      "themeName": "Minimal",
-      "useCase": "Clean and focused design for modern, minimalist brands",
+      "templateName": "Minimal Narrative",
+      "themeName": "Minimal Narrative",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Startup",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Product focus",
-        "Clean presentation",
-        "Modern branding",
-        "Minimalist approach"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Minimal design",
-        "White space",
-        "Simple typography",
-        "Clean lines"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-company-story/minimal-narrative/block.json",
@@ -608,7 +608,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-company-story-standard-narrative",
+      "name": "about-company-story-narrative",
       "description": "Company story section with founding narrative and journey",
       "fields": {
         "title": "string",
@@ -648,8 +648,8 @@
       "moduleName": "About",
       "sectionName": "Company Story",
       "templateName": "Narrative",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Narrative",
+      "theme": "narrative",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -680,7 +680,7 @@
     {
       "name": "about-landing-bold-image",
       "description": "Bold hero section for About pages with vibrant colors and dynamic presentation",
-      "theme": "bold",
+      "theme": "bold-image",
       "fields": {
         "badge": "string",
         "title": "string",
@@ -733,26 +733,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Landing",
-      "templateName": "Image",
-      "themeName": "Bold",
-      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
+      "templateName": "Bold Image",
+      "themeName": "Bold Image",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
+        "SaaS",
         "Agency",
-        "Startup",
-        "E-commerce",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Brand launch",
-        "Creative showcase",
-        "Attention-grabbing",
-        "Bold presentation"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Bold colors",
-        "Strong typography",
-        "Visual impact",
-        "Creative elements"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-landing/bold-image/block.json",
@@ -765,7 +765,7 @@
     {
       "name": "about-landing-bold-stats",
       "description": "Bold hero section with vibrant colors and dynamic stats presentation",
-      "theme": "bold",
+      "theme": "bold-stats",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -813,26 +813,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Landing",
-      "templateName": "Stats",
-      "themeName": "Bold",
-      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
+      "templateName": "Bold Stats",
+      "themeName": "Bold Stats",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
+        "SaaS",
         "Agency",
-        "Startup",
-        "E-commerce",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Brand launch",
-        "Creative showcase",
-        "Attention-grabbing",
-        "Bold presentation"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Bold colors",
-        "Strong typography",
-        "Visual impact",
-        "Creative elements"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-landing/bold-stats/block.json",
@@ -843,7 +843,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-landing-standard-image",
+      "name": "about-landing-image",
       "description": "Hero section for About pages with image and text layout",
       "fields": {
         "badge": "string",
@@ -898,8 +898,8 @@
       "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Image",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Image",
+      "theme": "image",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -930,7 +930,7 @@
     {
       "name": "about-landing-minimal-image",
       "description": "Minimal hero section for About pages with clean typography and subtle presentation",
-      "theme": "minimal",
+      "theme": "minimal-image",
       "fields": {
         "badge": "string",
         "title": "string",
@@ -983,26 +983,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Landing",
-      "templateName": "Image",
-      "themeName": "Minimal",
-      "useCase": "Clean and focused design for modern, minimalist brands",
+      "templateName": "Minimal Image",
+      "themeName": "Minimal Image",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Startup",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Product focus",
-        "Clean presentation",
-        "Modern branding",
-        "Minimalist approach"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Minimal design",
-        "White space",
-        "Simple typography",
-        "Clean lines"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-landing/minimal-image/block.json",
@@ -1015,7 +1015,7 @@
     {
       "name": "about-landing-minimal-stats",
       "description": "Minimal hero section with clean typography and subtle stats presentation",
-      "theme": "minimal",
+      "theme": "minimal-stats",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -1063,26 +1063,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Landing",
-      "templateName": "Stats",
-      "themeName": "Minimal",
-      "useCase": "Clean and focused design for modern, minimalist brands",
+      "templateName": "Minimal Stats",
+      "themeName": "Minimal Stats",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Startup",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Product focus",
-        "Clean presentation",
-        "Modern branding",
-        "Minimalist approach"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Minimal design",
-        "White space",
-        "Simple typography",
-        "Clean lines"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-landing/minimal-stats/block.json",
@@ -1093,7 +1093,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-landing-standard-stats",
+      "name": "about-landing-stats",
       "description": "Hero section for About pages with company introduction and stats",
       "fields": {
         "title": "string",
@@ -1143,8 +1143,8 @@
       "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Stats",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Stats",
+      "theme": "stats",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1175,7 +1175,7 @@
     {
       "name": "about-mission-bold-statement",
       "description": "Bold mission statement section with vibrant typography and dynamic elements",
-      "theme": "bold",
+      "theme": "bold-statement",
       "fields": {
         "title": "string",
         "mission": "text",
@@ -1206,26 +1206,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Mission",
-      "templateName": "Statement",
-      "themeName": "Bold",
-      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
+      "templateName": "Bold Statement",
+      "themeName": "Bold Statement",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
+        "SaaS",
         "Agency",
-        "Startup",
-        "E-commerce",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Brand launch",
-        "Creative showcase",
-        "Attention-grabbing",
-        "Bold presentation"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Bold colors",
-        "Strong typography",
-        "Visual impact",
-        "Creative elements"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-mission/bold-statement/block.json",
@@ -1238,7 +1238,7 @@
     {
       "name": "about-mission-minimal-statement",
       "description": "Minimal mission statement section with clean typography and subtle presentation",
-      "theme": "minimal",
+      "theme": "minimal-statement",
       "fields": {
         "title": "string",
         "mission": "text",
@@ -1269,26 +1269,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Mission",
-      "templateName": "Statement",
-      "themeName": "Minimal",
-      "useCase": "Clean and focused design for modern, minimalist brands",
+      "templateName": "Minimal Statement",
+      "themeName": "Minimal Statement",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Startup",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Product focus",
-        "Clean presentation",
-        "Modern branding",
-        "Minimalist approach"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Minimal design",
-        "White space",
-        "Simple typography",
-        "Clean lines"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-mission/minimal-statement/block.json",
@@ -1299,7 +1299,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-mission-standard-statement",
+      "name": "about-mission-statement",
       "description": "Mission statement section with call-to-action",
       "fields": {
         "title": "string",
@@ -1332,8 +1332,8 @@
       "moduleName": "About",
       "sectionName": "Mission",
       "templateName": "Statement",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Statement",
+      "theme": "statement",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1364,7 +1364,7 @@
     {
       "name": "about-team-bold-cards",
       "description": "Bold team showcase section with vibrant elements and dynamic presentation",
-      "theme": "bold",
+      "theme": "bold-cards",
       "fields": {
         "title": "string",
         "subtitle": "text"
@@ -1429,26 +1429,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Team",
-      "templateName": "Cards",
-      "themeName": "Bold",
-      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
+      "templateName": "Bold Cards",
+      "themeName": "Bold Cards",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
+        "SaaS",
         "Agency",
-        "Startup",
-        "E-commerce",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Brand launch",
-        "Creative showcase",
-        "Attention-grabbing",
-        "Bold presentation"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Bold colors",
-        "Strong typography",
-        "Visual impact",
-        "Creative elements"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-team/bold-cards/block.json",
@@ -1458,7 +1458,7 @@
       "cssVars": {}
     },
     {
-      "name": "about-team-standard-cards",
+      "name": "about-team-cards",
       "description": "Team showcase section with member cards and bios",
       "fields": {
         "title": "string",
@@ -1525,8 +1525,8 @@
       "moduleName": "About",
       "sectionName": "Team",
       "templateName": "Cards",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Cards",
+      "theme": "cards",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1556,7 +1556,7 @@
     {
       "name": "about-team-minimal-cards",
       "description": "Minimal team showcase section with clean typography and subtle presentation",
-      "theme": "minimal",
+      "theme": "minimal-cards",
       "fields": {
         "title": "string",
         "subtitle": "text"
@@ -1621,26 +1621,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Team",
-      "templateName": "Cards",
-      "themeName": "Minimal",
-      "useCase": "Clean and focused design for modern, minimalist brands",
+      "templateName": "Minimal Cards",
+      "themeName": "Minimal Cards",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Startup",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Product focus",
-        "Clean presentation",
-        "Modern branding",
-        "Minimalist approach"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Minimal design",
-        "White space",
-        "Simple typography",
-        "Clean lines"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-team/minimal-cards/block.json",
@@ -1652,7 +1652,7 @@
     {
       "name": "about-values-bold-grid",
       "description": "Bold company values section with vibrant colors and dynamic layouts",
-      "theme": "bold",
+      "theme": "bold-grid",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -1700,26 +1700,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Values",
-      "templateName": "Grid",
-      "themeName": "Bold",
-      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
+      "templateName": "Bold Grid",
+      "themeName": "Bold Grid",
+      "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
+        "SaaS",
         "Agency",
-        "Startup",
-        "E-commerce",
-        "Portfolio"
+        "Corporate",
+        "E-commerce"
       ],
       "scenarios": [
-        "Brand launch",
-        "Creative showcase",
-        "Attention-grabbing",
-        "Bold presentation"
+        "Product launch",
+        "Service showcase",
+        "Portfolio display",
+        "Corporate presentation"
       ],
       "keyFeatures": [
-        "Bold colors",
-        "Strong typography",
-        "Visual impact",
-        "Creative elements"
+        "Clean layout",
+        "Professional typography",
+        "Balanced spacing",
+        "Subtle animations"
       ],
       "files": [
         "blocks/about/about-values/bold-grid/block.json",
@@ -1730,7 +1730,7 @@
       "collectionsData": {}
     },
     {
-      "name": "about-values-standard-grid",
+      "name": "about-values-grid",
       "description": "Company values section with icons and descriptions",
       "fields": {
         "title": "string",
@@ -1780,8 +1780,8 @@
       "moduleName": "About",
       "sectionName": "Values",
       "templateName": "Grid",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Grid",
+      "theme": "grid",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1812,7 +1812,7 @@
     {
       "name": "about-values-minimal-grid",
       "description": "Minimal company values section with subtle typography and clean spacing",
-      "theme": "minimal",
+      "theme": "minimal-grid",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -1860,38 +1860,8 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Values",
-      "templateName": "Grid",
-      "themeName": "Minimal",
-      "useCase": "Clean and focused design for modern, minimalist brands",
-      "businessTypes": [
-        "SaaS",
-        "Agency",
-        "Startup",
-        "Portfolio"
-      ],
-      "scenarios": [
-        "Product focus",
-        "Clean presentation",
-        "Modern branding",
-        "Minimalist approach"
-      ],
-      "keyFeatures": [
-        "Minimal design",
-        "White space",
-        "Simple typography",
-        "Clean lines"
-      ],
-      "files": [
-        "blocks/about/about-values/minimal-grid/block.json",
-        "blocks/about/about-values/minimal-grid/component.tsx"
-      ],
-      "devDependencies": [],
-      "cssVars": {},
-      "collectionsData": {}
-    },
-    {
-      "name": "blog-blog-article-standard-bold",
-      "description": "Bold blog article layout with eye-catching design and modern styling.",
+      "templateName": "Minimal Grid",
+      "themeName": "Minimal Grid",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1910,6 +1880,36 @@
         "Professional typography",
         "Balanced spacing",
         "Subtle animations"
+      ],
+      "files": [
+        "blocks/about/about-values/minimal-grid/block.json",
+        "blocks/about/about-values/minimal-grid/component.tsx"
+      ],
+      "devDependencies": [],
+      "cssVars": {},
+      "collectionsData": {}
+    },
+    {
+      "name": "blog-blog-article-bold",
+      "description": "Bold blog article layout with eye-catching design and modern styling.",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
+      "businessTypes": [
+        "Agency",
+        "Startup",
+        "E-commerce",
+        "Portfolio"
+      ],
+      "scenarios": [
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
+      ],
+      "keyFeatures": [
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "entry": "object"
@@ -1947,8 +1947,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog Article",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/blog/blog-article/bold/block.json",
         "blocks/blog/blog-article/bold/component.tsx"
@@ -1960,26 +1960,26 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-article-standard-minimal",
+      "name": "blog-blog-article-minimal",
       "description": "Minimal blog article layout with clean, content-focused design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "entry": "object"
@@ -2010,8 +2010,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog Article",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/blog/blog-article/minimal/block.json",
         "blocks/blog/blog-article/minimal/component.tsx"
@@ -2023,7 +2023,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-article-standard-standard",
+      "name": "blog-blog-article-standard",
       "description": "Standard blog article layout with professional typography and clean design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2093,26 +2093,26 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-posts-standard-bold",
+      "name": "blog-blog-posts-bold",
       "description": "Bold blog posts listing with eye-catching design and modern styling.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -2172,8 +2172,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog Posts",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/blog/blog-posts/bold/block.json",
         "blocks/blog/blog-posts/bold/component.tsx"
@@ -2185,26 +2185,26 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-posts-standard-minimal",
+      "name": "blog-blog-posts-minimal",
       "description": "Minimal blog posts listing with clean, simple design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -2243,8 +2243,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog Posts",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/blog/blog-posts/minimal/block.json",
         "blocks/blog/blog-posts/minimal/component.tsx"
@@ -2256,7 +2256,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-blog-posts-standard-standard",
+      "name": "blog-blog-posts-standard",
       "description": "Standard blog posts listing with professional card layout.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2348,26 +2348,26 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-featured-posts-standard-bold",
+      "name": "blog-featured-posts-bold",
       "description": "Bold featured posts section with eye-catching design and modern styling.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -2428,8 +2428,8 @@
       "moduleName": "Blog",
       "sectionName": "Featured Posts",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/blog/featured-posts/bold/block.json",
         "blocks/blog/featured-posts/bold/component.tsx"
@@ -2441,26 +2441,26 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-featured-posts-standard-minimal",
+      "name": "blog-featured-posts-minimal",
       "description": "Minimal featured posts section with clean, simple design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -2499,8 +2499,8 @@
       "moduleName": "Blog",
       "sectionName": "Featured Posts",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/blog/featured-posts/minimal/block.json",
         "blocks/blog/featured-posts/minimal/component.tsx"
@@ -2512,7 +2512,7 @@
       "collectionsData": {}
     },
     {
-      "name": "blog-featured-posts-standard-standard",
+      "name": "blog-featured-posts-standard",
       "description": "Standard featured posts section with professional layout and clear hierarchy.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2606,26 +2606,26 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-help-standard-bold",
+      "name": "faq-help-bold",
       "description": "Bold help center with striking design and interactive elements.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -2737,8 +2737,8 @@
       "moduleName": "Faq",
       "sectionName": "Help",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/faq/help/bold/block.json",
         "blocks/faq/help/bold/component.tsx"
@@ -2750,26 +2750,26 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-help-standard-minimal",
+      "name": "faq-help-minimal",
       "description": "Minimal help center with clean, simple design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -2844,8 +2844,8 @@
       "moduleName": "Faq",
       "sectionName": "Help",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/faq/help/minimal/block.json",
         "blocks/faq/help/minimal/component.tsx"
@@ -2857,7 +2857,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-help-standard-standard",
+      "name": "faq-help-standard",
       "description": "Standard help center with organized documentation and support resources.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3001,26 +3001,26 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-questions-standard-bold",
+      "name": "faq-questions-bold",
       "description": "Bold FAQ questions section with striking design and animations.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -3074,8 +3074,8 @@
       "moduleName": "Faq",
       "sectionName": "Questions",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/faq/questions/bold/block.json",
         "blocks/faq/questions/bold/component.tsx"
@@ -3087,26 +3087,26 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-questions-standard-minimal",
+      "name": "faq-questions-minimal",
       "description": "Minimal FAQ questions section with simple expandable design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -3155,8 +3155,8 @@
       "moduleName": "Faq",
       "sectionName": "Questions",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/faq/questions/minimal/block.json",
         "blocks/faq/questions/minimal/component.tsx"
@@ -3168,7 +3168,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-questions-standard-standard",
+      "name": "faq-questions-standard",
       "description": "Standard FAQ questions section with expandable answers and clean design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3254,26 +3254,26 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-support-standard-bold",
+      "name": "faq-support-bold",
       "description": "Bold support section with premium design and multiple contact options.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -3351,8 +3351,8 @@
       "moduleName": "Faq",
       "sectionName": "Support",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/faq/support/bold/block.json",
         "blocks/faq/support/bold/component.tsx"
@@ -3364,26 +3364,26 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-support-standard-minimal",
+      "name": "faq-support-minimal",
       "description": "Minimal support section with essential contact options.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -3437,8 +3437,8 @@
       "moduleName": "Faq",
       "sectionName": "Support",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/faq/support/minimal/block.json",
         "blocks/faq/support/minimal/component.tsx"
@@ -3450,7 +3450,7 @@
       "collectionsData": {}
     },
     {
-      "name": "faq-support-standard-standard",
+      "name": "faq-support-standard",
       "description": "Standard support section with contact options and resources.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3544,7 +3544,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-capabilities-bold-bold",
+      "name": "features-capabilities-bold",
       "description": "Comprehensive capability overview",
       "theme": "bold",
       "fields": {
@@ -3648,7 +3648,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-capabilities-minimal-minimal",
+      "name": "features-capabilities-minimal",
       "description": "Comprehensive capability overview",
       "theme": "minimal",
       "fields": {
@@ -3748,7 +3748,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-capabilities-standard-standard",
+      "name": "features-capabilities-standard",
       "description": "Comprehensive capability overview",
       "theme": "standard",
       "fields": {
@@ -3852,7 +3852,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-highlights-bold-bold",
+      "name": "features-highlights-bold",
       "description": "Key feature highlights with benefits",
       "theme": "bold",
       "fields": {
@@ -3940,7 +3940,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-highlights-minimal-minimal",
+      "name": "features-highlights-minimal",
       "description": "Key feature highlights with benefits",
       "theme": "minimal",
       "fields": {
@@ -4028,7 +4028,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-highlights-standard-standard",
+      "name": "features-highlights-standard",
       "description": "Key feature highlights with benefits",
       "theme": "standard",
       "fields": {
@@ -4128,7 +4128,7 @@
       "cssVars": {}
     },
     {
-      "name": "features-showcase-bold-bold",
+      "name": "features-showcase-bold",
       "description": "Feature showcase with visual demonstrations",
       "theme": "bold",
       "fields": {
@@ -4210,7 +4210,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-showcase-minimal-minimal",
+      "name": "features-showcase-minimal",
       "description": "Feature showcase with visual demonstrations",
       "theme": "minimal",
       "fields": {
@@ -4292,7 +4292,7 @@
       "collectionsData": {}
     },
     {
-      "name": "features-showcase-standard-standard",
+      "name": "features-showcase-standard",
       "description": "Feature showcase with visual demonstrations",
       "theme": "standard",
       "fields": {
@@ -4392,26 +4392,26 @@
       "cssVars": {}
     },
     {
-      "name": "gallery-portfolio-standard-bold",
+      "name": "gallery-portfolio-bold",
       "description": "Bold portfolio gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -4504,8 +4504,8 @@
       "moduleName": "Gallery",
       "sectionName": "Portfolio",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/gallery/portfolio/bold/block.json",
         "blocks/gallery/portfolio/bold/component.tsx"
@@ -4517,26 +4517,26 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-portfolio-standard-minimal",
+      "name": "gallery-portfolio-minimal",
       "description": "Minimal portfolio gallery with clean, simple design and subtle interactions.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -4629,8 +4629,8 @@
       "moduleName": "Gallery",
       "sectionName": "Portfolio",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/gallery/portfolio/minimal/block.json",
         "blocks/gallery/portfolio/minimal/component.tsx"
@@ -4642,7 +4642,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-portfolio-standard-standard",
+      "name": "gallery-portfolio-standard",
       "description": "Standard portfolio gallery with clean grid layout and hover effects.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4767,26 +4767,26 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-products-standard-bold",
+      "name": "gallery-products-bold",
       "description": "Bold product gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -4873,8 +4873,8 @@
       "moduleName": "Gallery",
       "sectionName": "Products",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/gallery/products/bold/block.json",
         "blocks/gallery/products/bold/component.tsx"
@@ -4886,26 +4886,26 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-products-standard-minimal",
+      "name": "gallery-products-minimal",
       "description": "Minimal product gallery with clean, simple design focusing on product essentials.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -4992,8 +4992,8 @@
       "moduleName": "Gallery",
       "sectionName": "Products",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/gallery/products/minimal/block.json",
         "blocks/gallery/products/minimal/component.tsx"
@@ -5005,7 +5005,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-products-standard-standard",
+      "name": "gallery-products-standard",
       "description": "Standard product gallery with clean grid layout and product information display.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5124,26 +5124,26 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-showcase-standard-bold",
+      "name": "gallery-showcase-bold",
       "description": "Bold showcase gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -5244,8 +5244,8 @@
       "moduleName": "Gallery",
       "sectionName": "Showcase",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/gallery/showcase/bold/block.json",
         "blocks/gallery/showcase/bold/component.tsx"
@@ -5257,26 +5257,26 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-showcase-standard-minimal",
+      "name": "gallery-showcase-minimal",
       "description": "Minimal showcase gallery with clean, simple design focusing on content.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -5377,8 +5377,8 @@
       "moduleName": "Gallery",
       "sectionName": "Showcase",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/gallery/showcase/minimal/block.json",
         "blocks/gallery/showcase/minimal/component.tsx"
@@ -5390,7 +5390,7 @@
       "collectionsData": {}
     },
     {
-      "name": "gallery-showcase-standard-standard",
+      "name": "gallery-showcase-standard",
       "description": "Standard showcase gallery with featured content and visual highlights.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5523,26 +5523,26 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-brands-standard-bold",
+      "name": "logos-brands-bold",
       "description": "Bold brand logo showcase with striking design and animations.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -5622,8 +5622,8 @@
       "moduleName": "Logos",
       "sectionName": "Brands",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/logos/brands/bold/block.json",
         "blocks/logos/brands/bold/component.tsx"
@@ -5635,26 +5635,26 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-brands-standard-minimal",
+      "name": "logos-brands-minimal",
       "description": "Minimal brand logo showcase with clean, simple design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -5708,8 +5708,8 @@
       "moduleName": "Logos",
       "sectionName": "Brands",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/logos/brands/minimal/block.json",
         "blocks/logos/brands/minimal/component.tsx"
@@ -5721,7 +5721,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-brands-standard-standard",
+      "name": "logos-brands-standard",
       "description": "Standard brand logo showcase with professional grid layout.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5825,26 +5825,26 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-clients-standard-bold",
+      "name": "logos-clients-bold",
       "description": "Bold client logo showcase with striking design and animations.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -5916,8 +5916,8 @@
       "moduleName": "Logos",
       "sectionName": "Clients",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/logos/clients/bold/block.json",
         "blocks/logos/clients/bold/component.tsx"
@@ -5929,26 +5929,26 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-clients-standard-minimal",
+      "name": "logos-clients-minimal",
       "description": "Minimal client logo showcase with simple, clean design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -6002,8 +6002,8 @@
       "moduleName": "Logos",
       "sectionName": "Clients",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/logos/clients/minimal/block.json",
         "blocks/logos/clients/minimal/component.tsx"
@@ -6015,7 +6015,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-clients-standard-standard",
+      "name": "logos-clients-standard",
       "description": "Standard client logo showcase with clean grid layout.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6111,26 +6111,26 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-partners-standard-bold",
+      "name": "logos-partners-bold",
       "description": "Bold partner logo showcase with striking design and animations.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -6210,8 +6210,8 @@
       "moduleName": "Logos",
       "sectionName": "Partners",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/logos/partners/bold/block.json",
         "blocks/logos/partners/bold/component.tsx"
@@ -6223,26 +6223,26 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-partners-standard-minimal",
+      "name": "logos-partners-minimal",
       "description": "Minimal partner logo showcase with clean, simple design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -6296,8 +6296,8 @@
       "moduleName": "Logos",
       "sectionName": "Partners",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/logos/partners/minimal/block.json",
         "blocks/logos/partners/minimal/component.tsx"
@@ -6309,7 +6309,7 @@
       "collectionsData": {}
     },
     {
-      "name": "logos-partners-standard-standard",
+      "name": "logos-partners-standard",
       "description": "Standard partner logo showcase with professional layout.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6413,7 +6413,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-call-to-action-bold-bold",
+      "name": "main-call-to-action-bold",
       "description": "Bold conversion section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -6485,7 +6485,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-call-to-action-minimal-minimal",
+      "name": "main-call-to-action-minimal",
       "description": "Minimal conversion section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -6557,7 +6557,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-call-to-action-standard-standard",
+      "name": "main-call-to-action-standard",
       "description": "Primary conversion section",
       "theme": "standard",
       "fields": {
@@ -6629,7 +6629,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-contact-lead-generation-bold-bold",
+      "name": "main-contact-lead-generation-bold",
       "description": "Bold lead capture section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -6726,7 +6726,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-contact-lead-generation-minimal-minimal",
+      "name": "main-contact-lead-generation-minimal",
       "description": "Minimal lead capture section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -6823,7 +6823,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-contact-lead-generation-standard-standard",
+      "name": "main-contact-lead-generation-standard",
       "description": "Capture leads and contact information",
       "theme": "standard",
       "fields": {
@@ -6920,7 +6920,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-hero-section-bold-bold",
+      "name": "main-hero-section-bold",
       "description": "Bold hero section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -6992,7 +6992,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-hero-section-minimal-minimal",
+      "name": "main-hero-section-minimal",
       "description": "Minimal hero section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -7064,7 +7064,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-hero-section-standard-standard",
+      "name": "main-hero-section-standard",
       "description": "Primary landing area with headline, CTA, and hero image",
       "theme": "standard",
       "fields": {
@@ -7136,7 +7136,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-problem-solution-bold-bold",
+      "name": "main-problem-solution-bold",
       "description": "Bold problem-solution section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -7233,7 +7233,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-problem-solution-minimal-minimal",
+      "name": "main-problem-solution-minimal",
       "description": "Minimal problem-solution section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -7330,7 +7330,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-problem-solution-standard-standard",
+      "name": "main-problem-solution-standard",
       "description": "Address pain points and present solutions",
       "theme": "standard",
       "fields": {
@@ -7427,7 +7427,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-social-proof-bold-bold",
+      "name": "main-social-proof-bold",
       "description": "Bold social proof section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -7535,7 +7535,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-social-proof-minimal-minimal",
+      "name": "main-social-proof-minimal",
       "description": "Minimal social proof section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -7643,7 +7643,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-social-proof-standard-standard",
+      "name": "main-social-proof-standard",
       "description": "Trust building with logos, testimonials, and stats",
       "theme": "standard",
       "fields": {
@@ -7751,7 +7751,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-trust-indicators-bold-bold",
+      "name": "main-trust-indicators-bold",
       "description": "Bold trust indicators section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -7839,7 +7839,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-trust-indicators-minimal-minimal",
+      "name": "main-trust-indicators-minimal",
       "description": "Minimal trust indicators section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -7927,7 +7927,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-trust-indicators-standard-standard",
+      "name": "main-trust-indicators-standard",
       "description": "Security, certifications, and guarantees",
       "theme": "standard",
       "fields": {
@@ -8015,7 +8015,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-value-proposition-bold-bold",
+      "name": "main-value-proposition-bold",
       "description": "Bold value proposition section with vibrant colors and dynamic presentation",
       "theme": "bold",
       "fields": {
@@ -8099,7 +8099,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-value-proposition-minimal-minimal",
+      "name": "main-value-proposition-minimal",
       "description": "Minimal value proposition section with clean typography and subtle presentation",
       "theme": "minimal",
       "fields": {
@@ -8183,7 +8183,7 @@
       "collectionsData": {}
     },
     {
-      "name": "main-value-proposition-standard-standard",
+      "name": "main-value-proposition-standard",
       "description": "Clear value statement and key benefits",
       "theme": "standard",
       "fields": {
@@ -8267,26 +8267,26 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-opt-in-standard-bold",
+      "name": "newsletter-opt-in-bold",
       "description": "Bold opt-in form with eye-catching lead magnet design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -8312,8 +8312,8 @@
       "moduleName": "Newsletter",
       "sectionName": "Opt In",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/newsletter/opt-in/bold/block.json",
         "blocks/newsletter/opt-in/bold/component.tsx"
@@ -8325,26 +8325,26 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-opt-in-standard-minimal",
+      "name": "newsletter-opt-in-minimal",
       "description": "Minimal opt-in form with clean design and simple lead magnet.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -8366,8 +8366,8 @@
       "moduleName": "Newsletter",
       "sectionName": "Opt In",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/newsletter/opt-in/minimal/block.json",
         "blocks/newsletter/opt-in/minimal/component.tsx"
@@ -8379,7 +8379,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-opt-in-standard-standard",
+      "name": "newsletter-opt-in-standard",
       "description": "Standard opt-in form with lead magnet and value proposition.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8437,26 +8437,26 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-signup-standard-bold",
+      "name": "newsletter-signup-bold",
       "description": "Bold newsletter signup form with eye-catching design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -8480,8 +8480,8 @@
       "moduleName": "Newsletter",
       "sectionName": "Signup",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/newsletter/signup/bold/block.json",
         "blocks/newsletter/signup/bold/component.tsx"
@@ -8493,26 +8493,26 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-signup-standard-minimal",
+      "name": "newsletter-signup-minimal",
       "description": "Minimal newsletter signup form with clean design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -8534,8 +8534,8 @@
       "moduleName": "Newsletter",
       "sectionName": "Signup",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/newsletter/signup/minimal/block.json",
         "blocks/newsletter/signup/minimal/component.tsx"
@@ -8547,7 +8547,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-signup-standard-standard",
+      "name": "newsletter-signup-standard",
       "description": "Standard newsletter signup form with clear value proposition.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8603,26 +8603,26 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-subscription-standard-bold",
+      "name": "newsletter-subscription-bold",
       "description": "Bold subscription management with eye-catching design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -8664,8 +8664,8 @@
       "moduleName": "Newsletter",
       "sectionName": "Subscription",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/newsletter/subscription/bold/block.json",
         "blocks/newsletter/subscription/bold/component.tsx"
@@ -8677,26 +8677,26 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-subscription-standard-minimal",
+      "name": "newsletter-subscription-minimal",
       "description": "Minimal subscription management with clean design.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -8732,8 +8732,8 @@
       "moduleName": "Newsletter",
       "sectionName": "Subscription",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/newsletter/subscription/minimal/block.json",
         "blocks/newsletter/subscription/minimal/component.tsx"
@@ -8745,7 +8745,7 @@
       "collectionsData": {}
     },
     {
-      "name": "newsletter-subscription-standard-standard",
+      "name": "newsletter-subscription-standard",
       "description": "Standard subscription management form with preferences.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8821,26 +8821,26 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-plans-standard-bold",
+      "name": "pricing-plans-bold",
       "description": "Bold pricing plans with vibrant colors, dynamic layouts, and eye-catching design elements.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -8913,8 +8913,8 @@
       "moduleName": "Pricing",
       "sectionName": "Plans",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/pricing/plans/bold/block.json",
         "blocks/pricing/plans/bold/component.tsx"
@@ -8926,26 +8926,26 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-plans-standard-minimal",
+      "name": "pricing-plans-minimal",
       "description": "Minimal pricing plans with clean, simple design focusing on essential information.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -9018,8 +9018,8 @@
       "moduleName": "Pricing",
       "sectionName": "Plans",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/pricing/plans/minimal/block.json",
         "blocks/pricing/plans/minimal/component.tsx"
@@ -9031,7 +9031,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-plans-standard-standard",
+      "name": "pricing-plans-standard",
       "description": "Standard pricing plans with clear tiers and feature comparisons.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9136,26 +9136,26 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-subscription-standard-bold",
+      "name": "pricing-subscription-bold",
       "description": "Bold subscription pricing with vibrant colors, dynamic layouts, and eye-catching design elements.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -9241,8 +9241,8 @@
       "moduleName": "Pricing",
       "sectionName": "Subscription",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/pricing/subscription/bold/block.json",
         "blocks/pricing/subscription/bold/component.tsx"
@@ -9254,26 +9254,26 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-subscription-standard-minimal",
+      "name": "pricing-subscription-minimal",
       "description": "Minimal subscription pricing with clean design and essential billing information.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -9359,8 +9359,8 @@
       "moduleName": "Pricing",
       "sectionName": "Subscription",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/pricing/subscription/minimal/block.json",
         "blocks/pricing/subscription/minimal/component.tsx"
@@ -9372,7 +9372,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-subscription-standard-standard",
+      "name": "pricing-subscription-standard",
       "description": "Standard subscription pricing with billing options and plan management features.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9490,26 +9490,26 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-tables-standard-bold",
+      "name": "pricing-tables-bold",
       "description": "Bold pricing table with vibrant colors, dynamic layouts, and eye-catching design elements.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "fields": {
         "title": "string",
@@ -9599,8 +9599,8 @@
       "moduleName": "Pricing",
       "sectionName": "Tables",
       "templateName": "Bold",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Bold",
+      "theme": "bold",
       "files": [
         "blocks/pricing/tables/bold/block.json",
         "blocks/pricing/tables/bold/component.tsx"
@@ -9612,26 +9612,26 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-tables-standard-minimal",
+      "name": "pricing-tables-minimal",
       "description": "Minimal pricing table with clean design and essential feature comparison.",
-      "useCase": "Professional and balanced design for established businesses",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "fields": {
         "title": "string",
@@ -9721,8 +9721,8 @@
       "moduleName": "Pricing",
       "sectionName": "Tables",
       "templateName": "Minimal",
-      "themeName": "Standard",
-      "theme": "standard",
+      "themeName": "Minimal",
+      "theme": "minimal",
       "files": [
         "blocks/pricing/tables/minimal/block.json",
         "blocks/pricing/tables/minimal/component.tsx"
@@ -9734,7 +9734,7 @@
       "collectionsData": {}
     },
     {
-      "name": "pricing-tables-standard-standard",
+      "name": "pricing-tables-standard",
       "description": "Standard pricing table with detailed feature comparison and clear pricing structure.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9856,7 +9856,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-offerings-bold-bold",
+      "name": "services-offerings-bold",
       "description": "Service offerings and packages",
       "theme": "bold",
       "fields": {
@@ -9962,7 +9962,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-offerings-minimal-minimal",
+      "name": "services-offerings-minimal",
       "description": "Service offerings and packages",
       "theme": "minimal",
       "fields": {
@@ -10059,7 +10059,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-offerings-standard-standard",
+      "name": "services-offerings-standard",
       "description": "Service offerings and packages",
       "theme": "standard",
       "fields": {
@@ -10159,7 +10159,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-services-bold-bold",
+      "name": "services-services-bold",
       "description": "Service descriptions and overview",
       "theme": "bold",
       "fields": {
@@ -10265,7 +10265,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-services-minimal-minimal",
+      "name": "services-services-minimal",
       "description": "Service descriptions and overview",
       "theme": "minimal",
       "fields": {
@@ -10362,7 +10362,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-services-standard-standard",
+      "name": "services-services-standard",
       "description": "Service descriptions and capabilities",
       "theme": "standard",
       "fields": {
@@ -10462,7 +10462,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-solutions-bold-bold",
+      "name": "services-solutions-bold",
       "description": "Business solutions and outcomes",
       "theme": "bold",
       "fields": {
@@ -10568,7 +10568,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-solutions-minimal-minimal",
+      "name": "services-solutions-minimal",
       "description": "Business solutions and outcomes",
       "theme": "minimal",
       "fields": {
@@ -10665,7 +10665,7 @@
       "collectionsData": {}
     },
     {
-      "name": "services-solutions-standard-standard",
+      "name": "services-solutions-standard",
       "description": "Business solutions and problem-solving approaches",
       "theme": "standard",
       "fields": {
@@ -10765,7 +10765,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-culture-bold-bold",
+      "name": "team-culture-bold",
       "description": "Company culture and values",
       "theme": "bold",
       "fields": {
@@ -10849,7 +10849,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-culture-minimal-minimal",
+      "name": "team-culture-minimal",
       "description": "Company culture and values",
       "theme": "minimal",
       "fields": {
@@ -10933,7 +10933,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-culture-standard-standard",
+      "name": "team-culture-standard",
       "description": "Company culture and values",
       "theme": "standard",
       "fields": {
@@ -11017,7 +11017,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-members-bold-bold",
+      "name": "team-members-bold",
       "description": "Team member cards and introductions",
       "theme": "bold",
       "fields": {
@@ -11145,7 +11145,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-members-minimal-minimal",
+      "name": "team-members-minimal",
       "description": "Team member cards and introductions",
       "theme": "minimal",
       "fields": {
@@ -11261,7 +11261,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-members-standard-standard",
+      "name": "team-members-standard",
       "description": "Team member cards and introductions",
       "theme": "standard",
       "fields": {
@@ -11377,7 +11377,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-profiles-bold-bold",
+      "name": "team-profiles-bold",
       "description": "Team member profiles and introductions",
       "theme": "bold",
       "fields": {
@@ -11471,7 +11471,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-profiles-minimal-minimal",
+      "name": "team-profiles-minimal",
       "description": "Team member profiles and introductions",
       "theme": "minimal",
       "fields": {
@@ -11565,7 +11565,7 @@
       "collectionsData": {}
     },
     {
-      "name": "team-profiles-standard-standard",
+      "name": "team-profiles-standard",
       "description": "Team member profiles and introductions",
       "theme": "standard",
       "fields": {
