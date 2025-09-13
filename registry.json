@@ -495,9 +495,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -571,9 +568,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -645,9 +639,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -738,9 +729,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -824,9 +812,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -914,9 +899,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -1008,9 +990,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -1095,9 +1074,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -1180,9 +1156,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -1250,9 +1223,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -1319,9 +1289,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -1386,9 +1353,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -1491,9 +1455,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "card"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -1589,9 +1550,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "card"
       ],
       "tailwind": {
         "config": {
@@ -1691,9 +1649,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "card"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -1773,9 +1728,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "card"
       ],
       "tailwind": {
         "config": {
@@ -1865,9 +1817,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "card"
       ],
       "tailwind": {
         "config": {
@@ -1959,9 +1908,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "card"
       ],
       "tailwind": {
         "config": {
@@ -3892,9 +3838,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -4002,9 +3945,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -4118,9 +4058,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -4217,9 +4154,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -4314,9 +4248,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -4426,9 +4357,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -4517,9 +4445,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -4607,9 +4532,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -4717,9 +4639,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -6942,9 +6861,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -7022,9 +6938,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -7100,9 +7013,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -7204,9 +7114,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -7313,9 +7220,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -7419,9 +7323,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -7499,9 +7400,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -7581,9 +7479,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -7659,9 +7554,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -7763,9 +7655,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -7874,9 +7763,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -7982,9 +7868,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -8105,7 +7988,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [],
       "tailwind": {
         "config": {
           "theme": {
@@ -8223,7 +8105,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [],
       "tailwind": {
         "config": {
           "theme": {
@@ -8336,7 +8217,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [],
       "tailwind": {
         "config": {
           "theme": {
@@ -8429,7 +8309,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [],
       "tailwind": {
         "config": {
           "theme": {
@@ -8527,7 +8406,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [],
       "tailwind": {
         "config": {
           "theme": {
@@ -8624,7 +8502,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [],
       "tailwind": {
         "config": {
           "theme": {
@@ -8714,9 +8591,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -8810,9 +8684,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -8903,9 +8774,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -10746,9 +10614,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -10853,9 +10718,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -10963,9 +10825,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -11080,9 +10939,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -11189,9 +11045,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -11300,9 +11153,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -11417,9 +11267,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -11526,9 +11373,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -11638,9 +11482,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -11731,9 +11572,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -11828,9 +11666,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -11921,9 +11756,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -12060,9 +11892,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -12186,9 +12015,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -12308,9 +12134,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -12407,9 +12230,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {
@@ -12515,9 +12335,6 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "tailwind": {
         "config": {
           "theme": {
@@ -12618,9 +12435,6 @@
       },
       "dependencies": [
         "lucide-react"
-      ],
-      "registryDependencies": [
-        "button"
       ],
       "tailwind": {
         "config": {

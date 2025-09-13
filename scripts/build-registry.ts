@@ -222,7 +222,7 @@ async function buildRegistry() {
           // Generate the block slug dynamically
           const blockName = generateBlockSlug(moduleName, sectionName, themeName, templateName)
           
-          const { category, section, template, ...blockConfigWithoutOldFields } = blockConfig
+          const { category, section, template, registryDependencies, ...blockConfigWithoutOldFields } = blockConfig
           
           const registryItem: RegistryItem = {
             ...blockConfigWithoutOldFields,
