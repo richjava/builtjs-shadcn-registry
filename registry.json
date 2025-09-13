@@ -535,7 +535,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-company-story-minimal-narrative",
@@ -605,7 +611,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-company-story-narrative",
@@ -675,7 +687,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-landing-bold-image",
@@ -760,7 +778,14 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Play"
+      ]
     },
     {
       "name": "about-landing-bold-stats",
@@ -840,7 +865,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-landing-image",
@@ -925,7 +956,14 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Play"
+      ]
     },
     {
       "name": "about-landing-minimal-image",
@@ -1010,7 +1048,14 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Play"
+      ]
     },
     {
       "name": "about-landing-minimal-stats",
@@ -1090,7 +1135,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-landing-stats",
@@ -1170,7 +1221,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-mission-bold-statement",
@@ -1233,7 +1290,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-mission-minimal-statement",
@@ -1296,7 +1359,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-mission-statement",
@@ -1359,7 +1428,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "about-team-bold-cards",
@@ -1455,7 +1530,11 @@
         "blocks/about/about-team/bold-cards/component.tsx"
       ],
       "devDependencies": [],
-      "cssVars": {}
+      "cssVars": {},
+      "shadcnComponents": [
+        "Card"
+      ],
+      "lucideIcons": []
     },
     {
       "name": "about-team-cards",
@@ -1551,7 +1630,11 @@
         "blocks/about/about-team/cards/component.tsx"
       ],
       "devDependencies": [],
-      "cssVars": {}
+      "cssVars": {},
+      "shadcnComponents": [
+        "Card"
+      ],
+      "lucideIcons": []
     },
     {
       "name": "about-team-minimal-cards",
@@ -1647,7 +1730,11 @@
         "blocks/about/about-team/minimal-cards/component.tsx"
       ],
       "devDependencies": [],
-      "cssVars": {}
+      "cssVars": {},
+      "shadcnComponents": [
+        "Card"
+      ],
+      "lucideIcons": []
     },
     {
       "name": "about-values-bold-grid",
@@ -1727,7 +1814,20 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Card"
+      ],
+      "lucideIcons": [
+        "Heart",
+        "Users",
+        "Target",
+        "Award",
+        "Zap",
+        "Shield",
+        "Globe",
+        "Lightbulb"
+      ]
     },
     {
       "name": "about-values-grid",
@@ -1807,7 +1907,20 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Card"
+      ],
+      "lucideIcons": [
+        "Heart",
+        "Users",
+        "Target",
+        "Award",
+        "Zap",
+        "Shield",
+        "Globe",
+        "Lightbulb"
+      ]
     },
     {
       "name": "about-values-minimal-grid",
@@ -1887,7 +2000,20 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Card"
+      ],
+      "lucideIcons": [
+        "Heart",
+        "Users",
+        "Target",
+        "Award",
+        "Zap",
+        "Shield",
+        "Globe",
+        "Lightbulb"
+      ]
     },
     {
       "name": "blog-blog-article-bold",
@@ -1954,10 +2080,20 @@
         "blocks/blog/blog-article/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Calendar",
+        "Clock",
+        "User",
+        "Share2",
+        "Tag",
+        "ArrowRight"
+      ]
     },
     {
       "name": "blog-blog-article-minimal",
@@ -2017,10 +2153,14 @@
         "blocks/blog/blog-article/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Calendar",
+        "User"
+      ]
     },
     {
       "name": "blog-blog-article-standard",
@@ -2087,10 +2227,19 @@
         "blocks/blog/blog-article/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Calendar",
+        "Clock",
+        "User",
+        "Share2",
+        "Tag"
+      ]
     },
     {
       "name": "blog-blog-posts-bold",
@@ -2179,10 +2328,20 @@
         "blocks/blog/blog-posts/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Calendar",
+        "Clock",
+        "User",
+        "ArrowRight",
+        "Tag",
+        "Sparkles"
+      ]
     },
     {
       "name": "blog-blog-posts-minimal",
@@ -2250,10 +2409,15 @@
         "blocks/blog/blog-posts/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Calendar",
+        "User",
+        "ArrowRight"
+      ]
     },
     {
       "name": "blog-blog-posts-standard",
@@ -2342,10 +2506,19 @@
         "blocks/blog/blog-posts/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Calendar",
+        "Clock",
+        "User",
+        "ArrowRight",
+        "Tag"
+      ]
     },
     {
       "name": "blog-featured-posts-bold",
@@ -2435,10 +2608,21 @@
         "blocks/blog/featured-posts/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Calendar",
+        "Clock",
+        "User",
+        "ArrowRight",
+        "Tag",
+        "Sparkles",
+        "Crown"
+      ]
     },
     {
       "name": "blog-featured-posts-minimal",
@@ -2506,10 +2690,16 @@
         "blocks/blog/featured-posts/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Calendar",
+        "User",
+        "ArrowRight",
+        "Star"
+      ]
     },
     {
       "name": "blog-featured-posts-standard",
@@ -2600,10 +2790,20 @@
         "blocks/blog/featured-posts/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Calendar",
+        "Clock",
+        "User",
+        "ArrowRight",
+        "Tag",
+        "Star"
+      ]
     },
     {
       "name": "faq-help-bold",
@@ -2744,10 +2944,22 @@
         "blocks/faq/help/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "PlayCircle",
+        "CreditCard",
+        "Settings",
+        "Wrench",
+        "Clock",
+        "ArrowRight",
+        "Search",
+        "Sparkles"
+      ]
     },
     {
       "name": "faq-help-minimal",
@@ -2851,10 +3063,19 @@
         "blocks/faq/help/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "PlayCircle",
+        "CreditCard",
+        "Settings",
+        "Clock",
+        "ArrowRight"
+      ]
     },
     {
       "name": "faq-help-standard",
@@ -2995,10 +3216,21 @@
         "blocks/faq/help/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "PlayCircle",
+        "CreditCard",
+        "Settings",
+        "Wrench",
+        "Clock",
+        "ArrowRight",
+        "Search"
+      ]
     },
     {
       "name": "faq-questions-bold",
@@ -3081,10 +3313,18 @@
         "blocks/faq/questions/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ChevronDown",
+        "ChevronUp",
+        "HelpCircle",
+        "Sparkles"
+      ]
     },
     {
       "name": "faq-questions-minimal",
@@ -3162,10 +3402,16 @@
         "blocks/faq/questions/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Plus",
+        "Minus"
+      ]
     },
     {
       "name": "faq-questions-standard",
@@ -3248,10 +3494,17 @@
         "blocks/faq/questions/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ChevronDown",
+        "ChevronUp",
+        "HelpCircle"
+      ]
     },
     {
       "name": "faq-support-bold",
@@ -3358,10 +3611,24 @@
         "blocks/faq/support/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "MessageCircle",
+        "Mail",
+        "Phone",
+        "Video",
+        "BookOpen",
+        "Users",
+        "Clock",
+        "CheckCircle",
+        "AlertCircle",
+        "Sparkles"
+      ]
     },
     {
       "name": "faq-support-minimal",
@@ -3444,10 +3711,19 @@
         "blocks/faq/support/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "MessageCircle",
+        "Mail",
+        "BookOpen",
+        "Clock",
+        "CheckCircle"
+      ]
     },
     {
       "name": "faq-support-standard",
@@ -3538,10 +3814,21 @@
         "blocks/faq/support/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "MessageCircle",
+        "Mail",
+        "Phone",
+        "BookOpen",
+        "Clock",
+        "CheckCircle",
+        "AlertCircle"
+      ]
     },
     {
       "name": "features-capabilities-bold",
@@ -3645,7 +3932,18 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "BarChart",
+        "Users",
+        "Shield",
+        "Plug",
+        "Check"
+      ]
     },
     {
       "name": "features-capabilities-minimal",
@@ -3745,7 +4043,18 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "BarChart",
+        "Users",
+        "Shield",
+        "Plug",
+        "Check"
+      ]
     },
     {
       "name": "features-capabilities-standard",
@@ -3849,7 +4158,18 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "BarChart",
+        "Users",
+        "Shield",
+        "Plug",
+        "Check"
+      ]
     },
     {
       "name": "features-highlights-bold",
@@ -3937,7 +4257,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Zap",
+        "ShieldCheck",
+        "Headphones",
+        "TrendingUp"
+      ]
     },
     {
       "name": "features-highlights-minimal",
@@ -4025,7 +4355,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Zap",
+        "ShieldCheck",
+        "Headphones",
+        "TrendingUp"
+      ]
     },
     {
       "name": "features-highlights-standard",
@@ -4125,7 +4465,17 @@
         "blocks/features/highlights/standard/component.tsx"
       ],
       "devDependencies": [],
-      "cssVars": {}
+      "cssVars": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Zap",
+        "ShieldCheck",
+        "Headphones",
+        "TrendingUp"
+      ]
     },
     {
       "name": "features-showcase-bold",
@@ -4207,7 +4557,16 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "BarChart",
+        "Users",
+        "Shield"
+      ]
     },
     {
       "name": "features-showcase-minimal",
@@ -4289,7 +4648,16 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "BarChart",
+        "Users",
+        "Shield"
+      ]
     },
     {
       "name": "features-showcase-standard",
@@ -4389,7 +4757,16 @@
         "blocks/features/showcase/standard/component.tsx"
       ],
       "devDependencies": [],
-      "cssVars": {}
+      "cssVars": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "BarChart",
+        "Users",
+        "Shield"
+      ]
     },
     {
       "name": "gallery-portfolio-bold",
@@ -4511,10 +4888,18 @@
         "blocks/gallery/portfolio/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Tag",
+        "Eye",
+        "Sparkles"
+      ]
     },
     {
       "name": "gallery-portfolio-minimal",
@@ -4636,10 +5021,14 @@
         "blocks/gallery/portfolio/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Tag",
+        "ArrowRight"
+      ]
     },
     {
       "name": "gallery-portfolio-standard",
@@ -4761,10 +5150,17 @@
         "blocks/gallery/portfolio/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Tag",
+        "Eye"
+      ]
     },
     {
       "name": "gallery-products-bold",
@@ -4880,10 +5276,19 @@
         "blocks/gallery/products/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Star",
+        "ShoppingCart",
+        "Heart",
+        "Sparkles",
+        "Zap"
+      ]
     },
     {
       "name": "gallery-products-minimal",
@@ -4999,10 +5404,14 @@
         "blocks/gallery/products/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Star",
+        "ArrowRight"
+      ]
     },
     {
       "name": "gallery-products-standard",
@@ -5118,10 +5527,18 @@
         "blocks/gallery/products/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Star",
+        "ShoppingCart",
+        "Heart",
+        "Tag"
+      ]
     },
     {
       "name": "gallery-showcase-bold",
@@ -5251,10 +5668,20 @@
         "blocks/gallery/showcase/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Award",
+        "Star",
+        "ArrowRight",
+        "Sparkles",
+        "Trophy"
+      ]
     },
     {
       "name": "gallery-showcase-minimal",
@@ -5384,10 +5811,14 @@
         "blocks/gallery/showcase/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Award",
+        "ArrowRight"
+      ]
     },
     {
       "name": "gallery-showcase-standard",
@@ -5517,10 +5948,18 @@
         "blocks/gallery/showcase/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Award",
+        "Star",
+        "ArrowRight"
+      ]
     },
     {
       "name": "logos-brands-bold",
@@ -5629,10 +6068,19 @@
         "blocks/logos/brands/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Award",
+        "Star",
+        "ArrowRight",
+        "Tag"
+      ]
     },
     {
       "name": "logos-brands-minimal",
@@ -5715,10 +6163,15 @@
         "blocks/logos/brands/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink"
+      ]
     },
     {
       "name": "logos-brands-standard",
@@ -5819,10 +6272,17 @@
         "blocks/logos/brands/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Award",
+        "Tag"
+      ]
     },
     {
       "name": "logos-clients-bold",
@@ -5923,10 +6383,18 @@
         "blocks/logos/clients/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Users",
+        "Star",
+        "ArrowRight"
+      ]
     },
     {
       "name": "logos-clients-minimal",
@@ -6009,10 +6477,15 @@
         "blocks/logos/clients/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink"
+      ]
     },
     {
       "name": "logos-clients-standard",
@@ -6105,10 +6578,16 @@
         "blocks/logos/clients/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Users"
+      ]
     },
     {
       "name": "logos-partners-bold",
@@ -6217,10 +6696,19 @@
         "blocks/logos/partners/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Users",
+        "Star",
+        "ArrowRight",
+        "Tag"
+      ]
     },
     {
       "name": "logos-partners-minimal",
@@ -6303,10 +6791,15 @@
         "blocks/logos/partners/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink"
+      ]
     },
     {
       "name": "logos-partners-standard",
@@ -6407,10 +6900,17 @@
         "blocks/logos/partners/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ExternalLink",
+        "Users",
+        "Tag"
+      ]
     },
     {
       "name": "main-call-to-action-bold",
@@ -6482,7 +6982,15 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Calendar",
+        "Sparkles"
+      ]
     },
     {
       "name": "main-call-to-action-minimal",
@@ -6554,7 +7062,14 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Calendar"
+      ]
     },
     {
       "name": "main-call-to-action-standard",
@@ -6626,7 +7141,14 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Calendar"
+      ]
     },
     {
       "name": "main-contact-lead-generation-bold",
@@ -6723,7 +7245,18 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "Mail",
+        "Building",
+        "User",
+        "Sparkles",
+        "Zap"
+      ]
     },
     {
       "name": "main-contact-lead-generation-minimal",
@@ -6820,7 +7353,16 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "Mail",
+        "Building",
+        "User"
+      ]
     },
     {
       "name": "main-contact-lead-generation-standard",
@@ -6917,7 +7459,16 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "Mail",
+        "Building",
+        "User"
+      ]
     },
     {
       "name": "main-hero-section-bold",
@@ -6989,7 +7540,16 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Play",
+        "Sparkles",
+        "Zap"
+      ]
     },
     {
       "name": "main-hero-section-minimal",
@@ -7061,7 +7621,14 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Play"
+      ]
     },
     {
       "name": "main-hero-section-standard",
@@ -7133,7 +7700,14 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Play"
+      ]
     },
     {
       "name": "main-problem-solution-bold",
@@ -7230,7 +7804,20 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Settings",
+        "TrendingDown",
+        "AlertTriangle",
+        "Zap",
+        "TrendingUp",
+        "Shield",
+        "Sparkles"
+      ]
     },
     {
       "name": "main-problem-solution-minimal",
@@ -7327,7 +7914,19 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Settings",
+        "TrendingDown",
+        "AlertTriangle",
+        "Zap",
+        "TrendingUp",
+        "Shield"
+      ]
     },
     {
       "name": "main-problem-solution-standard",
@@ -7424,7 +8023,19 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Settings",
+        "TrendingDown",
+        "AlertTriangle",
+        "Zap",
+        "TrendingUp",
+        "Shield"
+      ]
     },
     {
       "name": "main-social-proof-bold",
@@ -7532,7 +8143,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Star",
+        "Quote",
+        "Sparkles",
+        "TrendingUp",
+        "Users",
+        "Globe",
+        "Clock"
+      ]
     },
     {
       "name": "main-social-proof-minimal",
@@ -7640,7 +8261,12 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Star",
+        "Quote"
+      ]
     },
     {
       "name": "main-social-proof-standard",
@@ -7748,7 +8374,12 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Star",
+        "Quote"
+      ]
     },
     {
       "name": "main-trust-indicators-bold",
@@ -7836,7 +8467,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "ShieldCheck",
+        "Lock",
+        "Globe",
+        "Award",
+        "Users",
+        "Clock",
+        "Sparkles"
+      ]
     },
     {
       "name": "main-trust-indicators-minimal",
@@ -7924,7 +8565,16 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "ShieldCheck",
+        "Lock",
+        "Globe",
+        "Award",
+        "Users",
+        "Clock"
+      ]
     },
     {
       "name": "main-trust-indicators-standard",
@@ -8012,7 +8662,16 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "ShieldCheck",
+        "Lock",
+        "Globe",
+        "Award",
+        "Users",
+        "Clock"
+      ]
     },
     {
       "name": "main-value-proposition-bold",
@@ -8096,7 +8755,18 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Zap",
+        "Shield",
+        "Users",
+        "TrendingUp",
+        "Sparkles"
+      ]
     },
     {
       "name": "main-value-proposition-minimal",
@@ -8180,7 +8850,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Zap",
+        "Shield",
+        "Users",
+        "TrendingUp"
+      ]
     },
     {
       "name": "main-value-proposition-standard",
@@ -8264,7 +8944,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Zap",
+        "Shield",
+        "Users",
+        "TrendingUp"
+      ]
     },
     {
       "name": "newsletter-opt-in-bold",
@@ -8319,10 +9009,21 @@
         "blocks/newsletter/opt-in/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Input",
+        "Label"
+      ],
+      "lucideIcons": [
+        "Download",
+        "ArrowRight",
+        "Sparkles",
+        "Crown",
+        "CheckCircle"
+      ]
     },
     {
       "name": "newsletter-opt-in-minimal",
@@ -8373,10 +9074,17 @@
         "blocks/newsletter/opt-in/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Input",
+        "Label"
+      ],
+      "lucideIcons": [
+        "Download"
+      ]
     },
     {
       "name": "newsletter-opt-in-standard",
@@ -8431,10 +9139,19 @@
         "blocks/newsletter/opt-in/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Input",
+        "Label"
+      ],
+      "lucideIcons": [
+        "Download",
+        "CheckCircle",
+        "Gift"
+      ]
     },
     {
       "name": "newsletter-signup-bold",
@@ -8487,10 +9204,19 @@
         "blocks/newsletter/signup/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Input",
+        "Label"
+      ],
+      "lucideIcons": [
+        "Mail",
+        "ArrowRight",
+        "Sparkles"
+      ]
     },
     {
       "name": "newsletter-signup-minimal",
@@ -8541,10 +9267,17 @@
         "blocks/newsletter/signup/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Input",
+        "Label"
+      ],
+      "lucideIcons": [
+        "Mail"
+      ]
     },
     {
       "name": "newsletter-signup-standard",
@@ -8597,10 +9330,18 @@
         "blocks/newsletter/signup/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Input",
+        "Label"
+      ],
+      "lucideIcons": [
+        "Mail",
+        "CheckCircle"
+      ]
     },
     {
       "name": "newsletter-subscription-bold",
@@ -8671,10 +9412,19 @@
         "blocks/newsletter/subscription/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Switch",
+        "Label"
+      ],
+      "lucideIcons": [
+        "Settings",
+        "Sparkles",
+        "AlertTriangle"
+      ]
     },
     {
       "name": "newsletter-subscription-minimal",
@@ -8739,10 +9489,15 @@
         "blocks/newsletter/subscription/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Switch",
+        "Label"
+      ],
+      "lucideIcons": []
     },
     {
       "name": "newsletter-subscription-standard",
@@ -8815,10 +9570,20 @@
         "blocks/newsletter/subscription/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button",
+        "Switch",
+        "Label"
+      ],
+      "lucideIcons": [
+        "Settings",
+        "Mail",
+        "Bell",
+        "AlertCircle"
+      ]
     },
     {
       "name": "pricing-plans-bold",
@@ -8920,10 +9685,18 @@
         "blocks/pricing/plans/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "Star",
+        "Zap",
+        "Crown"
+      ]
     },
     {
       "name": "pricing-plans-minimal",
@@ -9025,10 +9798,14 @@
         "blocks/pricing/plans/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Check",
+        "ArrowRight"
+      ]
     },
     {
       "name": "pricing-plans-standard",
@@ -9130,10 +9907,16 @@
         "blocks/pricing/plans/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "Star"
+      ]
     },
     {
       "name": "pricing-subscription-bold",
@@ -9248,10 +10031,20 @@
         "blocks/pricing/subscription/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "Star",
+        "Calendar",
+        "CreditCard",
+        "Zap",
+        "Crown"
+      ]
     },
     {
       "name": "pricing-subscription-minimal",
@@ -9366,10 +10159,15 @@
         "blocks/pricing/subscription/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Check",
+        "ArrowRight",
+        "Calendar"
+      ]
     },
     {
       "name": "pricing-subscription-standard",
@@ -9484,10 +10282,18 @@
         "blocks/pricing/subscription/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "Star",
+        "Calendar",
+        "CreditCard"
+      ]
     },
     {
       "name": "pricing-tables-bold",
@@ -9606,10 +10412,19 @@
         "blocks/pricing/tables/bold/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "X",
+        "Star",
+        "Zap",
+        "Crown"
+      ]
     },
     {
       "name": "pricing-tables-minimal",
@@ -9728,10 +10543,15 @@
         "blocks/pricing/tables/minimal/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [],
+      "lucideIcons": [
+        "Check",
+        "X",
+        "ArrowRight"
+      ]
     },
     {
       "name": "pricing-tables-standard",
@@ -9850,10 +10670,17 @@
         "blocks/pricing/tables/standard/component.tsx"
       ],
       "devDependencies": [],
-      "registryDependencies": [],
       "tailwind": {},
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "Check",
+        "X",
+        "Star"
+      ]
     },
     {
       "name": "services-offerings-bold",
@@ -9959,7 +10786,18 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Code",
+        "TrendingUp",
+        "Palette",
+        "Check",
+        "Star"
+      ]
     },
     {
       "name": "services-offerings-minimal",
@@ -10056,7 +10894,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Code",
+        "TrendingUp",
+        "Palette",
+        "Check"
+      ]
     },
     {
       "name": "services-offerings-standard",
@@ -10156,7 +11004,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Code",
+        "TrendingUp",
+        "Palette",
+        "Check"
+      ]
     },
     {
       "name": "services-services-bold",
@@ -10262,7 +11120,20 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Code",
+        "TrendingUp",
+        "Palette",
+        "Clock",
+        "CheckCircle",
+        "Star",
+        "Zap"
+      ]
     },
     {
       "name": "services-services-minimal",
@@ -10359,7 +11230,18 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Code",
+        "TrendingUp",
+        "Palette",
+        "Clock",
+        "CheckCircle"
+      ]
     },
     {
       "name": "services-services-standard",
@@ -10459,7 +11341,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Users",
+        "Code",
+        "Headphones",
+        "Clock"
+      ]
     },
     {
       "name": "services-solutions-bold",
@@ -10565,7 +11457,20 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Zap",
+        "Users",
+        "TrendingUp",
+        "CheckCircle",
+        "Target",
+        "Star",
+        "Award"
+      ]
     },
     {
       "name": "services-solutions-minimal",
@@ -10662,7 +11567,18 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Zap",
+        "Users",
+        "TrendingUp",
+        "CheckCircle",
+        "Target"
+      ]
     },
     {
       "name": "services-solutions-standard",
@@ -10762,7 +11678,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "RefreshCw",
+        "Settings",
+        "Target",
+        "Check"
+      ]
     },
     {
       "name": "team-culture-bold",
@@ -10846,7 +11772,19 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Lightbulb",
+        "Users",
+        "Award",
+        "TrendingUp",
+        "Star",
+        "Sparkles"
+      ]
     },
     {
       "name": "team-culture-minimal",
@@ -10930,7 +11868,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Lightbulb",
+        "Users",
+        "Award",
+        "TrendingUp"
+      ]
     },
     {
       "name": "team-culture-standard",
@@ -11014,7 +11962,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Lightbulb",
+        "Users",
+        "Award",
+        "TrendingUp"
+      ]
     },
     {
       "name": "team-members-bold",
@@ -11142,7 +12100,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Star",
+        "Award",
+        "Users",
+        "Zap"
+      ]
     },
     {
       "name": "team-members-minimal",
@@ -11258,7 +12226,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "team-members-standard",
@@ -11374,7 +12348,13 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight"
+      ]
     },
     {
       "name": "team-profiles-bold",
@@ -11468,7 +12448,20 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Linkedin",
+        "Twitter",
+        "Github",
+        "Dribbble",
+        "Star",
+        "Award",
+        "Crown"
+      ]
     },
     {
       "name": "team-profiles-minimal",
@@ -11562,7 +12555,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Linkedin",
+        "Twitter",
+        "Github",
+        "Dribbble"
+      ]
     },
     {
       "name": "team-profiles-standard",
@@ -11656,7 +12659,17 @@
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {}
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Button"
+      ],
+      "lucideIcons": [
+        "ArrowRight",
+        "Linkedin",
+        "Twitter",
+        "Github",
+        "Dribbble"
+      ]
     }
   ],
   "sections": {

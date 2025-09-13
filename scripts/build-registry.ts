@@ -5,13 +5,56 @@ import path from "path"
 import { existsSync } from "fs"
 import { generateBlockSlug, nameToSlug } from "../lib/slug-utils"
 
+// Common shadcn components mapping
+const SHADCN_COMPONENTS: Record<string, { importPath: string; category: string }> = {
+  'Button': { importPath: '@/components/ui/button', category: 'ui' },
+  'Input': { importPath: '@/components/ui/input', category: 'ui' },
+  'Label': { importPath: '@/components/ui/label', category: 'ui' },
+  'Card': { importPath: '@/components/ui/card', category: 'ui' },
+  'Badge': { importPath: '@/components/ui/badge', category: 'ui' },
+  'Avatar': { importPath: '@/components/ui/avatar', category: 'ui' },
+  'Dialog': { importPath: '@/components/ui/dialog', category: 'ui' },
+  'Sheet': { importPath: '@/components/ui/sheet', category: 'ui' },
+  'DropdownMenu': { importPath: '@/components/ui/dropdown-menu', category: 'ui' },
+  'Select': { importPath: '@/components/ui/select', category: 'ui' },
+  'Textarea': { importPath: '@/components/ui/textarea', category: 'ui' },
+  'Switch': { importPath: '@/components/ui/switch', category: 'ui' },
+  'Checkbox': { importPath: '@/components/ui/checkbox', category: 'ui' },
+  'RadioGroup': { importPath: '@/components/ui/radio-group', category: 'ui' },
+  'Tabs': { importPath: '@/components/ui/tabs', category: 'ui' },
+  'Accordion': { importPath: '@/components/ui/accordion', category: 'ui' },
+  'Alert': { importPath: '@/components/ui/alert', category: 'ui' },
+  'Toast': { importPath: '@/components/ui/toast', category: 'ui' },
+  'Tooltip': { importPath: '@/components/ui/tooltip', category: 'ui' },
+  'Popover': { importPath: '@/components/ui/popover', category: 'ui' },
+  'Command': { importPath: '@/components/ui/command', category: 'ui' },
+  'Calendar': { importPath: '@/components/ui/calendar', category: 'ui' },
+  'DatePicker': { importPath: '@/components/ui/date-picker', category: 'ui' },
+  'Slider': { importPath: '@/components/ui/slider', category: 'ui' },
+  'Progress': { importPath: '@/components/ui/progress', category: 'ui' },
+  'Separator': { importPath: '@/components/ui/separator', category: 'ui' },
+  'Skeleton': { importPath: '@/components/ui/skeleton', category: 'ui' },
+  'Table': { importPath: '@/components/ui/table', category: 'ui' },
+  'ScrollArea': { importPath: '@/components/ui/scroll-area', category: 'ui' },
+  'Resizable': { importPath: '@/components/ui/resizable', category: 'ui' },
+  'Collapsible': { importPath: '@/components/ui/collapsible', category: 'ui' },
+  'NavigationMenu': { importPath: '@/components/ui/navigation-menu', category: 'ui' },
+  'Menubar': { importPath: '@/components/ui/menubar', category: 'ui' },
+  'ContextMenu': { importPath: '@/components/ui/context-menu', category: 'ui' },
+  'HoverCard': { importPath: '@/components/ui/hover-card', category: 'ui' },
+  'Carousel': { importPath: '@/components/ui/carousel', category: 'ui' },
+  'Breadcrumb': { importPath: '@/components/ui/breadcrumb', category: 'ui' },
+  'Pagination': { importPath: '@/components/ui/pagination', category: 'ui' },
+  'Form': { importPath: '@/components/ui/form', category: 'ui' },
+  'cn': { importPath: '@/lib/utils', category: 'utility' }
+}
+
 interface RegistryItem {
   name: string
   type: "registry:block" | "registry:component"
   description?: string
   dependencies?: string[]
   devDependencies?: string[]
-  registryDependencies?: string[]
   files: string[]
   tailwind?: {
     config?: Record<string, any>
@@ -30,6 +73,9 @@ interface RegistryItem {
   businessTypes?: string[]
   scenarios?: string[]
   keyFeatures?: string[]
+  // Shadcn components used in this block
+  shadcnComponents?: string[]
+  lucideIcons?: string[]
 }
 
 interface Registry {
@@ -58,6 +104,44 @@ interface Registry {
     templates: string[]
   }>>
   blocks: RegistryItem[]
+}
+
+async function extractComponentsFromFile(filePath: string): Promise<{ shadcnComponents: string[], lucideIcons: string[] }> {
+  try {
+    const content = await fs.readFile(filePath, 'utf-8')
+    
+    const shadcnComponents: string[] = []
+    const lucideIcons: string[] = []
+    
+    // Extract shadcn UI component imports
+    const shadcnImportRegex = /import\s*{\s*([^}]+)\s*}\s+from\s+['"]@\/components\/ui\/([^'"]+)['"]/g
+    let shadcnMatch
+    while ((shadcnMatch = shadcnImportRegex.exec(content)) !== null) {
+      const componentNames = shadcnMatch[1].split(',').map(name => name.trim())
+      
+      componentNames.forEach(componentName => {
+        if (SHADCN_COMPONENTS[componentName]) {
+          shadcnComponents.push(componentName)
+        }
+      })
+    }
+    
+    // Extract lucide-react icons
+    const lucideImportRegex = /import\s*{\s*([^}]+)\s*}\s+from\s+['"]lucide-react['"]/g
+    let lucideMatch
+    while ((lucideMatch = lucideImportRegex.exec(content)) !== null) {
+      const icons = lucideMatch[1].split(',').map(icon => icon.trim())
+      lucideIcons.push(...icons)
+    }
+    
+    return {
+      shadcnComponents: [...new Set(shadcnComponents)],
+      lucideIcons: [...new Set(lucideIcons)]
+    }
+  } catch (error) {
+    console.error(`Error reading file ${filePath}:`, error)
+    return { shadcnComponents: [], lucideIcons: [] }
+  }
 }
 
 async function buildRegistry() {
@@ -120,6 +204,10 @@ async function buildRegistry() {
           // Find all files in the template directory
           const files = await getBlockFiles(templatePath, templatePath)
           
+          // Extract shadcn components from the main component file
+          const componentPath = path.join(templatePath, "component.tsx")
+          const { shadcnComponents, lucideIcons } = await extractComponentsFromFile(componentPath)
+          
           const theme = templateDir.name // Use the template directory name as the theme
           
           // Get template metadata for AI decision-making
@@ -154,12 +242,14 @@ async function buildRegistry() {
             files: files.map(f => f.replace(process.cwd() + "/", "")),
             dependencies: blockConfig.dependencies || [],
             devDependencies: blockConfig.devDependencies || [],
-            registryDependencies: blockConfig.registryDependencies || [],
             tailwind: blockConfig.tailwind || {},
             cssVars: blockConfig.cssVars || {},
             fields: blockConfig.fields || {},
             data: blockConfig.data || {},
-            collectionsData: blockConfig.collectionsData || {}
+            collectionsData: blockConfig.collectionsData || {},
+            // Shadcn components used in this block
+            shadcnComponents,
+            lucideIcons
           }
           
           // Add to registry
