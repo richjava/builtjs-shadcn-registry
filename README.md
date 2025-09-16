@@ -1,4 +1,4 @@
-# BuiltJS Shadcn Registry
+# Built.js Shadcn Registry
 
 A comprehensive shadcn/ui registry for a [Built.js](https://builtjs.com) theme featuring reusable React templates and blocks for building modern web applications.
 
