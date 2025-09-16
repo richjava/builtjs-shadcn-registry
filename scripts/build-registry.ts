@@ -106,12 +106,37 @@ interface Registry {
   blocks: RegistryItem[]
 }
 
-async function extractComponentsFromFile(filePath: string): Promise<{ shadcnComponents: string[], lucideIcons: string[] }> {
+// Mapping of shadcn components to their Radix UI dependencies
+function getRadixDependenciesForShadcnComponent(componentName: string): string[] {
+  const radixMapping: Record<string, string[]> = {
+    'Button': ['@radix-ui/react-slot'],
+    'Label': ['@radix-ui/react-label'],
+    'Switch': ['@radix-ui/react-switch'],
+    'DropdownMenu': ['@radix-ui/react-dropdown-menu'],
+    'Accordion': ['@radix-ui/react-accordion'],
+    'AlertDialog': ['@radix-ui/react-alert-dialog'],
+    'Avatar': ['@radix-ui/react-avatar'],
+    'Checkbox': ['@radix-ui/react-checkbox'],
+    'Dialog': ['@radix-ui/react-dialog'],
+    'Popover': ['@radix-ui/react-popover'],
+    'ScrollArea': ['@radix-ui/react-scroll-area'],
+    'Select': ['@radix-ui/react-select'],
+    'Separator': ['@radix-ui/react-separator'],
+    'Tabs': ['@radix-ui/react-tabs'],
+    'Toast': ['@radix-ui/react-toast'],
+    'Tooltip': ['@radix-ui/react-tooltip']
+  }
+  
+  return radixMapping[componentName] || []
+}
+
+async function extractComponentsFromFile(filePath: string): Promise<{ shadcnComponents: string[], lucideIcons: string[], radixDependencies: string[] }> {
   try {
     const content = await fs.readFile(filePath, 'utf-8')
     
     const shadcnComponents: string[] = []
     const lucideIcons: string[] = []
+    const radixDependencies: string[] = []
     
     // Extract shadcn UI component imports
     const shadcnImportRegex = /import\s*{\s*([^}]+)\s*}\s+from\s+['"]@\/components\/ui\/([^'"]+)['"]/g
@@ -122,6 +147,10 @@ async function extractComponentsFromFile(filePath: string): Promise<{ shadcnComp
       componentNames.forEach(componentName => {
         if (SHADCN_COMPONENTS[componentName]) {
           shadcnComponents.push(componentName)
+          
+          // Add Radix UI dependencies based on shadcn component
+          const radixDeps = getRadixDependenciesForShadcnComponent(componentName)
+          radixDependencies.push(...radixDeps)
         }
       })
     }
@@ -136,11 +165,12 @@ async function extractComponentsFromFile(filePath: string): Promise<{ shadcnComp
     
     return {
       shadcnComponents: [...new Set(shadcnComponents)],
-      lucideIcons: [...new Set(lucideIcons)]
+      lucideIcons: [...new Set(lucideIcons)],
+      radixDependencies: [...new Set(radixDependencies)]
     }
   } catch (error) {
     console.error(`Error reading file ${filePath}:`, error)
-    return { shadcnComponents: [], lucideIcons: [] }
+    return { shadcnComponents: [], lucideIcons: [], radixDependencies: [] }
   }
 }
 
@@ -206,9 +236,10 @@ async function buildRegistry() {
           
           // Extract shadcn components from the main component file
           const componentPath = path.join(templatePath, "component.tsx")
-          const { shadcnComponents, lucideIcons } = await extractComponentsFromFile(componentPath)
+          const { shadcnComponents, lucideIcons, radixDependencies } = await extractComponentsFromFile(componentPath)
           
-          const theme = templateDir.name // Use the template directory name as the theme
+          // Extract theme from template directory name
+          const theme = extractThemeFromTemplateName(templateDir.name)
           
           // Get template metadata for AI decision-making
           const templateMeta = templateMetadata[theme] || templateMetadata["standard"]
@@ -216,19 +247,31 @@ async function buildRegistry() {
           // Generate human-readable names
           const moduleName = getModuleName(moduleDir.name)
           const sectionName = getSectionName(sectionDir.name)
-          const templateName = getTemplateName(templateDir.name, theme)
+          let templateName = getTemplateName(templateDir.name, theme)
+          // If template name is null, use section name as template name
+          if (templateName === null) {
+            templateName = sectionName
+          }
           const themeName = getThemeName(theme)
+          
           
           // Generate the block slug dynamically
           const blockName = generateBlockSlug(moduleName, sectionName, themeName, templateName)
           
           const { category, section, template, registryDependencies, ...blockConfigWithoutOldFields } = blockConfig
           
+          // Generate theme-specific description
+          const themeSpecificDescription = generateThemeSpecificDescription(
+            blockConfig.description || `${moduleName} ${sectionName} ${templateName} template`,
+            theme,
+            templateMeta
+          )
+          
           const registryItem: RegistryItem = {
             ...blockConfigWithoutOldFields,
             name: blockName,
             type: "registry:block",
-            description: blockConfig.description || `${moduleName} ${sectionName} ${templateName} template`,
+            description: themeSpecificDescription,
             moduleName,
             sectionName,
             templateName,
@@ -240,7 +283,7 @@ async function buildRegistry() {
             scenarios: templateMeta.scenarios,
             keyFeatures: templateMeta.keyFeatures,
             files: files.map(f => f.replace(process.cwd() + "/", "")),
-            dependencies: blockConfig.dependencies || [],
+            dependencies: [...(blockConfig.dependencies || []), ...radixDependencies],
             devDependencies: blockConfig.devDependencies || [],
             tailwind: blockConfig.tailwind || {},
             cssVars: blockConfig.cssVars || {},
@@ -310,7 +353,13 @@ function getModuleName(moduleSlug: string): string {
 
 // Helper function to get template name from template slug
 function getTemplateName(templateSlug: string, theme: string): string {
-  // Remove theme prefix if present (e.g., "minimal-stats" -> "stats")
+  // If template slug is just the theme name (e.g., "bold", "minimal", "standard"),
+  // then the template name should be derived from the section name
+  if (templateSlug === theme) {
+    return null // Will be set to section name in the main loop
+  }
+  
+  // Remove theme prefix if present (e.g., "bold-narrative" -> "narrative", "minimal-stats" -> "stats")
   let baseTemplate = templateSlug
   if (theme !== "standard") {
     baseTemplate = templateSlug.replace(`${theme}-`, '')
@@ -330,6 +379,24 @@ function getSectionName(sectionSlug: string): string {
   return slugToName(sectionSlug)
 }
 
+// Helper function to extract theme from template directory name
+function extractThemeFromTemplateName(templateName: string): string {
+  // Check if template name starts with a theme prefix
+  if (templateName.startsWith('bold-')) {
+    return 'bold'
+  } else if (templateName.startsWith('minimal-')) {
+    return 'minimal'
+  } else if (templateName === 'bold') {
+    return 'bold'
+  } else if (templateName === 'minimal') {
+    return 'minimal'
+  } else if (templateName === 'standard') {
+    return 'standard'
+  } else {
+    return 'standard'
+  }
+}
+
 // Helper function to get theme name from theme slug
 function getThemeName(themeSlug: string): string {
   const themeNames: Record<string, string> = {
@@ -338,6 +405,17 @@ function getThemeName(themeSlug: string): string {
     'bold': 'Bold'
   }
   return themeNames[themeSlug] || slugToName(themeSlug)
+}
+
+// Helper function to generate theme-specific descriptions
+function generateThemeSpecificDescription(baseDescription: string, theme: string, templateMeta: any): string {
+  const themeDescriptions: Record<string, string> = {
+    'standard': `${baseDescription} with professional styling and balanced design.`,
+    'minimal': `${baseDescription} with clean, minimalist design and subtle styling.`,
+    'bold': `${baseDescription} with bold colors, strong typography, and high visual impact.`
+  }
+  
+  return themeDescriptions[theme] || baseDescription
 }
 
 // Category metadata for AI decision-making

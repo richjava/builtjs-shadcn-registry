@@ -3,6 +3,14 @@
   "name": "builtjs-registry",
   "version": "1.0.0",
   "baseUrl": "https://builtjs-shadcn-registry.vercel.app",
+  "dependencies": [
+    "class-variance-authority",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "devDependencies": [
+    "tailwindcss-animate"
+  ],
   "themes": [
     {
       "name": "standard",
@@ -468,9 +476,9 @@
   ],
   "blocks": [
     {
-      "name": "about-company-story-bold-narrative",
-      "description": "Bold company story section with vibrant colors and dynamic presentation",
-      "theme": "bold-narrative",
+      "name": "about-company-story-bold",
+      "description": "Bold company story section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
+      "theme": "bold",
       "fields": {
         "title": "string",
         "paragraphs": "array",
@@ -493,7 +501,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -505,26 +514,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Company Story",
-      "templateName": "Bold Narrative",
-      "themeName": "Bold Narrative",
-      "useCase": "Professional and balanced design for established businesses",
+      "templateName": "Narrative",
+      "themeName": "Bold",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "files": [
         "blocks/about/about-company-story/bold-narrative/block.json",
@@ -541,9 +550,9 @@
       ]
     },
     {
-      "name": "about-company-story-minimal-narrative",
-      "description": "Minimal company story section with clean typography and subtle presentation",
-      "theme": "minimal-narrative",
+      "name": "about-company-story-minimal",
+      "description": "Minimal company story section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
+      "theme": "minimal",
       "fields": {
         "title": "string",
         "paragraphs": "array",
@@ -566,7 +575,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -578,26 +588,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Company Story",
-      "templateName": "Minimal Narrative",
-      "themeName": "Minimal Narrative",
-      "useCase": "Professional and balanced design for established businesses",
+      "templateName": "Narrative",
+      "themeName": "Minimal",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "files": [
         "blocks/about/about-company-story/minimal-narrative/block.json",
@@ -614,8 +624,8 @@
       ]
     },
     {
-      "name": "about-company-story-narrative",
-      "description": "Company story section with founding narrative and journey",
+      "name": "about-company-story-standard",
+      "description": "Company story section with founding narrative and journey with professional styling and balanced design.",
       "fields": {
         "title": "string",
         "paragraphs": "array",
@@ -638,7 +648,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -651,8 +662,8 @@
       "moduleName": "About",
       "sectionName": "Company Story",
       "templateName": "Narrative",
-      "themeName": "Narrative",
-      "theme": "narrative",
+      "themeName": "Standard",
+      "theme": "standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -687,9 +698,9 @@
       ]
     },
     {
-      "name": "about-landing-bold-image",
-      "description": "Bold hero section for About pages with vibrant colors and dynamic presentation",
-      "theme": "bold-image",
+      "name": "about-landing-bold",
+      "description": "Bold hero section for About pages with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
+      "theme": "bold",
       "fields": {
         "badge": "string",
         "title": "string",
@@ -727,7 +738,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -739,26 +751,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Landing",
-      "templateName": "Bold Image",
-      "themeName": "Bold Image",
-      "useCase": "Professional and balanced design for established businesses",
+      "templateName": "Image",
+      "themeName": "Bold",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "files": [
         "blocks/about/about-landing/bold-image/block.json",
@@ -776,9 +788,9 @@
       ]
     },
     {
-      "name": "about-landing-bold-stats",
-      "description": "Bold hero section with vibrant colors and dynamic stats presentation",
-      "theme": "bold-stats",
+      "name": "about-landing-bold",
+      "description": "Bold hero section with vibrant colors and dynamic stats presentation with bold colors, strong typography, and high visual impact.",
+      "theme": "bold",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -811,7 +823,8 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -823,26 +836,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Landing",
-      "templateName": "Bold Stats",
-      "themeName": "Bold Stats",
-      "useCase": "Professional and balanced design for established businesses",
+      "templateName": "Stats",
+      "themeName": "Bold",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "files": [
         "blocks/about/about-landing/bold-stats/block.json",
@@ -859,8 +872,8 @@
       ]
     },
     {
-      "name": "about-landing-image",
-      "description": "Hero section for About pages with image and text layout",
+      "name": "about-landing-standard",
+      "description": "Hero section for About pages with image and text layout with professional styling and balanced design.",
       "fields": {
         "badge": "string",
         "title": "string",
@@ -898,7 +911,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -911,8 +925,8 @@
       "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Image",
-      "themeName": "Image",
-      "theme": "image",
+      "themeName": "Standard",
+      "theme": "standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -948,9 +962,9 @@
       ]
     },
     {
-      "name": "about-landing-minimal-image",
-      "description": "Minimal hero section for About pages with clean typography and subtle presentation",
-      "theme": "minimal-image",
+      "name": "about-landing-minimal",
+      "description": "Minimal hero section for About pages with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
+      "theme": "minimal",
       "fields": {
         "badge": "string",
         "title": "string",
@@ -988,7 +1002,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -1000,26 +1015,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Landing",
-      "templateName": "Minimal Image",
-      "themeName": "Minimal Image",
-      "useCase": "Professional and balanced design for established businesses",
+      "templateName": "Image",
+      "themeName": "Minimal",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "files": [
         "blocks/about/about-landing/minimal-image/block.json",
@@ -1037,9 +1052,9 @@
       ]
     },
     {
-      "name": "about-landing-minimal-stats",
-      "description": "Minimal hero section with clean typography and subtle stats presentation",
-      "theme": "minimal-stats",
+      "name": "about-landing-minimal",
+      "description": "Minimal hero section with clean typography and subtle stats presentation with clean, minimalist design and subtle styling.",
+      "theme": "minimal",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -1072,7 +1087,8 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -1084,26 +1100,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Landing",
-      "templateName": "Minimal Stats",
-      "themeName": "Minimal Stats",
-      "useCase": "Professional and balanced design for established businesses",
+      "templateName": "Stats",
+      "themeName": "Minimal",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "files": [
         "blocks/about/about-landing/minimal-stats/block.json",
@@ -1120,8 +1136,8 @@
       ]
     },
     {
-      "name": "about-landing-stats",
-      "description": "Hero section for About pages with company introduction and stats",
+      "name": "about-landing-standard",
+      "description": "Hero section for About pages with company introduction and stats with professional styling and balanced design.",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -1154,7 +1170,8 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -1167,8 +1184,8 @@
       "moduleName": "About",
       "sectionName": "Landing",
       "templateName": "Stats",
-      "themeName": "Stats",
-      "theme": "stats",
+      "themeName": "Standard",
+      "theme": "standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1203,9 +1220,9 @@
       ]
     },
     {
-      "name": "about-mission-bold-statement",
-      "description": "Bold mission statement section with vibrant typography and dynamic elements",
-      "theme": "bold-statement",
+      "name": "about-mission-bold",
+      "description": "Bold mission statement section with vibrant typography and dynamic elements with bold colors, strong typography, and high visual impact.",
+      "theme": "bold",
       "fields": {
         "title": "string",
         "mission": "text",
@@ -1221,7 +1238,8 @@
         "backgroundStyle": "gradient"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -1233,26 +1251,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Mission",
-      "templateName": "Bold Statement",
-      "themeName": "Bold Statement",
-      "useCase": "Professional and balanced design for established businesses",
+      "templateName": "Statement",
+      "themeName": "Bold",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "files": [
         "blocks/about/about-mission/bold-statement/block.json",
@@ -1269,9 +1287,9 @@
       ]
     },
     {
-      "name": "about-mission-minimal-statement",
-      "description": "Minimal mission statement section with clean typography and subtle presentation",
-      "theme": "minimal-statement",
+      "name": "about-mission-minimal",
+      "description": "Minimal mission statement section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
+      "theme": "minimal",
       "fields": {
         "title": "string",
         "mission": "text",
@@ -1287,7 +1305,8 @@
         "backgroundStyle": "white"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -1299,26 +1318,26 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Mission",
-      "templateName": "Minimal Statement",
-      "themeName": "Minimal Statement",
-      "useCase": "Professional and balanced design for established businesses",
+      "templateName": "Statement",
+      "themeName": "Minimal",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "files": [
         "blocks/about/about-mission/minimal-statement/block.json",
@@ -1335,8 +1354,8 @@
       ]
     },
     {
-      "name": "about-mission-statement",
-      "description": "Mission statement section with call-to-action",
+      "name": "about-mission-standard",
+      "description": "Mission statement section with call-to-action with professional styling and balanced design.",
       "fields": {
         "title": "string",
         "mission": "text",
@@ -1352,7 +1371,8 @@
         "backgroundStyle": "muted"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -1365,8 +1385,8 @@
       "moduleName": "About",
       "sectionName": "Mission",
       "templateName": "Statement",
-      "themeName": "Statement",
-      "theme": "statement",
+      "themeName": "Standard",
+      "theme": "standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1401,105 +1421,9 @@
       ]
     },
     {
-      "name": "about-team-bold-cards",
-      "description": "Bold team showcase section with vibrant elements and dynamic presentation",
-      "theme": "bold-cards",
-      "fields": {
-        "title": "string",
-        "subtitle": "text"
-      },
-      "data": {
-        "title": "Meet Our Team",
-        "subtitle": "The passionate individuals behind our mission to transform web development."
-      },
-      "collectionsData": {
-        "teamMemberItem": [
-          {
-            "_id": "teamMemberItem-1",
-            "_type": "teamMemberItem",
-            "slug": "sarah-chen",
-            "name": "Sarah Chen",
-            "role": "CEO & Co-Founder",
-            "image": {
-              "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
-              "alt": "Professional woman in business attire"
-            },
-            "bio": "Former tech lead at major SaaS companies with 10+ years building scalable products."
-          },
-          {
-            "_id": "teamMemberItem-2",
-            "_type": "teamMemberItem",
-            "slug": "marcus-johnson",
-            "name": "Marcus Johnson",
-            "role": "CTO & Co-Founder",
-            "image": {
-              "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-              "alt": "Professional man in business attire"
-            },
-            "bio": "Full-stack engineer passionate about developer tools and open-source technologies."
-          },
-          {
-            "_id": "teamMemberItem-3",
-            "_type": "teamMemberItem",
-            "slug": "emily-rodriguez",
-            "name": "Emily Rodriguez",
-            "role": "Head of Design",
-            "image": {
-              "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
-              "alt": "Creative designer woman"
-            },
-            "bio": "Design systems expert focused on creating intuitive and accessible user experiences."
-          }
-        ]
-      },
-      "dependencies": [
-        "lucide-react"
-      ],
-      "tailwind": {
-        "config": {
-          "theme": {
-            "extend": {}
-          }
-        }
-      },
-      "type": "registry:block",
-      "moduleName": "About",
-      "sectionName": "Team",
-      "templateName": "Bold Cards",
-      "themeName": "Bold Cards",
-      "useCase": "Professional and balanced design for established businesses",
-      "businessTypes": [
-        "SaaS",
-        "Agency",
-        "Corporate",
-        "E-commerce"
-      ],
-      "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
-      ],
-      "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
-      ],
-      "files": [
-        "blocks/about/about-team/bold-cards/block.json",
-        "blocks/about/about-team/bold-cards/component.tsx"
-      ],
-      "devDependencies": [],
-      "cssVars": {},
-      "shadcnComponents": [
-        "Card"
-      ],
-      "lucideIcons": []
-    },
-    {
-      "name": "about-team-cards",
-      "description": "Team showcase section with member cards and bios",
+      "name": "about-team-bold",
+      "description": "Bold team showcase section with vibrant elements and dynamic presentation with bold colors, strong typography, and high visual impact.",
+      "theme": "bold",
       "fields": {
         "title": "string",
         "subtitle": "text"
@@ -1562,30 +1486,29 @@
       "moduleName": "About",
       "sectionName": "Team",
       "templateName": "Cards",
-      "themeName": "Cards",
-      "theme": "cards",
-      "useCase": "Professional and balanced design for established businesses",
+      "themeName": "Bold",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "files": [
-        "blocks/about/about-team/cards/block.json",
-        "blocks/about/about-team/cards/component.tsx"
+        "blocks/about/about-team/bold-cards/block.json",
+        "blocks/about/about-team/bold-cards/component.tsx"
       ],
       "devDependencies": [],
       "cssVars": {},
@@ -1595,9 +1518,8 @@
       "lucideIcons": []
     },
     {
-      "name": "about-team-minimal-cards",
-      "description": "Minimal team showcase section with clean typography and subtle presentation",
-      "theme": "minimal-cards",
+      "name": "about-team-standard",
+      "description": "Team showcase section with member cards and bios with professional styling and balanced design.",
       "fields": {
         "title": "string",
         "subtitle": "text"
@@ -1659,8 +1581,9 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Team",
-      "templateName": "Minimal Cards",
-      "themeName": "Minimal Cards",
+      "templateName": "Cards",
+      "themeName": "Standard",
+      "theme": "standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1681,8 +1604,8 @@
         "Subtle animations"
       ],
       "files": [
-        "blocks/about/about-team/minimal-cards/block.json",
-        "blocks/about/about-team/minimal-cards/component.tsx"
+        "blocks/about/about-team/cards/block.json",
+        "blocks/about/about-team/cards/component.tsx"
       ],
       "devDependencies": [],
       "cssVars": {},
@@ -1692,37 +1615,54 @@
       "lucideIcons": []
     },
     {
-      "name": "about-values-bold-grid",
-      "description": "Bold company values section with vibrant colors and dynamic layouts",
-      "theme": "bold-grid",
+      "name": "about-team-minimal",
+      "description": "Minimal team showcase section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
+      "theme": "minimal",
       "fields": {
         "title": "string",
-        "subtitle": "text",
-        "values": "array"
+        "subtitle": "text"
       },
       "data": {
-        "title": "Our Values",
-        "subtitle": "The principles that guide everything we do and shape our company culture.",
-        "values": [
+        "title": "Meet Our Team",
+        "subtitle": "The passionate individuals behind our mission to transform web development."
+      },
+      "collectionsData": {
+        "teamMemberItem": [
           {
-            "icon": "Heart",
-            "title": "Passion-Driven",
-            "description": "We believe in the power of passion to drive innovation and create meaningful impact."
+            "_id": "teamMemberItem-1",
+            "_type": "teamMemberItem",
+            "slug": "sarah-chen",
+            "name": "Sarah Chen",
+            "role": "CEO & Co-Founder",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face",
+              "alt": "Professional woman in business attire"
+            },
+            "bio": "Former tech lead at major SaaS companies with 10+ years building scalable products."
           },
           {
-            "icon": "Users",
-            "title": "People-First",
-            "description": "Our team and customers are at the heart of everything we do. Their success is our success."
+            "_id": "teamMemberItem-2",
+            "_type": "teamMemberItem",
+            "slug": "marcus-johnson",
+            "name": "Marcus Johnson",
+            "role": "CTO & Co-Founder",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+              "alt": "Professional man in business attire"
+            },
+            "bio": "Full-stack engineer passionate about developer tools and open-source technologies."
           },
           {
-            "icon": "Target",
-            "title": "Purpose-Led",
-            "description": "Every decision we make is guided by our mission to make technology more accessible."
-          },
-          {
-            "icon": "Award",
-            "title": "Excellence",
-            "description": "We strive for excellence in every project, pushing boundaries to deliver exceptional results."
+            "_id": "teamMemberItem-3",
+            "_type": "teamMemberItem",
+            "slug": "emily-rodriguez",
+            "name": "Emily Rodriguez",
+            "role": "Head of Design",
+            "image": {
+              "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
+              "alt": "Creative designer woman"
+            },
+            "bio": "Design systems expert focused on creating intuitive and accessible user experiences."
           }
         ]
       },
@@ -1738,52 +1678,43 @@
       },
       "type": "registry:block",
       "moduleName": "About",
-      "sectionName": "Values",
-      "templateName": "Bold Grid",
-      "themeName": "Bold Grid",
-      "useCase": "Professional and balanced design for established businesses",
+      "sectionName": "Team",
+      "templateName": "Cards",
+      "themeName": "Minimal",
+      "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "files": [
-        "blocks/about/about-values/bold-grid/block.json",
-        "blocks/about/about-values/bold-grid/component.tsx"
+        "blocks/about/about-team/minimal-cards/block.json",
+        "blocks/about/about-team/minimal-cards/component.tsx"
       ],
       "devDependencies": [],
       "cssVars": {},
-      "collectionsData": {},
       "shadcnComponents": [
         "Card"
       ],
-      "lucideIcons": [
-        "Heart",
-        "Users",
-        "Target",
-        "Award",
-        "Zap",
-        "Shield",
-        "Globe",
-        "Lightbulb"
-      ]
+      "lucideIcons": []
     },
     {
-      "name": "about-values-grid",
-      "description": "Company values section with icons and descriptions",
+      "name": "about-values-bold",
+      "description": "Bold company values section with vibrant colors and dynamic layouts with bold colors, strong typography, and high visual impact.",
+      "theme": "bold",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -1829,30 +1760,29 @@
       "moduleName": "About",
       "sectionName": "Values",
       "templateName": "Grid",
-      "themeName": "Grid",
-      "theme": "grid",
-      "useCase": "Professional and balanced design for established businesses",
+      "themeName": "Bold",
+      "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
-        "SaaS",
         "Agency",
-        "Corporate",
-        "E-commerce"
+        "Startup",
+        "E-commerce",
+        "Portfolio"
       ],
       "scenarios": [
-        "Product launch",
-        "Service showcase",
-        "Portfolio display",
-        "Corporate presentation"
+        "Brand launch",
+        "Creative showcase",
+        "Attention-grabbing",
+        "Bold presentation"
       ],
       "keyFeatures": [
-        "Clean layout",
-        "Professional typography",
-        "Balanced spacing",
-        "Subtle animations"
+        "Bold colors",
+        "Strong typography",
+        "Visual impact",
+        "Creative elements"
       ],
       "files": [
-        "blocks/about/about-values/grid/block.json",
-        "blocks/about/about-values/grid/component.tsx"
+        "blocks/about/about-values/bold-grid/block.json",
+        "blocks/about/about-values/bold-grid/component.tsx"
       ],
       "devDependencies": [],
       "cssVars": {},
@@ -1872,9 +1802,8 @@
       ]
     },
     {
-      "name": "about-values-minimal-grid",
-      "description": "Minimal company values section with subtle typography and clean spacing",
-      "theme": "minimal-grid",
+      "name": "about-values-standard",
+      "description": "Company values section with icons and descriptions with professional styling and balanced design.",
       "fields": {
         "title": "string",
         "subtitle": "text",
@@ -1919,8 +1848,9 @@
       "type": "registry:block",
       "moduleName": "About",
       "sectionName": "Values",
-      "templateName": "Minimal Grid",
-      "themeName": "Minimal Grid",
+      "templateName": "Grid",
+      "themeName": "Standard",
+      "theme": "standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -1939,6 +1869,96 @@
         "Professional typography",
         "Balanced spacing",
         "Subtle animations"
+      ],
+      "files": [
+        "blocks/about/about-values/grid/block.json",
+        "blocks/about/about-values/grid/component.tsx"
+      ],
+      "devDependencies": [],
+      "cssVars": {},
+      "collectionsData": {},
+      "shadcnComponents": [
+        "Card"
+      ],
+      "lucideIcons": [
+        "Heart",
+        "Users",
+        "Target",
+        "Award",
+        "Zap",
+        "Shield",
+        "Globe",
+        "Lightbulb"
+      ]
+    },
+    {
+      "name": "about-values-minimal",
+      "description": "Minimal company values section with subtle typography and clean spacing with clean, minimalist design and subtle styling.",
+      "theme": "minimal",
+      "fields": {
+        "title": "string",
+        "subtitle": "text",
+        "values": "array"
+      },
+      "data": {
+        "title": "Our Values",
+        "subtitle": "The principles that guide everything we do and shape our company culture.",
+        "values": [
+          {
+            "icon": "Heart",
+            "title": "Passion-Driven",
+            "description": "We believe in the power of passion to drive innovation and create meaningful impact."
+          },
+          {
+            "icon": "Users",
+            "title": "People-First",
+            "description": "Our team and customers are at the heart of everything we do. Their success is our success."
+          },
+          {
+            "icon": "Target",
+            "title": "Purpose-Led",
+            "description": "Every decision we make is guided by our mission to make technology more accessible."
+          },
+          {
+            "icon": "Award",
+            "title": "Excellence",
+            "description": "We strive for excellence in every project, pushing boundaries to deliver exceptional results."
+          }
+        ]
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "tailwind": {
+        "config": {
+          "theme": {
+            "extend": {}
+          }
+        }
+      },
+      "type": "registry:block",
+      "moduleName": "About",
+      "sectionName": "Values",
+      "templateName": "Grid",
+      "themeName": "Minimal",
+      "useCase": "Clean and focused design for modern, minimalist brands",
+      "businessTypes": [
+        "SaaS",
+        "Agency",
+        "Startup",
+        "Portfolio"
+      ],
+      "scenarios": [
+        "Product focus",
+        "Clean presentation",
+        "Modern branding",
+        "Minimalist approach"
+      ],
+      "keyFeatures": [
+        "Minimal design",
+        "White space",
+        "Simple typography",
+        "Clean lines"
       ],
       "files": [
         "blocks/about/about-values/minimal-grid/block.json",
@@ -1963,7 +1983,7 @@
     },
     {
       "name": "blog-blog-article-bold",
-      "description": "Bold blog article layout with eye-catching design and modern styling.",
+      "description": "Bold blog article layout with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -2013,12 +2033,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Blog Article",
-      "templateName": "Bold",
+      "templateName": "Blog Article",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -2043,7 +2064,7 @@
     },
     {
       "name": "blog-blog-article-minimal",
-      "description": "Minimal blog article layout with clean, content-focused design.",
+      "description": "Minimal blog article layout with clean, content-focused design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -2091,7 +2112,7 @@
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Blog Article",
-      "templateName": "Minimal",
+      "templateName": "Blog Article",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -2110,7 +2131,7 @@
     },
     {
       "name": "blog-blog-article-standard",
-      "description": "Standard blog article layout with professional typography and clean design.",
+      "description": "Standard blog article layout with professional typography and clean design. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -2160,12 +2181,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Blog Article",
-      "templateName": "Standard",
+      "templateName": "Blog Article",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -2189,7 +2211,7 @@
     },
     {
       "name": "blog-blog-posts-bold",
-      "description": "Bold blog posts listing with eye-catching design and modern styling.",
+      "description": "Bold blog posts listing with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -2261,12 +2283,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Blog Posts",
-      "templateName": "Bold",
+      "templateName": "Blog Posts",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -2291,7 +2314,7 @@
     },
     {
       "name": "blog-blog-posts-minimal",
-      "description": "Minimal blog posts listing with clean, simple design.",
+      "description": "Minimal blog posts listing with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -2347,7 +2370,7 @@
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Blog Posts",
-      "templateName": "Minimal",
+      "templateName": "Blog Posts",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -2367,7 +2390,7 @@
     },
     {
       "name": "blog-blog-posts-standard",
-      "description": "Standard blog posts listing with professional card layout.",
+      "description": "Standard blog posts listing with professional card layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -2439,12 +2462,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Blog Posts",
-      "templateName": "Standard",
+      "templateName": "Blog Posts",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -2468,7 +2492,7 @@
     },
     {
       "name": "blog-featured-posts-bold",
-      "description": "Bold featured posts section with eye-catching design and modern styling.",
+      "description": "Bold featured posts section with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -2541,12 +2565,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Featured Posts",
-      "templateName": "Bold",
+      "templateName": "Featured Posts",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -2572,7 +2597,7 @@
     },
     {
       "name": "blog-featured-posts-minimal",
-      "description": "Minimal featured posts section with clean, simple design.",
+      "description": "Minimal featured posts section with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -2628,7 +2653,7 @@
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Featured Posts",
-      "templateName": "Minimal",
+      "templateName": "Featured Posts",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -2649,7 +2674,7 @@
     },
     {
       "name": "blog-featured-posts-standard",
-      "description": "Standard featured posts section with professional layout and clear hierarchy.",
+      "description": "Standard featured posts section with professional layout and clear hierarchy. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -2723,12 +2748,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Blog",
       "sectionName": "Featured Posts",
-      "templateName": "Standard",
+      "templateName": "Featured Posts",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -2753,7 +2779,7 @@
     },
     {
       "name": "faq-help-bold",
-      "description": "Bold help center with striking design and interactive elements.",
+      "description": "Bold help center with striking design and interactive elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -2877,12 +2903,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Help",
-      "templateName": "Bold",
+      "templateName": "Help",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -2909,7 +2936,7 @@
     },
     {
       "name": "faq-help-minimal",
-      "description": "Minimal help center with clean, simple design.",
+      "description": "Minimal help center with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -2996,12 +3023,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Help",
-      "templateName": "Minimal",
+      "templateName": "Help",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -3025,7 +3053,7 @@
     },
     {
       "name": "faq-help-standard",
-      "description": "Standard help center with organized documentation and support resources.",
+      "description": "Standard help center with organized documentation and support resources. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -3149,12 +3177,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Help",
-      "templateName": "Standard",
+      "templateName": "Help",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -3180,7 +3209,7 @@
     },
     {
       "name": "faq-questions-bold",
-      "description": "Bold FAQ questions section with striking design and animations.",
+      "description": "Bold FAQ questions section with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -3246,12 +3275,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Questions",
-      "templateName": "Bold",
+      "templateName": "Questions",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -3274,7 +3304,7 @@
     },
     {
       "name": "faq-questions-minimal",
-      "description": "Minimal FAQ questions section with simple expandable design.",
+      "description": "Minimal FAQ questions section with simple expandable design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -3335,12 +3365,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Questions",
-      "templateName": "Minimal",
+      "templateName": "Questions",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -3361,7 +3392,7 @@
     },
     {
       "name": "faq-questions-standard",
-      "description": "Standard FAQ questions section with expandable answers and clean design.",
+      "description": "Standard FAQ questions section with expandable answers and clean design. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -3427,12 +3458,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Questions",
-      "templateName": "Standard",
+      "templateName": "Questions",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -3454,7 +3486,7 @@
     },
     {
       "name": "faq-support-bold",
-      "description": "Bold support section with premium design and multiple contact options.",
+      "description": "Bold support section with premium design and multiple contact options. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -3544,12 +3576,13 @@
         "ctaLink": "/emergency-support"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Support",
-      "templateName": "Bold",
+      "templateName": "Support",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -3578,7 +3611,7 @@
     },
     {
       "name": "faq-support-minimal",
-      "description": "Minimal support section with essential contact options.",
+      "description": "Minimal support section with essential contact options. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -3644,12 +3677,13 @@
         "ctaLink": "/emergency"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Support",
-      "templateName": "Minimal",
+      "templateName": "Support",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -3673,7 +3707,7 @@
     },
     {
       "name": "faq-support-standard",
-      "description": "Standard support section with contact options and resources.",
+      "description": "Standard support section with contact options and resources. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -3747,12 +3781,13 @@
         "ctaLink": "/emergency"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Faq",
       "sectionName": "Support",
-      "templateName": "Standard",
+      "templateName": "Support",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -3778,7 +3813,7 @@
     },
     {
       "name": "features-capabilities-bold",
-      "description": "Comprehensive capability overview",
+      "description": "Comprehensive capability overview with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -3836,7 +3871,8 @@
         "ctaLink": "/get-started"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -3848,7 +3884,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Capabilities",
-      "templateName": "Bold",
+      "templateName": "Capabilities",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -3890,7 +3926,7 @@
     },
     {
       "name": "features-capabilities-minimal",
-      "description": "Comprehensive capability overview",
+      "description": "Comprehensive capability overview with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -3944,7 +3980,8 @@
         "ctaLink": "/signup"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -3956,7 +3993,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Capabilities",
-      "templateName": "Minimal",
+      "templateName": "Capabilities",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -3998,7 +4035,7 @@
     },
     {
       "name": "features-capabilities-standard",
-      "description": "Comprehensive capability overview",
+      "description": "Comprehensive capability overview with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -4056,7 +4093,8 @@
         "ctaLink": "/get-started"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -4068,7 +4106,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Capabilities",
-      "templateName": "Standard",
+      "templateName": "Capabilities",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4110,7 +4148,7 @@
     },
     {
       "name": "features-highlights-bold",
-      "description": "Key feature highlights with benefits",
+      "description": "Key feature highlights with benefits with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -4152,7 +4190,8 @@
         "ctaLink": "/get-started"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -4164,7 +4203,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Highlights",
-      "templateName": "Bold",
+      "templateName": "Highlights",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -4205,7 +4244,7 @@
     },
     {
       "name": "features-highlights-minimal",
-      "description": "Key feature highlights with benefits",
+      "description": "Key feature highlights with benefits with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -4247,7 +4286,8 @@
         "ctaLink": "/signup"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -4259,7 +4299,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Highlights",
-      "templateName": "Minimal",
+      "templateName": "Highlights",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -4300,7 +4340,7 @@
     },
     {
       "name": "features-highlights-standard",
-      "description": "Key feature highlights with benefits",
+      "description": "Key feature highlights with benefits with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -4355,7 +4395,8 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -4367,7 +4408,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Highlights",
-      "templateName": "Standard",
+      "templateName": "Highlights",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4407,7 +4448,7 @@
     },
     {
       "name": "features-showcase-bold",
-      "description": "Feature showcase with visual demonstrations",
+      "description": "Feature showcase with visual demonstrations with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -4443,7 +4484,8 @@
         "ctaLink": "/features"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -4455,7 +4497,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Showcase",
-      "templateName": "Bold",
+      "templateName": "Showcase",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -4495,7 +4537,7 @@
     },
     {
       "name": "features-showcase-minimal",
-      "description": "Feature showcase with visual demonstrations",
+      "description": "Feature showcase with visual demonstrations with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -4531,7 +4573,8 @@
         "ctaLink": "/features"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -4543,7 +4586,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Showcase",
-      "templateName": "Minimal",
+      "templateName": "Showcase",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -4583,7 +4626,7 @@
     },
     {
       "name": "features-showcase-standard",
-      "description": "Feature showcase with visual demonstrations",
+      "description": "Feature showcase with visual demonstrations with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -4638,7 +4681,8 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -4650,7 +4694,7 @@
       "type": "registry:block",
       "moduleName": "Features",
       "sectionName": "Showcase",
-      "templateName": "Standard",
+      "templateName": "Showcase",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4689,7 +4733,7 @@
     },
     {
       "name": "gallery-portfolio-bold",
-      "description": "Bold portfolio gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
+      "description": "Bold portfolio gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -4794,12 +4838,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Portfolio",
-      "templateName": "Bold",
+      "templateName": "Portfolio",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -4822,7 +4867,7 @@
     },
     {
       "name": "gallery-portfolio-minimal",
-      "description": "Minimal portfolio gallery with clean, simple design and subtle interactions.",
+      "description": "Minimal portfolio gallery with clean, simple design and subtle interactions. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -4932,7 +4977,7 @@
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Portfolio",
-      "templateName": "Minimal",
+      "templateName": "Portfolio",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -4951,7 +4996,7 @@
     },
     {
       "name": "gallery-portfolio-standard",
-      "description": "Standard portfolio gallery with clean grid layout and hover effects.",
+      "description": "Standard portfolio gallery with clean grid layout and hover effects. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -5056,12 +5101,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Portfolio",
-      "templateName": "Standard",
+      "templateName": "Portfolio",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -5083,7 +5129,7 @@
     },
     {
       "name": "gallery-products-bold",
-      "description": "Bold product gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
+      "description": "Bold product gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -5182,12 +5228,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Products",
-      "templateName": "Bold",
+      "templateName": "Products",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -5211,7 +5258,7 @@
     },
     {
       "name": "gallery-products-minimal",
-      "description": "Minimal product gallery with clean, simple design focusing on product essentials.",
+      "description": "Minimal product gallery with clean, simple design focusing on product essentials. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -5315,7 +5362,7 @@
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Products",
-      "templateName": "Minimal",
+      "templateName": "Products",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -5334,7 +5381,7 @@
     },
     {
       "name": "gallery-products-standard",
-      "description": "Standard product gallery with clean grid layout and product information display.",
+      "description": "Standard product gallery with clean grid layout and product information display. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -5433,12 +5480,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Products",
-      "templateName": "Standard",
+      "templateName": "Products",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -5461,7 +5509,7 @@
     },
     {
       "name": "gallery-showcase-bold",
-      "description": "Bold showcase gallery with vibrant colors, dynamic layouts, and eye-catching design elements.",
+      "description": "Bold showcase gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -5574,12 +5622,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Showcase",
-      "templateName": "Bold",
+      "templateName": "Showcase",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -5604,7 +5653,7 @@
     },
     {
       "name": "gallery-showcase-minimal",
-      "description": "Minimal showcase gallery with clean, simple design focusing on content.",
+      "description": "Minimal showcase gallery with clean, simple design focusing on content. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -5722,7 +5771,7 @@
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Showcase",
-      "templateName": "Minimal",
+      "templateName": "Showcase",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -5741,7 +5790,7 @@
     },
     {
       "name": "gallery-showcase-standard",
-      "description": "Standard showcase gallery with featured content and visual highlights.",
+      "description": "Standard showcase gallery with featured content and visual highlights. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -5854,12 +5903,13 @@
       },
       "dependencies": [
         "next/image",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Gallery",
       "sectionName": "Showcase",
-      "templateName": "Standard",
+      "templateName": "Showcase",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -5882,7 +5932,7 @@
     },
     {
       "name": "logos-brands-bold",
-      "description": "Bold brand logo showcase with striking design and animations.",
+      "description": "Bold brand logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -5974,12 +6024,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Brands",
-      "templateName": "Bold",
+      "templateName": "Brands",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -6003,7 +6054,7 @@
     },
     {
       "name": "logos-brands-minimal",
-      "description": "Minimal brand logo showcase with clean, simple design.",
+      "description": "Minimal brand logo showcase with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -6069,12 +6120,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Brands",
-      "templateName": "Minimal",
+      "templateName": "Brands",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -6094,7 +6146,7 @@
     },
     {
       "name": "logos-brands-standard",
-      "description": "Standard brand logo showcase with professional grid layout.",
+      "description": "Standard brand logo showcase with professional grid layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -6178,12 +6230,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Brands",
-      "templateName": "Standard",
+      "templateName": "Brands",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -6205,7 +6258,7 @@
     },
     {
       "name": "logos-clients-bold",
-      "description": "Bold client logo showcase with striking design and animations.",
+      "description": "Bold client logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -6289,12 +6342,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Clients",
-      "templateName": "Bold",
+      "templateName": "Clients",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -6317,7 +6371,7 @@
     },
     {
       "name": "logos-clients-minimal",
-      "description": "Minimal client logo showcase with simple, clean design.",
+      "description": "Minimal client logo showcase with simple, clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -6383,12 +6437,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Clients",
-      "templateName": "Minimal",
+      "templateName": "Clients",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -6408,7 +6463,7 @@
     },
     {
       "name": "logos-clients-standard",
-      "description": "Standard client logo showcase with clean grid layout.",
+      "description": "Standard client logo showcase with clean grid layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -6484,12 +6539,13 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Clients",
-      "templateName": "Standard",
+      "templateName": "Clients",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -6510,7 +6566,7 @@
     },
     {
       "name": "logos-partners-bold",
-      "description": "Bold partner logo showcase with striking design and animations.",
+      "description": "Bold partner logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -6602,12 +6658,13 @@
         "ctaLink": "/partnerships"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Partners",
-      "templateName": "Bold",
+      "templateName": "Partners",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -6631,7 +6688,7 @@
     },
     {
       "name": "logos-partners-minimal",
-      "description": "Minimal partner logo showcase with clean, simple design.",
+      "description": "Minimal partner logo showcase with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -6697,12 +6754,13 @@
         "ctaLink": "/partnerships"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Partners",
-      "templateName": "Minimal",
+      "templateName": "Partners",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -6722,7 +6780,7 @@
     },
     {
       "name": "logos-partners-standard",
-      "description": "Standard partner logo showcase with professional layout.",
+      "description": "Standard partner logo showcase with professional layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -6806,12 +6864,13 @@
         "ctaLink": "/partnerships"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Logos",
       "sectionName": "Partners",
-      "templateName": "Standard",
+      "templateName": "Partners",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -6833,7 +6892,7 @@
     },
     {
       "name": "main-call-to-action-bold",
-      "description": "Bold conversion section with vibrant colors and dynamic presentation",
+      "description": "Bold conversion section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -6859,7 +6918,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -6871,7 +6931,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Call To Action",
-      "templateName": "Bold",
+      "templateName": "Call To Action",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -6910,7 +6970,7 @@
     },
     {
       "name": "main-call-to-action-minimal",
-      "description": "Minimal conversion section with clean typography and subtle presentation",
+      "description": "Minimal conversion section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -6936,7 +6996,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -6948,7 +7009,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Call To Action",
-      "templateName": "Minimal",
+      "templateName": "Call To Action",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -6986,7 +7047,7 @@
     },
     {
       "name": "main-call-to-action-standard",
-      "description": "Primary conversion section",
+      "description": "Primary conversion section with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -7012,7 +7073,8 @@
         }
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7024,7 +7086,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Call To Action",
-      "templateName": "Standard",
+      "templateName": "Call To Action",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -7062,7 +7124,7 @@
     },
     {
       "name": "main-contact-lead-generation-bold",
-      "description": "Bold lead capture section with vibrant colors and dynamic presentation",
+      "description": "Bold lead capture section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -7113,7 +7175,8 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7125,7 +7188,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Contact Lead Generation",
-      "templateName": "Bold",
+      "templateName": "Contact Lead Generation",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -7167,7 +7230,7 @@
     },
     {
       "name": "main-contact-lead-generation-minimal",
-      "description": "Minimal lead capture section with clean typography and subtle presentation",
+      "description": "Minimal lead capture section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -7218,7 +7281,8 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7230,7 +7294,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Contact Lead Generation",
-      "templateName": "Minimal",
+      "templateName": "Contact Lead Generation",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -7270,7 +7334,7 @@
     },
     {
       "name": "main-contact-lead-generation-standard",
-      "description": "Capture leads and contact information",
+      "description": "Capture leads and contact information with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -7321,7 +7385,8 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7333,7 +7398,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Contact Lead Generation",
-      "templateName": "Standard",
+      "templateName": "Contact Lead Generation",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -7373,7 +7438,7 @@
     },
     {
       "name": "main-hero-section-bold",
-      "description": "Bold hero section with vibrant colors and dynamic presentation",
+      "description": "Bold hero section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "headline": "string",
@@ -7399,7 +7464,8 @@
         "backgroundType": "image"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7411,7 +7477,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Hero Section",
-      "templateName": "Bold",
+      "templateName": "Hero Section",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -7451,7 +7517,7 @@
     },
     {
       "name": "main-hero-section-minimal",
-      "description": "Minimal hero section with clean typography and subtle presentation",
+      "description": "Minimal hero section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "headline": "string",
@@ -7477,7 +7543,8 @@
         "backgroundType": "image"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7489,7 +7556,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Hero Section",
-      "templateName": "Minimal",
+      "templateName": "Hero Section",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -7527,7 +7594,7 @@
     },
     {
       "name": "main-hero-section-standard",
-      "description": "Primary landing area with headline, CTA, and hero image",
+      "description": "Primary landing area with headline, CTA, and hero image with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "headline": "string",
@@ -7553,7 +7620,8 @@
         "backgroundType": "image"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7565,7 +7633,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Hero Section",
-      "templateName": "Standard",
+      "templateName": "Hero Section",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -7603,7 +7671,7 @@
     },
     {
       "name": "main-problem-solution-bold",
-      "description": "Bold problem-solution section with vibrant colors and dynamic presentation",
+      "description": "Bold problem-solution section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -7654,7 +7722,8 @@
         "ctaLink": "/demo"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7666,7 +7735,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Problem Solution",
-      "templateName": "Bold",
+      "templateName": "Problem Solution",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -7710,7 +7779,7 @@
     },
     {
       "name": "main-problem-solution-minimal",
-      "description": "Minimal problem-solution section with clean typography and subtle presentation",
+      "description": "Minimal problem-solution section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -7761,7 +7830,8 @@
         "ctaLink": "/demo"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7773,7 +7843,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Problem Solution",
-      "templateName": "Minimal",
+      "templateName": "Problem Solution",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -7816,7 +7886,7 @@
     },
     {
       "name": "main-problem-solution-standard",
-      "description": "Address pain points and present solutions",
+      "description": "Address pain points and present solutions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -7867,7 +7937,8 @@
         "ctaLink": "/demo"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -7879,7 +7950,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Problem Solution",
-      "templateName": "Standard",
+      "templateName": "Problem Solution",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -7922,7 +7993,7 @@
     },
     {
       "name": "main-social-proof-bold",
-      "description": "Bold social proof section with vibrant colors and dynamic presentation",
+      "description": "Bold social proof section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -7998,7 +8069,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Social Proof",
-      "templateName": "Bold",
+      "templateName": "Social Proof",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -8039,7 +8110,7 @@
     },
     {
       "name": "main-social-proof-minimal",
-      "description": "Minimal social proof section with clean typography and subtle presentation",
+      "description": "Minimal social proof section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -8115,7 +8186,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Social Proof",
-      "templateName": "Minimal",
+      "templateName": "Social Proof",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -8151,7 +8222,7 @@
     },
     {
       "name": "main-social-proof-standard",
-      "description": "Trust building with logos, testimonials, and stats",
+      "description": "Trust building with logos, testimonials, and stats with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -8227,7 +8298,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Social Proof",
-      "templateName": "Standard",
+      "templateName": "Social Proof",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8263,7 +8334,7 @@
     },
     {
       "name": "main-trust-indicators-bold",
-      "description": "Bold trust indicators section with vibrant colors and dynamic presentation",
+      "description": "Bold trust indicators section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -8319,7 +8390,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Trust Indicators",
-      "templateName": "Bold",
+      "templateName": "Trust Indicators",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -8360,7 +8431,7 @@
     },
     {
       "name": "main-trust-indicators-minimal",
-      "description": "Minimal trust indicators section with clean typography and subtle presentation",
+      "description": "Minimal trust indicators section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -8416,7 +8487,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Trust Indicators",
-      "templateName": "Minimal",
+      "templateName": "Trust Indicators",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -8456,7 +8527,7 @@
     },
     {
       "name": "main-trust-indicators-standard",
-      "description": "Security, certifications, and guarantees",
+      "description": "Security, certifications, and guarantees with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -8512,7 +8583,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Trust Indicators",
-      "templateName": "Standard",
+      "templateName": "Trust Indicators",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8552,7 +8623,7 @@
     },
     {
       "name": "main-value-proposition-bold",
-      "description": "Bold value proposition section with vibrant colors and dynamic presentation",
+      "description": "Bold value proposition section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -8590,7 +8661,8 @@
         "ctaLink": "/features"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -8602,7 +8674,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Value Proposition",
-      "templateName": "Bold",
+      "templateName": "Value Proposition",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -8644,7 +8716,7 @@
     },
     {
       "name": "main-value-proposition-minimal",
-      "description": "Minimal value proposition section with clean typography and subtle presentation",
+      "description": "Minimal value proposition section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -8682,7 +8754,8 @@
         "ctaLink": "/features"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -8694,7 +8767,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Value Proposition",
-      "templateName": "Minimal",
+      "templateName": "Value Proposition",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -8735,7 +8808,7 @@
     },
     {
       "name": "main-value-proposition-standard",
-      "description": "Clear value statement and key benefits",
+      "description": "Clear value statement and key benefits with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -8773,7 +8846,8 @@
         "ctaLink": "/features"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -8785,7 +8859,7 @@
       "type": "registry:block",
       "moduleName": "Main",
       "sectionName": "Value Proposition",
-      "templateName": "Standard",
+      "templateName": "Value Proposition",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8826,7 +8900,7 @@
     },
     {
       "name": "newsletter-opt-in-bold",
-      "description": "Bold opt-in form with eye-catching lead magnet design.",
+      "description": "Bold opt-in form with eye-catching lead magnet design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -8864,12 +8938,14 @@
       },
       "dependencies": [
         "@radix-ui/react-label",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Opt In",
-      "templateName": "Bold",
+      "templateName": "Opt In",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -8895,7 +8971,7 @@
     },
     {
       "name": "newsletter-opt-in-minimal",
-      "description": "Minimal opt-in form with clean design and simple lead magnet.",
+      "description": "Minimal opt-in form with clean design and simple lead magnet. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -8929,12 +9005,14 @@
       },
       "dependencies": [
         "@radix-ui/react-label",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Opt In",
-      "templateName": "Minimal",
+      "templateName": "Opt In",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -8956,7 +9034,7 @@
     },
     {
       "name": "newsletter-opt-in-standard",
-      "description": "Standard opt-in form with lead magnet and value proposition.",
+      "description": "Standard opt-in form with lead magnet and value proposition. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -8994,12 +9072,14 @@
       },
       "dependencies": [
         "@radix-ui/react-label",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Opt In",
-      "templateName": "Standard",
+      "templateName": "Opt In",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -9023,7 +9103,7 @@
     },
     {
       "name": "newsletter-signup-bold",
-      "description": "Bold newsletter signup form with eye-catching design.",
+      "description": "Bold newsletter signup form with eye-catching design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -9059,12 +9139,14 @@
       },
       "dependencies": [
         "@radix-ui/react-label",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Signup",
-      "templateName": "Bold",
+      "templateName": "Signup",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -9088,7 +9170,7 @@
     },
     {
       "name": "newsletter-signup-minimal",
-      "description": "Minimal newsletter signup form with clean design.",
+      "description": "Minimal newsletter signup form with clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -9122,12 +9204,14 @@
       },
       "dependencies": [
         "@radix-ui/react-label",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Signup",
-      "templateName": "Minimal",
+      "templateName": "Signup",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -9149,7 +9233,7 @@
     },
     {
       "name": "newsletter-signup-standard",
-      "description": "Standard newsletter signup form with clear value proposition.",
+      "description": "Standard newsletter signup form with clear value proposition. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -9185,12 +9269,14 @@
       },
       "dependencies": [
         "@radix-ui/react-label",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Signup",
-      "templateName": "Standard",
+      "templateName": "Signup",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -9213,7 +9299,7 @@
     },
     {
       "name": "newsletter-subscription-bold",
-      "description": "Bold subscription management with eye-catching design.",
+      "description": "Bold subscription management with eye-catching design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -9267,12 +9353,15 @@
       "dependencies": [
         "@radix-ui/react-switch",
         "@radix-ui/react-label",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-switch",
+        "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Subscription",
-      "templateName": "Bold",
+      "templateName": "Subscription",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -9296,7 +9385,7 @@
     },
     {
       "name": "newsletter-subscription-minimal",
-      "description": "Minimal subscription management with clean design.",
+      "description": "Minimal subscription management with clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -9344,12 +9433,15 @@
       },
       "dependencies": [
         "@radix-ui/react-switch",
+        "@radix-ui/react-label",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-switch",
         "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Subscription",
-      "templateName": "Minimal",
+      "templateName": "Subscription",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -9369,7 +9461,7 @@
     },
     {
       "name": "newsletter-subscription-standard",
-      "description": "Standard subscription management form with preferences.",
+      "description": "Standard subscription management form with preferences. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -9425,12 +9517,15 @@
       "dependencies": [
         "@radix-ui/react-switch",
         "@radix-ui/react-label",
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-switch",
+        "@radix-ui/react-label"
       ],
       "type": "registry:block",
       "moduleName": "Newsletter",
       "sectionName": "Subscription",
-      "templateName": "Standard",
+      "templateName": "Subscription",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -9455,7 +9550,7 @@
     },
     {
       "name": "pricing-plans-bold",
-      "description": "Bold pricing plans with vibrant colors, dynamic layouts, and eye-catching design elements.",
+      "description": "Bold pricing plans with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -9540,12 +9635,13 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Plans",
-      "templateName": "Bold",
+      "templateName": "Plans",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -9568,7 +9664,7 @@
     },
     {
       "name": "pricing-plans-minimal",
-      "description": "Minimal pricing plans with clean, simple design focusing on essential information.",
+      "description": "Minimal pricing plans with clean, simple design focusing on essential information. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -9658,7 +9754,7 @@
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Plans",
-      "templateName": "Minimal",
+      "templateName": "Plans",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -9677,7 +9773,7 @@
     },
     {
       "name": "pricing-plans-standard",
-      "description": "Standard pricing plans with clear tiers and feature comparisons.",
+      "description": "Standard pricing plans with clear tiers and feature comparisons. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -9762,12 +9858,13 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Plans",
-      "templateName": "Standard",
+      "templateName": "Plans",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -9788,7 +9885,7 @@
     },
     {
       "name": "pricing-subscription-bold",
-      "description": "Bold subscription pricing with vibrant colors, dynamic layouts, and eye-catching design elements.",
+      "description": "Bold subscription pricing with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -9886,12 +9983,13 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Subscription",
-      "templateName": "Bold",
+      "templateName": "Subscription",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -9916,7 +10014,7 @@
     },
     {
       "name": "pricing-subscription-minimal",
-      "description": "Minimal subscription pricing with clean design and essential billing information.",
+      "description": "Minimal subscription pricing with clean design and essential billing information. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -10019,7 +10117,7 @@
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Subscription",
-      "templateName": "Minimal",
+      "templateName": "Subscription",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -10039,7 +10137,7 @@
     },
     {
       "name": "pricing-subscription-standard",
-      "description": "Standard subscription pricing with billing options and plan management features.",
+      "description": "Standard subscription pricing with billing options and plan management features. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -10137,12 +10235,13 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Subscription",
-      "templateName": "Standard",
+      "templateName": "Subscription",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -10165,7 +10264,7 @@
     },
     {
       "name": "pricing-tables-bold",
-      "description": "Bold pricing table with vibrant colors, dynamic layouts, and eye-catching design elements.",
+      "description": "Bold pricing table with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
         "Agency",
@@ -10267,12 +10366,13 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Tables",
-      "templateName": "Bold",
+      "templateName": "Tables",
       "themeName": "Bold",
       "theme": "bold",
       "files": [
@@ -10296,7 +10396,7 @@
     },
     {
       "name": "pricing-tables-minimal",
-      "description": "Minimal pricing table with clean design and essential feature comparison.",
+      "description": "Minimal pricing table with clean design and essential feature comparison. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
         "SaaS",
@@ -10403,7 +10503,7 @@
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Tables",
-      "templateName": "Minimal",
+      "templateName": "Tables",
       "themeName": "Minimal",
       "theme": "minimal",
       "files": [
@@ -10423,7 +10523,7 @@
     },
     {
       "name": "pricing-tables-standard",
-      "description": "Standard pricing table with detailed feature comparison and clear pricing structure.",
+      "description": "Standard pricing table with detailed feature comparison and clear pricing structure. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
         "SaaS",
@@ -10525,12 +10625,13 @@
         ]
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "type": "registry:block",
       "moduleName": "Pricing",
       "sectionName": "Tables",
-      "templateName": "Standard",
+      "templateName": "Tables",
       "themeName": "Standard",
       "theme": "standard",
       "files": [
@@ -10552,7 +10653,7 @@
     },
     {
       "name": "services-offerings-bold",
-      "description": "Service offerings and packages",
+      "description": "Service offerings and packages with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -10612,7 +10713,8 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -10624,7 +10726,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Offerings",
-      "templateName": "Bold",
+      "templateName": "Offerings",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -10666,7 +10768,7 @@
     },
     {
       "name": "services-offerings-minimal",
-      "description": "Service offerings and packages",
+      "description": "Service offerings and packages with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -10717,7 +10819,8 @@
         "ctaLink": "/quote"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -10729,7 +10832,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Offerings",
-      "templateName": "Minimal",
+      "templateName": "Offerings",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -10770,7 +10873,7 @@
     },
     {
       "name": "services-offerings-standard",
-      "description": "Service offerings and packages",
+      "description": "Service offerings and packages with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -10824,7 +10927,8 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -10836,7 +10940,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Offerings",
-      "templateName": "Standard",
+      "templateName": "Offerings",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -10877,7 +10981,7 @@
     },
     {
       "name": "services-services-bold",
-      "description": "Service descriptions and overview",
+      "description": "Service descriptions and overview with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -10937,7 +11041,8 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -10949,7 +11054,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Services",
-      "templateName": "Bold",
+      "templateName": "Services",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -10993,7 +11098,7 @@
     },
     {
       "name": "services-services-minimal",
-      "description": "Service descriptions and overview",
+      "description": "Service descriptions and overview with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -11044,7 +11149,8 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11056,7 +11162,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Services",
-      "templateName": "Minimal",
+      "templateName": "Services",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -11098,7 +11204,7 @@
     },
     {
       "name": "services-services-standard",
-      "description": "Service descriptions and capabilities",
+      "description": "Service descriptions and capabilities with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -11152,7 +11258,8 @@
         "ctaLink": "/contact"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11164,7 +11271,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Services",
-      "templateName": "Standard",
+      "templateName": "Services",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -11205,7 +11312,7 @@
     },
     {
       "name": "services-solutions-bold",
-      "description": "Business solutions and outcomes",
+      "description": "Business solutions and outcomes with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -11265,7 +11372,8 @@
         "ctaLink": "/solutions"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11277,7 +11385,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Solutions",
-      "templateName": "Bold",
+      "templateName": "Solutions",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -11321,7 +11429,7 @@
     },
     {
       "name": "services-solutions-minimal",
-      "description": "Business solutions and outcomes",
+      "description": "Business solutions and outcomes with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -11372,7 +11480,8 @@
         "ctaLink": "/solutions"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11384,7 +11493,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Solutions",
-      "templateName": "Minimal",
+      "templateName": "Solutions",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -11426,7 +11535,7 @@
     },
     {
       "name": "services-solutions-standard",
-      "description": "Business solutions and problem-solving approaches",
+      "description": "Business solutions and problem-solving approaches with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -11480,7 +11589,8 @@
         "ctaLink": "/consultation"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11492,7 +11602,7 @@
       "type": "registry:block",
       "moduleName": "Services",
       "sectionName": "Solutions",
-      "templateName": "Standard",
+      "templateName": "Solutions",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -11533,7 +11643,7 @@
     },
     {
       "name": "team-culture-bold",
-      "description": "Company culture and values",
+      "description": "Company culture and values with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -11571,7 +11681,8 @@
         "ctaLink": "/careers"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11583,7 +11694,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Culture",
-      "templateName": "Bold",
+      "templateName": "Culture",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -11626,7 +11737,7 @@
     },
     {
       "name": "team-culture-minimal",
-      "description": "Company culture and values",
+      "description": "Company culture and values with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -11664,7 +11775,8 @@
         "ctaLink": "/culture"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11676,7 +11788,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Culture",
-      "templateName": "Minimal",
+      "templateName": "Culture",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -11717,7 +11829,7 @@
     },
     {
       "name": "team-culture-standard",
-      "description": "Company culture and values",
+      "description": "Company culture and values with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -11755,7 +11867,8 @@
         "ctaLink": "/culture"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11767,7 +11880,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Culture",
-      "templateName": "Standard",
+      "templateName": "Culture",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -11808,7 +11921,7 @@
     },
     {
       "name": "team-members-bold",
-      "description": "Team member cards and introductions",
+      "description": "Team member cards and introductions with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -11890,7 +12003,8 @@
         "ctaLink": "/careers"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -11902,7 +12016,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Members",
-      "templateName": "Bold",
+      "templateName": "Members",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -11943,7 +12057,7 @@
     },
     {
       "name": "team-members-minimal",
-      "description": "Team member cards and introductions",
+      "description": "Team member cards and introductions with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -12013,7 +12127,8 @@
         "ctaLink": "/team"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -12025,7 +12140,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Members",
-      "templateName": "Minimal",
+      "templateName": "Members",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -12062,7 +12177,7 @@
     },
     {
       "name": "team-members-standard",
-      "description": "Team member cards and introductions",
+      "description": "Team member cards and introductions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -12132,7 +12247,8 @@
         "ctaLink": "/team"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -12144,7 +12260,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Members",
-      "templateName": "Standard",
+      "templateName": "Members",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -12181,7 +12297,7 @@
     },
     {
       "name": "team-profiles-bold",
-      "description": "Team member profiles and introductions",
+      "description": "Team member profiles and introductions with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
         "title": "string",
@@ -12229,7 +12345,8 @@
         "ctaLink": "/careers"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -12241,7 +12358,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Profiles",
-      "templateName": "Bold",
+      "templateName": "Profiles",
       "themeName": "Bold",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -12285,7 +12402,7 @@
     },
     {
       "name": "team-profiles-minimal",
-      "description": "Team member profiles and introductions",
+      "description": "Team member profiles and introductions with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
         "title": "string",
@@ -12333,7 +12450,8 @@
         "ctaLink": "/careers"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -12345,7 +12463,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Profiles",
-      "templateName": "Minimal",
+      "templateName": "Profiles",
       "themeName": "Minimal",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -12386,7 +12504,7 @@
     },
     {
       "name": "team-profiles-standard",
-      "description": "Team member profiles and introductions",
+      "description": "Team member profiles and introductions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
         "title": "string",
@@ -12434,7 +12552,8 @@
         "ctaLink": "/careers"
       },
       "dependencies": [
-        "lucide-react"
+        "lucide-react",
+        "@radix-ui/react-slot"
       ],
       "tailwind": {
         "config": {
@@ -12446,7 +12565,7 @@
       "type": "registry:block",
       "moduleName": "Team",
       "sectionName": "Profiles",
-      "templateName": "Standard",
+      "templateName": "Profiles",
       "themeName": "Standard",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [

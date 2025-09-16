@@ -353,10 +353,10 @@ export default function BlockPreview({ block, componentName, navigation }: Props
               </Button>
               <div>
                 <h1 className="text-lg font-semibold">
-                  {block.sectionName} - {block.templateName}
+                  {block.templateName} - {block.themeName}
                 </h1>
                 <p className="text-sm text-muted-foreground">
-                  {block.moduleName} • {block.themeName}
+                  {block.moduleName} Module
                 </p>
               </div>
             </div>
