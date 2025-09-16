@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router'
-import fs from 'fs'
-import path from 'path'
+import * as fs from 'fs'
+import * as path from 'path'
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowLeft, Download, Code } from 'lucide-react'
+import { ArrowLeft, Download, Code, Check } from 'lucide-react'
 import Header from '@/components/header'
 import TemplateNavigation from '@/components/template-navigation'
+import { useState } from 'react'
 
 // Import all block components
 import AboutLandingImage from '@/blocks/about/about-landing/image/component'
@@ -309,6 +310,28 @@ export default function BlockPreview({ block, componentName, navigation }: Props
   const router = useRouter()
   const Component = blockComponents[componentName]
   const isThumbnail = router.query.thumbnail === 'true'
+  const [copied, setCopied] = useState(false)
+
+  const handleCopyCode = async () => {
+    try {
+      // Fetch the component content from the API
+      const response = await fetch(`/api/component/${componentName}`)
+      if (!response.ok) {
+        throw new Error('Failed to fetch component content')
+      }
+      
+      const data = await response.json()
+      
+      // Copy to clipboard
+      await navigator.clipboard.writeText(data.content)
+      setCopied(true)
+      
+      // Reset after 2 seconds
+      setTimeout(() => setCopied(false), 2000)
+    } catch (error) {
+      console.error('Failed to copy code:', error)
+    }
+  }
 
   if (!Component) {
     return (
@@ -367,9 +390,18 @@ export default function BlockPreview({ block, componentName, navigation }: Props
                   View JSON
                 </a>
               </Button>
-              <Button size="sm">
-                <Download className="mr-2 h-4 w-4" />
-                Copy Code
+              <Button size="sm" onClick={handleCopyCode}>
+                {copied ? (
+                  <>
+                    <Check className="mr-2 h-4 w-4" />
+                    Copied!
+                  </>
+                ) : (
+                  <>
+                    <Download className="mr-2 h-4 w-4" />
+                    Copy Code
+                  </>
+                )}
               </Button>
             </div>
           </div>
