@@ -476,7 +476,7 @@
   ],
   "blocks": [
     {
-      "name": "about-company-story-bold",
+      "name": "about-company-story-narrative-bold",
       "description": "Bold company story section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -550,7 +550,7 @@
       ]
     },
     {
-      "name": "about-company-story-minimal",
+      "name": "about-company-story-narrative-minimal",
       "description": "Minimal company story section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -624,7 +624,7 @@
       ]
     },
     {
-      "name": "about-company-story-standard",
+      "name": "about-company-story-narrative-standard",
       "description": "Company story section with founding narrative and journey with professional styling and balanced design.",
       "fields": {
         "title": "string",
@@ -698,7 +698,7 @@
       ]
     },
     {
-      "name": "about-landing-bold",
+      "name": "about-landing-image-bold",
       "description": "Bold hero section for About pages with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -788,7 +788,7 @@
       ]
     },
     {
-      "name": "about-landing-bold",
+      "name": "about-landing-stats-bold",
       "description": "Bold hero section with vibrant colors and dynamic stats presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -872,7 +872,7 @@
       ]
     },
     {
-      "name": "about-landing-standard",
+      "name": "about-landing-image-standard",
       "description": "Hero section for About pages with image and text layout with professional styling and balanced design.",
       "fields": {
         "badge": "string",
@@ -962,7 +962,7 @@
       ]
     },
     {
-      "name": "about-landing-minimal",
+      "name": "about-landing-image-minimal",
       "description": "Minimal hero section for About pages with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -1052,7 +1052,7 @@
       ]
     },
     {
-      "name": "about-landing-minimal",
+      "name": "about-landing-stats-minimal",
       "description": "Minimal hero section with clean typography and subtle stats presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -1136,7 +1136,7 @@
       ]
     },
     {
-      "name": "about-landing-standard",
+      "name": "about-landing-stats-standard",
       "description": "Hero section for About pages with company introduction and stats with professional styling and balanced design.",
       "fields": {
         "title": "string",
@@ -1220,7 +1220,7 @@
       ]
     },
     {
-      "name": "about-mission-bold",
+      "name": "about-mission-statement-bold",
       "description": "Bold mission statement section with vibrant typography and dynamic elements with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -1287,7 +1287,7 @@
       ]
     },
     {
-      "name": "about-mission-minimal",
+      "name": "about-mission-statement-minimal",
       "description": "Minimal mission statement section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -1354,7 +1354,7 @@
       ]
     },
     {
-      "name": "about-mission-standard",
+      "name": "about-mission-statement-standard",
       "description": "Mission statement section with call-to-action with professional styling and balanced design.",
       "fields": {
         "title": "string",
@@ -1421,7 +1421,7 @@
       ]
     },
     {
-      "name": "about-team-bold",
+      "name": "about-team-cards-bold",
       "description": "Bold team showcase section with vibrant elements and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -1518,7 +1518,7 @@
       "lucideIcons": []
     },
     {
-      "name": "about-team-standard",
+      "name": "about-team-cards-standard",
       "description": "Team showcase section with member cards and bios with professional styling and balanced design.",
       "fields": {
         "title": "string",
@@ -1615,7 +1615,7 @@
       "lucideIcons": []
     },
     {
-      "name": "about-team-minimal",
+      "name": "about-team-cards-minimal",
       "description": "Minimal team showcase section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -1712,7 +1712,7 @@
       "lucideIcons": []
     },
     {
-      "name": "about-values-bold",
+      "name": "about-values-grid-bold",
       "description": "Bold company values section with vibrant colors and dynamic layouts with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -1802,7 +1802,7 @@
       ]
     },
     {
-      "name": "about-values-standard",
+      "name": "about-values-grid-standard",
       "description": "Company values section with icons and descriptions with professional styling and balanced design.",
       "fields": {
         "title": "string",
@@ -1892,7 +1892,7 @@
       ]
     },
     {
-      "name": "about-values-minimal",
+      "name": "about-values-grid-minimal",
       "description": "Minimal company values section with subtle typography and clean spacing with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -1982,7 +1982,7 @@
       ]
     },
     {
-      "name": "blog-blog-article-bold",
+      "name": "blog-blog-article-blog-article-bold",
       "description": "Bold blog article layout with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -2063,7 +2063,7 @@
       ]
     },
     {
-      "name": "blog-blog-article-minimal",
+      "name": "blog-blog-article-blog-article-minimal",
       "description": "Minimal blog article layout with clean, content-focused design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -2130,7 +2130,7 @@
       ]
     },
     {
-      "name": "blog-blog-article-standard",
+      "name": "blog-blog-article-blog-article-standard",
       "description": "Standard blog article layout with professional typography and clean design. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2210,7 +2210,7 @@
       ]
     },
     {
-      "name": "blog-blog-posts-bold",
+      "name": "blog-blog-posts-blog-posts-bold",
       "description": "Bold blog posts listing with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -2313,7 +2313,7 @@
       ]
     },
     {
-      "name": "blog-blog-posts-minimal",
+      "name": "blog-blog-posts-blog-posts-minimal",
       "description": "Minimal blog posts listing with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -2389,7 +2389,7 @@
       ]
     },
     {
-      "name": "blog-blog-posts-standard",
+      "name": "blog-blog-posts-blog-posts-standard",
       "description": "Standard blog posts listing with professional card layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2491,7 +2491,7 @@
       ]
     },
     {
-      "name": "blog-featured-posts-bold",
+      "name": "blog-featured-posts-featured-posts-bold",
       "description": "Bold featured posts section with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -2596,7 +2596,7 @@
       ]
     },
     {
-      "name": "blog-featured-posts-minimal",
+      "name": "blog-featured-posts-featured-posts-minimal",
       "description": "Minimal featured posts section with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -2673,7 +2673,7 @@
       ]
     },
     {
-      "name": "blog-featured-posts-standard",
+      "name": "blog-featured-posts-featured-posts-standard",
       "description": "Standard featured posts section with professional layout and clear hierarchy. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2778,7 +2778,7 @@
       ]
     },
     {
-      "name": "faq-help-bold",
+      "name": "faq-help-help-bold",
       "description": "Bold help center with striking design and interactive elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -2935,7 +2935,7 @@
       ]
     },
     {
-      "name": "faq-help-minimal",
+      "name": "faq-help-help-minimal",
       "description": "Minimal help center with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -3052,7 +3052,7 @@
       ]
     },
     {
-      "name": "faq-help-standard",
+      "name": "faq-help-help-standard",
       "description": "Standard help center with organized documentation and support resources. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3208,7 +3208,7 @@
       ]
     },
     {
-      "name": "faq-questions-bold",
+      "name": "faq-questions-questions-bold",
       "description": "Bold FAQ questions section with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -3303,7 +3303,7 @@
       ]
     },
     {
-      "name": "faq-questions-minimal",
+      "name": "faq-questions-questions-minimal",
       "description": "Minimal FAQ questions section with simple expandable design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -3391,7 +3391,7 @@
       ]
     },
     {
-      "name": "faq-questions-standard",
+      "name": "faq-questions-questions-standard",
       "description": "Standard FAQ questions section with expandable answers and clean design. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3485,7 +3485,7 @@
       ]
     },
     {
-      "name": "faq-support-bold",
+      "name": "faq-support-support-bold",
       "description": "Bold support section with premium design and multiple contact options. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -3610,7 +3610,7 @@
       ]
     },
     {
-      "name": "faq-support-minimal",
+      "name": "faq-support-support-minimal",
       "description": "Minimal support section with essential contact options. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -3706,7 +3706,7 @@
       ]
     },
     {
-      "name": "faq-support-standard",
+      "name": "faq-support-support-standard",
       "description": "Standard support section with contact options and resources. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3812,7 +3812,7 @@
       ]
     },
     {
-      "name": "features-capabilities-bold",
+      "name": "features-capabilities-capabilities-bold",
       "description": "Comprehensive capability overview with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -3925,7 +3925,7 @@
       ]
     },
     {
-      "name": "features-capabilities-minimal",
+      "name": "features-capabilities-capabilities-minimal",
       "description": "Comprehensive capability overview with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -4034,7 +4034,7 @@
       ]
     },
     {
-      "name": "features-capabilities-standard",
+      "name": "features-capabilities-capabilities-standard",
       "description": "Comprehensive capability overview with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -4147,7 +4147,7 @@
       ]
     },
     {
-      "name": "features-highlights-bold",
+      "name": "features-highlights-highlights-bold",
       "description": "Key feature highlights with benefits with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -4243,7 +4243,7 @@
       ]
     },
     {
-      "name": "features-highlights-minimal",
+      "name": "features-highlights-highlights-minimal",
       "description": "Key feature highlights with benefits with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -4339,7 +4339,7 @@
       ]
     },
     {
-      "name": "features-highlights-standard",
+      "name": "features-highlights-highlights-standard",
       "description": "Key feature highlights with benefits with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -4447,7 +4447,7 @@
       ]
     },
     {
-      "name": "features-showcase-bold",
+      "name": "features-showcase-showcase-bold",
       "description": "Feature showcase with visual demonstrations with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -4536,7 +4536,7 @@
       ]
     },
     {
-      "name": "features-showcase-minimal",
+      "name": "features-showcase-showcase-minimal",
       "description": "Feature showcase with visual demonstrations with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -4625,7 +4625,7 @@
       ]
     },
     {
-      "name": "features-showcase-standard",
+      "name": "features-showcase-showcase-standard",
       "description": "Feature showcase with visual demonstrations with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -4732,7 +4732,7 @@
       ]
     },
     {
-      "name": "gallery-portfolio-bold",
+      "name": "gallery-portfolio-portfolio-bold",
       "description": "Bold portfolio gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -4866,7 +4866,7 @@
       ]
     },
     {
-      "name": "gallery-portfolio-minimal",
+      "name": "gallery-portfolio-portfolio-minimal",
       "description": "Minimal portfolio gallery with clean, simple design and subtle interactions. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -4995,7 +4995,7 @@
       ]
     },
     {
-      "name": "gallery-portfolio-standard",
+      "name": "gallery-portfolio-portfolio-standard",
       "description": "Standard portfolio gallery with clean grid layout and hover effects. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5128,7 +5128,7 @@
       ]
     },
     {
-      "name": "gallery-products-bold",
+      "name": "gallery-products-products-bold",
       "description": "Bold product gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -5257,7 +5257,7 @@
       ]
     },
     {
-      "name": "gallery-products-minimal",
+      "name": "gallery-products-products-minimal",
       "description": "Minimal product gallery with clean, simple design focusing on product essentials. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -5380,7 +5380,7 @@
       ]
     },
     {
-      "name": "gallery-products-standard",
+      "name": "gallery-products-products-standard",
       "description": "Standard product gallery with clean grid layout and product information display. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5508,7 +5508,7 @@
       ]
     },
     {
-      "name": "gallery-showcase-bold",
+      "name": "gallery-showcase-showcase-bold",
       "description": "Bold showcase gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -5652,7 +5652,7 @@
       ]
     },
     {
-      "name": "gallery-showcase-minimal",
+      "name": "gallery-showcase-showcase-minimal",
       "description": "Minimal showcase gallery with clean, simple design focusing on content. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -5789,7 +5789,7 @@
       ]
     },
     {
-      "name": "gallery-showcase-standard",
+      "name": "gallery-showcase-showcase-standard",
       "description": "Standard showcase gallery with featured content and visual highlights. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5931,7 +5931,7 @@
       ]
     },
     {
-      "name": "logos-brands-bold",
+      "name": "logos-brands-brands-bold",
       "description": "Bold brand logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -6053,7 +6053,7 @@
       ]
     },
     {
-      "name": "logos-brands-minimal",
+      "name": "logos-brands-brands-minimal",
       "description": "Minimal brand logo showcase with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -6145,7 +6145,7 @@
       ]
     },
     {
-      "name": "logos-brands-standard",
+      "name": "logos-brands-brands-standard",
       "description": "Standard brand logo showcase with professional grid layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6257,7 +6257,7 @@
       ]
     },
     {
-      "name": "logos-clients-bold",
+      "name": "logos-clients-clients-bold",
       "description": "Bold client logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -6370,7 +6370,7 @@
       ]
     },
     {
-      "name": "logos-clients-minimal",
+      "name": "logos-clients-clients-minimal",
       "description": "Minimal client logo showcase with simple, clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -6462,7 +6462,7 @@
       ]
     },
     {
-      "name": "logos-clients-standard",
+      "name": "logos-clients-clients-standard",
       "description": "Standard client logo showcase with clean grid layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6565,7 +6565,7 @@
       ]
     },
     {
-      "name": "logos-partners-bold",
+      "name": "logos-partners-partners-bold",
       "description": "Bold partner logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -6687,7 +6687,7 @@
       ]
     },
     {
-      "name": "logos-partners-minimal",
+      "name": "logos-partners-partners-minimal",
       "description": "Minimal partner logo showcase with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -6779,7 +6779,7 @@
       ]
     },
     {
-      "name": "logos-partners-standard",
+      "name": "logos-partners-partners-standard",
       "description": "Standard partner logo showcase with professional layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6891,7 +6891,7 @@
       ]
     },
     {
-      "name": "main-call-to-action-bold",
+      "name": "main-call-to-action-call-to-action-bold",
       "description": "Bold conversion section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -6969,7 +6969,7 @@
       ]
     },
     {
-      "name": "main-call-to-action-minimal",
+      "name": "main-call-to-action-call-to-action-minimal",
       "description": "Minimal conversion section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -7046,7 +7046,7 @@
       ]
     },
     {
-      "name": "main-call-to-action-standard",
+      "name": "main-call-to-action-call-to-action-standard",
       "description": "Primary conversion section with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -7123,7 +7123,7 @@
       ]
     },
     {
-      "name": "main-contact-lead-generation-bold",
+      "name": "main-contact-lead-generation-contact-lead-generation-bold",
       "description": "Bold lead capture section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -7229,7 +7229,7 @@
       ]
     },
     {
-      "name": "main-contact-lead-generation-minimal",
+      "name": "main-contact-lead-generation-contact-lead-generation-minimal",
       "description": "Minimal lead capture section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -7333,7 +7333,7 @@
       ]
     },
     {
-      "name": "main-contact-lead-generation-standard",
+      "name": "main-contact-lead-generation-contact-lead-generation-standard",
       "description": "Capture leads and contact information with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -7437,7 +7437,7 @@
       ]
     },
     {
-      "name": "main-hero-section-bold",
+      "name": "main-hero-section-hero-section-bold",
       "description": "Bold hero section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -7516,7 +7516,7 @@
       ]
     },
     {
-      "name": "main-hero-section-minimal",
+      "name": "main-hero-section-hero-section-minimal",
       "description": "Minimal hero section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -7593,7 +7593,7 @@
       ]
     },
     {
-      "name": "main-hero-section-standard",
+      "name": "main-hero-section-hero-section-standard",
       "description": "Primary landing area with headline, CTA, and hero image with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -7670,7 +7670,7 @@
       ]
     },
     {
-      "name": "main-problem-solution-bold",
+      "name": "main-problem-solution-problem-solution-bold",
       "description": "Bold problem-solution section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -7778,7 +7778,7 @@
       ]
     },
     {
-      "name": "main-problem-solution-minimal",
+      "name": "main-problem-solution-problem-solution-minimal",
       "description": "Minimal problem-solution section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -7885,7 +7885,7 @@
       ]
     },
     {
-      "name": "main-problem-solution-standard",
+      "name": "main-problem-solution-problem-solution-standard",
       "description": "Address pain points and present solutions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -7992,7 +7992,7 @@
       ]
     },
     {
-      "name": "main-social-proof-bold",
+      "name": "main-social-proof-social-proof-bold",
       "description": "Bold social proof section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -8109,7 +8109,7 @@
       ]
     },
     {
-      "name": "main-social-proof-minimal",
+      "name": "main-social-proof-social-proof-minimal",
       "description": "Minimal social proof section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -8221,7 +8221,7 @@
       ]
     },
     {
-      "name": "main-social-proof-standard",
+      "name": "main-social-proof-social-proof-standard",
       "description": "Trust building with logos, testimonials, and stats with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -8333,7 +8333,7 @@
       ]
     },
     {
-      "name": "main-trust-indicators-bold",
+      "name": "main-trust-indicators-trust-indicators-bold",
       "description": "Bold trust indicators section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -8430,7 +8430,7 @@
       ]
     },
     {
-      "name": "main-trust-indicators-minimal",
+      "name": "main-trust-indicators-trust-indicators-minimal",
       "description": "Minimal trust indicators section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -8526,7 +8526,7 @@
       ]
     },
     {
-      "name": "main-trust-indicators-standard",
+      "name": "main-trust-indicators-trust-indicators-standard",
       "description": "Security, certifications, and guarantees with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -8622,7 +8622,7 @@
       ]
     },
     {
-      "name": "main-value-proposition-bold",
+      "name": "main-value-proposition-value-proposition-bold",
       "description": "Bold value proposition section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -8715,7 +8715,7 @@
       ]
     },
     {
-      "name": "main-value-proposition-minimal",
+      "name": "main-value-proposition-value-proposition-minimal",
       "description": "Minimal value proposition section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -8807,7 +8807,7 @@
       ]
     },
     {
-      "name": "main-value-proposition-standard",
+      "name": "main-value-proposition-value-proposition-standard",
       "description": "Clear value statement and key benefits with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -8899,7 +8899,7 @@
       ]
     },
     {
-      "name": "newsletter-opt-in-bold",
+      "name": "newsletter-opt-in-opt-in-bold",
       "description": "Bold opt-in form with eye-catching lead magnet design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -8970,7 +8970,7 @@
       ]
     },
     {
-      "name": "newsletter-opt-in-minimal",
+      "name": "newsletter-opt-in-opt-in-minimal",
       "description": "Minimal opt-in form with clean design and simple lead magnet. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -9033,7 +9033,7 @@
       ]
     },
     {
-      "name": "newsletter-opt-in-standard",
+      "name": "newsletter-opt-in-opt-in-standard",
       "description": "Standard opt-in form with lead magnet and value proposition. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9102,7 +9102,7 @@
       ]
     },
     {
-      "name": "newsletter-signup-bold",
+      "name": "newsletter-signup-signup-bold",
       "description": "Bold newsletter signup form with eye-catching design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -9169,7 +9169,7 @@
       ]
     },
     {
-      "name": "newsletter-signup-minimal",
+      "name": "newsletter-signup-signup-minimal",
       "description": "Minimal newsletter signup form with clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -9232,7 +9232,7 @@
       ]
     },
     {
-      "name": "newsletter-signup-standard",
+      "name": "newsletter-signup-signup-standard",
       "description": "Standard newsletter signup form with clear value proposition. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9298,7 +9298,7 @@
       ]
     },
     {
-      "name": "newsletter-subscription-bold",
+      "name": "newsletter-subscription-subscription-bold",
       "description": "Bold subscription management with eye-catching design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -9384,7 +9384,7 @@
       ]
     },
     {
-      "name": "newsletter-subscription-minimal",
+      "name": "newsletter-subscription-subscription-minimal",
       "description": "Minimal subscription management with clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -9460,7 +9460,7 @@
       "lucideIcons": []
     },
     {
-      "name": "newsletter-subscription-standard",
+      "name": "newsletter-subscription-subscription-standard",
       "description": "Standard subscription management form with preferences. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9549,7 +9549,7 @@
       ]
     },
     {
-      "name": "pricing-plans-bold",
+      "name": "pricing-plans-plans-bold",
       "description": "Bold pricing plans with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -9663,7 +9663,7 @@
       ]
     },
     {
-      "name": "pricing-plans-minimal",
+      "name": "pricing-plans-plans-minimal",
       "description": "Minimal pricing plans with clean, simple design focusing on essential information. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -9772,7 +9772,7 @@
       ]
     },
     {
-      "name": "pricing-plans-standard",
+      "name": "pricing-plans-plans-standard",
       "description": "Standard pricing plans with clear tiers and feature comparisons. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9884,7 +9884,7 @@
       ]
     },
     {
-      "name": "pricing-subscription-bold",
+      "name": "pricing-subscription-subscription-bold",
       "description": "Bold subscription pricing with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -10013,7 +10013,7 @@
       ]
     },
     {
-      "name": "pricing-subscription-minimal",
+      "name": "pricing-subscription-subscription-minimal",
       "description": "Minimal subscription pricing with clean design and essential billing information. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -10136,7 +10136,7 @@
       ]
     },
     {
-      "name": "pricing-subscription-standard",
+      "name": "pricing-subscription-subscription-standard",
       "description": "Standard subscription pricing with billing options and plan management features. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -10263,7 +10263,7 @@
       ]
     },
     {
-      "name": "pricing-tables-bold",
+      "name": "pricing-tables-tables-bold",
       "description": "Bold pricing table with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -10395,7 +10395,7 @@
       ]
     },
     {
-      "name": "pricing-tables-minimal",
+      "name": "pricing-tables-tables-minimal",
       "description": "Minimal pricing table with clean design and essential feature comparison. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -10522,7 +10522,7 @@
       ]
     },
     {
-      "name": "pricing-tables-standard",
+      "name": "pricing-tables-tables-standard",
       "description": "Standard pricing table with detailed feature comparison and clear pricing structure. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -10652,7 +10652,7 @@
       ]
     },
     {
-      "name": "services-offerings-bold",
+      "name": "services-offerings-offerings-bold",
       "description": "Service offerings and packages with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -10767,7 +10767,7 @@
       ]
     },
     {
-      "name": "services-offerings-minimal",
+      "name": "services-offerings-offerings-minimal",
       "description": "Service offerings and packages with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -10872,7 +10872,7 @@
       ]
     },
     {
-      "name": "services-offerings-standard",
+      "name": "services-offerings-offerings-standard",
       "description": "Service offerings and packages with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -10980,7 +10980,7 @@
       ]
     },
     {
-      "name": "services-services-bold",
+      "name": "services-services-services-bold",
       "description": "Service descriptions and overview with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -11097,7 +11097,7 @@
       ]
     },
     {
-      "name": "services-services-minimal",
+      "name": "services-services-services-minimal",
       "description": "Service descriptions and overview with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -11203,7 +11203,7 @@
       ]
     },
     {
-      "name": "services-services-standard",
+      "name": "services-services-services-standard",
       "description": "Service descriptions and capabilities with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -11311,7 +11311,7 @@
       ]
     },
     {
-      "name": "services-solutions-bold",
+      "name": "services-solutions-solutions-bold",
       "description": "Business solutions and outcomes with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -11428,7 +11428,7 @@
       ]
     },
     {
-      "name": "services-solutions-minimal",
+      "name": "services-solutions-solutions-minimal",
       "description": "Business solutions and outcomes with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -11534,7 +11534,7 @@
       ]
     },
     {
-      "name": "services-solutions-standard",
+      "name": "services-solutions-solutions-standard",
       "description": "Business solutions and problem-solving approaches with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -11642,7 +11642,7 @@
       ]
     },
     {
-      "name": "team-culture-bold",
+      "name": "team-culture-culture-bold",
       "description": "Company culture and values with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -11736,7 +11736,7 @@
       ]
     },
     {
-      "name": "team-culture-minimal",
+      "name": "team-culture-culture-minimal",
       "description": "Company culture and values with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -11828,7 +11828,7 @@
       ]
     },
     {
-      "name": "team-culture-standard",
+      "name": "team-culture-culture-standard",
       "description": "Company culture and values with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -11920,7 +11920,7 @@
       ]
     },
     {
-      "name": "team-members-bold",
+      "name": "team-members-members-bold",
       "description": "Team member cards and introductions with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -12056,7 +12056,7 @@
       ]
     },
     {
-      "name": "team-members-minimal",
+      "name": "team-members-members-minimal",
       "description": "Team member cards and introductions with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -12176,7 +12176,7 @@
       ]
     },
     {
-      "name": "team-members-standard",
+      "name": "team-members-members-standard",
       "description": "Team member cards and introductions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
@@ -12296,7 +12296,7 @@
       ]
     },
     {
-      "name": "team-profiles-bold",
+      "name": "team-profiles-profiles-bold",
       "description": "Team member profiles and introductions with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
@@ -12401,7 +12401,7 @@
       ]
     },
     {
-      "name": "team-profiles-minimal",
+      "name": "team-profiles-profiles-minimal",
       "description": "Team member profiles and introductions with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
@@ -12503,7 +12503,7 @@
       ]
     },
     {
-      "name": "team-profiles-standard",
+      "name": "team-profiles-profiles-standard",
       "description": "Team member profiles and introductions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {

@@ -130,7 +130,7 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-1">
-                      {block.sectionName} - {block.templateName}
+                      {block.sectionName} - {block.templateName} ({block.themeName})
                     </h3>
                     {block.description && (
                       <p className="text-sm text-muted-foreground mb-2">{block.description}</p>

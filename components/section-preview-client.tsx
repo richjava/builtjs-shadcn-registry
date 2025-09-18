@@ -119,7 +119,7 @@ export default function SectionPreviewClient({ category, categoryLabel, section,
               
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2">{template.themeName}</h3>
+                <h3 className="text-lg font-semibold mb-2">{template.templateName} {template.themeName}</h3>
                 {template.description ? (
                   <p className="text-sm text-muted-foreground mb-4">{template.description}</p>
                 ) : null}

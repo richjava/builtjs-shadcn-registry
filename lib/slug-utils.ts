@@ -21,8 +21,8 @@ export function nameToSlug(name: string): string {
  * @param moduleName - The module name (e.g., "About")
  * @param sectionName - The section name (e.g., "Values") 
  * @param themeName - The theme name (e.g., "Minimal")
- * @param templateName - The template name (e.g., "Grid") - not used in slug
- * @returns The complete block slug (e.g., "about-values-minimal")
+ * @param templateName - The template name (e.g., "Grid")
+ * @returns The complete block slug (e.g., "about-landing-image-bold")
  */
 export function generateBlockSlug(
   moduleName: string,
@@ -32,9 +32,10 @@ export function generateBlockSlug(
 ): string {
   const moduleSlug = nameToSlug(moduleName)
   const sectionSlug = nameToSlug(sectionName)
+  const templateSlug = nameToSlug(templateName)
   const themeSlug = nameToSlug(themeName)
   
-  return `${moduleSlug}-${sectionSlug}-${themeSlug}`
+  return `${moduleSlug}-${sectionSlug}-${templateSlug}-${themeSlug}`
 }
 
 /**
@@ -65,7 +66,7 @@ export function generateTemplateSlug(themeName: string, templateName: string): s
 
 /**
  * Parses a block slug back into its component parts
- * @param blockSlug - The block slug (e.g., "about-values-minimal")
+ * @param blockSlug - The block slug (e.g., "about-landing-image-bold")
  * @returns Object with parsed components or null if invalid format
  */
 export function parseBlockSlug(blockSlug: string): {
@@ -75,7 +76,7 @@ export function parseBlockSlug(blockSlug: string): {
   templateName: string
 } | null {
   const parts = blockSlug.split('-')
-  if (parts.length < 3) {
+  if (parts.length < 4) {
     return null
   }
   
@@ -88,14 +89,16 @@ export function parseBlockSlug(blockSlug: string): {
   }
   
   const themeIndex = parts.length - 1
-  const moduleParts = parts.slice(0, themeIndex - 1)
-  const sectionParts = parts.slice(themeIndex - 1, themeIndex)
+  const templateIndex = parts.length - 2
+  const moduleParts = parts.slice(0, themeIndex - 2)
+  const sectionParts = parts.slice(themeIndex - 2, templateIndex)
+  const templateParts = parts.slice(templateIndex, themeIndex)
   const themeParts = parts.slice(themeIndex, themeIndex + 1)
   
   return {
     moduleName: moduleParts.join(' ').replace(/\b\w/g, l => l.toUpperCase()),
     sectionName: sectionParts.join(' ').replace(/\b\w/g, l => l.toUpperCase()),
-    themeName: themeParts.join(' ').replace(/\b\w/g, l => l.toUpperCase()),
-    templateName: '' // Template name is not part of the slug anymore
+    templateName: templateParts.join(' ').replace(/\b\w/g, l => l.toUpperCase()),
+    themeName: themeParts.join(' ').replace(/\b\w/g, l => l.toUpperCase())
   }
 }
