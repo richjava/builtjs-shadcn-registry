@@ -1,7 +1,7 @@
 #!/usr/bin/env tsx
 
-import fs from "fs/promises"
-import path from "path"
+import * as fs from "fs/promises"
+import * as path from "path"
 import { existsSync } from "fs"
 import { generateBlockSlug, nameToSlug } from "../lib/slug-utils"
 
@@ -164,9 +164,9 @@ async function extractComponentsFromFile(filePath: string): Promise<{ shadcnComp
     }
     
     return {
-      shadcnComponents: [...new Set(shadcnComponents)],
-      lucideIcons: [...new Set(lucideIcons)],
-      radixDependencies: [...new Set(radixDependencies)]
+      shadcnComponents: Array.from(new Set(shadcnComponents)),
+      lucideIcons: Array.from(new Set(lucideIcons)),
+      radixDependencies: Array.from(new Set(radixDependencies))
     }
   } catch (error) {
     console.error(`Error reading file ${filePath}:`, error)
@@ -258,7 +258,7 @@ async function buildRegistry() {
           // Generate the block slug dynamically
           const blockName = generateBlockSlug(moduleName, sectionName, themeName, templateName)
           
-          const { category, section, template, registryDependencies, ...blockConfigWithoutOldFields } = blockConfig
+          const { registryDependencies, ...blockConfigWithoutOldFields } = blockConfig as any
           
           // Generate theme-specific description
           const themeSpecificDescription = generateThemeSpecificDescription(
@@ -352,7 +352,7 @@ function getModuleName(moduleSlug: string): string {
 }
 
 // Helper function to get template name from template slug
-function getTemplateName(templateSlug: string, theme: string): string {
+function getTemplateName(templateSlug: string, theme: string): string | null {
   // If template slug is just the theme name (e.g., "bold", "minimal", "standard"),
   // then the template name should be derived from the section name
   if (templateSlug === theme) {

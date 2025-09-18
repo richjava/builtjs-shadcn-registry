@@ -1983,6 +1983,9 @@
     },
     {
       "name": "blog-blog-article-blog-article-bold",
+      "category": "blog",
+      "section": "blog-article",
+      "template": "bold",
       "description": "Bold blog article layout with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -2064,6 +2067,9 @@
     },
     {
       "name": "blog-blog-article-blog-article-minimal",
+      "category": "blog",
+      "section": "blog-article",
+      "template": "minimal",
       "description": "Minimal blog article layout with clean, content-focused design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -2131,6 +2137,9 @@
     },
     {
       "name": "blog-blog-article-blog-article-standard",
+      "category": "blog",
+      "section": "blog-article",
+      "template": "standard",
       "description": "Standard blog article layout with professional typography and clean design. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2211,6 +2220,9 @@
     },
     {
       "name": "blog-blog-posts-blog-posts-bold",
+      "category": "blog",
+      "section": "blog-posts",
+      "template": "bold",
       "description": "Bold blog posts listing with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -2314,6 +2326,9 @@
     },
     {
       "name": "blog-blog-posts-blog-posts-minimal",
+      "category": "blog",
+      "section": "blog-posts",
+      "template": "minimal",
       "description": "Minimal blog posts listing with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -2390,6 +2405,9 @@
     },
     {
       "name": "blog-blog-posts-blog-posts-standard",
+      "category": "blog",
+      "section": "blog-posts",
+      "template": "standard",
       "description": "Standard blog posts listing with professional card layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2492,6 +2510,9 @@
     },
     {
       "name": "blog-featured-posts-featured-posts-bold",
+      "category": "blog",
+      "section": "featured-posts",
+      "template": "bold",
       "description": "Bold featured posts section with eye-catching design and modern styling. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -2597,6 +2618,9 @@
     },
     {
       "name": "blog-featured-posts-featured-posts-minimal",
+      "category": "blog",
+      "section": "featured-posts",
+      "template": "minimal",
       "description": "Minimal featured posts section with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -2674,6 +2698,9 @@
     },
     {
       "name": "blog-featured-posts-featured-posts-standard",
+      "category": "blog",
+      "section": "featured-posts",
+      "template": "standard",
       "description": "Standard featured posts section with professional layout and clear hierarchy. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -2779,6 +2806,9 @@
     },
     {
       "name": "faq-help-help-bold",
+      "category": "faq",
+      "section": "help",
+      "template": "bold",
       "description": "Bold help center with striking design and interactive elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -2936,6 +2966,9 @@
     },
     {
       "name": "faq-help-help-minimal",
+      "category": "faq",
+      "section": "help",
+      "template": "minimal",
       "description": "Minimal help center with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -3053,6 +3086,9 @@
     },
     {
       "name": "faq-help-help-standard",
+      "category": "faq",
+      "section": "help",
+      "template": "standard",
       "description": "Standard help center with organized documentation and support resources. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3209,6 +3245,9 @@
     },
     {
       "name": "faq-questions-questions-bold",
+      "category": "faq",
+      "section": "questions",
+      "template": "bold",
       "description": "Bold FAQ questions section with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -3304,6 +3343,9 @@
     },
     {
       "name": "faq-questions-questions-minimal",
+      "category": "faq",
+      "section": "questions",
+      "template": "minimal",
       "description": "Minimal FAQ questions section with simple expandable design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -3392,6 +3434,9 @@
     },
     {
       "name": "faq-questions-questions-standard",
+      "category": "faq",
+      "section": "questions",
+      "template": "standard",
       "description": "Standard FAQ questions section with expandable answers and clean design. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -3486,6 +3531,9 @@
     },
     {
       "name": "faq-support-support-bold",
+      "category": "faq",
+      "section": "support",
+      "template": "bold",
       "description": "Bold support section with premium design and multiple contact options. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -3611,6 +3659,9 @@
     },
     {
       "name": "faq-support-support-minimal",
+      "category": "faq",
+      "section": "support",
+      "template": "minimal",
       "description": "Minimal support section with essential contact options. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -3707,6 +3758,9 @@
     },
     {
       "name": "faq-support-support-standard",
+      "category": "faq",
+      "section": "support",
+      "template": "standard",
       "description": "Standard support section with contact options and resources. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -4733,6 +4787,9 @@
     },
     {
       "name": "gallery-portfolio-portfolio-bold",
+      "category": "gallery",
+      "section": "portfolio",
+      "template": "bold",
       "description": "Bold portfolio gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -4867,6 +4924,9 @@
     },
     {
       "name": "gallery-portfolio-portfolio-minimal",
+      "category": "gallery",
+      "section": "portfolio",
+      "template": "minimal",
       "description": "Minimal portfolio gallery with clean, simple design and subtle interactions. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -4996,6 +5056,9 @@
     },
     {
       "name": "gallery-portfolio-portfolio-standard",
+      "category": "gallery",
+      "section": "portfolio",
+      "template": "standard",
       "description": "Standard portfolio gallery with clean grid layout and hover effects. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5129,6 +5192,9 @@
     },
     {
       "name": "gallery-products-products-bold",
+      "category": "gallery",
+      "section": "products",
+      "template": "bold",
       "description": "Bold product gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -5258,6 +5324,9 @@
     },
     {
       "name": "gallery-products-products-minimal",
+      "category": "gallery",
+      "section": "products",
+      "template": "minimal",
       "description": "Minimal product gallery with clean, simple design focusing on product essentials. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -5381,6 +5450,9 @@
     },
     {
       "name": "gallery-products-products-standard",
+      "category": "gallery",
+      "section": "products",
+      "template": "standard",
       "description": "Standard product gallery with clean grid layout and product information display. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5509,6 +5581,9 @@
     },
     {
       "name": "gallery-showcase-showcase-bold",
+      "category": "gallery",
+      "section": "showcase",
+      "template": "bold",
       "description": "Bold showcase gallery with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -5653,6 +5728,9 @@
     },
     {
       "name": "gallery-showcase-showcase-minimal",
+      "category": "gallery",
+      "section": "showcase",
+      "template": "minimal",
       "description": "Minimal showcase gallery with clean, simple design focusing on content. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -5790,6 +5868,9 @@
     },
     {
       "name": "gallery-showcase-showcase-standard",
+      "category": "gallery",
+      "section": "showcase",
+      "template": "standard",
       "description": "Standard showcase gallery with featured content and visual highlights. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -5932,6 +6013,9 @@
     },
     {
       "name": "logos-brands-brands-bold",
+      "category": "logos",
+      "section": "brands",
+      "template": "bold",
       "description": "Bold brand logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -6054,6 +6138,9 @@
     },
     {
       "name": "logos-brands-brands-minimal",
+      "category": "logos",
+      "section": "brands",
+      "template": "minimal",
       "description": "Minimal brand logo showcase with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -6146,6 +6233,9 @@
     },
     {
       "name": "logos-brands-brands-standard",
+      "category": "logos",
+      "section": "brands",
+      "template": "standard",
       "description": "Standard brand logo showcase with professional grid layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6258,6 +6348,9 @@
     },
     {
       "name": "logos-clients-clients-bold",
+      "category": "logos",
+      "section": "clients",
+      "template": "bold",
       "description": "Bold client logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -6371,6 +6464,9 @@
     },
     {
       "name": "logos-clients-clients-minimal",
+      "category": "logos",
+      "section": "clients",
+      "template": "minimal",
       "description": "Minimal client logo showcase with simple, clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -6463,6 +6559,9 @@
     },
     {
       "name": "logos-clients-clients-standard",
+      "category": "logos",
+      "section": "clients",
+      "template": "standard",
       "description": "Standard client logo showcase with clean grid layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -6566,6 +6665,9 @@
     },
     {
       "name": "logos-partners-partners-bold",
+      "category": "logos",
+      "section": "partners",
+      "template": "bold",
       "description": "Bold partner logo showcase with striking design and animations. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -6688,6 +6790,9 @@
     },
     {
       "name": "logos-partners-partners-minimal",
+      "category": "logos",
+      "section": "partners",
+      "template": "minimal",
       "description": "Minimal partner logo showcase with clean, simple design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -6780,6 +6885,9 @@
     },
     {
       "name": "logos-partners-partners-standard",
+      "category": "logos",
+      "section": "partners",
+      "template": "standard",
       "description": "Standard partner logo showcase with professional layout. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -8900,6 +9008,9 @@
     },
     {
       "name": "newsletter-opt-in-opt-in-bold",
+      "category": "newsletter",
+      "section": "opt-in",
+      "template": "bold",
       "description": "Bold opt-in form with eye-catching lead magnet design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -8971,6 +9082,9 @@
     },
     {
       "name": "newsletter-opt-in-opt-in-minimal",
+      "category": "newsletter",
+      "section": "opt-in",
+      "template": "minimal",
       "description": "Minimal opt-in form with clean design and simple lead magnet. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -9034,6 +9148,9 @@
     },
     {
       "name": "newsletter-opt-in-opt-in-standard",
+      "category": "newsletter",
+      "section": "opt-in",
+      "template": "standard",
       "description": "Standard opt-in form with lead magnet and value proposition. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9103,6 +9220,9 @@
     },
     {
       "name": "newsletter-signup-signup-bold",
+      "category": "newsletter",
+      "section": "signup",
+      "template": "bold",
       "description": "Bold newsletter signup form with eye-catching design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -9170,6 +9290,9 @@
     },
     {
       "name": "newsletter-signup-signup-minimal",
+      "category": "newsletter",
+      "section": "signup",
+      "template": "minimal",
       "description": "Minimal newsletter signup form with clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -9233,6 +9356,9 @@
     },
     {
       "name": "newsletter-signup-signup-standard",
+      "category": "newsletter",
+      "section": "signup",
+      "template": "standard",
       "description": "Standard newsletter signup form with clear value proposition. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9299,6 +9425,9 @@
     },
     {
       "name": "newsletter-subscription-subscription-bold",
+      "category": "newsletter",
+      "section": "subscription",
+      "template": "bold",
       "description": "Bold subscription management with eye-catching design. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -9385,6 +9514,9 @@
     },
     {
       "name": "newsletter-subscription-subscription-minimal",
+      "category": "newsletter",
+      "section": "subscription",
+      "template": "minimal",
       "description": "Minimal subscription management with clean design. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -9461,6 +9593,9 @@
     },
     {
       "name": "newsletter-subscription-subscription-standard",
+      "category": "newsletter",
+      "section": "subscription",
+      "template": "standard",
       "description": "Standard subscription management form with preferences. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9550,6 +9685,9 @@
     },
     {
       "name": "pricing-plans-plans-bold",
+      "category": "pricing",
+      "section": "plans",
+      "template": "bold",
       "description": "Bold pricing plans with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -9664,6 +9802,9 @@
     },
     {
       "name": "pricing-plans-plans-minimal",
+      "category": "pricing",
+      "section": "plans",
+      "template": "minimal",
       "description": "Minimal pricing plans with clean, simple design focusing on essential information. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -9773,6 +9914,9 @@
     },
     {
       "name": "pricing-plans-plans-standard",
+      "category": "pricing",
+      "section": "plans",
+      "template": "standard",
       "description": "Standard pricing plans with clear tiers and feature comparisons. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -9885,6 +10029,9 @@
     },
     {
       "name": "pricing-subscription-subscription-bold",
+      "category": "pricing",
+      "section": "subscription",
+      "template": "bold",
       "description": "Bold subscription pricing with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -10014,6 +10161,9 @@
     },
     {
       "name": "pricing-subscription-subscription-minimal",
+      "category": "pricing",
+      "section": "subscription",
+      "template": "minimal",
       "description": "Minimal subscription pricing with clean design and essential billing information. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -10137,6 +10287,9 @@
     },
     {
       "name": "pricing-subscription-subscription-standard",
+      "category": "pricing",
+      "section": "subscription",
+      "template": "standard",
       "description": "Standard subscription pricing with billing options and plan management features. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
@@ -10264,6 +10417,9 @@
     },
     {
       "name": "pricing-tables-tables-bold",
+      "category": "pricing",
+      "section": "tables",
+      "template": "bold",
       "description": "Bold pricing table with vibrant colors, dynamic layouts, and eye-catching design elements. with bold colors, strong typography, and high visual impact.",
       "useCase": "Eye-catching and impactful design for attention-grabbing presentations",
       "businessTypes": [
@@ -10396,6 +10552,9 @@
     },
     {
       "name": "pricing-tables-tables-minimal",
+      "category": "pricing",
+      "section": "tables",
+      "template": "minimal",
       "description": "Minimal pricing table with clean design and essential feature comparison. with clean, minimalist design and subtle styling.",
       "useCase": "Clean and focused design for modern, minimalist brands",
       "businessTypes": [
@@ -10523,6 +10682,9 @@
     },
     {
       "name": "pricing-tables-tables-standard",
+      "category": "pricing",
+      "section": "tables",
+      "template": "standard",
       "description": "Standard pricing table with detailed feature comparison and clear pricing structure. with professional styling and balanced design.",
       "useCase": "Professional and balanced design for established businesses",
       "businessTypes": [
