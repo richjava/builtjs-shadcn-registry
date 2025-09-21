@@ -51,10 +51,10 @@
       }
     ],
     "logos": [
-      { "name": "TechCorp", "logo": "https://via.placeholder.com/120x60/000000/FFFFFF?text=TechCorp" },
-      { "name": "StartupXYZ", "logo": "https://via.placeholder.com/120x60/000000/FFFFFF?text=StartupXYZ" },
-      { "name": "InnovateLab", "logo": "https://via.placeholder.com/120x60/000000/FFFFFF?text=InnovateLab" },
-      { "name": "FutureSoft", "logo": "https://via.placeholder.com/120x60/000000/FFFFFF?text=FutureSoft" }
+      { "name": "TechCorp", "logo": "https://placehold.co/120x60/000000/FFFFFF?text=TechCorp" },
+      { "name": "StartupXYZ", "logo": "https://placehold.co/120x60/000000/FFFFFF?text=StartupXYZ" },
+      { "name": "InnovateLab", "logo": "https://placehold.co/120x60/000000/FFFFFF?text=InnovateLab" },
+      { "name": "FutureSoft", "logo": "https://placehold.co/120x60/000000/FFFFFF?text=FutureSoft" }
     ]
   },
   "dependencies": [

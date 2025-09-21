@@ -49,10 +49,10 @@ export default function SocialProof({ content }: SocialProofProps) {
       }
     ],
     logos: [
-      { name: "Company A", logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop" },
-      { name: "Company B", logo: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=100&fit=crop" },
-      { name: "Company C", logo: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&h=100&fit=crop" },
-      { name: "Company D", logo: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&h=100&fit=crop" }
+      { name: "Company A", logo: "https://placehold.co/200x100/000000/FFFFFF?text=Company+A" },
+      { name: "Company B", logo: "https://placehold.co/200x100/000000/FFFFFF?text=Company+B" },
+      { name: "Company C", logo: "https://placehold.co/200x100/000000/FFFFFF?text=Company+C" },
+      { name: "Company D", logo: "https://placehold.co/200x100/000000/FFFFFF?text=Company+D" }
     ]
   }
 
