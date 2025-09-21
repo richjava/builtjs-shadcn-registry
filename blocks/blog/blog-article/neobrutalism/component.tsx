@@ -133,7 +133,7 @@ export default function BlogArticleNeobrutalism({ content }: BlogArticleProps) {
         <div className="prose prose-lg max-w-none mb-12">
           <div 
             className="border-4 border-black p-8 bg-green-100 shadow-[8px_8px_0px_#000000]"
-            dangerouslySetInnerHTML={{ __html: entry.content }}
+            dangerouslySetInnerHTML={{ __html: entry.content || '' }}
           />
         </div>
 
