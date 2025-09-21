@@ -1,0 +1,63 @@
+{
+  "name": "newsletter-signup-signup-neobrutalism",
+  "description": "Simple newsletter signup form with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist newsletter signup with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Email capture",
+    "Newsletter signup",
+    "Lead generation",
+    "Content updates"
+  ],
+  "keyFeatures": [
+    "Email capture",
+    "Simple form",
+    "Benefits list",
+    "Privacy notice"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "placeholder": "string",
+    "buttonText": "string",
+    "privacyText": "string"
+  },
+  "data": {
+    "title": "Stay Updated",
+    "subtitle": "Get the latest news, tips, and insights delivered directly to your inbox. Join our community of forward-thinking professionals.",
+    "placeholder": "Enter your email address",
+    "buttonText": "Subscribe",
+    "privacyText": "We respect your privacy. Unsubscribe at any time."
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button",
+    "Input",
+    "Label"
+  ],
+  "lucideIcons": [
+    "Mail",
+    "CheckCircle"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Signup",
+  "themeName": "Neobrutalism",
+  "moduleName": "Newsletter",
+  "sectionName": "Signup",
+  "files": [
+    "blocks/newsletter/signup/neobrutalism/component.tsx",
+    "blocks/newsletter/signup/neobrutalism/block.json"
+  ]
+}

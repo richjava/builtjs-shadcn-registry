@@ -1,0 +1,61 @@
+{
+  "name": "blog-featured-posts-featured-posts-neobrutalism",
+  "description": "Featured blog posts section with highlighted articles with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist featured posts showcase with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Featured content",
+    "Popular articles",
+    "Trending posts",
+    "Content highlights"
+  ],
+  "keyFeatures": [
+    "Main featured post",
+    "Side featured posts",
+    "Star indicators",
+    "Meta information",
+    "Tags"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string"
+  },
+  "data": {
+    "title": "Featured Posts",
+    "subtitle": "Discover our most popular and trending articles."
+  },
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "Calendar",
+    "Clock",
+    "User",
+    "ArrowRight",
+    "Tag",
+    "Star"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Featured Posts",
+  "themeName": "Neobrutalism",
+  "moduleName": "Blog",
+  "sectionName": "Featured Posts",
+  "files": [
+    "blocks/blog/featured-posts/neobrutalism/component.tsx",
+    "blocks/blog/featured-posts/neobrutalism/block.json"
+  ]
+}

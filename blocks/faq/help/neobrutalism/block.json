@@ -1,0 +1,155 @@
+{
+  "name": "faq-help-help-neobrutalism",
+  "description": "FAQ help section with categorized articles and search functionality with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist FAQ help center with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Help center",
+    "Knowledge base",
+    "Support articles",
+    "User guidance"
+  ],
+  "keyFeatures": [
+    "Category cards",
+    "Article previews",
+    "Read time indicators",
+    "Call to action"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "categories": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Help Center",
+    "subtitle": "Find answers to common questions and learn how to get the most out of our platform.",
+    "categories": [
+      {
+        "name": "Getting Started",
+        "description": "Learn the basics and set up your account",
+        "icon": "play-circle",
+        "articles": [
+          {
+            "title": "Creating Your First Project",
+            "description": "Step-by-step guide to creating your first project",
+            "readTime": "5 min"
+          },
+          {
+            "title": "Account Setup",
+            "description": "How to configure your account settings",
+            "readTime": "3 min"
+          },
+          {
+            "title": "Team Collaboration",
+            "description": "Working with team members and permissions",
+            "readTime": "7 min"
+          }
+        ]
+      },
+      {
+        "name": "Billing & Plans",
+        "description": "Understand pricing and manage your subscription",
+        "icon": "credit-card",
+        "articles": [
+          {
+            "title": "Pricing Plans",
+            "description": "Compare our different pricing options",
+            "readTime": "4 min"
+          },
+          {
+            "title": "Payment Methods",
+            "description": "How to add and manage payment methods",
+            "readTime": "3 min"
+          },
+          {
+            "title": "Billing History",
+            "description": "View and download your billing history",
+            "readTime": "2 min"
+          }
+        ]
+      },
+      {
+        "name": "Account Settings",
+        "description": "Customize your account and preferences",
+        "icon": "settings",
+        "articles": [
+          {
+            "title": "Profile Settings",
+            "description": "Update your profile information",
+            "readTime": "3 min"
+          },
+          {
+            "title": "Security Settings",
+            "description": "Manage your security preferences",
+            "readTime": "5 min"
+          },
+          {
+            "title": "Notification Preferences",
+            "description": "Configure how you receive notifications",
+            "readTime": "4 min"
+          }
+        ]
+      },
+      {
+        "name": "Technical Support",
+        "description": "Troubleshooting and technical assistance",
+        "icon": "wrench",
+        "articles": [
+          {
+            "title": "Common Issues",
+            "description": "Solutions to frequently encountered problems",
+            "readTime": "6 min"
+          },
+          {
+            "title": "API Documentation",
+            "description": "Complete API reference and examples",
+            "readTime": "10 min"
+          },
+          {
+            "title": "System Requirements",
+            "description": "Minimum system requirements and compatibility",
+            "readTime": "3 min"
+          }
+        ]
+      }
+    ],
+    "ctaText": "Browse All Articles",
+    "ctaLink": "/help"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "PlayCircle",
+    "CreditCard",
+    "Settings",
+    "Wrench",
+    "Clock",
+    "ArrowRight",
+    "Search"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Help",
+  "themeName": "Neobrutalism",
+  "moduleName": "FAQ",
+  "sectionName": "Help",
+  "files": [
+    "blocks/faq/help/neobrutalism/component.tsx",
+    "blocks/faq/help/neobrutalism/block.json"
+  ]
+}

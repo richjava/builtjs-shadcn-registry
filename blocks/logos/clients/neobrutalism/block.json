@@ -1,0 +1,83 @@
+{
+  "name": "logos-clients-clients-neobrutalism",
+  "description": "Client logos showcase with trust and credibility with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist client showcase with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Client showcase",
+    "Logo gallery",
+    "Trust building",
+    "Credibility display"
+  ],
+  "keyFeatures": [
+    "Client logos",
+    "External links",
+    "Call to action",
+    "Trust indicators"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "clients": "array",
+    "ctaText": "string",
+    "ctaLink": "string"
+  },
+  "data": {
+    "title": "Trusted by Industry Leaders",
+    "subtitle": "We've had the privilege of working with some of the most innovative companies in the industry.",
+    "clients": [
+      {
+        "name": "GlobalCorp",
+        "logo": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=100&h=100&fit=crop",
+        "website": "https://globalcorp.com"
+      },
+      {
+        "name": "InnovateLab",
+        "logo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop",
+        "website": "https://innovatelab.com"
+      },
+      {
+        "name": "FutureTech",
+        "logo": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=100&h=100&fit=crop",
+        "website": "https://futuretech.com"
+      },
+      {
+        "name": "NextGen",
+        "logo": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=100&h=100&fit=crop",
+        "website": "https://nextgen.com"
+      }
+    ],
+    "ctaText": "Work With Us",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "ExternalLink",
+    "Users"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Clients",
+  "themeName": "Neobrutalism",
+  "moduleName": "Logos",
+  "sectionName": "Clients",
+  "files": [
+    "blocks/logos/clients/neobrutalism/component.tsx",
+    "blocks/logos/clients/neobrutalism/block.json"
+  ]
+}

@@ -38,7 +38,7 @@ A comprehensive shadcn/ui registry for a [Built.js](https://builtjs.com) theme f
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/builtjs-shadcn-registry.git
+git clone https://github.com/richjava/builtjs-shadcn-registry.git
 cd builtjs-shadcn-registry
 ```
 

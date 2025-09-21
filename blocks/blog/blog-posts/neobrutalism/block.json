@@ -1,0 +1,60 @@
+{
+  "name": "blog-blog-posts-blog-posts-neobrutalism",
+  "description": "Blog posts grid with article previews with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist blog posts grid with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Blog listing",
+    "Article previews",
+    "Content showcase",
+    "News updates"
+  ],
+  "keyFeatures": [
+    "Post cards",
+    "Featured images",
+    "Meta information",
+    "Tags",
+    "Read more buttons"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string"
+  },
+  "data": {
+    "title": "Latest Blog Posts",
+    "subtitle": "Stay updated with our latest insights and industry news."
+  },
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "Calendar",
+    "Clock",
+    "User",
+    "ArrowRight",
+    "Tag"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Blog Posts",
+  "themeName": "Neobrutalism",
+  "moduleName": "Blog",
+  "sectionName": "Blog Posts",
+  "files": [
+    "blocks/blog/blog-posts/neobrutalism/component.tsx",
+    "blocks/blog/blog-posts/neobrutalism/block.json"
+  ]
+}

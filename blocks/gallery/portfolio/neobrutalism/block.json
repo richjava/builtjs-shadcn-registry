@@ -1,0 +1,85 @@
+{
+  "name": "gallery-portfolio-portfolio-neobrutalism",
+  "description": "Portfolio gallery with project showcase with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist portfolio gallery with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Portfolio showcase",
+    "Project gallery",
+    "Work samples",
+    "Case studies"
+  ],
+  "keyFeatures": [
+    "Project cards",
+    "Category badges",
+    "Image overlays",
+    "Tags",
+    "External links"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "projects": "array"
+  },
+  "data": {
+    "title": "Our Portfolio",
+    "subtitle": "Explore our latest projects and see how we bring ideas to life through innovative design and development.",
+    "projects": [
+      {
+        "title": "E-commerce Platform Redesign",
+        "category": "Web Design",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+        "description": "Complete redesign of a modern e-commerce platform with improved user experience and conversion optimization.",
+        "tags": ["UI/UX", "E-commerce", "React"],
+        "link": "/portfolio/ecommerce-redesign"
+      },
+      {
+        "title": "Mobile Banking App",
+        "category": "Mobile App",
+        "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
+        "description": "Secure and intuitive mobile banking application with advanced features and modern design patterns.",
+        "tags": ["Mobile", "Fintech", "Security"],
+        "link": "/portfolio/mobile-banking"
+      },
+      {
+        "title": "SaaS Dashboard",
+        "category": "Web App",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+        "description": "Comprehensive analytics dashboard for SaaS platform with real-time data visualization and reporting.",
+        "tags": ["Dashboard", "Analytics", "SaaS"],
+        "link": "/portfolio/saas-dashboard"
+      }
+    ]
+  },
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "ExternalLink",
+    "Tag",
+    "Eye"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Portfolio",
+  "themeName": "Neobrutalism",
+  "moduleName": "Gallery",
+  "sectionName": "Portfolio",
+  "files": [
+    "blocks/gallery/portfolio/neobrutalism/component.tsx",
+    "blocks/gallery/portfolio/neobrutalism/block.json"
+  ]
+}

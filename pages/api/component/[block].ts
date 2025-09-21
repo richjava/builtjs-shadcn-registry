@@ -25,39 +25,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       return res.status(404).json({ error: 'Block not found in registry' })
     }
 
-    // Construct the component path based on the block structure
-    const moduleSlug = blockData.moduleName?.toLowerCase().replace(/\s+/g, '-') || ''
-    const sectionSlug = blockData.sectionName?.toLowerCase().replace(/\s+/g, '-') || ''
-    const templateSlug = blockData.templateName?.toLowerCase().replace(/\s+/g, '-') || ''
-    const themeSlug = blockData.themeName?.toLowerCase().replace(/\s+/g, '-') || ''
-    
-    let componentPath: string
-    
-    // Handle different module structures
-    if (moduleSlug === 'main' || moduleSlug === 'features') {
-      // Main and Features modules: blocks/{module}/{section}/{theme}/component.tsx
-      componentPath = path.join(
-        process.cwd(), 
-        'blocks', 
-        moduleSlug,
-        sectionSlug,
-        themeSlug,
-        'component.tsx'
-      )
-    } else {
-      // Other modules (About, etc.): blocks/{module}/{module-section}/{theme-template}/component.tsx
-      const sectionDir = `${moduleSlug}-${sectionSlug}`
-      const templateDir = `${themeSlug}-${templateSlug}`
-      
-      componentPath = path.join(
-        process.cwd(), 
-        'blocks', 
-        moduleSlug,
-        sectionDir,
-        templateDir,
-        'component.tsx'
-      )
-    }
+        // Get the component path from the registry files array
+        const componentFile = blockData.files?.find((file: string) => file.endsWith('component.tsx'))
+        
+        if (!componentFile) {
+          return res.status(404).json({ error: 'Component file not found in registry' })
+        }
+        
+        const componentPath = path.join(process.cwd(), componentFile)
     
     // Read the component file
     const componentContent = fs.readFileSync(componentPath, 'utf-8')

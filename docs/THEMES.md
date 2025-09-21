@@ -237,6 +237,158 @@ Themes are defined in `registry.json`:
 
 ## Contributing
 
+## Neobrutalism Theme
+
+### Definition
+Neobrutalism is a raw, unpolished design aesthetic that embraces bold contrasts, thick borders, stark shadows, and intentionally "unfinished" elements. It's characterized by high-impact visuals that prioritize functionality and authenticity over polish.
+
+### Key Characteristics
+
+#### **High Contrast & Bright Colors**
+- **Primary Colors**: Bold black (#000000), Electric blue (#00BFFF), Neon green (#00FF00)
+- **Background**: Pure white (#FFFFFF) with strategic color blocks
+- **Text**: High-contrast combinations ensuring accessibility
+- **Accent Colors**: Vibrant, saturated hues for CTAs and highlights
+
+#### **Thick Lines & Geometric Shapes**
+- **Borders**: 4-8px solid borders on key elements
+- **Shapes**: Angular, geometric layouts with sharp corners
+- **Lines**: Bold, solid dividers and separators
+- **Layout**: Grid-based, structured arrangements
+
+#### **Stark Drop Shadows**
+- **Shadow Style**: Solid, single-color shadows (not gradients)
+- **Offset**: 4px horizontal and vertical offset
+- **Color**: Black (#000000) shadows for depth
+- **Usage**: Applied to cards, buttons, and key elements
+
+#### **Bold Typography**
+- **Headings**: Bold, quirky sans-serif fonts (Inter Bold, Montserrat Bold)
+- **Body Text**: Clean, readable fonts (Roboto, Inter)
+- **Whitespace**: Generous padding (24-32px) for breathing room
+- **Hierarchy**: Clear size variations (headlines 2x larger than body)
+
+#### **Skeuomorphic Elements**
+- **Retro UI**: Windows 98-style buttons and interfaces
+- **Monospace Fonts**: For technical or nostalgic elements
+- **Pixel Art**: Occasional pixel-style graphics
+- **Raw Aesthetics**: Intentionally "unfinished" look
+
+### Design Principles
+
+#### **Usability First**
+- Clear, recognizable buttons and interactive elements
+- Readable text with proper contrast ratios
+- Ample whitespace to prevent overwhelming users
+- Intuitive navigation despite bold aesthetics
+
+#### **Accessibility Standards**
+- Meet WCAG contrast ratio requirements
+- Avoid problematic color combinations (yellow/cyan)
+- Ensure interactive elements are clearly identifiable
+- Test with accessibility tools
+
+#### **Strategic Color Limitation**
+- Limit palette to 2-3 bold, high-contrast colors
+- Use color intensity for hierarchy
+- Avoid overwhelming users with too many colors
+- Maintain brand consistency
+
+#### **Balanced Raw Aesthetics**
+- Offset dense elements with generous padding
+- Create visual breathing room
+- Guide users to key actions
+- Maintain clear information hierarchy
+
+### Implementation Guidelines
+
+#### **Component Styling**
+```css
+/* Neobrutalism Button Example */
+.neobrutalism-button {
+  background: #00BFFF;
+  color: #000000;
+  border: 4px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  font-weight: 700;
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.neobrutalism-button:hover {
+  background: #00FF00;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000000;
+}
+```
+
+#### **Card Components**
+- Thick black borders (4-8px)
+- Stark drop shadows (4px offset)
+- Bold, high-contrast colors
+- Generous padding (24-32px)
+- Angular, geometric shapes
+
+#### **Typography Hierarchy**
+- **H1**: 48px, Bold, High contrast
+- **H2**: 36px, Bold, Medium contrast  
+- **H3**: 24px, Bold, Standard contrast
+- **Body**: 16px, Regular, Readable contrast
+- **Small**: 14px, Regular, Subtle contrast
+
+#### **Layout Patterns**
+- Grid-based layouts with clear structure
+- Generous whitespace between sections
+- Bold dividers and separators
+- Angular, geometric arrangements
+- High-contrast section backgrounds
+
+### Use Cases
+
+#### **Best For**
+- **Creative Agencies**: Bold, attention-grabbing designs
+- **Tech Startups**: Modern, rebellious aesthetic
+- **Portfolio Sites**: Standout, memorable experiences
+- **Brand Launches**: High-impact, memorable presentations
+- **Creative Showcases**: Artistic, expressive designs
+
+#### **Avoid When**
+- **Corporate B2B**: May be too bold for conservative audiences
+- **Financial Services**: Raw aesthetic may seem unprofessional
+- **Healthcare**: Bold colors may not convey trust
+- **Accessibility Concerns**: Ensure proper contrast ratios
+
+### Examples & Inspiration
+
+#### **Successful Implementations**
+- **Figma**: Bold contrasts with creative freedom
+- **Gumroad**: Raw aesthetic empowering creators
+- **Tony's Chocolonely**: Playful, bold brand expression
+- **Halo Lab**: Structured layouts with striking visuals
+
+#### **Design Patterns**
+- High-contrast color combinations
+- Thick, solid borders
+- Stark drop shadows
+- Bold, geometric layouts
+- Generous whitespace usage
+
+### Testing & Validation
+
+#### **Accessibility Testing**
+- Verify contrast ratios meet WCAG standards
+- Test with screen readers
+- Ensure keyboard navigation works
+- Validate color combinations
+
+#### **User Experience Testing**
+- Test with target audience
+- Verify usability despite bold aesthetics
+- Ensure clear call-to-actions
+- Validate information hierarchy
+
+---
+
 When adding new templates:
 
 1. Create theme variations following the established patterns
@@ -247,4 +399,4 @@ When adding new templates:
 
 ---
 
-*Last updated: December 2024*
+*Last updated: January 2025*

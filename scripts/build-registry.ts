@@ -311,6 +311,10 @@ async function buildRegistry() {
   // Write updated registry.json
   await fs.writeFile(registryPath, JSON.stringify(registry, null, 2))
   
+  // Validate theme implementation and directory structure
+  validateThemeImplementation(registry.blocks)
+  validateDirectoryStructure(registry.blocks)
+  
   // Write index.json for the registry
   const indexPath = path.join(outputDir, "index.json")
   await fs.writeFile(indexPath, JSON.stringify(registry, null, 2))
@@ -379,32 +383,91 @@ function getSectionName(sectionSlug: string): string {
   return slugToName(sectionSlug)
 }
 
+// Centralized theme configuration
+const THEME_CONFIG = {
+  themes: ['bold', 'minimal', 'standard', 'neobrutalism'],
+  themeNames: {
+    'standard': 'Standard',
+    'minimal': 'Minimal',
+    'bold': 'Bold',
+    'neobrutalism': 'Neobrutalism'
+  }
+}
+
+// Theme validation function
+function validateThemeImplementation(blocks: RegistryItem[]): void {
+  const themeCounts: Record<string, number> = {}
+  const missingThemes: string[] = []
+  
+  // Count blocks by theme
+  blocks.forEach(block => {
+    const theme = block.theme || 'standard'
+    themeCounts[theme] = (themeCounts[theme] || 0) + 1
+  })
+  
+  // Check if all themes are represented
+  THEME_CONFIG.themes.forEach(theme => {
+    if (!themeCounts[theme]) {
+      missingThemes.push(theme)
+    }
+  })
+  
+  if (missingThemes.length > 0) {
+    console.warn(`⚠️  Warning: Missing theme implementations: ${missingThemes.join(', ')}`)
+  }
+  
+  console.log(`📊 Theme distribution:`, themeCounts)
+}
+
+// Directory structure validation function
+function validateDirectoryStructure(blocks: RegistryItem[]): void {
+  const structureIssues: string[] = []
+  
+  blocks.forEach(block => {
+    const files = block.files || []
+    const componentFile = files.find(file => file.endsWith('component.tsx'))
+    
+    if (!componentFile) {
+      structureIssues.push(`Block ${block.name}: Missing component.tsx file`)
+      return
+    }
+    
+    // Check if file actually exists
+    const fullPath = path.join(process.cwd(), componentFile)
+    if (!existsSync(fullPath)) {
+      structureIssues.push(`Block ${block.name}: Component file not found at ${componentFile}`)
+    }
+  })
+  
+  if (structureIssues.length > 0) {
+    console.warn(`⚠️  Directory structure issues:`)
+    structureIssues.forEach(issue => console.warn(`  - ${issue}`))
+  } else {
+    console.log(`✅ All component files exist and are properly structured`)
+  }
+}
+
 // Helper function to extract theme from template directory name
 function extractThemeFromTemplateName(templateName: string): string {
-  // Check if template name starts with a theme prefix
-  if (templateName.startsWith('bold-')) {
-    return 'bold'
-  } else if (templateName.startsWith('minimal-')) {
-    return 'minimal'
-  } else if (templateName === 'bold') {
-    return 'bold'
-  } else if (templateName === 'minimal') {
-    return 'minimal'
-  } else if (templateName === 'standard') {
-    return 'standard'
-  } else {
-    return 'standard'
+  // Check for theme prefixes first (e.g., "bold-image", "minimal-stats")
+  for (const theme of THEME_CONFIG.themes) {
+    if (templateName.startsWith(`${theme}-`)) {
+      return theme
+    }
   }
+  
+  // Check for exact theme matches (e.g., "bold", "minimal", "standard")
+  if (THEME_CONFIG.themes.includes(templateName)) {
+    return templateName
+  }
+  
+  // Default to standard theme
+  return 'standard'
 }
 
 // Helper function to get theme name from theme slug
 function getThemeName(themeSlug: string): string {
-  const themeNames: Record<string, string> = {
-    'standard': 'Standard',
-    'minimal': 'Minimal',
-    'bold': 'Bold'
-  }
-  return themeNames[themeSlug] || slugToName(themeSlug)
+  return THEME_CONFIG.themeNames[themeSlug as keyof typeof THEME_CONFIG.themeNames] || 'Standard'
 }
 
 // Helper function to generate theme-specific descriptions
@@ -412,7 +475,8 @@ function generateThemeSpecificDescription(baseDescription: string, theme: string
   const themeDescriptions: Record<string, string> = {
     'standard': `${baseDescription} with professional styling and balanced design.`,
     'minimal': `${baseDescription} with clean, minimalist design and subtle styling.`,
-    'bold': `${baseDescription} with bold colors, strong typography, and high visual impact.`
+    'bold': `${baseDescription} with bold colors, strong typography, and high visual impact.`,
+    'neobrutalism': `${baseDescription} with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.`
   }
   
   return themeDescriptions[theme] || baseDescription

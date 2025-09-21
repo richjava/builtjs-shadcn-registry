@@ -1,0 +1,34 @@
+{
+  "name": "neobrutalism-narrative",
+  "description": "Company story section with founding narrative and journey with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors",
+  "fields": {
+    "title": "string",
+    "paragraphs": "array",
+    "ctaText": "string",
+    "ctaLink": "url",
+    "image": "object"
+  },
+  "data": {
+    "title": "Our Story",
+    "paragraphs": [
+      "Founded in 2020, we started as a small team of developers frustrated by the complexity of modern web development. We believed there had to be a better way to build beautiful, performant applications without sacrificing developer experience.",
+      "What began as a weekend project has grown into a platform trusted by thousands of developers worldwide. Our tools have powered everything from startup MVPs to enterprise applications, helping teams ship faster and more confidently.",
+      "Today, we continue to push the boundaries of what's possible in web development, always keeping our core mission in mind: making great technology accessible to everyone."
+    ],
+    "ctaText": "Read More",
+    "ctaLink": "/about/story",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+      "alt": "Team collaboration and innovation workspace"
+    }
+  },
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["button"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

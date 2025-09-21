@@ -1,0 +1,67 @@
+{
+  "name": "newsletter-opt-in-opt-in-neobrutalism",
+  "description": "Newsletter opt-in with lead magnet download with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist newsletter opt-in with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Lead generation",
+    "Email capture",
+    "Free downloads",
+    "Newsletter signup"
+  ],
+  "keyFeatures": [
+    "Lead magnet",
+    "Email capture",
+    "Trust indicators",
+    "Download button",
+    "Privacy notice"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "leadMagnet": "string",
+    "placeholder": "string",
+    "buttonText": "string",
+    "privacyText": "string"
+  },
+  "data": {
+    "title": "Get Your Free Guide",
+    "subtitle": "Download our comprehensive guide and join thousands of subscribers who get exclusive content delivered to their inbox.",
+    "leadMagnet": "Ultimate Guide to Modern Web Development",
+    "placeholder": "Enter your email address",
+    "buttonText": "Download Free Guide",
+    "privacyText": "We respect your privacy. Unsubscribe at any time."
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button",
+    "Input",
+    "Label"
+  ],
+  "lucideIcons": [
+    "Download",
+    "CheckCircle",
+    "Gift"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Opt-in",
+  "themeName": "Neobrutalism",
+  "moduleName": "Newsletter",
+  "sectionName": "Opt-in",
+  "files": [
+    "blocks/newsletter/opt-in/neobrutalism/component.tsx",
+    "blocks/newsletter/opt-in/neobrutalism/block.json"
+  ]
+}

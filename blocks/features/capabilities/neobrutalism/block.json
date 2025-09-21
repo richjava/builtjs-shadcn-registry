@@ -1,0 +1,106 @@
+{
+  "name": "features-capabilities-capabilities-neobrutalism",
+  "description": "Features capabilities section with categorized feature lists with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist features capabilities with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Feature lists",
+    "Capability overview",
+    "Solution showcase",
+    "Product comparison"
+  ],
+  "keyFeatures": [
+    "Categorized features",
+    "Check lists",
+    "Icons",
+    "Call to action"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "capabilities": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Complete Solution",
+    "subtitle": "Everything you need to succeed, all in one powerful platform.",
+    "capabilities": [
+      {
+        "category": "Analytics & Insights",
+        "features": [
+          "Real-time dashboards",
+          "Custom reporting",
+          "Data visualization",
+          "Performance metrics"
+        ],
+        "icon": "bar-chart"
+      },
+      {
+        "category": "Collaboration Tools",
+        "features": [
+          "Team workspaces",
+          "Real-time editing",
+          "Comment system",
+          "Version control"
+        ],
+        "icon": "users"
+      },
+      {
+        "category": "Security & Compliance",
+        "features": [
+          "End-to-end encryption",
+          "SOC 2 compliance",
+          "Access controls",
+          "Audit logs"
+        ],
+        "icon": "shield"
+      },
+      {
+        "category": "Integrations",
+        "features": [
+          "API connections",
+          "Third-party apps",
+          "Webhook support",
+          "Custom plugins"
+        ],
+        "icon": "plug"
+      }
+    ],
+    "ctaText": "Explore Capabilities",
+    "ctaLink": "/capabilities"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "ArrowRight",
+    "BarChart",
+    "Users",
+    "Shield",
+    "Plug",
+    "Check"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Capabilities",
+  "themeName": "Neobrutalism",
+  "moduleName": "Features",
+  "sectionName": "Capabilities",
+  "files": [
+    "blocks/features/capabilities/neobrutalism/component.tsx",
+    "blocks/features/capabilities/neobrutalism/block.json"
+  ]
+}

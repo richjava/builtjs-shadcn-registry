@@ -1,0 +1,85 @@
+{
+  "name": "newsletter-subscription-subscription-neobrutalism",
+  "description": "Newsletter subscription management with preferences and settings with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist newsletter subscription management with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Subscription management",
+    "Preference settings",
+    "Email preferences",
+    "Notification control"
+  ],
+  "keyFeatures": [
+    "Preference toggles",
+    "Status display",
+    "Settings management",
+    "Unsubscribe option"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "currentStatus": "string",
+    "preferences": "array",
+    "unsubscribeText": "string"
+  },
+  "data": {
+    "title": "Manage Your Subscription",
+    "subtitle": "Customize your newsletter preferences and control how you receive updates from us.",
+    "currentStatus": "Subscribed to Weekly Newsletter",
+    "preferences": [
+      {
+        "id": "email",
+        "name": "Email Newsletter",
+        "description": "Receive our weekly newsletter with industry insights and updates",
+        "enabled": true
+      },
+      {
+        "id": "notifications",
+        "name": "Push Notifications",
+        "description": "Get notified about new content and important announcements",
+        "enabled": false
+      },
+      {
+        "id": "marketing",
+        "name": "Marketing Emails",
+        "description": "Receive promotional content and special offers",
+        "enabled": true
+      }
+    ],
+    "unsubscribeText": "Want to unsubscribe? Click here to manage your subscription preferences."
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button",
+    "Switch",
+    "Label"
+  ],
+  "lucideIcons": [
+    "Settings",
+    "Mail",
+    "Bell",
+    "AlertCircle"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot",
+    "@radix-ui/react-switch"
+  ],
+  "templateName": "Subscription",
+  "themeName": "Neobrutalism",
+  "moduleName": "Newsletter",
+  "sectionName": "Subscription",
+  "files": [
+    "blocks/newsletter/subscription/neobrutalism/component.tsx",
+    "blocks/newsletter/subscription/neobrutalism/block.json"
+  ]
+}

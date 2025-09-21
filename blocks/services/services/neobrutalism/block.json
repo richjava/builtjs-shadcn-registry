@@ -1,0 +1,101 @@
+{
+  "name": "services-services-services-neobrutalism",
+  "description": "Services section with detailed service descriptions and deliverables with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist services overview with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Service overview",
+    "Process explanation",
+    "Deliverable showcase",
+    "Service selection"
+  ],
+  "keyFeatures": [
+    "Service cards",
+    "Duration display",
+    "Deliverable lists",
+    "Call to action"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "services": "array",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "What We Do",
+    "subtitle": "Professional services designed to help your business thrive in the digital age.",
+    "services": [
+      {
+        "name": "Consulting",
+        "description": "Strategic guidance to help you make informed decisions and achieve your goals.",
+        "icon": "users",
+        "duration": "Ongoing",
+        "deliverables": [
+          "Strategic planning",
+          "Market analysis",
+          "Process review",
+          "Implementation roadmap"
+        ]
+      },
+      {
+        "name": "Development",
+        "description": "Custom software solutions built with the latest technologies and best practices.",
+        "icon": "code",
+        "duration": "2-12 weeks",
+        "deliverables": [
+          "Custom applications",
+          "API development",
+          "Database design",
+          "Testing & deployment"
+        ]
+      },
+      {
+        "name": "Support",
+        "description": "Ongoing maintenance and support to keep your systems running smoothly.",
+        "icon": "headphones",
+        "duration": "24/7",
+        "deliverables": [
+          "Technical support",
+          "Bug fixes",
+          "Performance monitoring",
+          "Regular updates"
+        ]
+      }
+    ],
+    "ctaText": "Start Your Project",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "ArrowRight",
+    "Users",
+    "Code",
+    "Headphones",
+    "Clock"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Services",
+  "themeName": "Neobrutalism",
+  "moduleName": "Services",
+  "sectionName": "Services",
+  "files": [
+    "blocks/services/services/neobrutalism/component.tsx",
+    "blocks/services/services/neobrutalism/block.json"
+  ]
+}

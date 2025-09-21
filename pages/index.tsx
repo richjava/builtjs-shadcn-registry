@@ -13,9 +13,9 @@ export default function Home() {
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="flex min-h-[60vh] flex-col items-center justify-center p-24">
-          <div className="max-w-5xl w-full text-center">
-            <h1 className="text-4xl font-bold mb-4">BuiltJS Shadcn Registry</h1>
-            <p className="text-xl text-muted-foreground mb-8">
+          <div className="w-full max-w-5xl text-center">
+            <h1 className="mb-4 text-4xl font-bold">BuiltJS Shadcn Registry</h1>
+            <p className="mb-8 text-xl text-muted-foreground">
               A collection of reusable React templates and blocks built with shadcn/ui
             </p>
             
@@ -26,7 +26,7 @@ export default function Home() {
                 </Link>
               </Button>
               <Button variant="outline" asChild>
-                <Link href="https://github.com/your-username/builtjs-shadcn-registry" target="_blank">
+                <Link href="https://github.com/richjava/builtjs-shadcn-registry" target="_blank">
                   GitHub
                 </Link>
               </Button>
@@ -35,27 +35,27 @@ export default function Home() {
         </section>
 
         {/* Template Preview Grid */}
-        <section className="py-16 px-4">
-          <div className="max-w-7xl mx-auto">
+        <section className="px-4 py-16">
+          <div className="mx-auto max-w-7xl">
             <TemplatePreviewGrid />
           </div>
         </section>
 
         {/* Categories Grid */}
-        <section className="py-16 px-4 bg-gray-50">
+        <section className="px-4 py-16 bg-gray-50">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Browse by Category</h2>
+            <div className="mb-12 text-center">
+              <h2 className="mb-4 text-3xl font-bold">Browse by Category</h2>
               <p className="text-lg text-muted-foreground">
                 Explore templates organized by use case and purpose
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               {categories.map((category) => (
-                <div key={category.name} className="border rounded-lg p-6 hover:shadow-lg transition-shadow bg-white">
-                  <h3 className="text-lg font-semibold mb-2">{category.label}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
+                <div key={category.name} className="p-6 transition-shadow bg-white border rounded-lg hover:shadow-lg">
+                  <h3 className="mb-2 text-lg font-semibold">{category.label}</h3>
+                  <p className="mb-4 text-sm text-muted-foreground">
                     Browse {category.label.toLowerCase()} templates
                   </p>
                   <Button variant="outline" size="sm" asChild>

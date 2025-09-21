@@ -1,0 +1,21 @@
+{
+  "name": "neobrutalism-cards",
+  "description": "Team showcase section with member cards with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors",
+  "fields": {
+    "title": "string",
+    "subtitle": "text"
+  },
+  "data": {
+    "title": "Meet Our Team",
+    "subtitle": "The passionate individuals behind our mission to transform web development."
+  },
+  "dependencies": [],
+  "registryDependencies": ["card"],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {}
+      }
+    }
+  }
+}

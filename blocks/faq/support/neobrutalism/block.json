@@ -1,0 +1,105 @@
+{
+  "name": "faq-support-support-neobrutalism",
+  "description": "FAQ support section with contact methods and support hours with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist support contact with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Customer support",
+    "Contact information",
+    "Support channels",
+    "Help desk"
+  ],
+  "keyFeatures": [
+    "Contact methods",
+    "Status indicators",
+    "Response times",
+    "Support hours"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "contactMethods": "array",
+    "supportHours": "object",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Get Support",
+    "subtitle": "Choose the best way to get help from our support team.",
+    "contactMethods": [
+      {
+        "name": "Live Chat",
+        "description": "Chat with our support team in real-time",
+        "icon": "message-circle",
+        "status": "online",
+        "responseTime": "< 1 minute",
+        "link": "/chat"
+      },
+      {
+        "name": "Email Support",
+        "description": "Send us an email and we'll get back to you",
+        "icon": "mail",
+        "status": "available",
+        "responseTime": "< 2 hours",
+        "link": "/support/email"
+      },
+      {
+        "name": "Phone Support",
+        "description": "Call us directly for immediate assistance",
+        "icon": "phone",
+        "status": "available",
+        "responseTime": "Immediate",
+        "link": "/support/phone"
+      },
+      {
+        "name": "Knowledge Base",
+        "description": "Browse our comprehensive help articles",
+        "icon": "book-open",
+        "status": "online",
+        "responseTime": "Self-service",
+        "link": "/help"
+      }
+    ],
+    "supportHours": {
+      "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM EST",
+      "weekends": "Saturday - Sunday: 10:00 AM - 4:00 PM EST",
+      "emergency": "24/7 for critical issues"
+    },
+    "ctaText": "Contact Support",
+    "ctaLink": "/contact"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "MessageCircle",
+    "Mail",
+    "Phone",
+    "BookOpen",
+    "Clock",
+    "CheckCircle",
+    "AlertCircle"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Support",
+  "themeName": "Neobrutalism",
+  "moduleName": "FAQ",
+  "sectionName": "Support",
+  "files": [
+    "blocks/faq/support/neobrutalism/component.tsx",
+    "blocks/faq/support/neobrutalism/block.json"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "name": "team-members-members-neobrutalism",
+  "description": "Team members showcase with profiles and skills with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist team members showcase with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Team introduction",
+    "Member profiles",
+    "Skills showcase",
+    "Team directory"
+  ],
+  "keyFeatures": [
+    "Member profiles",
+    "Photos",
+    "Skills",
+    "Call to action"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "members": "array",
+    "ctaText": "string",
+    "ctaLink": "string"
+  },
+  "data": {
+    "title": "Our Team",
+    "subtitle": "Meet the people who make it all possible.",
+    "members": [
+      {
+        "name": "Alex Thompson",
+        "role": "Lead Developer",
+        "department": "Engineering",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+        "bio": "Full-stack developer with expertise in React and Node.js.",
+        "skills": ["React", "Node.js", "TypeScript", "AWS"]
+      },
+      {
+        "name": "Maria Garcia",
+        "role": "Product Manager",
+        "department": "Product",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=face",
+        "bio": "Strategic product leader focused on user experience and growth.",
+        "skills": ["Product Strategy", "User Research", "Analytics", "Agile"]
+      },
+      {
+        "name": "David Kim",
+        "role": "UX Designer",
+        "department": "Design",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face",
+        "bio": "Creative designer passionate about intuitive user interfaces.",
+        "skills": ["UI/UX Design", "Figma", "Prototyping", "User Testing"]
+      },
+      {
+        "name": "Sarah Johnson",
+        "role": "Marketing Director",
+        "department": "Marketing",
+        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face",
+        "bio": "Marketing strategist with expertise in digital campaigns and brand building.",
+        "skills": ["Digital Marketing", "Brand Strategy", "Content Marketing", "SEO"]
+      }
+    ],
+    "ctaText": "View All Team Members",
+    "ctaLink": "/team"
+  },
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "ArrowRight"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Members",
+  "themeName": "Neobrutalism",
+  "moduleName": "Team",
+  "sectionName": "Members",
+  "files": [
+    "blocks/team/members/neobrutalism/component.tsx",
+    "blocks/team/members/neobrutalism/block.json"
+  ]
+}

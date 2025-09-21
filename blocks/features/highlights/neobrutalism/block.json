@@ -1,0 +1,62 @@
+{
+  "name": "features-highlights-highlights-neobrutalism",
+  "description": "Features highlights section with key benefits and icons with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
+  "useCase": "Neobrutalist features highlights with high visual impact",
+  "businessTypes": [
+    "Agency",
+    "Startup",
+    "E-commerce",
+    "Portfolio"
+  ],
+  "scenarios": [
+    "Key benefits",
+    "Feature highlights",
+    "Value proposition",
+    "Competitive advantage"
+  ],
+  "keyFeatures": [
+    "Benefit cards",
+    "Icons",
+    "Statistics",
+    "Call to action"
+  ],
+  "fields": {
+    "title": "string",
+    "subtitle": "string",
+    "ctaText": "string",
+    "ctaLink": "url"
+  },
+  "data": {
+    "title": "Why Choose Our Platform",
+    "subtitle": "Experience the difference with our cutting-edge features designed for modern businesses.",
+    "ctaText": "Get Started Today",
+    "ctaLink": "/signup"
+  },
+  "dependencies": [
+    "lucide-react"
+  ],
+  "devDependencies": [],
+  "tailwind": {},
+  "cssVars": {},
+  "shadcnComponents": [
+    "Button"
+  ],
+  "lucideIcons": [
+    "ArrowRight",
+    "Zap",
+    "ShieldCheck",
+    "Headphones",
+    "TrendingUp"
+  ],
+  "radixDependencies": [
+    "@radix-ui/react-slot"
+  ],
+  "templateName": "Highlights",
+  "themeName": "Neobrutalism",
+  "moduleName": "Features",
+  "sectionName": "Highlights",
+  "files": [
+    "blocks/features/highlights/neobrutalism/component.tsx",
+    "blocks/features/highlights/neobrutalism/block.json"
+  ]
+}
