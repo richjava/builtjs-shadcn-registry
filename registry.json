@@ -485,11 +485,33 @@
       "description": "Bold company story section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "paragraphs": "array",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "image": "object"
+        "title": {
+          "type": "string"
+        },
+        "paragraphs": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "image": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "title": "Our Story",
@@ -559,11 +581,33 @@
       "description": "Minimal company story section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "paragraphs": "array",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "image": "object"
+        "title": {
+          "type": "string"
+        },
+        "paragraphs": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "image": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "title": "Our Story",
@@ -632,11 +676,33 @@
       "name": "about-company-story-narrative-standard",
       "description": "Company story section with founding narrative and journey with professional styling and balanced design.",
       "fields": {
-        "title": "string",
-        "paragraphs": "array",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "image": "object"
+        "title": {
+          "type": "string"
+        },
+        "paragraphs": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "image": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "title": "Our Story",
@@ -706,11 +772,33 @@
       "name": "about-company-story-narrative-neobrutalism",
       "description": "Company story section with founding narrative and journey with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
       "fields": {
-        "title": "string",
-        "paragraphs": "array",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "image": "object"
+        "title": {
+          "type": "string"
+        },
+        "paragraphs": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "image": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "title": "Our Story",
@@ -781,16 +869,48 @@
       "description": "Bold hero section for About pages with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "badge": "string",
-        "title": "string",
-        "titleHighlight": "string",
-        "subtitle": "text",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "trustBadges": "array",
-        "image": "object"
+        "badge": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleHighlight": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "trustBadges": {
+          "type": "array"
+        },
+        "image": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "badge": "✨ About Our Company",
@@ -871,11 +991,21 @@
       "description": "Bold hero section with vibrant colors and dynamic stats presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "text",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "stats": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "stats": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "We're building the future of web development",
@@ -954,16 +1084,48 @@
       "name": "about-landing-image-standard",
       "description": "Hero section for About pages with image and text layout with professional styling and balanced design.",
       "fields": {
-        "badge": "string",
-        "title": "string",
-        "titleHighlight": "string",
-        "subtitle": "text",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "trustBadges": "array",
-        "image": "object"
+        "badge": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleHighlight": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "trustBadges": {
+          "type": "array"
+        },
+        "image": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "badge": "✨ About Our Company",
@@ -1045,16 +1207,48 @@
       "description": "Minimal hero section for About pages with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "badge": "string",
-        "title": "string",
-        "titleHighlight": "string",
-        "subtitle": "text",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "trustBadges": "array",
-        "image": "object"
+        "badge": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleHighlight": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "trustBadges": {
+          "type": "array"
+        },
+        "image": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "badge": "About Our Company",
@@ -1135,11 +1329,21 @@
       "description": "Minimal hero section with clean typography and subtle stats presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "text",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "stats": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "stats": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "We're building the future of web development",
@@ -1218,16 +1422,48 @@
       "name": "about-landing-image-neobrutalism",
       "description": "Hero section for About pages with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
       "fields": {
-        "badge": "string",
-        "title": "string",
-        "titleHighlight": "string",
-        "subtitle": "text",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "trustBadges": "array",
-        "image": "object"
+        "badge": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleHighlight": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "trustBadges": {
+          "type": "array"
+        },
+        "image": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "badge": "✨ About Our Company",
@@ -1308,11 +1544,21 @@
       "name": "about-landing-stats-neobrutalism",
       "description": "Hero section for About pages with company introduction and stats with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
       "fields": {
-        "title": "string",
-        "subtitle": "text",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "stats": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "stats": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Building the future of web development",
@@ -1392,11 +1638,21 @@
       "name": "about-landing-stats-standard",
       "description": "Hero section for About pages with company introduction and stats with professional styling and balanced design.",
       "fields": {
-        "title": "string",
-        "subtitle": "text",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "stats": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "stats": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "We're building the future of web development",
@@ -1477,11 +1733,21 @@
       "description": "Bold mission statement section with vibrant typography and dynamic elements with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "mission": "text",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "backgroundStyle": "string"
+        "title": {
+          "type": "string"
+        },
+        "mission": {
+          "type": "text"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "backgroundStyle": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Our Mission",
@@ -1544,11 +1810,21 @@
       "description": "Minimal mission statement section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "mission": "text",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "backgroundStyle": "string"
+        "title": {
+          "type": "string"
+        },
+        "mission": {
+          "type": "text"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "backgroundStyle": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Our Mission",
@@ -1610,11 +1886,21 @@
       "name": "about-mission-statement-neobrutalism",
       "description": "Mission statement section with call-to-action with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
       "fields": {
-        "title": "string",
-        "mission": "text",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "backgroundStyle": "string"
+        "title": {
+          "type": "string"
+        },
+        "mission": {
+          "type": "text"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "backgroundStyle": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Our Mission",
@@ -1677,11 +1963,21 @@
       "name": "about-mission-statement-standard",
       "description": "Mission statement section with call-to-action with professional styling and balanced design.",
       "fields": {
-        "title": "string",
-        "mission": "text",
-        "ctaText": "string",
-        "ctaLink": "url",
-        "backgroundStyle": "string"
+        "title": {
+          "type": "string"
+        },
+        "mission": {
+          "type": "text"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        },
+        "backgroundStyle": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Our Mission",
@@ -1745,8 +2041,12 @@
       "description": "Bold team showcase section with vibrant elements and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "text"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        }
       },
       "data": {
         "title": "Meet Our Team",
@@ -1841,8 +2141,12 @@
       "name": "about-team-cards-standard",
       "description": "Team showcase section with member cards and bios with professional styling and balanced design.",
       "fields": {
-        "title": "string",
-        "subtitle": "text"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        }
       },
       "data": {
         "title": "Meet Our Team",
@@ -1939,8 +2243,12 @@
       "description": "Minimal team showcase section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "text"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        }
       },
       "data": {
         "title": "Meet Our Team",
@@ -2035,8 +2343,12 @@
       "name": "about-team-cards-neobrutalism",
       "description": "Team showcase section with member cards with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
       "fields": {
-        "title": "string",
-        "subtitle": "text"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        }
       },
       "data": {
         "title": "Meet Our Team",
@@ -2092,9 +2404,15 @@
       "description": "Bold company values section with vibrant colors and dynamic layouts with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "text",
-        "values": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "values": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Values",
@@ -2181,9 +2499,15 @@
       "name": "about-values-grid-standard",
       "description": "Company values section with icons and descriptions with professional styling and balanced design.",
       "fields": {
-        "title": "string",
-        "subtitle": "text",
-        "values": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "values": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Values",
@@ -2272,9 +2596,15 @@
       "description": "Minimal company values section with subtle typography and clean spacing with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "text",
-        "values": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "values": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Values",
@@ -2361,9 +2691,15 @@
       "name": "about-values-grid-neobrutalism",
       "description": "Company values section with grid layout with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
       "fields": {
-        "title": "string",
-        "subtitle": "text",
-        "values": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "text"
+        },
+        "values": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Values",
@@ -2473,7 +2809,76 @@
         "Creative elements"
       ],
       "fields": {
-        "entry": "object"
+        "entry": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "_id",
+              "title": "_id",
+              "type": "string"
+            },
+            {
+              "name": "_type",
+              "title": "_type",
+              "type": "string"
+            },
+            {
+              "name": "slug",
+              "title": "Slug",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "title": "Title",
+              "type": "string"
+            },
+            {
+              "name": "excerpt",
+              "title": "Excerpt",
+              "type": "string"
+            },
+            {
+              "name": "author",
+              "title": "Author",
+              "type": "string"
+            },
+            {
+              "name": "publishedDate",
+              "title": "Published Date",
+              "type": "string"
+            },
+            {
+              "name": "readTime",
+              "title": "Read Time",
+              "type": "string"
+            },
+            {
+              "name": "image",
+              "title": "Image",
+              "type": "object"
+            },
+            {
+              "name": "tags",
+              "title": "Tags",
+              "type": "array"
+            },
+            {
+              "name": "category",
+              "title": "Category",
+              "type": "string"
+            },
+            {
+              "name": "featured",
+              "title": "Featured",
+              "type": "boolean"
+            },
+            {
+              "name": "content",
+              "title": "Content",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "entry": {
@@ -2557,7 +2962,66 @@
         "Clean lines"
       ],
       "fields": {
-        "entry": "object"
+        "entry": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "_id",
+              "title": "_id",
+              "type": "string"
+            },
+            {
+              "name": "_type",
+              "title": "_type",
+              "type": "string"
+            },
+            {
+              "name": "slug",
+              "title": "Slug",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "title": "Title",
+              "type": "string"
+            },
+            {
+              "name": "excerpt",
+              "title": "Excerpt",
+              "type": "string"
+            },
+            {
+              "name": "author",
+              "title": "Author",
+              "type": "string"
+            },
+            {
+              "name": "publishedDate",
+              "title": "Published Date",
+              "type": "string"
+            },
+            {
+              "name": "readTime",
+              "title": "Read Time",
+              "type": "string"
+            },
+            {
+              "name": "tags",
+              "title": "Tags",
+              "type": "array"
+            },
+            {
+              "name": "category",
+              "title": "Category",
+              "type": "string"
+            },
+            {
+              "name": "content",
+              "title": "Content",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "entry": {
@@ -2624,7 +3088,76 @@
         "Subtle animations"
       ],
       "fields": {
-        "entry": "object"
+        "entry": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "_id",
+              "title": "_id",
+              "type": "string"
+            },
+            {
+              "name": "_type",
+              "title": "_type",
+              "type": "string"
+            },
+            {
+              "name": "slug",
+              "title": "Slug",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "title": "Title",
+              "type": "string"
+            },
+            {
+              "name": "excerpt",
+              "title": "Excerpt",
+              "type": "string"
+            },
+            {
+              "name": "author",
+              "title": "Author",
+              "type": "string"
+            },
+            {
+              "name": "publishedDate",
+              "title": "Published Date",
+              "type": "string"
+            },
+            {
+              "name": "readTime",
+              "title": "Read Time",
+              "type": "string"
+            },
+            {
+              "name": "image",
+              "title": "Image",
+              "type": "object"
+            },
+            {
+              "name": "tags",
+              "title": "Tags",
+              "type": "array"
+            },
+            {
+              "name": "category",
+              "title": "Category",
+              "type": "string"
+            },
+            {
+              "name": "featured",
+              "title": "Featured",
+              "type": "boolean"
+            },
+            {
+              "name": "content",
+              "title": "Content",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "entry": {
@@ -2709,7 +3242,76 @@
         "Subtle animations"
       ],
       "fields": {
-        "entry": "object"
+        "entry": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "_id",
+              "title": "_id",
+              "type": "string"
+            },
+            {
+              "name": "_type",
+              "title": "_type",
+              "type": "string"
+            },
+            {
+              "name": "slug",
+              "title": "Slug",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "title": "Title",
+              "type": "string"
+            },
+            {
+              "name": "excerpt",
+              "title": "Excerpt",
+              "type": "string"
+            },
+            {
+              "name": "author",
+              "title": "Author",
+              "type": "string"
+            },
+            {
+              "name": "publishedDate",
+              "title": "Published Date",
+              "type": "string"
+            },
+            {
+              "name": "readTime",
+              "title": "Read Time",
+              "type": "string"
+            },
+            {
+              "name": "image",
+              "title": "Image",
+              "type": "object"
+            },
+            {
+              "name": "tags",
+              "title": "Tags",
+              "type": "array"
+            },
+            {
+              "name": "category",
+              "title": "Category",
+              "type": "string"
+            },
+            {
+              "name": "featured",
+              "title": "Featured",
+              "type": "boolean"
+            },
+            {
+              "name": "content",
+              "title": "Content",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "entry": {
@@ -2792,9 +3394,15 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "posts": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "posts": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Featured Articles",
@@ -2898,8 +3506,12 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "posts": "array"
+        "title": {
+          "type": "string"
+        },
+        "posts": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Blog Posts",
@@ -2974,8 +3586,12 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Latest Blog Posts",
@@ -3040,9 +3656,15 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "posts": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "posts": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Latest Blog Posts",
@@ -3145,10 +3767,60 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "featuredPost": "object",
-        "otherPosts": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "featuredPost": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "title": "Title",
+              "type": "string"
+            },
+            {
+              "name": "excerpt",
+              "title": "Excerpt",
+              "type": "string"
+            },
+            {
+              "name": "author",
+              "title": "Author",
+              "type": "string"
+            },
+            {
+              "name": "publishedDate",
+              "title": "Published Date",
+              "type": "string"
+            },
+            {
+              "name": "readingTime",
+              "title": "Reading Time",
+              "type": "string"
+            },
+            {
+              "name": "image",
+              "title": "Image",
+              "type": "string"
+            },
+            {
+              "name": "tags",
+              "title": "Tags",
+              "type": "array"
+            },
+            {
+              "name": "slug",
+              "title": "Slug",
+              "type": "string"
+            }
+          ]
+        },
+        "otherPosts": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Must-Read Articles",
@@ -3253,8 +3925,12 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "posts": "array"
+        "title": {
+          "type": "string"
+        },
+        "posts": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Featured Posts",
@@ -3330,8 +4006,12 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Featured Posts",
@@ -3397,10 +4077,60 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "featuredPost": "object",
-        "otherPosts": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "featuredPost": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "title": "Title",
+              "type": "string"
+            },
+            {
+              "name": "excerpt",
+              "title": "Excerpt",
+              "type": "string"
+            },
+            {
+              "name": "author",
+              "title": "Author",
+              "type": "string"
+            },
+            {
+              "name": "publishedDate",
+              "title": "Published Date",
+              "type": "string"
+            },
+            {
+              "name": "readingTime",
+              "title": "Reading Time",
+              "type": "string"
+            },
+            {
+              "name": "image",
+              "title": "Image",
+              "type": "string"
+            },
+            {
+              "name": "tags",
+              "title": "Tags",
+              "type": "array"
+            },
+            {
+              "name": "slug",
+              "title": "Slug",
+              "type": "string"
+            }
+          ]
+        },
+        "otherPosts": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Featured Content",
@@ -3505,11 +4235,21 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "categories": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Help Center",
@@ -3665,11 +4405,21 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "categories": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Help Center",
@@ -3782,11 +4532,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "categories": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Help Center",
@@ -3944,11 +4704,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "categories": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "categories": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Help Center",
@@ -4103,11 +4873,21 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "questions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Frequently Asked Questions",
@@ -4201,11 +4981,21 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "questions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Common Questions",
@@ -4289,11 +5079,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "questions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Frequently Asked Questions",
@@ -4389,11 +5189,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "questions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Frequently Asked Questions",
@@ -4486,12 +5296,41 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "contactMethods": "array",
-        "supportHours": "object",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "contactMethods": {
+          "type": "array"
+        },
+        "supportHours": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "weekdays",
+              "title": "Weekdays",
+              "type": "string"
+            },
+            {
+              "name": "weekends",
+              "title": "Weekends",
+              "type": "string"
+            },
+            {
+              "name": "emergency",
+              "title": "Emergency",
+              "type": "string"
+            }
+          ]
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Premium Support",
@@ -4614,12 +5453,41 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "contactMethods": "array",
-        "supportHours": "object",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "contactMethods": {
+          "type": "array"
+        },
+        "supportHours": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "weekdays",
+              "title": "Weekdays",
+              "type": "string"
+            },
+            {
+              "name": "weekends",
+              "title": "Weekends",
+              "type": "string"
+            },
+            {
+              "name": "emergency",
+              "title": "Emergency",
+              "type": "string"
+            }
+          ]
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Support",
@@ -4710,12 +5578,41 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "contactMethods": "array",
-        "supportHours": "object",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "contactMethods": {
+          "type": "array"
+        },
+        "supportHours": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "weekdays",
+              "title": "Weekdays",
+              "type": "string"
+            },
+            {
+              "name": "weekends",
+              "title": "Weekends",
+              "type": "string"
+            },
+            {
+              "name": "emergency",
+              "title": "Emergency",
+              "type": "string"
+            }
+          ]
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Get Support",
@@ -4822,12 +5719,41 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "contactMethods": "array",
-        "supportHours": "object",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "contactMethods": {
+          "type": "array"
+        },
+        "supportHours": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "weekdays",
+              "title": "Weekdays",
+              "type": "string"
+            },
+            {
+              "name": "weekends",
+              "title": "Weekends",
+              "type": "string"
+            },
+            {
+              "name": "emergency",
+              "title": "Emergency",
+              "type": "string"
+            }
+          ]
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Get Support",
@@ -4910,11 +5836,21 @@
       "description": "Comprehensive capability overview with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "capabilities": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "capabilities": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Complete Platform",
@@ -5023,11 +5959,21 @@
       "description": "Comprehensive capability overview with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "capabilities": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "capabilities": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "What We Offer",
@@ -5150,11 +6096,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "capabilities": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "capabilities": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Complete Solution",
@@ -5242,11 +6198,21 @@
       "description": "Comprehensive capability overview with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "capabilities": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "capabilities": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Complete Solution",
@@ -5355,11 +6321,21 @@
       "description": "Key feature highlights with benefits with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "highlights": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "highlights": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Why We're Different",
@@ -5451,11 +6427,21 @@
       "description": "Key feature highlights with benefits with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "highlights": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "highlights": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Why Choose Us",
@@ -5565,10 +6551,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Why Choose Our Platform",
@@ -5613,10 +6607,18 @@
       "description": "Key feature highlights with benefits with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Why Choose Our Platform",
@@ -5721,11 +6723,21 @@
       "description": "Feature showcase with visual demonstrations with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "features": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "features": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Revolutionary Features",
@@ -5810,11 +6822,21 @@
       "description": "Feature showcase with visual demonstrations with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "features": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "features": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Features",
@@ -5917,10 +6939,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Powerful Features",
@@ -5964,10 +6994,18 @@
       "description": "Feature showcase with visual demonstrations with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Powerful Features",
@@ -6092,9 +7130,15 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "projects": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Creative Portfolio",
@@ -6229,9 +7273,15 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "projects": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Selected Work",
@@ -6358,9 +7408,15 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "projects": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Portfolio",
@@ -6461,9 +7517,15 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "projects": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "projects": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Portfolio",
@@ -6597,9 +7659,15 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "products": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "products": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Featured Products",
@@ -6729,9 +7797,15 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "products": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "products": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Product Collection",
@@ -6852,9 +7926,15 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "products": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "products": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Featured Products",
@@ -6953,9 +8033,15 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "products": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "products": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Products",
@@ -7084,10 +8170,18 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "featuredItems": "array",
-        "otherItems": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "featuredItems": {
+          "type": "array"
+        },
+        "otherItems": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Achievements",
@@ -7231,10 +8325,18 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "featuredItems": "array",
-        "otherItems": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "featuredItems": {
+          "type": "array"
+        },
+        "otherItems": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Work",
@@ -7368,10 +8470,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "featuredItems": "array",
-        "otherItems": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "featuredItems": {
+          "type": "array"
+        },
+        "otherItems": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Showcase",
@@ -7506,10 +8616,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "featuredItems": "array",
-        "otherItems": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "featuredItems": {
+          "type": "array"
+        },
+        "otherItems": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Our Showcase",
@@ -7651,11 +8769,21 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "brands": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "brands": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Global Brand Recognition",
@@ -7776,11 +8904,21 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "brands": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "brands": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Brand Partners",
@@ -7868,11 +9006,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "brands": "array",
-        "ctaText": "string",
-        "ctaLink": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "brands": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Trusted by Leading Brands",
@@ -7963,11 +9111,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "brands": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "brands": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Recognized Brands",
@@ -8078,11 +9236,21 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "clients": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "clients": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Trusted by Industry Leaders",
@@ -8194,11 +9362,21 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "clients": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "clients": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Clients",
@@ -8286,11 +9464,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "clients": "array",
-        "ctaText": "string",
-        "ctaLink": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "clients": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Trusted by Industry Leaders",
@@ -8376,11 +9564,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "clients": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "clients": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Trusted by Leading Companies",
@@ -8482,11 +9680,21 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "partners": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "partners": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Strategic Partnerships",
@@ -8607,11 +9815,21 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "partners": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "partners": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Partners",
@@ -8699,11 +9917,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "partners": "array",
-        "ctaText": "string",
-        "ctaLink": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "partners": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Strategic Partnerships",
@@ -8794,11 +10022,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "partners": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "partners": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Strategic Partners",
@@ -8888,14 +10126,42 @@
       "description": "Bold conversion section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "backgroundType": "string",
-        "backgroundImage": "object"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "backgroundType": {
+          "type": "string"
+        },
+        "backgroundImage": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "title": "Ready to Get Started?",
@@ -8966,14 +10232,42 @@
       "description": "Minimal conversion section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "backgroundType": "string",
-        "backgroundImage": "object"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "backgroundType": {
+          "type": "string"
+        },
+        "backgroundImage": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "title": "Ready to Get Started?",
@@ -9061,14 +10355,42 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "backgroundType": "string",
-        "backgroundImage": "object"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "backgroundType": {
+          "type": "string"
+        },
+        "backgroundImage": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "title": "Ready to Get Started?",
@@ -9117,14 +10439,42 @@
       "description": "Primary conversion section with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "backgroundType": "string",
-        "backgroundImage": "object"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "backgroundType": {
+          "type": "string"
+        },
+        "backgroundImage": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        }
       },
       "data": {
         "title": "Ready to Get Started?",
@@ -9194,13 +10544,27 @@
       "description": "Bold lead capture section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "formType": "string",
-        "formFields": "array",
-        "ctaText": "string",
-        "privacyText": "string",
-        "benefits": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "formType": {
+          "type": "string"
+        },
+        "formFields": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        },
+        "benefits": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Ready to Transform Your Development?",
@@ -9300,13 +10664,27 @@
       "description": "Minimal lead capture section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "formType": "string",
-        "formFields": "array",
-        "ctaText": "string",
-        "privacyText": "string",
-        "benefits": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "formType": {
+          "type": "string"
+        },
+        "formFields": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        },
+        "benefits": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Ready to Transform Your Development?",
@@ -9422,13 +10800,27 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "formType": "string",
-        "formFields": "array",
-        "ctaText": "string",
-        "privacyText": "string",
-        "benefits": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "formType": {
+          "type": "string"
+        },
+        "formFields": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        },
+        "benefits": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Ready to Transform Your Development?",
@@ -9506,13 +10898,27 @@
       "description": "Capture leads and contact information with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "formType": "string",
-        "formFields": "array",
-        "ctaText": "string",
-        "privacyText": "string",
-        "benefits": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "formType": {
+          "type": "string"
+        },
+        "formFields": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        },
+        "benefits": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Ready to Transform Your Development?",
@@ -9610,14 +11016,42 @@
       "description": "Bold hero section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "headline": "string",
-        "subheadline": "string",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "heroImage": "object",
-        "backgroundType": "string"
+        "headline": {
+          "type": "string"
+        },
+        "subheadline": {
+          "type": "string"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "heroImage": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        },
+        "backgroundType": {
+          "type": "string"
+        }
       },
       "data": {
         "headline": "Build the Future of Web Development",
@@ -9689,14 +11123,42 @@
       "description": "Minimal hero section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "headline": "string",
-        "subheadline": "string",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "heroImage": "object",
-        "backgroundType": "string"
+        "headline": {
+          "type": "string"
+        },
+        "subheadline": {
+          "type": "string"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "heroImage": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        },
+        "backgroundType": {
+          "type": "string"
+        }
       },
       "data": {
         "headline": "Build the Future of Web Development",
@@ -9784,14 +11246,42 @@
         "Subtle animations"
       ],
       "fields": {
-        "headline": "string",
-        "subheadline": "string",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "heroImage": "object",
-        "backgroundType": "string"
+        "headline": {
+          "type": "string"
+        },
+        "subheadline": {
+          "type": "string"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "heroImage": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        },
+        "backgroundType": {
+          "type": "string"
+        }
       },
       "data": {
         "headline": "Build the Future of Web Development",
@@ -9840,14 +11330,42 @@
       "description": "Primary landing area with headline, CTA, and hero image with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "headline": "string",
-        "subheadline": "string",
-        "primaryCtaText": "string",
-        "primaryCtaLink": "url",
-        "secondaryCtaText": "string",
-        "secondaryCtaLink": "url",
-        "heroImage": "object",
-        "backgroundType": "string"
+        "headline": {
+          "type": "string"
+        },
+        "subheadline": {
+          "type": "string"
+        },
+        "primaryCtaText": {
+          "type": "string"
+        },
+        "primaryCtaLink": {
+          "type": "url"
+        },
+        "secondaryCtaText": {
+          "type": "string"
+        },
+        "secondaryCtaLink": {
+          "type": "url"
+        },
+        "heroImage": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "url",
+              "title": "Url",
+              "type": "string"
+            },
+            {
+              "name": "alt",
+              "title": "Alt",
+              "type": "string"
+            }
+          ]
+        },
+        "backgroundType": {
+          "type": "string"
+        }
       },
       "data": {
         "headline": "Build the Future of Web Development",
@@ -9917,12 +11435,24 @@
       "description": "Bold problem-solution section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "problems": "array",
-        "solutions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "problems": {
+          "type": "array"
+        },
+        "solutions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "The Problem We Solve",
@@ -10025,12 +11555,24 @@
       "description": "Minimal problem-solution section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "problems": "array",
-        "solutions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "problems": {
+          "type": "array"
+        },
+        "solutions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "The Problem We Solve",
@@ -10150,12 +11692,24 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "problems": "array",
-        "solutions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "problems": {
+          "type": "array"
+        },
+        "solutions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "The Problem We Solve",
@@ -10236,12 +11790,24 @@
       "description": "Address pain points and present solutions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "problems": "array",
-        "solutions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "problems": {
+          "type": "array"
+        },
+        "solutions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "The Problem We Solve",
@@ -10343,11 +11909,21 @@
       "description": "Bold social proof section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "stats": "array",
-        "testimonials": "array",
-        "logos": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "stats": {
+          "type": "array"
+        },
+        "testimonials": {
+          "type": "array"
+        },
+        "logos": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Trusted by Industry Leaders",
@@ -10375,31 +11951,31 @@
             "quote": "This platform has revolutionized how we build and deploy applications. The developer experience is unmatched.",
             "author": "Sarah Chen",
             "role": "CTO, TechCorp",
-            "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+            "avatar": "https://placehold.co/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
           },
           {
             "quote": "The performance improvements we've seen since switching have been incredible. Our users love the speed.",
             "author": "Michael Rodriguez",
             "role": "Lead Developer, StartupXYZ",
-            "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+            "avatar": "https://placehold.co/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
           }
         ],
         "logos": [
           {
             "name": "Company A",
-            "logo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop"
           },
           {
             "name": "Company B",
-            "logo": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1551434678-e076c223a692?w=200&h=100&fit=crop"
           },
           {
             "name": "Company C",
-            "logo": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1554224155-6726b3ff858f?w=200&h=100&fit=crop"
           },
           {
             "name": "Company D",
-            "logo": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1554224155-8d04cb21cd6c?w=200&h=100&fit=crop"
           }
         ]
       },
@@ -10460,11 +12036,21 @@
       "description": "Minimal social proof section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "stats": "array",
-        "testimonials": "array",
-        "logos": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "stats": {
+          "type": "array"
+        },
+        "testimonials": {
+          "type": "array"
+        },
+        "logos": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Trusted by Industry Leaders",
@@ -10492,31 +12078,31 @@
             "quote": "This platform has revolutionized how we build and deploy applications. The developer experience is unmatched.",
             "author": "Sarah Chen",
             "role": "CTO, TechCorp",
-            "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+            "avatar": "https://placehold.co/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
           },
           {
             "quote": "The performance improvements we've seen since switching have been incredible. Our users love the speed.",
             "author": "Michael Rodriguez",
             "role": "Lead Developer, StartupXYZ",
-            "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+            "avatar": "https://placehold.co/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
           }
         ],
         "logos": [
           {
             "name": "Company A",
-            "logo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop"
           },
           {
             "name": "Company B",
-            "logo": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1551434678-e076c223a692?w=200&h=100&fit=crop"
           },
           {
             "name": "Company C",
-            "logo": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1554224155-6726b3ff858f?w=200&h=100&fit=crop"
           },
           {
             "name": "Company D",
-            "logo": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1554224155-8d04cb21cd6c?w=200&h=100&fit=crop"
           }
         ]
       },
@@ -10590,11 +12176,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "stats": "array",
-        "testimonials": "array",
-        "logos": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "stats": {
+          "type": "array"
+        },
+        "testimonials": {
+          "type": "array"
+        },
+        "logos": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Trusted by Industry Leaders",
@@ -10679,11 +12275,21 @@
       "description": "Trust building with logos, testimonials, and stats with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "stats": "array",
-        "testimonials": "array",
-        "logos": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "stats": {
+          "type": "array"
+        },
+        "testimonials": {
+          "type": "array"
+        },
+        "logos": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Trusted by Industry Leaders",
@@ -10711,31 +12317,31 @@
             "quote": "This platform has revolutionized how we build and deploy applications. The developer experience is unmatched.",
             "author": "Sarah Chen",
             "role": "CTO, TechCorp",
-            "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+            "avatar": "https://placehold.co/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
           },
           {
             "quote": "The performance improvements we've seen since switching have been incredible. Our users love the speed.",
             "author": "Michael Rodriguez",
             "role": "Lead Developer, StartupXYZ",
-            "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+            "avatar": "https://placehold.co/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
           }
         ],
         "logos": [
           {
             "name": "Company A",
-            "logo": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop"
           },
           {
             "name": "Company B",
-            "logo": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1551434678-e076c223a692?w=200&h=100&fit=crop"
           },
           {
             "name": "Company C",
-            "logo": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1554224155-6726b3ff858f?w=200&h=100&fit=crop"
           },
           {
             "name": "Company D",
-            "logo": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&h=100&fit=crop"
+            "logo": "https://placehold.co/photo-1554224155-8d04cb21cd6c?w=200&h=100&fit=crop"
           }
         ]
       },
@@ -10791,9 +12397,15 @@
       "description": "Bold trust indicators section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "indicators": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "indicators": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Your Security is Our Priority",
@@ -10888,9 +12500,15 @@
       "description": "Minimal trust indicators section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "indicators": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "indicators": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Your Security is Our Priority",
@@ -11002,9 +12620,15 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "indicators": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "indicators": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Your Security is Our Priority",
@@ -11075,9 +12699,15 @@
       "description": "Security, certifications, and guarantees with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "indicators": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "indicators": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Your Security is Our Priority",
@@ -11171,11 +12801,21 @@
       "description": "Bold value proposition section with vibrant colors and dynamic presentation with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "benefits": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "benefits": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Why Choose Our Platform",
@@ -11264,11 +12904,21 @@
       "description": "Minimal value proposition section with clean typography and subtle presentation with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "benefits": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "benefits": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Why Choose Our Platform",
@@ -11374,11 +13024,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "benefits": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "benefits": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Why Choose Our Platform",
@@ -11445,11 +13105,21 @@
       "description": "Clear value statement and key benefits with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "benefits": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "benefits": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Why Choose Our Platform",
@@ -11558,12 +13228,24 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "leadMagnet": "string",
-        "placeholder": "string",
-        "buttonText": "string",
-        "privacyText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "leadMagnet": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Unlock Premium Content",
@@ -11632,10 +13314,18 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "leadMagnet": "string",
-        "placeholder": "string",
-        "buttonText": "string"
+        "title": {
+          "type": "string"
+        },
+        "leadMagnet": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Free Resource",
@@ -11695,12 +13385,24 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "leadMagnet": "string",
-        "placeholder": "string",
-        "buttonText": "string",
-        "privacyText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "leadMagnet": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Get Your Free Guide",
@@ -11769,12 +13471,24 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "leadMagnet": "string",
-        "placeholder": "string",
-        "buttonText": "string",
-        "privacyText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "leadMagnet": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Get Your Free Guide",
@@ -11841,11 +13555,21 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "placeholder": "string",
-        "buttonText": "string",
-        "privacyText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Join Our Community",
@@ -11911,10 +13635,18 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "placeholder": "string",
-        "buttonText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Newsletter",
@@ -11974,11 +13706,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "placeholder": "string",
-        "buttonText": "string",
-        "privacyText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Stay Updated",
@@ -12045,11 +13787,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "placeholder": "string",
-        "buttonText": "string",
-        "privacyText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        },
+        "privacyText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Stay Updated",
@@ -12114,10 +13866,18 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "preferences": "array",
-        "unsubscribeText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "preferences": {
+          "type": "array"
+        },
+        "unsubscribeText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Customize Your Experience",
@@ -12203,9 +13963,15 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "preferences": "array",
-        "unsubscribeText": "string"
+        "title": {
+          "type": "string"
+        },
+        "preferences": {
+          "type": "array"
+        },
+        "unsubscribeText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Email Settings",
@@ -12279,11 +14045,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "currentStatus": "string",
-        "preferences": "array",
-        "unsubscribeText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "currentStatus": {
+          "type": "string"
+        },
+        "preferences": {
+          "type": "array"
+        },
+        "unsubscribeText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Manage Your Subscription",
@@ -12373,11 +14149,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "currentStatus": "string",
-        "preferences": "array",
-        "unsubscribeText": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "currentStatus": {
+          "type": "string"
+        },
+        "preferences": {
+          "type": "array"
+        },
+        "unsubscribeText": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Newsletter Preferences",
@@ -12465,9 +14251,15 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "plans": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Pricing That Works",
@@ -12582,9 +14374,15 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "plans": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Simple Pricing",
@@ -12691,9 +14489,15 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "plans": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Choose Your Plan",
@@ -12809,9 +14613,15 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "plans": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Choose Your Plan",
@@ -12924,10 +14734,18 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "billingOptions": "array",
-        "plans": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "billingOptions": {
+          "type": "array"
+        },
+        "plans": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Flexible Subscriptions",
@@ -13056,10 +14874,18 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "billingOptions": "array",
-        "plans": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "billingOptions": {
+          "type": "array"
+        },
+        "plans": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Simple Pricing",
@@ -13179,10 +15005,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "billingOptions": "array",
-        "plans": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "billingOptions": {
+          "type": "array"
+        },
+        "plans": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Flexible Pricing Plans",
@@ -13312,10 +15146,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "billingOptions": "array",
-        "plans": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "billingOptions": {
+          "type": "array"
+        },
+        "plans": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Subscription Plans",
@@ -13442,10 +15284,18 @@
         "Creative elements"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "plans": "array",
-        "features": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array"
+        },
+        "features": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Choose Your Plan",
@@ -13577,10 +15427,18 @@
         "Clean lines"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "plans": "array",
-        "features": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array"
+        },
+        "features": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Plan Comparison",
@@ -13704,10 +15562,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "plans": "array",
-        "features": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array"
+        },
+        "features": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Compare Plans",
@@ -13842,10 +15708,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "plans": "array",
-        "features": "array"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "plans": {
+          "type": "array"
+        },
+        "features": {
+          "type": "array"
+        }
       },
       "data": {
         "title": "Compare Plans",
@@ -13954,11 +15828,21 @@
       "description": "Service offerings and packages with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "offerings": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "offerings": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Premium Service Packages",
@@ -14069,11 +15953,21 @@
       "description": "Service offerings and packages with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "offerings": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "offerings": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Service Packages",
@@ -14192,10 +16086,18 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Services",
@@ -14240,11 +16142,21 @@
       "description": "Service offerings and packages with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "offerings": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "offerings": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Services",
@@ -14348,11 +16260,21 @@
       "description": "Service descriptions and overview with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "services": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "services": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Premium Services",
@@ -14465,11 +16387,21 @@
       "description": "Service descriptions and overview with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "services": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "services": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Services",
@@ -14589,11 +16521,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "services": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "services": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "What We Do",
@@ -14676,11 +16618,21 @@
       "description": "Service descriptions and capabilities with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "services": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "services": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "What We Do",
@@ -14784,11 +16736,21 @@
       "description": "Business solutions and outcomes with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "solutions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "solutions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Strategic Business Solutions",
@@ -14901,11 +16863,21 @@
       "description": "Business solutions and outcomes with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "solutions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "solutions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Business Solutions",
@@ -15025,11 +16997,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "solutions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "solutions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Business Solutions",
@@ -15112,11 +17094,21 @@
       "description": "Business solutions and problem-solving approaches with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "solutions": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "solutions": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Business Solutions",
@@ -15220,11 +17212,21 @@
       "description": "Company culture and values with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "values": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "values": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Culture & Values",
@@ -15314,11 +17316,21 @@
       "description": "Company culture and values with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "values": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "values": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Values",
@@ -15424,11 +17436,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "values": "array",
-        "ctaText": "string",
-        "ctaLink": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "values": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Our Culture",
@@ -15495,11 +17517,21 @@
       "description": "Company culture and values with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "values": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "values": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Culture",
@@ -15587,11 +17619,21 @@
       "description": "Team member cards and introductions with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "members": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "members": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Meet Our Exceptional Team",
@@ -15723,11 +17765,21 @@
       "description": "Team member cards and introductions with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "members": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "members": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Team",
@@ -15861,11 +17913,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "members": "array",
-        "ctaText": "string",
-        "ctaLink": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "members": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Our Team",
@@ -15961,11 +18023,21 @@
       "description": "Team member cards and introductions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "members": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "members": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Team",
@@ -16081,11 +18153,21 @@
       "description": "Team member profiles and introductions with bold colors, strong typography, and high visual impact.",
       "theme": "bold",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "profiles": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "profiles": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Meet Our Leadership Team",
@@ -16186,11 +18268,21 @@
       "description": "Team member profiles and introductions with clean, minimalist design and subtle styling.",
       "theme": "minimal",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "profiles": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "profiles": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Our Team",
@@ -16306,11 +18398,21 @@
         "Subtle animations"
       ],
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "profiles": "array",
-        "ctaText": "string",
-        "ctaLink": "string"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "profiles": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "string"
+        }
       },
       "data": {
         "title": "Meet Our Team",
@@ -16399,11 +18501,21 @@
       "description": "Team member profiles and introductions with professional styling and balanced design.",
       "theme": "standard",
       "fields": {
-        "title": "string",
-        "subtitle": "string",
-        "profiles": "array",
-        "ctaText": "string",
-        "ctaLink": "url"
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "profiles": {
+          "type": "array"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "ctaLink": {
+          "type": "url"
+        }
       },
       "data": {
         "title": "Meet Our Team",

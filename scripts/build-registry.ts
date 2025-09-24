@@ -287,7 +287,7 @@ async function buildRegistry() {
             devDependencies: blockConfig.devDependencies || [],
             tailwind: blockConfig.tailwind || {},
             cssVars: blockConfig.cssVars || {},
-            fields: blockConfig.fields || {},
+            fields: transformFieldsFormat(blockConfig.fields || {}, blockConfig.data || {}),
             data: blockConfig.data || {},
             collectionsData: blockConfig.collectionsData || {},
             // Shadcn components used in this block
@@ -480,6 +480,85 @@ function generateThemeSpecificDescription(baseDescription: string, theme: string
   }
   
   return themeDescriptions[theme] || baseDescription
+}
+
+// Transform fields format from simple strings to structured objects
+function transformFieldsFormat(fields: any, data?: any): any {
+  if (!fields || typeof fields !== 'object') return fields
+  
+  const transformedFields: any = {}
+  
+  for (const [key, value] of Object.entries(fields)) {
+    if (typeof value === 'string') {
+      // Simple field types - check if it's an object type that needs fields
+      if (value === 'object' && data && data[key]) {
+        // Generate fields array based on the data structure
+        const objectData = data[key]
+        if (typeof objectData === 'object' && objectData !== null) {
+          const fieldsArray = Object.entries(objectData).map(([fieldKey, fieldValue]) => {
+            let fieldType = 'string'
+            if (typeof fieldValue === 'number') fieldType = 'number'
+            else if (typeof fieldValue === 'boolean') fieldType = 'boolean'
+            else if (typeof fieldValue === 'object' && fieldValue !== null) {
+              if (Array.isArray(fieldValue)) fieldType = 'array'
+              else fieldType = 'object'
+            }
+            
+            return {
+              name: fieldKey,
+              title: fieldKey.charAt(0).toUpperCase() + fieldKey.slice(1).replace(/([A-Z])/g, ' $1'),
+              type: fieldType
+            }
+          })
+          
+          transformedFields[key] = {
+            type: 'object',
+            fields: fieldsArray
+          }
+        } else {
+          transformedFields[key] = { type: value }
+        }
+      } else {
+        // Simple field types
+        transformedFields[key] = { type: value }
+      }
+    } else if (typeof value === 'object' && value !== null) {
+      // Check if this is an object field that needs a fields array
+      if (value.type === 'object' && !value.fields && data && data[key]) {
+        // Generate fields array based on the data structure
+        const objectData = data[key]
+        if (typeof objectData === 'object' && objectData !== null) {
+          const fieldsArray = Object.entries(objectData).map(([fieldKey, fieldValue]) => {
+            let fieldType = 'string'
+            if (typeof fieldValue === 'number') fieldType = 'number'
+            else if (typeof fieldValue === 'boolean') fieldType = 'boolean'
+            else if (typeof fieldValue === 'object' && fieldValue !== null) {
+              if (Array.isArray(fieldValue)) fieldType = 'array'
+              else fieldType = 'object'
+            }
+            
+            return {
+              name: fieldKey,
+              title: fieldKey.charAt(0).toUpperCase() + fieldKey.slice(1).replace(/([A-Z])/g, ' $1'),
+              type: fieldType
+            }
+          })
+          
+          transformedFields[key] = {
+            type: 'object',
+            fields: fieldsArray
+          }
+        } else {
+          transformedFields[key] = { type: 'object' }
+        }
+      } else {
+        // Complex field types (already in new format or complex objects)
+        transformedFields[key] = value
+      }
+    }
+  }
+  
+  return transformedFields
 }
 
 // Category metadata for AI decision-making

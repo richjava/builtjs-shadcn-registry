@@ -1,0 +1,74 @@
+{
+  "fields": {
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "image": { "type": "image" },
+    "cta": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "label",
+          "title": "Label",
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "title": "Url",
+          "type": "string"
+        }
+      ]
+    },
+    "features": {
+      "type": "array",
+      "fields": [
+        {
+          "name": "title",
+          "title": "Feature Title",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "title": "Feature Description",
+          "type": "text"
+        },
+        {
+          "name": "icon",
+          "title": "Icon",
+          "type": "string"
+        }
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "fields": [
+        {
+          "name": "published",
+          "title": "Published",
+          "type": "boolean"
+        },
+        {
+          "name": "tags",
+          "title": "Tags",
+          "type": "array"
+        },
+        {
+          "name": "author",
+          "title": "Author",
+          "type": "object",
+          "fields": [
+            {
+              "name": "name",
+              "title": "Author Name",
+              "type": "string"
+            },
+            {
+              "name": "email",
+              "title": "Author Email",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
