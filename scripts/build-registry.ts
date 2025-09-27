@@ -400,8 +400,12 @@ function extractCollectionsFromBlocks(blocks: RegistryItem[]): Record<string, an
         "author": "Alex Chen",
         "publishedDate": "2024-01-10",
         "readTime": "5 min read",
-        "image": "https://placehold.co/600x400/000000/FFFFFF?text=JavaScript",
-        "tags": ["JavaScript", "Tutorial"]
+        "image": {
+          "url": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800&h=400&fit=crop",
+          "alt": "JavaScript code on computer screen"
+        },
+        "tags": ["JavaScript", "Tutorial"],
+        "content": "<p>JavaScript has evolved significantly over the years. Modern JavaScript brings powerful features that make development more efficient and code more maintainable.</p><h2>ES6+ Features</h2><p>Modern JavaScript includes many powerful features like arrow functions, destructuring, template literals, and async/await that make code more readable and efficient.</p><h2>Module System</h2><p>The introduction of ES6 modules has revolutionized how we organize and structure JavaScript code, making it easier to create maintainable applications.</p><h2>Best Practices</h2><p>Following modern JavaScript best practices helps create more reliable, performant, and maintainable applications.</p>"
       },
       {
         "_id": "blog-post-2",
@@ -412,8 +416,12 @@ function extractCollectionsFromBlocks(blocks: RegistryItem[]): Record<string, an
         "author": "Maria Rodriguez",
         "publishedDate": "2024-01-05",
         "readTime": "7 min read",
-        "image": "https://placehold.co/600x400/000000/FFFFFF?text=React",
-        "tags": ["React", "Best Practices"]
+        "image": {
+          "url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop",
+          "alt": "React development workspace with code"
+        },
+        "tags": ["React", "Best Practices"],
+        "content": "<p>In today's fast-paced development environment, building scalable React applications is crucial for long-term success. This comprehensive guide will walk you through the essential patterns and practices that will help you create maintainable, performant, and scalable React applications.</p><h2>Understanding Scalability in React</h2><p>Scalability in React applications refers to the ability to handle increasing complexity, user load, and feature requirements without significant performance degradation or code maintainability issues.</p><h2>Key Principles for Scalable React Applications</h2><p>Here are the fundamental principles that will guide you in building scalable React applications:</p><h3>1. Component Architecture</h3><p>Design your components with single responsibility in mind. Each component should have a clear purpose and minimal dependencies.</p><h3>2. State Management</h3><p>Choose the right state management solution for your application's complexity. For simple apps, React's built-in state might be sufficient, while complex applications may benefit from Redux or Zustand.</p><h3>3. Performance Optimization</h3><p>Implement proper memoization, lazy loading, and code splitting to ensure your application remains performant as it scales.</p><h2>Best Practices</h2><p>Follow these best practices to ensure your React application scales effectively:</p><ul><li>Use TypeScript for better type safety</li><li>Implement proper error boundaries</li><li>Write comprehensive tests</li><li>Follow consistent coding standards</li><li>Document your components and APIs</li></ul><p>By following these guidelines, you'll be well on your way to building React applications that can scale with your business needs.</p>"
       },
       {
         "_id": "blog-post-3",
@@ -424,8 +432,12 @@ function extractCollectionsFromBlocks(blocks: RegistryItem[]): Record<string, an
         "author": "David Kim",
         "publishedDate": "2024-01-01",
         "readTime": "6 min read",
-        "image": "https://placehold.co/600x400/000000/FFFFFF?text=CSS",
-        "tags": ["CSS", "Layout"]
+        "image": {
+          "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop",
+          "alt": "CSS Grid and Flexbox layout examples"
+        },
+        "tags": ["CSS", "Layout"],
+        "content": "<p>CSS Grid and Flexbox are two powerful layout systems in CSS, each with its own strengths and use cases. Understanding when to use each can significantly improve your web development workflow and create better user experiences.</p><h2>CSS Grid: Two-Dimensional Layout</h2><p>CSS Grid is designed for two-dimensional layouts, allowing you to create complex grid-based designs with rows and columns. It's perfect for overall page layouts, card grids, and complex component arrangements.</p><h2>Flexbox: One-Dimensional Layout</h2><p>Flexbox is designed for one-dimensional layouts, making it ideal for aligning items in a single direction - either horizontally or vertically. It's perfect for navigation bars, button groups, and centering content.</p><h2>When to Use Each</h2><p>Use CSS Grid when you need to create layouts with both rows and columns. Use Flexbox when you need to align items in a single direction or create flexible components that need to adapt to their content.</p><h2>Combining Both</h2><p>Often, the best approach is to combine both: use CSS Grid for the overall page layout and Flexbox for individual components within the grid.</p>"
       }
     ],
     serviceItem: [
@@ -506,7 +518,10 @@ function extractCollectionsFromBlocks(blocks: RegistryItem[]): Record<string, an
         "name": "Sarah Chen",
         "role": "CEO & Co-Founder",
         "bio": "Visionary leader with 15+ years in tech, passionate about building products that make a difference.",
-        "image": "https://placehold.co/400x400/000000/FFFFFF?text=SC",
+        "image": {
+          "url": "https://placehold.co/400x400/000000/FFFFFF?text=SC",
+          "alt": "Sarah Chen profile photo"
+        },
         "social": {
           "linkedin": "https://linkedin.com/in/sarahchen",
           "twitter": "https://twitter.com/sarahchen"
@@ -519,7 +534,10 @@ function extractCollectionsFromBlocks(blocks: RegistryItem[]): Record<string, an
         "name": "Mike Rodriguez",
         "role": "CTO & Co-Founder",
         "bio": "Technical architect and full-stack developer with expertise in scalable systems and modern frameworks.",
-        "image": "https://placehold.co/400x400/000000/FFFFFF?text=MR",
+        "image": {
+          "url": "https://placehold.co/400x400/000000/FFFFFF?text=MR",
+          "alt": "Mike Rodriguez profile photo"
+        },
         "social": {
           "linkedin": "https://linkedin.com/in/mikerodriguez",
           "github": "https://github.com/mikerodriguez"
@@ -532,7 +550,10 @@ function extractCollectionsFromBlocks(blocks: RegistryItem[]): Record<string, an
         "name": "Alex Kim",
         "role": "Head of Design",
         "bio": "Creative director focused on user experience and visual design that drives engagement and conversion.",
-        "image": "https://placehold.co/400x400/000000/FFFFFF?text=AK",
+        "image": {
+          "url": "https://placehold.co/400x400/000000/FFFFFF?text=AK",
+          "alt": "Alex Kim profile photo"
+        },
         "social": {
           "linkedin": "https://linkedin.com/in/alexkim",
           "dribbble": "https://dribbble.com/alexkim"
@@ -627,6 +648,28 @@ async function extractComponentsFromFile(filePath: string): Promise<{ shadcnComp
   }
 }
 
+// Transform entry data into references
+function transformEntryDataToReferences(data: any): any {
+  if (!data || typeof data !== 'object') {
+    return data
+  }
+
+  const transformedData = { ...data }
+
+  // Check if this data object has an entry field
+  if (transformedData.entry && typeof transformedData.entry === 'object' && transformedData.entry._type && transformedData.entry.slug) {
+    // Transform the entry from a full object to a reference
+    const entryType = transformedData.entry._type
+    const entrySlug = transformedData.entry.slug
+
+    transformedData.entry = {
+      [entryType]: { slug: entrySlug }
+    }
+  }
+
+  return transformedData
+}
+
 async function buildRegistry() {
   console.log("🏗️  Building registry...")
 
@@ -675,14 +718,8 @@ async function buildRegistry() {
           
           const templatePath = path.join(sectionPath, templateDir.name)
           
-          // Check if template has a config file
-          const configPath = path.join(templatePath, "block.json")
+          // Since block.json files are removed, use default empty config
           let blockConfig: Partial<RegistryItem> = {}
-          
-          if (existsSync(configPath)) {
-            const configContent = await fs.readFile(configPath, "utf-8")
-            blockConfig = JSON.parse(configContent)
-          }
           
           // Find all files in the template directory
           const files = await getBlockFiles(templatePath, templatePath)
@@ -748,7 +785,7 @@ async function buildRegistry() {
             tailwind: blockConfig.tailwind || {},
             cssVars: blockConfig.cssVars || {},
             fields: transformFieldsFormat(blockConfig.fields || {}, blockConfig.data || {}),
-            data: blockConfig.data || {},
+            data: transformEntryDataToReferences(blockConfig.data || {}),
             // Shadcn components used in this block
             shadcnComponents,
             lucideIcons

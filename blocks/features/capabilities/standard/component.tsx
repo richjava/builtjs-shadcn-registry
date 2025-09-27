@@ -45,7 +45,7 @@ export default function Capabilities({ content }: CapabilitiesProps) {
       slug: "analytics-insights",
       category: "Analytics & Insights",
       features: [
-        "Real-time dashboards!!!",
+        "Real-time dashboards",
         "Custom reporting",
         "Data visualization",
         "Performance metrics"

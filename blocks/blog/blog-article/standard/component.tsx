@@ -2,6 +2,8 @@ import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Calendar, Clock, User, Share2, Tag } from 'lucide-react'
 import Image from 'next/image'
+import { PortableText } from '@portabletext/react'
+import { createPortableTextComponents } from '@/components/shared'
 
 interface BlogArticleProps {
   content: {
@@ -22,7 +24,7 @@ interface BlogArticleProps {
         tags?: string[]
         category?: string
         featured?: boolean
-        content?: string
+        content?: any // PortableText content
       }
     }
   }
@@ -130,10 +132,16 @@ export default function BlogArticleStandard({ content }: BlogArticleProps) {
 
         {/* Article Content */}
         <div className="prose prose-lg max-w-none">
-          <div 
-            className="text-gray-800 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: entry.content || entry.excerpt }}
-          />
+          <div className="text-gray-800 leading-relaxed">
+            {entry.content ? (
+              <PortableText 
+                value={entry.content} 
+                components={createPortableTextComponents('standard')}
+              />
+            ) : (
+              <p>{entry.excerpt}</p>
+            )}
+          </div>
         </div>
 
         {/* Article Footer */}

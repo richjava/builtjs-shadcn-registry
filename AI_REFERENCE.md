@@ -2,24 +2,52 @@
 
 ## Overview
 
-This is a **custom shadcn/ui registry** that extends the standard shadcn registry format with enhanced metadata for AI-powered component selection and generation. The registry contains 120+ pre-built blocks organized into modules, sections, and templates.
+This is a **custom shadcn/ui registry** that extends the standard shadcn registry format with enhanced metadata for AI-powered component selection and generation. The registry contains 160+ pre-built blocks organized into modules, sections, and templates.
+
+## New Simplified Architecture
+
+**IMPORTANT**: This registry has been restructured to eliminate redundant `block.json` files and use a simplified architecture where public files serve as the single source of truth.
+
+### File Structure
+
+```
+public/
+├── registry.json                    # Minimal registry (ShadCN convention)
+└── registry/
+    ├── blocks-index.json           # Complete block definitions with fields, data, collections
+    ├── collections-data.json       # All collection data (blogItem, teamMemberItem, etc.)
+    └── content-types.json          # Content type definitions (Built.js format)
+
+blocks/
+└── [module]/[section]/[template]/
+    └── component.tsx               # Only component files remain!
+```
+
+### Key Changes
+
+1. **No `block.json` files** - All block metadata is now in `public/registry/blocks-index.json`
+2. **Centralized collections** - All collection data is in `public/registry/collections-data.json`
+3. **Direct editing** - Modify public files directly, no build step required
+4. **AI accessible** - All definition files are in the public directory
+5. **Simplified workflow** - Edit component files + update public registry files
 
 ## Registry Structure
 
 ### Core Organization
 - **Modules** (formerly categories): Top-level groupings (About, Main, Features, Services, Team, FAQ, Logos, Newsletter, Blog, Gallery, Pricing)
 - **Sections**: Specific functionality within modules (e.g., "hero-section", "team-profiles", "pricing-plans")
-- **Templates**: Theme variations of sections (Standard, Minimal, Bold)
+- **Templates**: Theme variations of sections (Standard, Minimal, Bold, Neobrutalism)
 
 ### Block Naming Convention
-Blocks follow the pattern: `{module}-{section}-{theme}`
-- Example: `main-hero-section-standard`
-- Example: `about-team-profiles-bold`
-- Example: `pricing-plans-minimal`
+Blocks follow the pattern: `{module}-{section}-{template}-{theme}`
+- Example: `main-hero-section-hero-section-standard`
+- Example: `about-team-cards-bold`
+- Example: `pricing-plans-plans-minimal`
 
-## Registry Structure
+## Registry Files Structure
 
-The `registry.json` file follows this complete structure:
+### 1. `public/registry.json` - Minimal Registry
+This file contains only essential metadata following ShadCN conventions:
 
 ```json
 {
@@ -43,156 +71,197 @@ The `registry.json` file follows this complete structure:
       "name": "bold", 
       "label": "Bold",
       "description": "High-impact design with vibrant colors and dynamic layouts"
+    },
+    {
+      "name": "neobrutalism",
+      "label": "Neobrutalism",
+      "description": "Raw, unpolished aesthetics with thick borders and stark shadows"
     }
   ],
   
-  "contentTypes": {
-    "teamMemberItem": {
-      "name": "teamMemberItem",
-      "title": "Team Member Item",
-      "fields": {
-        "name": { "type": "string" },
-        "role": { "type": "string" },
-        "bio": { "type": "text" },
-        "image": { "type": "image" }
-      }
-    }
-  },
-  
-  "modules": [
+  "blocks": [
     {
-      "name": "About",
-      "label": "About",
-      "description": "About page sections and components",
-      "sections": [
-        {
-          "name": "About Team",
-          "label": "About Team", 
-          "description": "Team member showcase sections",
-          "templates": [
-            // Array of template objects
-          ]
-        }
-      ]
+      "name": "main-hero-section-hero-section-standard",
+      "moduleName": "Main",
+      "sectionName": "Hero Section",
+      "templateName": "Hero Section",
+      "themeName": "Standard",
+      "theme": "standard",
+      "description": "Hero section template with clean, modern styling and professional design."
     }
   ]
 }
 ```
 
-### Top-Level Properties
+### 2. `public/registry/blocks-index.json` - Complete Block Definitions
+This file contains the full block definitions with fields, data, and collections:
 
-- **`$schema`**: JSON schema reference for validation
-- **`name`**: Registry identifier (`builtjs-registry`)
-- **`version`**: Registry version number
-- **`baseUrl`**: Base URL for the registry
-- **`themes`**: Array of available theme definitions
-- **`contentTypes`**: Object defining reusable content types
-- **`modules`**: Array of module objects containing sections and templates
-
-### Theme Structure
-
-Each theme object contains:
 ```json
 {
-  "name": "theme-slug",           // URL-friendly identifier
-  "label": "Theme Label",         // Human-readable name
-  "description": "Theme description" // Detailed explanation
-}
-```
-
-### Content Type Structure
-
-Each content type contains:
-```json
-{
-  "name": "contentTypeName",      // Internal identifier
-  "title": "Content Type Title",  // Display name
-  "fields": {                     // Field definitions
-    "fieldName": {
-      "type": "dataType"          // Sanity data type
+  "main-hero-section-hero-section-standard": {
+    "fields": {
+      "headline": {
+        "type": "string"
+      },
+      "subheadline": {
+        "type": "text"
+      },
+      "ctaText": {
+        "type": "string"
+      },
+      "ctaLink": {
+        "type": "url"
+      }
+    },
+    "data": {
+      "headline": "Build Amazing Products",
+      "subheadline": "Create stunning user experiences with our comprehensive design system and component library.",
+      "ctaText": "Get Started",
+      "ctaLink": "/signup"
+    },
+    "collections": {
+      "featureItem": {
+        "limit": 3
+      }
+    },
+    "dependencies": ["lucide-react"],
+    "shadcnComponents": ["Button", "Card"],
+    "lucideIcons": ["ArrowRight", "Star"],
+    "masterDetail": {
+      "isMaster": false,
+      "isDetail": false
     }
   }
 }
 ```
 
-### Module Structure
+### 3. `public/registry/collections-data.json` - Collection Data
+This file contains all the data for collections referenced by blocks:
 
-Each module contains:
 ```json
 {
-  "name": "ModuleName",           // Internal identifier
-  "label": "Module Label",        // Display name
-  "description": "Module description",
-  "sections": [                   // Array of section objects
+  "blogItem": [
     {
-      "name": "SectionName",      // Internal identifier
-      "label": "Section Label",   // Display name
-      "description": "Section description",
-      "templates": [              // Array of template objects
-        // Individual block definitions
-      ]
+      "_id": "blog-post-1",
+      "_type": "blogItem",
+      "slug": "getting-started-modern-javascript",
+      "title": "Getting Started with Modern JavaScript",
+      "excerpt": "Learn the fundamentals of modern JavaScript and best practices.",
+      "author": "Alex Chen",
+      "publishedDate": "2024-01-10",
+      "readTime": "5 min read",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800&h=400&fit=crop",
+        "alt": "JavaScript code on computer screen"
+      },
+      "tags": ["JavaScript", "Tutorial"],
+      "content": "<p>JavaScript has evolved significantly...</p>"
+    }
+  ],
+  "teamMemberItem": [
+    {
+      "_id": "teamMemberItem-1",
+      "_type": "teamMemberItem",
+      "slug": "sarah-chen",
+      "name": "Sarah Chen",
+      "role": "CEO & Co-Founder",
+      "bio": "Visionary leader with 15+ years in tech, passionate about building products that make a difference.",
+      "image": {
+        "url": "https://placehold.co/400x400/000000/FFFFFF?text=SC",
+        "alt": "Sarah Chen profile photo"
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/in/sarahchen",
+        "twitter": "https://twitter.com/sarahchen"
+      }
     }
   ]
 }
 ```
 
-## Registry Block Structure
-
-Each block in `registry.json` contains:
+### 4. `public/registry/content-types.json` - Content Type Definitions
+This file contains Built.js format content type definitions:
 
 ```json
 {
-  "name": "block-slug",
-  "type": "registry:block",
-  "description": "Human-readable description",
-  "moduleName": "Module Name",
-  "sectionName": "Section Name", 
-  "templateName": "Template Name",
-  "themeName": "Theme Name",
-  "theme": "theme-slug",
-  
-  // Enhanced AI metadata
-  "useCase": "Primary use case description",
-  "businessTypes": ["SaaS", "Agency", "E-commerce"],
-  "scenarios": ["Landing page", "Product launch"],
-  "keyFeatures": ["Bold colors", "Strong typography"],
-  
-  // Master/Detail relationship for AI understanding
-  "masterDetail": {
-    "isMaster": false,
-    "isDetail": true
-  },
-  
-  // Component dependencies
-  "dependencies": ["lucide-react", "@radix-ui/react-label"],
-  "devDependencies": [],
-  "shadcnComponents": ["Button", "Input", "Label"],
-  "lucideIcons": ["ArrowRight", "Play", "Sparkles"],
-  
-  // Content structure
-  "fields": {
-    "headline": "string",
-    "subheadline": "string",
-    "ctaText": "string"
-  },
-  "data": {
-    "headline": "Example headline",
-    "subheadline": "Example subheadline",
-    "ctaText": "Get Started"
-  },
-  "collectionsData": {
-    "items": [
-      {"name": "Item 1", "description": "Description 1"},
-      {"name": "Item 2", "description": "Description 2"}
+  "blogItem": {
+    "name": "blogItem",
+    "title": "Blog Item",
+    "dataPosition": 1,
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "excerpt",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "content",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "image",
+        "type": "image",
+        "required": false
+      }
     ]
-  },
-  
-  // Technical
-  "files": ["blocks/path/to/component.tsx"],
-  "tailwind": {},
-  "cssVars": {}
+  }
 }
 ```
+
+## Registry Block Structure
+
+Each block in `public/registry/blocks-index.json` contains:
+
+```json
+{
+  "block-name": {
+    "fields": {
+      "headline": {
+        "type": "string"
+      },
+      "subheadline": {
+        "type": "text"
+      },
+      "ctaText": {
+        "type": "string"
+      }
+    },
+    "data": {
+      "headline": "Example headline",
+      "subheadline": "Example subheadline",
+      "ctaText": "Get Started"
+    },
+    "collections": {
+      "featureItem": {
+        "limit": 3
+      }
+    },
+    "dependencies": ["lucide-react"],
+    "shadcnComponents": ["Button", "Input", "Label"],
+    "lucideIcons": ["ArrowRight", "Play", "Sparkles"],
+    "masterDetail": {
+      "isMaster": false,
+      "isDetail": true
+    }
+  }
+}
+```
+
+### Block Properties
+
+- **`fields`**: Schema definition for the block's data structure
+- **`data`**: Default/example data for the block
+- **`collections`**: References to collection data with optional limits
+- **`dependencies`**: Required npm packages
+- **`shadcnComponents`**: Required ShadCN UI components
+- **`lucideIcons`**: Required Lucide React icons
+- **`masterDetail`**: Master/detail relationship indicators
 
 ## Theme System
 
@@ -216,6 +285,13 @@ Each block in `registry.json` contains:
 - **Best for**: Portfolio, minimalist brands, content-focused sites
 - **Color palette**: Monochromatic with subtle accents
 - **Typography**: Clean, readable fonts
+
+### Neobrutalism Theme
+- **Purpose**: Raw, unpolished aesthetics with bold design choices
+- **Characteristics**: Thick borders, stark shadows, high-contrast colors, raw typography
+- **Best for**: Creative portfolios, experimental brands, design-forward projects
+- **Color palette**: High contrast, bold colors, stark black/white combinations
+- **Typography**: Bold, impactful fonts with strong character
 
 ## Component Interface Pattern
 
@@ -569,7 +645,7 @@ The registry includes a `masterDetail` property for each block to help AI models
 #### **Decision Point: What type of block is needed?**
 - **New Module**: Create entirely new module (e.g., "E-commerce", "Dashboard")
 - **New Section**: Add section to existing module (e.g., "Contact Form" to "Main")
-- **New Template**: Add theme variation to existing section (e.g., "bold" theme for "hero-section")
+- **New Template**: Add theme variation to existing section (e.g., "neobrutalism" theme for "hero-section")
 
 #### **Decision Point: Which module should contain this block?**
 - **About**: Company information, team, values, story
@@ -609,6 +685,7 @@ The registry includes a `masterDetail` property for each block to help AI models
 - **Standard**: Professional, corporate, SaaS, broad appeal
 - **Bold**: Creative, startup, brand launch, high impact
 - **Minimal**: Portfolio, minimalist brand, content-focused
+- **Neobrutalism**: Creative, experimental, design-forward, raw aesthetics
 
 #### **Decision Point: Should all themes be created?**
 - **YES**: If the section will be used across different brand personalities
@@ -629,38 +706,81 @@ The registry includes a `masterDetail` property for each block to help AI models
 - **Navigation**: `Menu`, `Search`, `Filter`
 - **Status**: `AlertCircle`, `CheckCircle`, `Info`
 
+### 4.5. **Custom Components**
+
+#### **Decision Point: Do you need custom components?**
+Custom components used within block templates must be placed in the `components/shared` directory and imported from there:
+
+```typescript
+// ✅ Correct - Import from components/shared
+import { createPortableTextComponents } from '@/components/shared'
+
+// ❌ Incorrect - Don't import from lib or other locations
+import { createPortableTextComponents } from '@/lib/portable-text-components'
+```
+
+#### **Shared Components Structure**
+```
+components/
+├── ui/                    # ShadCN UI components
+└── shared/                # Custom shared components
+    ├── index.ts          # Export all shared components
+    ├── portable-text-components.tsx
+    └── [other-shared-components].tsx
+```
+
+#### **PortableText Components**
+The registry includes theme-aware PortableText components for rendering rich text content:
+
+```typescript
+import { PortableText } from '@portabletext/react'
+import { createPortableTextComponents } from '@/components/shared'
+
+// In your component
+<PortableText 
+  value={entry.content} 
+  components={createPortableTextComponents('bold')} // 'standard', 'minimal', 'bold', 'neobrutalism'
+/>
+```
+
+The `createPortableTextComponents` function provides theme-specific styling for:
+- Headings (h1, h2, h3, h4)
+- Paragraphs and text formatting
+- Lists (bullet and numbered)
+- Links and emphasis
+- Code blocks and inline code
+- Blockquotes
+
 ### 5. **Implementation Flow**
 
-#### **Step 1: Create Block Directory Structure**
+#### **Step 1: Create Component File**
 ```
-blocks/{module}/{section}/{theme}/
-├── block.json
-├── component.tsx
-└── (optional files)
+blocks/{module}/{section}/{template}/
+└── component.tsx
 ```
 
-#### **Step 2: Define Block Configuration**
-- Set `moduleName`, `sectionName`, `templateName`, `themeName`
-- Define `useCase`, `businessTypes`, `scenarios`
-- Specify `keyFeatures` for the theme
-- List `dependencies`, `shadcnComponents`, `lucideIcons`
-
-#### **Step 3: Create Component Interface**
+#### **Step 2: Define Component Interface**
 - Define `ComponentProps` interface
 - Structure `content.data` fields
 - Structure `content.collections` if using content types
 - Add default data fallbacks
 
-#### **Step 4: Implement Component Logic**
+#### **Step 3: Implement Component Logic**
 - Extract data from props
 - Handle theme-specific styling
 - Implement responsive design
 - Add accessibility features
 
-#### **Step 5: Update Registry**
-- Add block to appropriate module/section/template
-- Update `blockComponents` mapping in preview page
-- Test block rendering
+#### **Step 4: Update Registry Files**
+- Add block definition to `public/registry/blocks-index.json`
+- Add collection data to `public/registry/collections-data.json` (if needed)
+- Add content type to `public/registry/content-types.json` (if needed)
+- Update `public/registry.json` with block metadata
+
+#### **Step 5: Test Block Rendering**
+- Test block rendering in preview
+- Verify data structure matches interface
+- Test all theme variations (if multiple created)
 
 ### 6. **Alternative Flows**
 
@@ -669,24 +789,28 @@ blocks/{module}/{section}/{theme}/
 2. Create single theme variation
 3. Use basic shadcn components
 4. Implement with simple props interface
+5. Update `blocks-index.json` only
 
 #### **Flow B: Complex Block (With Content Types)**
-1. Define content type in `contentTypes` section
+1. Define content type in `content-types.json`
 2. Create multiple theme variations
 3. Use advanced shadcn components
 4. Implement with collections interface
+5. Update all registry files
 
 #### **Flow C: Theme-Specific Block**
 1. Create only relevant theme(s)
 2. Optimize for specific use case
 3. Use theme-appropriate components
 4. Implement with theme-specific styling
+5. Update registry files accordingly
 
 #### **Flow D: Reusable Block**
 1. Create content type for reusability
 2. Design flexible data structure
 3. Use modular components
 4. Implement with generic interface
+5. Update all registry files
 
 ### 7. **Validation Checklist**
 
@@ -704,6 +828,7 @@ blocks/{module}/{section}/{theme}/
 - [ ] Components are properly imported
 - [ ] Accessibility features included
 - [ ] Responsive design implemented
+- [ ] Registry files updated correctly
 
 ## AI Generation Best Practices
 

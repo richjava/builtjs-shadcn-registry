@@ -28,7 +28,7 @@ async function loadCollectionsData(): Promise<RegistryCollections> {
   if (typeof window === 'undefined') {
     try {
       // Server-side: read from filesystem
-      const collectionsPath = path.join(process.cwd(), 'public', 'collections-data.json')
+      const collectionsPath = path.join(process.cwd(), 'public', 'registry', 'collections-data.json')
       const collectionsContent = fs.readFileSync(collectionsPath, 'utf-8')
       return JSON.parse(collectionsContent)
     } catch (error) {
@@ -38,7 +38,7 @@ async function loadCollectionsData(): Promise<RegistryCollections> {
   } else {
     try {
       // Client-side: fetch from public URL
-      const response = await fetch('/collections-data.json')
+      const response = await fetch('/registry/collections-data.json')
       if (!response.ok) {
         throw new Error(`Failed to load collections data: ${response.status}`)
       }
@@ -58,7 +58,7 @@ async function loadBlockDefinition(blockName: string): Promise<any> {
   if (typeof window === 'undefined') {
     try {
       // Server-side: read from filesystem
-      const blocksPath = path.join(process.cwd(), 'public', 'blocks-index.json')
+      const blocksPath = path.join(process.cwd(), 'public', 'registry', 'blocks-index.json')
       const blocksContent = fs.readFileSync(blocksPath, 'utf-8')
       const blocksIndex = JSON.parse(blocksContent)
       return blocksIndex[blockName] || {}
@@ -69,7 +69,7 @@ async function loadBlockDefinition(blockName: string): Promise<any> {
   } else {
     try {
       // Client-side: fetch from public URL
-      const response = await fetch('/blocks-index.json')
+      const response = await fetch('/registry/blocks-index.json')
       if (!response.ok) {
         throw new Error(`Failed to load blocks index: ${response.status}`)
       }
@@ -80,6 +80,45 @@ async function loadBlockDefinition(blockName: string): Promise<any> {
       return {}
     }
   }
+}
+
+/**
+ * Resolves entry references from collection data
+ * 
+ * @param entryRef - Entry reference object (e.g., { blogItem: { slug: "post-slug" } })
+ * @param collectionsData - Available collections data
+ * @returns Resolved entry object or null if not found
+ */
+function resolveEntryReference(entryRef: any, collectionsData: RegistryCollections): any {
+  if (!entryRef || typeof entryRef !== 'object') {
+    return null
+  }
+
+  // Get the collection type and config (e.g., blogItem: { slug: "..." })
+  const [collectionType] = Object.keys(entryRef)
+  const config = entryRef[collectionType]
+
+  if (!collectionType || !collectionsData[collectionType]) {
+    console.warn(`⚠️  Collection type '${collectionType}' not found for entry resolution`)
+    return null
+  }
+
+  const collection = collectionsData[collectionType]
+  
+  // If no slug provided, return the first item
+  if (!config?.slug) {
+    return collection[0] || null
+  }
+
+  // Find entry by slug
+  const entry = collection.find((item: any) => item.slug === config.slug)
+  
+  if (!entry) {
+    console.warn(`⚠️  Entry with slug '${config.slug}' not found in collection '${collectionType}'`)
+    return null
+  }
+
+  return entry
 }
 
 /**
@@ -104,7 +143,16 @@ export async function resolveBlockCollections(blockName: string): Promise<{
 
 
     // Extract block data
-    blockData = blockDefinition.data || {}
+    blockData = { ...(blockDefinition.data || {}) }
+
+    // Resolve entry references in block data
+    if (blockData.entry && typeof blockData.entry === 'object') {
+      const resolvedEntry = resolveEntryReference(blockData.entry, collectionsData)
+      if (resolvedEntry) {
+        blockData.entry = resolvedEntry
+        console.log(`✅ Resolved entry reference for block: ${blockName}`)
+      }
+    }
 
     const blockCollections = blockDefinition.collections || {}
 

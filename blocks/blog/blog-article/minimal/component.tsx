@@ -1,5 +1,7 @@
 import { cn } from '@/lib/utils'
 import { Calendar, User } from 'lucide-react'
+import { PortableText } from '@portabletext/react'
+import { createPortableTextComponents } from '@/components/shared'
 
 interface BlogArticleProps {
   content: {
@@ -20,7 +22,7 @@ interface BlogArticleProps {
         tags?: string[]
         category?: string
         featured?: boolean
-        content?: string
+        content?: any // PortableText content
       }
     }
   }
@@ -31,7 +33,7 @@ export default function BlogArticleMinimal({ content }: BlogArticleProps) {
     _id: "fallback-1",
     _type: "blogItem",
     slug: "building-scalable-react-applications",
-    title: "Building Scalable React Applications!",
+    title: "Building Scalable React Applications",
     excerpt: "Learn the best practices for creating maintainable and scalable React applications that can grow with your business needs.",
     author: "Sarah Johnson",
     publishedDate: "2024-01-15",
@@ -81,10 +83,16 @@ export default function BlogArticleMinimal({ content }: BlogArticleProps) {
 
         {/* Article Content */}
         <div className="prose max-w-none">
-          <div 
-            className="leading-relaxed text-gray-800"
-            dangerouslySetInnerHTML={{ __html: entry.content || entry.excerpt }}
-          />
+          <div className="leading-relaxed text-gray-800">
+            {entry.content ? (
+              <PortableText 
+                value={entry.content} 
+                components={createPortableTextComponents('minimal')}
+              />
+            ) : (
+              <p>{entry.excerpt}</p>
+            )}
+          </div>
         </div>
       </div>
     </article>

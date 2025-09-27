@@ -36,23 +36,23 @@ export default function CategoryPage({ category, sections }: Props) {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container mx-auto px-4 py-12">
+      <main className="container px-4 py-12 mx-auto">
         <div className="mb-8">
           <Button variant="outline" size="sm" asChild>
             <Link href="/">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Link>
           </Button>
         </div>
-        <h1 className="text-3xl font-bold mb-6">{category.label}</h1>
-        <p className="text-muted-foreground mb-8">Browse sections in the {category.label} module.</p>
+        <h1 className="mb-6 text-3xl font-bold">{category.label}</h1>
+        <p className="mb-8 text-muted-foreground">Browse sections in the {category.label} module.</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {sections.map((section) => (
-            <div key={section.name} className="border rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-2">{section.sectionName}</h3>
-              <p className="text-sm text-muted-foreground mb-4">
+            <div key={section.name} className="p-6 border rounded-lg">
+              <h3 className="mb-2 text-lg font-semibold">{section.sectionName}</h3>
+              <p className="mb-4 text-sm text-muted-foreground">
                 {section.templates.length} template variation{section.templates.length !== 1 ? 's' : ''}
               </p>
               <div className="flex space-x-2">

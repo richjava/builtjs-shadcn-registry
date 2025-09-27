@@ -2,6 +2,8 @@ import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Calendar, Clock, User, Share2, Tag } from 'lucide-react'
 import Image from 'next/image'
+import { PortableText } from '@portabletext/react'
+import { createPortableTextComponents } from '@/components/shared'
 
 interface BlogArticleProps {
   content: {
@@ -22,7 +24,7 @@ interface BlogArticleProps {
         tags?: string[]
         category?: string
         featured?: boolean
-        content?: string
+        content?: any // PortableText content
       }
     }
   }
@@ -131,10 +133,16 @@ export default function BlogArticleNeobrutalism({ content }: BlogArticleProps) {
 
         {/* Article Content */}
         <div className="prose prose-lg max-w-none mb-12">
-          <div 
-            className="border-4 border-black p-8 bg-green-100 shadow-[8px_8px_0px_#000000]"
-            dangerouslySetInnerHTML={{ __html: entry.content || '' }}
-          />
+          <div className="border-4 border-black p-8 bg-green-100 shadow-[8px_8px_0px_#000000]">
+            {entry.content ? (
+              <PortableText 
+                value={entry.content} 
+                components={createPortableTextComponents('neobrutalism')}
+              />
+            ) : (
+              <p>{entry.excerpt}</p>
+            )}
+          </div>
         </div>
 
         {/* Tags */}

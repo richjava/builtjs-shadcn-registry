@@ -11,6 +11,7 @@ interface Block {
   sectionName: string
   templateName: string
   themeName: string
+  theme: string
   description: string
 }
 
@@ -136,14 +137,14 @@ export default function TemplatePreviewGrid() {
   if (loading) {
     return (
       <div className="w-full">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Template Previews</h2>
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-3xl font-bold">Template Previews</h2>
           <p className="text-lg text-muted-foreground">
             See our templates in action across different themes
           </p>
         </div>
         <div className="flex items-center justify-center h-64">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+          <div className="w-8 h-8 border-b-2 border-blue-600 rounded-full animate-spin"></div>
         </div>
       </div>
     )
@@ -151,15 +152,15 @@ export default function TemplatePreviewGrid() {
 
   return (
     <div className="w-full">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Template Previews</h2>
+      <div className="mb-12 text-center">
+        <h2 className="mb-4 text-3xl font-bold">Template Previews</h2>
         <p className="text-lg text-muted-foreground">
           See our templates in action across different themes
         </p>
       </div>
 
       {/* Module and Section Selectors */}
-      <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
+      <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
         <div className="flex flex-col gap-2">
           <label className="text-sm font-medium text-gray-700">Module</label>
           <Select value={selectedModule} onValueChange={handleModuleChange}>
@@ -201,18 +202,18 @@ export default function TemplatePreviewGrid() {
 
       {/* Theme Preview Cards */}
       {currentBlocks.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {themes.map(theme => {
             const block = currentBlocks.find(b => b.theme === theme.name)
             
             if (!block) {
               return (
                 <div key={theme.name} className="group">
-                  <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-                    <div className="text-gray-400 mb-2">
+                  <div className="p-8 text-center border-2 border-gray-300 border-dashed rounded-lg">
+                    <div className="mb-2 text-gray-400">
                       <div className="w-12 h-12 mx-auto bg-gray-200 rounded-lg"></div>
                     </div>
-                    <h3 className="font-semibold text-gray-500 mb-2">{theme.label}</h3>
+                    <h3 className="mb-2 font-semibold text-gray-500">{theme.label}</h3>
                     <p className="text-sm text-gray-400">Coming Soon</p>
                   </div>
                 </div>
@@ -225,9 +226,9 @@ export default function TemplatePreviewGrid() {
                   {/* Header */}
                   <div className="p-4 bg-white border-b">
                     <div className="flex items-center justify-between">
-                      <div className="min-w-0 flex-1">
+                      <div className="flex-1 min-w-0">
                         <h3 className="font-semibold text-gray-900">{theme.label}</h3>
-                        <p className="text-sm text-gray-600 line-clamp-2 leading-relaxed">{block.description}</p>
+                        <p className="text-sm leading-relaxed text-gray-600 line-clamp-2">{block.description}</p>
                       </div>
                       <div className={`w-3 h-3 rounded-full ${theme.color.split(' ')[0]} border`}></div>
                     </div>
@@ -237,9 +238,9 @@ export default function TemplatePreviewGrid() {
                   <div className="relative bg-white">
                     {/* Loading State */}
                     {!loadedIframes.has(block.name) && (
-                      <div className="h-64 flex items-center justify-center bg-gray-50">
+                      <div className="flex items-center justify-center h-64 bg-gray-50">
                         <div className="text-center">
-                          <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mx-auto mb-2"></div>
+                          <div className="w-6 h-6 mx-auto mb-2 border-b-2 border-blue-600 rounded-full animate-spin"></div>
                           <p className="text-xs text-gray-500">Loading...</p>
                         </div>
                       </div>
@@ -257,7 +258,7 @@ export default function TemplatePreviewGrid() {
                     />
                     
                     {/* Overlay for interaction */}
-                    <div className="absolute inset-0 bg-transparent group-hover:bg-black/5 transition-colors duration-300 pointer-events-none" />
+                    <div className="absolute inset-0 transition-colors duration-300 bg-transparent pointer-events-none group-hover:bg-black/5" />
                   </div>
                   
                   {/* Footer */}
@@ -265,7 +266,7 @@ export default function TemplatePreviewGrid() {
                     <div className="flex items-center justify-between">
                       <Link 
                         href={`/preview/${block.name}`}
-                        className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800 font-medium"
+                        className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
                       >
                         View Template →
                       </Link>
@@ -286,7 +287,7 @@ export default function TemplatePreviewGrid() {
 
       {/* No blocks message */}
       {currentBlocks.length === 0 && selectedModule && selectedSection && (
-        <div className="text-center py-12">
+        <div className="py-12 text-center">
           <p className="text-gray-500">No templates available for the selected section.</p>
         </div>
       )}
