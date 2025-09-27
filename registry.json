@@ -56,7 +56,7 @@
       "moduleName": "About",
       "sectionName": "Company",
       "templateName": "Story",
-      "themeName": "Narrative"
+      "themeName": "Bold"
     },
     {
       "name": "about-company-story-narrative-minimal",
@@ -84,7 +84,7 @@
       "moduleName": "About",
       "sectionName": "Company",
       "templateName": "Story",
-      "themeName": "Narrative"
+      "themeName": "Minimal"
     },
     {
       "name": "about-company-story-narrative-standard",
@@ -112,7 +112,7 @@
       "moduleName": "About",
       "sectionName": "Company",
       "templateName": "Story",
-      "themeName": "Narrative"
+      "themeName": "Standard"
     },
     {
       "name": "about-company-story-narrative-neobrutalism",
@@ -140,7 +140,7 @@
       "moduleName": "About",
       "sectionName": "Company",
       "templateName": "Story",
-      "themeName": "Narrative"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "about-landing-image-bold",
@@ -742,7 +742,7 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Article",
-      "themeName": "Blog"
+      "themeName": "Bold"
     },
     {
       "name": "blog-blog-article-blog-article-minimal",
@@ -767,7 +767,7 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Article",
-      "themeName": "Blog"
+      "themeName": "Minimal"
     },
     {
       "name": "blog-blog-article-blog-article-neobrutalism",
@@ -799,7 +799,7 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Article",
-      "themeName": "Blog"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "blog-blog-article-blog-article-standard",
@@ -831,7 +831,7 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Article",
-      "themeName": "Blog"
+      "themeName": "Standard"
     },
     {
       "name": "blog-blog-posts-blog-posts-bold",
@@ -864,7 +864,7 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Posts",
-      "themeName": "Blog"
+      "themeName": "Bold"
     },
     {
       "name": "blog-blog-posts-blog-posts-minimal",
@@ -890,7 +890,7 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Posts",
-      "themeName": "Blog"
+      "themeName": "Minimal"
     },
     {
       "name": "blog-blog-posts-blog-posts-neobrutalism",
@@ -922,7 +922,7 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Posts",
-      "themeName": "Blog"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "blog-blog-posts-blog-posts-standard",
@@ -954,7 +954,7 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Posts",
-      "themeName": "Blog"
+      "themeName": "Standard"
     },
     {
       "name": "blog-featured-posts-featured-posts-bold",
@@ -988,7 +988,7 @@
       "moduleName": "Blog",
       "sectionName": "Featured",
       "templateName": "Posts",
-      "themeName": "Featured"
+      "themeName": "Bold"
     },
     {
       "name": "blog-featured-posts-featured-posts-minimal",
@@ -1015,7 +1015,7 @@
       "moduleName": "Blog",
       "sectionName": "Featured",
       "templateName": "Posts",
-      "themeName": "Featured"
+      "themeName": "Minimal"
     },
     {
       "name": "blog-featured-posts-featured-posts-neobrutalism",
@@ -1048,7 +1048,7 @@
       "moduleName": "Blog",
       "sectionName": "Featured",
       "templateName": "Posts",
-      "themeName": "Featured"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "blog-featured-posts-featured-posts-standard",
@@ -1081,7 +1081,7 @@
       "moduleName": "Blog",
       "sectionName": "Featured",
       "templateName": "Posts",
-      "themeName": "Featured"
+      "themeName": "Standard"
     },
     {
       "name": "faq-help-help-bold",
@@ -2599,7 +2599,7 @@
       "moduleName": "Main",
       "sectionName": "Call to action",
       "templateName": "To",
-      "themeName": "Action"
+      "themeName": "Bold"
     },
     {
       "name": "main-call-to-action-call-to-action-minimal",
@@ -2628,7 +2628,7 @@
       "moduleName": "Main",
       "sectionName": "Call to action",
       "templateName": "To",
-      "themeName": "Action"
+      "themeName": "Minimal"
     },
     {
       "name": "main-call-to-action-call-to-action-neobrutalism",
@@ -2657,7 +2657,7 @@
       "moduleName": "Main",
       "sectionName": "Call to action",
       "templateName": "To",
-      "themeName": "Action"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "main-call-to-action-call-to-action-standard",
@@ -2686,7 +2686,7 @@
       "moduleName": "Main",
       "sectionName": "Call to action",
       "templateName": "To",
-      "themeName": "Action"
+      "themeName": "Standard"
     },
     {
       "name": "main-contact-lead-generation-contact-lead-generation-bold",
@@ -2719,7 +2719,7 @@
       "moduleName": "Main",
       "sectionName": "Contact lead generation",
       "templateName": "Lead",
-      "themeName": "Generation"
+      "themeName": "Bold"
     },
     {
       "name": "main-contact-lead-generation-contact-lead-generation-minimal",
@@ -2750,7 +2750,7 @@
       "moduleName": "Main",
       "sectionName": "Contact lead generation",
       "templateName": "Lead",
-      "themeName": "Generation"
+      "themeName": "Minimal"
     },
     {
       "name": "main-contact-lead-generation-contact-lead-generation-neobrutalism",
@@ -2781,7 +2781,7 @@
       "moduleName": "Main",
       "sectionName": "Contact lead generation",
       "templateName": "Lead",
-      "themeName": "Generation"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "main-contact-lead-generation-contact-lead-generation-standard",
@@ -2812,7 +2812,7 @@
       "moduleName": "Main",
       "sectionName": "Contact lead generation",
       "templateName": "Lead",
-      "themeName": "Generation"
+      "themeName": "Standard"
     },
     {
       "name": "main-hero-section-hero-section-bold",
@@ -2843,7 +2843,7 @@
       "moduleName": "Main",
       "sectionName": "Hero section",
       "templateName": "Section",
-      "themeName": "Hero"
+      "themeName": "Bold"
     },
     {
       "name": "main-hero-section-hero-section-minimal",
@@ -2872,7 +2872,7 @@
       "moduleName": "Main",
       "sectionName": "Hero section",
       "templateName": "Section",
-      "themeName": "Hero"
+      "themeName": "Minimal"
     },
     {
       "name": "main-hero-section-hero-section-neobrutalism",
@@ -2901,7 +2901,7 @@
       "moduleName": "Main",
       "sectionName": "Hero section",
       "templateName": "Section",
-      "themeName": "Hero"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "main-hero-section-hero-section-standard",
@@ -2930,7 +2930,7 @@
       "moduleName": "Main",
       "sectionName": "Hero section",
       "templateName": "Section",
-      "themeName": "Hero"
+      "themeName": "Standard"
     },
     {
       "name": "main-problem-solution-problem-solution-bold",
@@ -2965,7 +2965,7 @@
       "moduleName": "Main",
       "sectionName": "Problem solution",
       "templateName": "Solution",
-      "themeName": "Problem"
+      "themeName": "Bold"
     },
     {
       "name": "main-problem-solution-problem-solution-minimal",
@@ -2999,7 +2999,7 @@
       "moduleName": "Main",
       "sectionName": "Problem solution",
       "templateName": "Solution",
-      "themeName": "Problem"
+      "themeName": "Minimal"
     },
     {
       "name": "main-problem-solution-problem-solution-neobrutalism",
@@ -3033,7 +3033,7 @@
       "moduleName": "Main",
       "sectionName": "Problem solution",
       "templateName": "Solution",
-      "themeName": "Problem"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "main-problem-solution-problem-solution-standard",
@@ -3067,7 +3067,7 @@
       "moduleName": "Main",
       "sectionName": "Problem solution",
       "templateName": "Solution",
-      "themeName": "Problem"
+      "themeName": "Standard"
     },
     {
       "name": "main-social-proof-social-proof-bold",
@@ -3097,7 +3097,7 @@
       "moduleName": "Main",
       "sectionName": "Social proof",
       "templateName": "Proof",
-      "themeName": "Social"
+      "themeName": "Bold"
     },
     {
       "name": "main-social-proof-social-proof-minimal",
@@ -3122,7 +3122,7 @@
       "moduleName": "Main",
       "sectionName": "Social proof",
       "templateName": "Proof",
-      "themeName": "Social"
+      "themeName": "Minimal"
     },
     {
       "name": "main-social-proof-social-proof-neobrutalism",
@@ -3147,7 +3147,7 @@
       "moduleName": "Main",
       "sectionName": "Social proof",
       "templateName": "Proof",
-      "themeName": "Social"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "main-social-proof-social-proof-standard",
@@ -3172,7 +3172,7 @@
       "moduleName": "Main",
       "sectionName": "Social proof",
       "templateName": "Proof",
-      "themeName": "Social"
+      "themeName": "Standard"
     },
     {
       "name": "main-trust-indicators-trust-indicators-bold",
@@ -3202,7 +3202,7 @@
       "moduleName": "Main",
       "sectionName": "Trust indicators",
       "templateName": "Indicators",
-      "themeName": "Trust"
+      "themeName": "Bold"
     },
     {
       "name": "main-trust-indicators-trust-indicators-minimal",
@@ -3231,7 +3231,7 @@
       "moduleName": "Main",
       "sectionName": "Trust indicators",
       "templateName": "Indicators",
-      "themeName": "Trust"
+      "themeName": "Minimal"
     },
     {
       "name": "main-trust-indicators-trust-indicators-neobrutalism",
@@ -3260,7 +3260,7 @@
       "moduleName": "Main",
       "sectionName": "Trust indicators",
       "templateName": "Indicators",
-      "themeName": "Trust"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "main-trust-indicators-trust-indicators-standard",
@@ -3289,7 +3289,7 @@
       "moduleName": "Main",
       "sectionName": "Trust indicators",
       "templateName": "Indicators",
-      "themeName": "Trust"
+      "themeName": "Standard"
     },
     {
       "name": "main-value-proposition-value-proposition-bold",
@@ -3322,7 +3322,7 @@
       "moduleName": "Main",
       "sectionName": "Value proposition",
       "templateName": "Proposition",
-      "themeName": "Value"
+      "themeName": "Bold"
     },
     {
       "name": "main-value-proposition-value-proposition-minimal",
@@ -3354,7 +3354,7 @@
       "moduleName": "Main",
       "sectionName": "Value proposition",
       "templateName": "Proposition",
-      "themeName": "Value"
+      "themeName": "Minimal"
     },
     {
       "name": "main-value-proposition-value-proposition-neobrutalism",
@@ -3386,7 +3386,7 @@
       "moduleName": "Main",
       "sectionName": "Value proposition",
       "templateName": "Proposition",
-      "themeName": "Value"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "main-value-proposition-value-proposition-standard",
@@ -3418,7 +3418,7 @@
       "moduleName": "Main",
       "sectionName": "Value proposition",
       "templateName": "Proposition",
-      "themeName": "Value"
+      "themeName": "Standard"
     },
     {
       "name": "newsletter-opt-in-opt-in-bold",
@@ -3453,7 +3453,7 @@
       "moduleName": "Newsletter",
       "sectionName": "Opt",
       "templateName": "In",
-      "themeName": "Opt"
+      "themeName": "Bold"
     },
     {
       "name": "newsletter-opt-in-opt-in-minimal",
@@ -3484,7 +3484,7 @@
       "moduleName": "Newsletter",
       "sectionName": "Opt",
       "templateName": "In",
-      "themeName": "Opt"
+      "themeName": "Minimal"
     },
     {
       "name": "newsletter-opt-in-opt-in-neobrutalism",
@@ -3517,7 +3517,7 @@
       "moduleName": "Newsletter",
       "sectionName": "Opt",
       "templateName": "In",
-      "themeName": "Opt"
+      "themeName": "Neobrutalism"
     },
     {
       "name": "newsletter-opt-in-opt-in-standard",
@@ -3550,7 +3550,7 @@
       "moduleName": "Newsletter",
       "sectionName": "Opt",
       "templateName": "In",
-      "themeName": "Opt"
+      "themeName": "Standard"
     },
     {
       "name": "newsletter-signup-signup-bold",
