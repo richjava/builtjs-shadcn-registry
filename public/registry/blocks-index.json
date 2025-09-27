@@ -766,7 +766,9 @@
     },
     "collections": {
       "teamMemberItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -785,7 +787,9 @@
     },
     "collections": {
       "teamMemberItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -804,7 +808,9 @@
     },
     "collections": {
       "teamMemberItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -823,7 +829,9 @@
     },
     "collections": {
       "teamMemberItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -1103,7 +1111,9 @@
     },
     "collections": {
       "blogItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -1118,7 +1128,9 @@
     },
     "collections": {
       "blogItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -1137,7 +1149,9 @@
     },
     "collections": {
       "blogItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -1156,7 +1170,9 @@
     },
     "collections": {
       "blogItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -1275,7 +1291,9 @@
     },
     "collections": {
       "blogItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -1351,7 +1369,9 @@
     },
     "collections": {
       "blogItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -2422,7 +2442,9 @@
     },
     "collections": {
       "capabilityItem": {
-        "limit": 4
+        "config": {
+          "limit": 4
+        }
       }
     }
   },
@@ -2449,7 +2471,9 @@
     },
     "collections": {
       "capabilityItem": {
-        "limit": 4
+        "config": {
+          "limit": 4
+        }
       }
     }
   },
@@ -2476,7 +2500,9 @@
     },
     "collections": {
       "capabilityItem": {
-        "limit": 4
+        "config": {
+          "limit": 4
+        }
       }
     }
   },
@@ -2503,7 +2529,9 @@
     },
     "collections": {
       "capabilityItem": {
-        "limit": 4
+        "config": {
+          "limit": 4
+        }
       }
     }
   },
@@ -2680,7 +2708,9 @@
     },
     "collections": {
       "featureItem": {
-        "limit": 4
+        "config": {
+          "limit": 4
+        }
       }
     }
   },
@@ -7710,7 +7740,9 @@
     },
     "collections": {
       "serviceItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -7737,7 +7769,9 @@
     },
     "collections": {
       "serviceItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -7764,7 +7798,9 @@
     },
     "collections": {
       "serviceItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },
@@ -7829,7 +7865,9 @@
     },
     "collections": {
       "serviceItem": {
-        "limit": 3
+        "config": {
+          "limit": 3
+        }
       }
     }
   },

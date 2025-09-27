@@ -13,6 +13,9 @@ import * as path from 'path'
 interface CollectionReference {
   [collectionName: string]: {
     limit?: number
+    config?: {
+      limit?: number
+    }
   }
 }
 
@@ -161,8 +164,9 @@ export async function resolveBlockCollections(blockName: string): Promise<{
       const collectionData = collectionsData[collectionName]
       
       if (collectionData && Array.isArray(collectionData)) {
-        // Apply limit if specified
-        const limit = config.limit
+        // Handle new config object format: { config: { limit: 3 } }
+        // or legacy format: { limit: 3 }
+        const limit = config.config?.limit || config.limit
         const resolvedData = limit ? collectionData.slice(0, limit) : collectionData
         
         resolvedCollections[collectionName] = resolvedData
@@ -203,8 +207,9 @@ export function resolveCollectionsForBlock(
     const collectionData = registryCollections[collectionName]
     
     if (collectionData && Array.isArray(collectionData)) {
-      // Apply limit if specified
-      const limit = config.limit
+      // Handle new config object format: { config: { limit: 3 } }
+      // or legacy format: { limit: 3 }
+      const limit = config.config?.limit || config.limit
       const resolvedData = limit ? collectionData.slice(0, limit) : collectionData
       
       resolvedCollections[collectionName] = resolvedData
