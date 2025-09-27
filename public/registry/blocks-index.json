@@ -37,7 +37,7 @@
         "Today, we continue to push the boundaries of what's possible in web development, always keeping our core mission in mind: making great technology accessible to everyone."
       ],
       "ctaText": "Read More",
-      "ctaLink": "/about/story",
+      "ctaLink": "/about",
       "image": {
         "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
         "alt": "Team collaboration and innovation workspace"
@@ -83,7 +83,7 @@
         "Today, we continue to push the boundaries of what's possible in web development, always keeping our core mission in mind: making great technology accessible to everyone."
       ],
       "ctaText": "Read More",
-      "ctaLink": "/about/story",
+      "ctaLink": "/about",
       "image": {
         "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
         "alt": "Team collaboration and innovation workspace"
@@ -129,7 +129,7 @@
         "Today, we continue to push the boundaries of what's possible in web development, always keeping our core mission in mind: making great technology accessible to everyone."
       ],
       "ctaText": "Read More",
-      "ctaLink": "/about/story",
+      "ctaLink": "/about",
       "image": {
         "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
         "alt": "Team collaboration and innovation workspace"
@@ -175,7 +175,7 @@
         "Today, we continue to push the boundaries of what's possible in web development, always keeping our core mission in mind: making great technology accessible to everyone."
       ],
       "ctaText": "Read More",
-      "ctaLink": "/about/story",
+      "ctaLink": "/about",
       "image": {
         "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
         "alt": "Team collaboration and innovation workspace"
@@ -276,7 +276,7 @@
       "title": "We're building the future of web development",
       "subtitle": "Join thousands of developers who are already building amazing things with our platform. Experience the power of modern web development tools.",
       "ctaText": "Get Started",
-      "ctaLink": "/signup",
+      "ctaLink": "/contact",
       "stats": [
         {
           "number": "50K+",
@@ -462,7 +462,7 @@
       "title": "We're building the future of web development",
       "subtitle": "Join thousands of developers who are already building amazing things with our platform. Experience the power of modern web development tools.",
       "ctaText": "Get Started",
-      "ctaLink": "/signup",
+      "ctaLink": "/contact",
       "stats": [
         {
           "number": "50K+",
@@ -577,7 +577,7 @@
       "title": "Building the future of web development",
       "subtitle": "We're on a mission to make modern web development more accessible, efficient, and enjoyable for developers around the world.",
       "ctaText": "Join Our Team",
-      "ctaLink": "/join",
+      "ctaLink": "/contact",
       "stats": [
         {
           "number": "50K+",
@@ -621,7 +621,7 @@
       "title": "We're building the future of web development",
       "subtitle": "Join thousands of developers who are already building amazing things with our platform. Experience the power of modern web development tools.",
       "ctaText": "Get Started",
-      "ctaLink": "/signup",
+      "ctaLink": "/contact",
       "stats": [
         {
           "number": "50K+",
@@ -665,7 +665,7 @@
       "title": "Our Mission",
       "mission": "To democratize web development by providing powerful, intuitive tools that enable anyone to build beautiful, performant applications without traditional complexity barriers.",
       "ctaText": "Join Our Mission",
-      "ctaLink": "/join",
+      "ctaLink": "/contact",
       "backgroundStyle": "gradient"
     },
     "collections": {}
@@ -692,7 +692,7 @@
       "title": "Our Mission",
       "mission": "To democratize web development by providing powerful, intuitive tools that enable anyone to build beautiful, performant applications without traditional complexity barriers.",
       "ctaText": "Join Our Mission",
-      "ctaLink": "/join",
+      "ctaLink": "/contact",
       "backgroundStyle": "white"
     },
     "collections": {}
@@ -719,7 +719,7 @@
       "title": "Our Mission",
       "mission": "To democratize web development by providing powerful, intuitive tools that enable anyone to build beautiful, performant applications without the traditional complexity barriers.",
       "ctaText": "Join Our Mission",
-      "ctaLink": "/join",
+      "ctaLink": "/contact",
       "backgroundStyle": "muted"
     },
     "collections": {}
@@ -746,7 +746,7 @@
       "title": "Our Mission",
       "mission": "To democratize web development by providing powerful, intuitive tools that enable anyone to build beautiful, performant applications without traditional complexity barriers.",
       "ctaText": "Join Our Mission",
-      "ctaLink": "/join",
+      "ctaLink": "/contact",
       "backgroundStyle": "muted"
     },
     "collections": {}
@@ -1682,7 +1682,7 @@
         }
       ],
       "ctaText": "Browse All Articles",
-      "ctaLink": "/help"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -2126,7 +2126,7 @@
         "emergency": "24/7 Priority Support for Enterprise customers"
       },
       "ctaText": "Need immediate assistance?",
-      "ctaLink": "/emergency-support"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -2203,7 +2203,7 @@
         "emergency": "24/7 for critical issues"
       },
       "ctaText": "Need urgent help?",
-      "ctaLink": "/emergency"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -2373,7 +2373,7 @@
         "emergency": "24/7 for critical issues"
       },
       "ctaText": "Need immediate assistance?",
-      "ctaLink": "/emergency"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -2438,7 +2438,7 @@
         }
       ],
       "ctaText": "Start Building Today",
-      "ctaLink": "/get-started"
+      "ctaLink": "/contact"
     },
     "collections": {
       "capabilityItem": {
@@ -2467,7 +2467,7 @@
       "title": "What We Offer",
       "subtitle": "Essential tools and features for your success.",
       "ctaText": "Get Started",
-      "ctaLink": "/signup"
+      "ctaLink": "/contact"
     },
     "collections": {
       "capabilityItem": {
@@ -2496,7 +2496,7 @@
       "title": "Complete Solution",
       "subtitle": "Everything you need to succeed, all in one powerful platform.",
       "ctaText": "Explore Capabilities",
-      "ctaLink": "/capabilities"
+      "ctaLink": "/contact"
     },
     "collections": {
       "capabilityItem": {
@@ -2525,7 +2525,7 @@
       "title": "Complete Solution",
       "subtitle": "Everything you need to succeed, all in one powerful platform.",
       "ctaText": "Start Building",
-      "ctaLink": "/get-started"
+      "ctaLink": "/contact"
     },
     "collections": {
       "capabilityItem": {
@@ -2583,7 +2583,7 @@
         }
       ],
       "ctaText": "Start Your Journey",
-      "ctaLink": "/get-started"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -2635,7 +2635,7 @@
         }
       ],
       "ctaText": "Get Started",
-      "ctaLink": "/signup"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -2658,7 +2658,7 @@
       "title": "Why Choose Our Platform",
       "subtitle": "Experience the difference with our cutting-edge features designed for modern businesses.",
       "ctaText": "Get Started Today",
-      "ctaLink": "/signup"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -2681,7 +2681,7 @@
       "title": "Why Choose Our Platform",
       "subtitle": "Experience the difference with our cutting-edge features designed for modern businesses.",
       "ctaText": "Get Started Today",
-      "ctaLink": "/signup"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -4037,7 +4037,7 @@
         }
       ],
       "ctaText": "Become a Partner",
-      "ctaLink": "/partnership"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -4447,7 +4447,7 @@
         }
       ],
       "ctaText": "Join our partner ecosystem",
-      "ctaLink": "/partnerships"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -4505,7 +4505,7 @@
         }
       ],
       "ctaText": "Partner with us",
-      "ctaLink": "/partnerships"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -4557,7 +4557,7 @@
         }
       ],
       "ctaText": "Partner With Us",
-      "ctaLink": "/partnership"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -4633,7 +4633,7 @@
         }
       ],
       "ctaText": "Interested in partnering with us?",
-      "ctaLink": "/partnerships"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -5389,7 +5389,7 @@
         }
       ],
       "ctaText": "See How It Works",
-      "ctaLink": "/demo"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -5452,7 +5452,7 @@
         }
       ],
       "ctaText": "See How It Works",
-      "ctaLink": "/demo"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -5515,7 +5515,7 @@
         }
       ],
       "ctaText": "See How It Works",
-      "ctaLink": "/demo"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -5578,7 +5578,7 @@
         }
       ],
       "ctaText": "See How It Works",
-      "ctaLink": "/demo"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -6688,7 +6688,7 @@
             "Mobile app access"
           ],
           "ctaText": "Get Started",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         },
         {
@@ -6706,7 +6706,7 @@
             "Advanced reporting"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": true
         },
         {
@@ -6725,7 +6725,7 @@
             "Custom training"
           ],
           "ctaText": "Contact Sales",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         }
       ]
@@ -6761,7 +6761,7 @@
             "Mobile app access"
           ],
           "ctaText": "Get Started",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         },
         {
@@ -6779,7 +6779,7 @@
             "Advanced reporting"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": true
         },
         {
@@ -6798,7 +6798,7 @@
             "Custom training"
           ],
           "ctaText": "Contact Sales",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         }
       ]
@@ -6834,7 +6834,7 @@
             "Mobile app access"
           ],
           "ctaText": "Get Started",
-          "ctaLink": "/signup/starter",
+          "ctaLink": "/contact",
           "popular": false
         },
         {
@@ -6852,7 +6852,7 @@
             "Custom integrations"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "/signup/professional",
+          "ctaLink": "/contact",
           "popular": true
         },
         {
@@ -6871,7 +6871,7 @@
             "SLA guarantee"
           ],
           "ctaText": "Contact Sales",
-          "ctaLink": "/contact/enterprise",
+          "ctaLink": "/contact",
           "popular": false
         }
       ]
@@ -6907,7 +6907,7 @@
             "Mobile app access"
           ],
           "ctaText": "Get Started",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         },
         {
@@ -6925,7 +6925,7 @@
             "Advanced reporting"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": true
         },
         {
@@ -6944,7 +6944,7 @@
             "Custom training"
           ],
           "ctaText": "Contact Sales",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         }
       ]
@@ -6995,7 +6995,7 @@
             "Mobile app access"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         },
         {
@@ -7013,7 +7013,7 @@
             "Advanced reporting"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": true
         },
         {
@@ -7032,7 +7032,7 @@
             "Custom training"
           ],
           "ctaText": "Contact Sales",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         }
       ]
@@ -7083,7 +7083,7 @@
             "Mobile app access"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         },
         {
@@ -7101,7 +7101,7 @@
             "Advanced reporting"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": true
         },
         {
@@ -7120,7 +7120,7 @@
             "Custom training"
           ],
           "ctaText": "Contact Sales",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         }
       ]
@@ -7171,7 +7171,7 @@
             "Mobile access"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "/signup/basic",
+          "ctaLink": "/contact",
           "popular": false
         },
         {
@@ -7189,7 +7189,7 @@
             "API access"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "/signup/pro",
+          "ctaLink": "/contact",
           "popular": true
         },
         {
@@ -7208,7 +7208,7 @@
             "SLA guarantee"
           ],
           "ctaText": "Contact Sales",
-          "ctaLink": "/contact/enterprise",
+          "ctaLink": "/contact",
           "popular": false
         }
       ]
@@ -7259,7 +7259,7 @@
             "Mobile app access"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         },
         {
@@ -7277,7 +7277,7 @@
             "Advanced reporting"
           ],
           "ctaText": "Start Free Trial",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": true
         },
         {
@@ -7296,7 +7296,7 @@
             "Custom training"
           ],
           "ctaText": "Contact Sales",
-          "ctaLink": "#",
+          "ctaLink": "/contact",
           "popular": false
         }
       ]
@@ -7765,7 +7765,7 @@
       "title": "Service Packages",
       "subtitle": "Choose the right package for your business needs.",
       "ctaText": "Get Quote",
-      "ctaLink": "/quote"
+      "ctaLink": "/contact"
     },
     "collections": {
       "serviceItem": {
@@ -8196,7 +8196,7 @@
         }
       ],
       "ctaText": "Start Your Transformation",
-      "ctaLink": "/solutions"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -8257,7 +8257,7 @@
         }
       ],
       "ctaText": "Get Solution",
-      "ctaLink": "/solutions"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -8385,7 +8385,7 @@
         }
       ],
       "ctaText": "Discuss Your Project",
-      "ctaLink": "/consultation"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -8433,7 +8433,7 @@
         }
       ],
       "ctaText": "Join Our Culture",
-      "ctaLink": "/careers"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -8481,7 +8481,7 @@
         }
       ],
       "ctaText": "Learn More",
-      "ctaLink": "/culture"
+      "ctaLink": "/about"
     },
     "collections": {}
   },
@@ -8529,7 +8529,7 @@
         }
       ],
       "ctaText": "Join Our Team",
-      "ctaLink": "/careers"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -8577,7 +8577,7 @@
         }
       ],
       "ctaText": "Learn More",
-      "ctaLink": "/culture"
+      "ctaLink": "/about"
     },
     "collections": {}
   },
@@ -8669,7 +8669,7 @@
         }
       ],
       "ctaText": "Join Our Team",
-      "ctaLink": "/careers"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -8967,7 +8967,7 @@
         }
       ],
       "ctaText": "Join Our Leadership",
-      "ctaLink": "/careers"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -9025,7 +9025,7 @@
         }
       ],
       "ctaText": "Join Our Team",
-      "ctaLink": "/careers"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -9094,7 +9094,7 @@
         }
       ],
       "ctaText": "Join Our Team",
-      "ctaLink": "/careers"
+      "ctaLink": "/contact"
     },
     "collections": {}
   },
@@ -9152,7 +9152,7 @@
         }
       ],
       "ctaText": "Join Our Team",
-      "ctaLink": "/careers"
+      "ctaLink": "/contact"
     },
     "collections": {}
   }

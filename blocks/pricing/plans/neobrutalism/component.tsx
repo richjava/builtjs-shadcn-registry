@@ -47,12 +47,12 @@ export default function PricingPlansNeobrutalism({ content }: PricingPlansProps)
               className={cn(
                 "relative border-4 border-black bg-white shadow-[8px_8px_0px_#000000] p-8 transition-all duration-200 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[12px_12px_0px_#000000]",
                 plan.popular
-                  ? "border-black bg-electric-blue transform scale-105"
+                  ? "border-black bg-blue-400 transform scale-105"
                   : "border-black bg-white"
               )}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 border-2 border-black px-4 py-1 bg-neon-green shadow-[2px_2px_0px_#000000]">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 border-2 border-black px-4 py-1 bg-green-400 shadow-[2px_2px_0px_#000000]">
                   <div className="flex items-center">
                     <Star className="h-4 w-4 text-black mr-1" />
                     <span className="text-sm font-bold text-black">Most Popular</span>

@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { Check, ArrowRight } from 'lucide-react'
+import { Check, ArrowRight, Star } from 'lucide-react'
 
 interface PricingPlansProps {
   content: {
@@ -43,8 +43,19 @@ export default function PricingPlansMinimal({ content }: PricingPlansProps) {
           {data.plans.map((plan, index) => (
             <div
               key={index}
-              className="group cursor-pointer"
+              className={cn(
+                "group cursor-pointer relative",
+                plan.popular && "transform scale-105"
+              )}
             >
+              {plan.popular && (
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                  <div className="flex items-center space-x-1 bg-gray-800 text-white px-3 py-1 rounded-full text-xs font-medium">
+                    <Star className="w-3 h-3" />
+                    <span>Most Popular</span>
+                  </div>
+                </div>
+              )}
               <div className="text-center mb-8">
                 <h3 className="text-xl font-medium text-gray-900 mb-2 group-hover:text-gray-700 transition-colors">
                   {plan.name}
