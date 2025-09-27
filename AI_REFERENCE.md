@@ -157,6 +157,12 @@ Each block in `registry.json` contains:
   "scenarios": ["Landing page", "Product launch"],
   "keyFeatures": ["Bold colors", "Strong typography"],
   
+  // Master/Detail relationship for AI understanding
+  "masterDetail": {
+    "isMaster": false,
+    "isDetail": true
+  },
+  
   // Component dependencies
   "dependencies": ["lucide-react", "@radix-ui/react-label"],
   "devDependencies": [],
@@ -387,6 +393,64 @@ Content type fields in the `contentTypes` section should use **Sanity CMS data t
 - **Field validation**: Sanity provides built-in validation rules
 - **Custom validation**: Define custom validation functions
 - **Field groups**: Organize related fields into groups
+
+## Master/Detail Relationship System
+
+The registry includes a `masterDetail` property for each block to help AI models understand the relationship between list views and detail views. This is crucial for proper content architecture and navigation.
+
+### Master/Detail Property Structure
+
+```json
+{
+  "masterDetail": {
+    "isMaster": boolean,
+    "isDetail": boolean
+  }
+}
+```
+
+### Master/Detail Patterns
+
+#### Blog Module
+- **Master Blocks** (`isMaster: true, isDetail: false`):
+  - `blog-posts`: Blog post listings and previews
+  - `featured-posts`: Featured blog post collections
+- **Detail Blocks** (`isMaster: false, isDetail: true`):
+  - `blog-article`: Individual blog post pages
+
+#### Gallery Module
+- **Master Blocks** (`isMaster: true, isDetail: false`):
+  - `portfolio`: Portfolio item listings
+  - `products`: Product gallery listings
+  - `showcase`: Showcase item collections
+
+#### Team Module
+- **Master Blocks** (`isMaster: true, isDetail: false`):
+  - `profiles`: Team member listings
+  - `culture`: Company culture sections
+  - `members`: Team member collections
+
+#### Other Modules
+- **Neither Master nor Detail** (`isMaster: false, isDetail: false`):
+  - Most sections in `main`, `features`, `services`, `faq`, `logos`, `newsletter`, `pricing`
+  - These are standalone sections without master/detail relationships
+
+### AI Decision Making with Master/Detail
+
+#### Content Architecture
+- **For List Pages**: Use master blocks (`isMaster: true`) to display collections of items
+- **For Detail Pages**: Use detail blocks (`isDetail: true`) to display individual item content
+- **For Standalone Pages**: Use neither master nor detail blocks for self-contained sections
+
+#### Navigation Patterns
+- **Master → Detail**: Link from master blocks to detail blocks using appropriate routing
+- **Detail → Master**: Provide "back to list" navigation from detail blocks
+- **Cross-References**: Use master blocks to show related items from other collections
+
+#### Content Generation
+- **Master Blocks**: Generate summary content, previews, and collection metadata
+- **Detail Blocks**: Generate full content, detailed descriptions, and comprehensive information
+- **Standalone Blocks**: Generate complete, self-contained content
 
 ## AI Decision Framework
 

@@ -68,19 +68,19 @@ export default function BlogPostsMinimal({ content }: BlogPostsProps) {
 
   return (
     <section className="py-8 md:py-12 bg-gray-50">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-8">
+      <div className="container max-w-4xl px-4 mx-auto">
+        <h2 className="mb-8 text-2xl font-semibold text-gray-900">
           {data.title}
         </h2>
 
         <div className="space-y-6">
           {posts.map((post, index) => (
-            <article key={post._id || index} className="bg-white rounded-lg p-6 border border-gray-200 hover:border-gray-300 transition-colors">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">
+            <article key={post._id || index} className="p-6 transition-colors bg-white border border-gray-200 rounded-lg hover:border-gray-300">
+              <h3 className="mb-2 text-lg font-medium text-gray-900">
                 {post.title}
               </h3>
               
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4 text-gray-600">
                 {post.excerpt}
               </p>
 
@@ -100,7 +100,7 @@ export default function BlogPostsMinimal({ content }: BlogPostsProps) {
                   )}
                 </div>
                 
-                <button className="flex items-center text-sm text-blue-600 hover:text-blue-800 transition-colors">
+                <button className="flex items-center text-sm text-blue-600 transition-colors hover:text-blue-800">
                   Read More
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </button>

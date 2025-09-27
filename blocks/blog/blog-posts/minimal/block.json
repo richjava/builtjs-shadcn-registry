@@ -5,38 +5,37 @@
   "template": "minimal",
   "description": "Minimal blog posts listing with clean, simple design.",
   "useCase": "Simple blog post listings with minimal visual elements and focus on content.",
-  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup", "E-commerce"],
-  "scenarios": ["Simple blog", "Minimal design", "Content-focused", "Clean layout"],
-  "keyFeatures": ["Minimal styling", "Simple layout", "Clean typography", "Content focus"],
+  "businessTypes": [
+    "Agency",
+    "SaaS",
+    "Corporate",
+    "Startup",
+    "E-commerce"
+  ],
+  "scenarios": [
+    "Simple blog",
+    "Minimal design",
+    "Content-focused",
+    "Clean layout"
+  ],
+  "keyFeatures": [
+    "Minimal styling",
+    "Simple layout",
+    "Clean typography",
+    "Content focus"
+  ],
   "fields": {
-    "title": "string",
-    "posts": "array"
+    "title": {
+      "type": "string"
+    }
+  },
+  "collections": {
+    "blogItem": {
+      "limit": 3
+    }
   },
   "data": {
-    "title": "Blog Posts",
-    "posts": [
-      {
-        "title": "Getting Started with Modern JavaScript",
-        "excerpt": "Learn the fundamentals of modern JavaScript and best practices.",
-        "author": "Alex Chen",
-        "publishedDate": "2024-01-10",
-        "slug": "modern-javascript-guide"
-      },
-      {
-        "title": "Building Scalable React Applications",
-        "excerpt": "Best practices for creating maintainable React applications.",
-        "author": "Maria Rodriguez",
-        "publishedDate": "2024-01-05",
-        "slug": "scalable-react-applications"
-      },
-      {
-        "title": "CSS Grid vs Flexbox: When to Use What",
-        "excerpt": "A comprehensive guide to choosing the right layout method.",
-        "author": "David Kim",
-        "publishedDate": "2024-01-01",
-        "slug": "css-grid-vs-flexbox"
-      }
-    ]
+    "title": "Blog Posts"
   },
   "dependencies": [
     "lucide-react"

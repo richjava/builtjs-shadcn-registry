@@ -3,53 +3,27 @@
   "description": "Comprehensive capability overview",
   "theme": "minimal",
   "fields": {
-    "title": "string",
-    "subtitle": "string",
-    "capabilities": "array",
-    "ctaText": "string",
-    "ctaLink": "url"
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "url"
+    }
+  },
+  "collections": {
+    "capabilityItem": {
+      "limit": 4
+    }
   },
   "data": {
     "title": "What We Offer",
     "subtitle": "Essential tools and features for your success.",
-    "capabilities": [
-      {
-        "category": "Analytics",
-        "features": [
-          "Real-time dashboards",
-          "Custom reporting",
-          "Data visualization"
-        ],
-        "icon": "bar-chart"
-      },
-      {
-        "category": "Collaboration",
-        "features": [
-          "Team workspaces",
-          "Real-time editing",
-          "Comment system"
-        ],
-        "icon": "users"
-      },
-      {
-        "category": "Security",
-        "features": [
-          "End-to-end encryption",
-          "SSO integration",
-          "Audit logs"
-        ],
-        "icon": "shield"
-      },
-      {
-        "category": "Integration",
-        "features": [
-          "RESTful APIs",
-          "Webhook support",
-          "Third-party apps"
-        ],
-        "icon": "plug"
-      }
-    ],
     "ctaText": "Get Started",
     "ctaLink": "/signup"
   },

@@ -31,7 +31,7 @@ export default function BlogArticleMinimal({ content }: BlogArticleProps) {
     _id: "fallback-1",
     _type: "blogItem",
     slug: "building-scalable-react-applications",
-    title: "Building Scalable React Applications",
+    title: "Building Scalable React Applications!",
     excerpt: "Learn the best practices for creating maintainable and scalable React applications that can grow with your business needs.",
     author: "Sarah Johnson",
     publishedDate: "2024-01-15",
@@ -55,15 +55,15 @@ export default function BlogArticleMinimal({ content }: BlogArticleProps) {
   }
 
   return (
-    <article className="py-8 md:py-12 bg-white">
-      <div className="container mx-auto px-4 max-w-3xl">
+    <article className="py-8 bg-white md:py-12">
+      <div className="container max-w-3xl px-4 mx-auto">
         {/* Article Header */}
         <header className="mb-8">
-          <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+          <h1 className="mb-4 text-2xl font-semibold text-gray-900 md:text-3xl">
             {entry.title}
           </h1>
           
-          <div className="flex items-center space-x-4 text-sm text-gray-500 mb-6">
+          <div className="flex items-center mb-6 space-x-4 text-sm text-gray-500">
             {entry.author && (
               <div className="flex items-center space-x-1">
                 <User className="w-4 h-4" />
@@ -82,7 +82,7 @@ export default function BlogArticleMinimal({ content }: BlogArticleProps) {
         {/* Article Content */}
         <div className="prose max-w-none">
           <div 
-            className="text-gray-800 leading-relaxed"
+            className="leading-relaxed text-gray-800"
             dangerouslySetInnerHTML={{ __html: entry.content || entry.excerpt }}
           />
         </div>

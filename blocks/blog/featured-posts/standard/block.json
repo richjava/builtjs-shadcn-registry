@@ -9,10 +9,17 @@
   "scenarios": ["Homepage featured content", "Content marketing", "Important posts", "Professional showcase"],
   "keyFeatures": ["Featured post layout", "Clear hierarchy", "Professional styling", "Content highlights"],
   "fields": {
-    "title": "string",
-    "subtitle": "string",
-    "featuredPost": "object",
-    "otherPosts": "array"
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  },
+  "collections": {
+    "blogItem": {
+      "limit": 3
+    }
   },
   "data": {
     "title": "Featured Content",

@@ -5,38 +5,37 @@
   "template": "minimal",
   "description": "Minimal featured posts section with clean, simple design.",
   "useCase": "Simple featured content showcase with minimal visual elements.",
-  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup", "E-commerce"],
-  "scenarios": ["Simple blog", "Minimal design", "Content-focused", "Clean layout"],
-  "keyFeatures": ["Minimal styling", "Simple layout", "Clean typography", "Content focus"],
+  "businessTypes": [
+    "Agency",
+    "SaaS",
+    "Corporate",
+    "Startup",
+    "E-commerce"
+  ],
+  "scenarios": [
+    "Simple blog",
+    "Minimal design",
+    "Content-focused",
+    "Clean layout"
+  ],
+  "keyFeatures": [
+    "Minimal styling",
+    "Simple layout",
+    "Clean typography",
+    "Content focus"
+  ],
   "fields": {
-    "title": "string",
-    "posts": "array"
+    "title": {
+      "type": "string"
+    }
+  },
+  "collections": {
+    "blogItem": {
+      "limit": 3
+    }
   },
   "data": {
-    "title": "Featured Posts",
-    "posts": [
-      {
-        "title": "Getting Started with Modern JavaScript",
-        "excerpt": "Learn the fundamentals of modern JavaScript and best practices for development.",
-        "author": "Alex Chen",
-        "publishedDate": "2024-01-15",
-        "slug": "modern-javascript-guide"
-      },
-      {
-        "title": "Building Scalable React Applications",
-        "excerpt": "Best practices for creating maintainable and scalable React applications.",
-        "author": "Maria Rodriguez",
-        "publishedDate": "2024-01-10",
-        "slug": "scalable-react-applications"
-      },
-      {
-        "title": "CSS Grid vs Flexbox: When to Use What",
-        "excerpt": "A comprehensive guide to choosing the right layout method for your projects.",
-        "author": "David Kim",
-        "publishedDate": "2024-01-05",
-        "slug": "css-grid-vs-flexbox"
-      }
-    ]
+    "title": "Featured Posts"
   },
   "dependencies": [
     "lucide-react"

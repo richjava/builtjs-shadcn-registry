@@ -21,10 +21,23 @@
     "Call to action"
   ],
   "fields": {
-    "title": "string",
-    "subtitle": "string",
-    "ctaText": "string",
-    "ctaLink": "url"
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "url"
+    }
+  },
+  "collections": {
+    "serviceItem": {
+      "limit": 3
+    }
   },
   "data": {
     "title": "Our Services",

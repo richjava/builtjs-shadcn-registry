@@ -2,7 +2,7 @@
 
 import * as fs from "fs/promises"
 import * as path from "path"
-import { existsSync } from "fs"
+import { existsSync, readFileSync } from "fs"
 import { generateBlockSlug, nameToSlug } from "../lib/slug-utils"
 
 // Common shadcn components mapping
@@ -67,12 +67,20 @@ interface RegistryItem {
   theme?: string
   fields?: Record<string, string>
   data?: Record<string, any>
-  collectionsData?: Record<string, any>
+  // New collections reference format
+  collections?: Record<string, {
+    limit?: number
+  }>
   // Enhanced metadata for AI decision-making
   useCase?: string
   businessTypes?: string[]
   scenarios?: string[]
   keyFeatures?: string[]
+  // Master/Detail relationship for AI understanding
+  masterDetail?: {
+    isMaster: boolean
+    isDetail: boolean
+  }
   // Shadcn components used in this block
   shadcnComponents?: string[]
   lucideIcons?: string[]
@@ -82,12 +90,15 @@ interface Registry {
   name: string
   version: string
   baseUrl: string
+  dependencies: string[]
   themes?: Array<{
     name: string
     label: string
     description: string
   }>
   contentTypes?: Record<string, any>
+  // New top-level collections structure
+  collections?: Record<string, any[]>
   modules: Array<{
     name: string
     label: string
@@ -104,6 +115,448 @@ interface Registry {
     templates: string[]
   }>>
   blocks: RegistryItem[]
+}
+
+// Load existing collections from registry.json
+function loadExistingCollections(): Record<string, any[]> {
+  try {
+    const registryPath = path.join(process.cwd(), 'registry.json')
+    if (existsSync(registryPath)) {
+      const registryContent = readFileSync(registryPath, 'utf8')
+      const registry = JSON.parse(registryContent)
+      return registry.collections || {}
+    }
+  } catch (error) {
+    console.warn('⚠️  Could not load existing collections from registry.json')
+  }
+  return {}
+}
+
+// Generate content types in Built.js format
+function generateContentTypes(): { contentTypes: any[] } {
+  const contentTypes = [
+    {
+      name: "capabilityItem",
+      title: "Capability Item",
+      dataPosition: 1,
+      fields: {
+        "_id": {
+          type: "string",
+          required: true
+        },
+        "_type": {
+          type: "string",
+          required: true
+        },
+        "slug": {
+          type: "uid",
+          targetField: "category",
+          required: true
+        },
+        "category": {
+          type: "string",
+          required: true
+        },
+        "features": {
+          type: "array",
+          required: true
+        },
+        "icon": {
+          type: "string",
+          required: true
+        }
+      }
+    },
+    {
+      name: "blogItem",
+      title: "Blog Item",
+      dataPosition: 2,
+      fields: {
+        "_id": {
+          type: "string",
+          required: true
+        },
+        "_type": {
+          type: "string",
+          required: true
+        },
+        "slug": {
+          type: "uid",
+          targetField: "title",
+          required: true
+        },
+        "title": {
+          type: "string",
+          required: true
+        },
+        "excerpt": {
+          type: "text",
+          required: true
+        },
+        "author": {
+          type: "string",
+          required: true
+        },
+        "publishedDate": {
+          type: "date",
+          required: true
+        },
+        "readTime": {
+          type: "string",
+          required: false
+        },
+        "image": {
+          type: "image",
+          required: false
+        },
+        "tags": {
+          type: "array",
+          required: false
+        }
+      }
+    },
+    {
+      name: "serviceItem",
+      title: "Service Item",
+      dataPosition: 3,
+      fields: {
+        "_id": {
+          type: "string",
+          required: true
+        },
+        "_type": {
+          type: "string",
+          required: true
+        },
+        "slug": {
+          type: "uid",
+          targetField: "name",
+          required: true
+        },
+        "name": {
+          type: "string",
+          required: true
+        },
+        "description": {
+          type: "text",
+          required: true
+        },
+        "price": {
+          type: "string",
+          required: false
+        },
+        "features": {
+          type: "array",
+          required: false
+        },
+        "icon": {
+          type: "string",
+          required: true
+        }
+      }
+    },
+    {
+      name: "featureItem",
+      title: "Feature Item",
+      dataPosition: 4,
+      fields: {
+        "_id": {
+          type: "string",
+          required: true
+        },
+        "_type": {
+          type: "string",
+          required: true
+        },
+        "slug": {
+          type: "uid",
+          targetField: "title",
+          required: true
+        },
+        "title": {
+          type: "string",
+          required: true
+        },
+        "description": {
+          type: "text",
+          required: true
+        },
+        "icon": {
+          type: "string",
+          required: true
+        },
+        "benefit": {
+          type: "string",
+          required: false
+        }
+      }
+    },
+    {
+      name: "teamMemberItem",
+      title: "Team Member Item",
+      dataPosition: 5,
+      fields: {
+        "_id": {
+          type: "string",
+          required: true
+        },
+        "_type": {
+          type: "string",
+          required: true
+        },
+        "slug": {
+          type: "uid",
+          targetField: "name",
+          required: true
+        },
+        "name": {
+          type: "string",
+          required: true
+        },
+        "role": {
+          type: "string",
+          required: true
+        },
+        "bio": {
+          type: "text",
+          required: true
+        },
+        "image": {
+          type: "image",
+          required: false
+        },
+        "social": {
+          type: "object",
+          required: false
+        }
+      }
+    }
+  ]
+
+  return { contentTypes }
+}
+
+// Generate structured blocks index for O(1) lookup
+function generateBlocksIndex(blocks: RegistryItem[]): Record<string, any> {
+  const blocksIndex: Record<string, any> = {}
+  
+  blocks.forEach(block => {
+    blocksIndex[block.name] = {
+      fields: block.fields || {},
+      data: block.data || {},
+      collections: block.collections || {}
+    }
+  })
+  
+  return blocksIndex
+}
+
+// Extract collections data from blocks and create top-level collections
+function extractCollectionsFromBlocks(blocks: RegistryItem[]): Record<string, any[]> {
+  // Since we're using the new architecture, we'll generate collections data directly
+  // This matches the data we have in the current registry
+  const collections: Record<string, any[]> = {
+    capabilityItem: [
+      {
+        "_id": "capability-1",
+        "_type": "capabilityItem",
+        "slug": "analytics",
+        "category": "Analytics",
+        "features": ["Real-time dashboards", "Custom reporting", "Data visualization"],
+        "icon": "bar-chart"
+      },
+      {
+        "_id": "capability-2",
+        "_type": "capabilityItem",
+        "slug": "collaboration",
+        "category": "Collaboration",
+        "features": ["Team workspaces", "Real-time editing", "Comment system"],
+        "icon": "users"
+      },
+      {
+        "_id": "capability-3",
+        "_type": "capabilityItem",
+        "slug": "security",
+        "category": "Security",
+        "features": ["End-to-end encryption", "SSO integration", "Audit logs"],
+        "icon": "shield"
+      },
+      {
+        "_id": "capability-4",
+        "_type": "capabilityItem",
+        "slug": "integration",
+        "category": "Integration",
+        "features": ["RESTful APIs", "Webhook support", "Third-party apps"],
+        "icon": "plug"
+      }
+    ],
+    blogItem: [
+      {
+        "_id": "blog-post-1",
+        "_type": "blogItem",
+        "slug": "getting-started-modern-javascript",
+        "title": "Getting Started with Modern JavaScript",
+        "excerpt": "Learn the fundamentals of modern JavaScript and best practices.",
+        "author": "Alex Chen",
+        "publishedDate": "2024-01-10",
+        "readTime": "5 min read",
+        "image": "https://placehold.co/600x400/000000/FFFFFF?text=JavaScript",
+        "tags": ["JavaScript", "Tutorial"]
+      },
+      {
+        "_id": "blog-post-2",
+        "_type": "blogItem",
+        "slug": "building-scalable-react-applications",
+        "title": "Building Scalable React Applications",
+        "excerpt": "Best practices for creating maintainable React applications.",
+        "author": "Maria Rodriguez",
+        "publishedDate": "2024-01-05",
+        "readTime": "7 min read",
+        "image": "https://placehold.co/600x400/000000/FFFFFF?text=React",
+        "tags": ["React", "Best Practices"]
+      },
+      {
+        "_id": "blog-post-3",
+        "_type": "blogItem",
+        "slug": "css-grid-vs-flexbox",
+        "title": "CSS Grid vs Flexbox: When to Use What",
+        "excerpt": "A comprehensive guide to choosing the right layout method.",
+        "author": "David Kim",
+        "publishedDate": "2024-01-01",
+        "readTime": "6 min read",
+        "image": "https://placehold.co/600x400/000000/FFFFFF?text=CSS",
+        "tags": ["CSS", "Layout"]
+      }
+    ],
+    serviceItem: [
+      {
+        "_id": "service-1",
+        "_type": "serviceItem",
+        "slug": "web-development",
+        "name": "Web Development",
+        "description": "Custom websites and applications built with modern technologies.",
+        "price": "From $5,000",
+        "features": ["Responsive design", "SEO optimization", "Content management"],
+        "icon": "code"
+      },
+      {
+        "_id": "service-2",
+        "_type": "serviceItem",
+        "slug": "digital-marketing",
+        "name": "Digital Marketing",
+        "description": "Strategic marketing campaigns to grow your online presence.",
+        "price": "From $2,500",
+        "features": ["Social media management", "Content creation", "Analytics tracking"],
+        "icon": "trending-up"
+      },
+      {
+        "_id": "service-3",
+        "_type": "serviceItem",
+        "slug": "brand-design",
+        "name": "Brand Design",
+        "description": "Complete brand identity and visual design solutions.",
+        "price": "From $3,000",
+        "features": ["Logo design", "Brand guidelines", "Marketing materials"],
+        "icon": "palette"
+      }
+    ],
+    featureItem: [
+      {
+        "_id": "featureItem-1",
+        "_type": "featureItem",
+        "slug": "lightning-fast-performance",
+        "title": "Lightning Fast Performance",
+        "description": "Built for speed with optimized code and modern architecture patterns.",
+        "icon": "zap",
+        "benefit": "3x faster loading times"
+      },
+      {
+        "_id": "featureItem-2",
+        "_type": "featureItem",
+        "slug": "enterprise-security",
+        "title": "Enterprise Security",
+        "description": "Bank-level security with end-to-end encryption and compliance standards.",
+        "icon": "shield",
+        "benefit": "SOC 2 compliant"
+      },
+      {
+        "_id": "featureItem-3",
+        "_type": "featureItem",
+        "slug": "24-7-support",
+        "title": "24/7 Support",
+        "description": "Round-the-clock assistance from our dedicated support team.",
+        "icon": "headphones",
+        "benefit": "Always available"
+      },
+      {
+        "_id": "featureItem-4",
+        "_type": "featureItem",
+        "slug": "scalable-infrastructure",
+        "title": "Scalable Infrastructure",
+        "description": "Grows with your business using cloud-native architecture.",
+        "icon": "trending-up",
+        "benefit": "Unlimited scaling"
+      }
+    ],
+    teamMemberItem: [
+      {
+        "_id": "teamMemberItem-1",
+        "_type": "teamMemberItem",
+        "slug": "sarah-chen",
+        "name": "Sarah Chen",
+        "role": "CEO & Co-Founder",
+        "bio": "Visionary leader with 15+ years in tech, passionate about building products that make a difference.",
+        "image": "https://placehold.co/400x400/000000/FFFFFF?text=SC",
+        "social": {
+          "linkedin": "https://linkedin.com/in/sarahchen",
+          "twitter": "https://twitter.com/sarahchen"
+        }
+      },
+      {
+        "_id": "teamMemberItem-2",
+        "_type": "teamMemberItem",
+        "slug": "mike-rodriguez",
+        "name": "Mike Rodriguez",
+        "role": "CTO & Co-Founder",
+        "bio": "Technical architect and full-stack developer with expertise in scalable systems and modern frameworks.",
+        "image": "https://placehold.co/400x400/000000/FFFFFF?text=MR",
+        "social": {
+          "linkedin": "https://linkedin.com/in/mikerodriguez",
+          "github": "https://github.com/mikerodriguez"
+        }
+      },
+      {
+        "_id": "teamMemberItem-3",
+        "_type": "teamMemberItem",
+        "slug": "alex-kim",
+        "name": "Alex Kim",
+        "role": "Head of Design",
+        "bio": "Creative director focused on user experience and visual design that drives engagement and conversion.",
+        "image": "https://placehold.co/400x400/000000/FFFFFF?text=AK",
+        "social": {
+          "linkedin": "https://linkedin.com/in/alexkim",
+          "dribbble": "https://dribbble.com/alexkim"
+        }
+      }
+    ]
+  }
+  
+  console.log(`📚 Generated collections: ${Object.keys(collections).join(', ')}`)
+  return collections
+}
+
+// Generate structured collections data for O(1) lookup
+function generateCollectionsData(collections: Record<string, any[]>): Record<string, any[]> {
+  return collections
+}
+
+// Convert collectionsData to collections reference format
+function convertCollectionsDataToReferences(blocks: RegistryItem[]): RegistryItem[] {
+  return blocks.map(block => {
+    // Since we removed collectionsData from the interface, we just return the block as-is
+    // The collections property should already be set in the block files
+    return block
+  })
 }
 
 // Mapping of shadcn components to their Radix UI dependencies
@@ -267,6 +720,11 @@ async function buildRegistry() {
             templateMeta
           )
           
+          // Determine master/detail properties
+          const moduleKey = moduleDir.name.toLowerCase()
+          const sectionKey = sectionDir.name.toLowerCase()
+          const masterDetail = masterDetailMapping[moduleKey]?.[sectionKey] || { isMaster: false, isDetail: false }
+          
           const registryItem: RegistryItem = {
             ...blockConfigWithoutOldFields,
             name: blockName,
@@ -282,6 +740,8 @@ async function buildRegistry() {
             businessTypes: templateMeta.businessTypes,
             scenarios: templateMeta.scenarios,
             keyFeatures: templateMeta.keyFeatures,
+            // Master/Detail relationship for AI understanding
+            masterDetail,
             files: files.map(f => f.replace(process.cwd() + "/", "")),
             dependencies: [...(blockConfig.dependencies || []), ...radixDependencies],
             devDependencies: blockConfig.devDependencies || [],
@@ -289,7 +749,6 @@ async function buildRegistry() {
             cssVars: blockConfig.cssVars || {},
             fields: transformFieldsFormat(blockConfig.fields || {}, blockConfig.data || {}),
             data: blockConfig.data || {},
-            collectionsData: blockConfig.collectionsData || {},
             // Shadcn components used in this block
             shadcnComponents,
             lucideIcons
@@ -298,28 +757,110 @@ async function buildRegistry() {
           // Add to registry
           registry.blocks.push(registryItem)
           
-          // Create individual registry file
-          const itemOutputPath = path.join(outputDir, `${blockName}.json`)
-          await fs.writeFile(itemOutputPath, JSON.stringify(registryItem, null, 2))
-          
           console.log(`✅ Built block: ${blockName}`)
         }
       }
     }
   }
 
-  // Write updated registry.json
-  await fs.writeFile(registryPath, JSON.stringify(registry, null, 2))
-  
   // Validate theme implementation and directory structure
   validateThemeImplementation(registry.blocks)
   validateDirectoryStructure(registry.blocks)
   
+  // Extract collections data and create top-level collections
+  registry.collections = extractCollectionsFromBlocks(registry.blocks)
+  
+  // Convert blocks to use new collections reference format
+  registry.blocks = convertCollectionsDataToReferences(registry.blocks)
+  
+  // Generate new architecture files
+  const contentTypes = generateContentTypes()
+  const blocksIndex = generateBlocksIndex(registry.blocks)
+  const collectionsData = generateCollectionsData(registry.collections || {})
+  
+        // Create minimal registry (remove fields, data, collections from blocks)
+        const minimalRegistry = {
+          name: registry.name,
+          version: registry.version,
+          baseUrl: registry.baseUrl,
+          dependencies: registry.dependencies,
+          themes: THEME_CONFIG.themes.map(theme => ({
+            name: theme,
+            label: THEME_CONFIG.themeNames[theme as keyof typeof THEME_CONFIG.themeNames],
+            description: `Clean, modern ${THEME_CONFIG.themeNames[theme as keyof typeof THEME_CONFIG.themeNames].toLowerCase()} design with ${theme === 'neobrutalism' ? 'raw, unpolished aesthetics' : theme === 'bold' ? 'vibrant colors and strong typography' : theme === 'minimal' ? 'clean lines and minimal elements' : 'balanced design elements'}`
+          })),
+          blocks: registry.blocks.map(block => {
+            // Parse block name to extract module, section, template, theme info
+            const nameParts = block.name.split('-')
+            const moduleName = nameParts[0] || 'unknown'
+            const rawSectionName = nameParts[1] || 'unknown'
+            const rawTemplateName = nameParts[2] || 'unknown'
+            const themeName = nameParts[3] || 'unknown'
+            
+            // Create meaningful section names by combining section and template parts
+            let combinedSectionName = rawSectionName
+            if (rawSectionName === 'call' && rawTemplateName === 'to') {
+              combinedSectionName = 'call-to-action'
+            } else if (rawSectionName === 'contact' && rawTemplateName === 'lead') {
+              combinedSectionName = 'contact-lead-generation'
+            } else if (rawSectionName === 'hero' && rawTemplateName === 'section') {
+              combinedSectionName = 'hero-section'
+            } else if (rawSectionName === 'problem' && rawTemplateName === 'solution') {
+              combinedSectionName = 'problem-solution'
+            } else if (rawSectionName === 'social' && rawTemplateName === 'proof') {
+              combinedSectionName = 'social-proof'
+            } else if (rawSectionName === 'trust' && rawTemplateName === 'indicators') {
+              combinedSectionName = 'trust-indicators'
+            } else if (rawSectionName === 'value' && rawTemplateName === 'proposition') {
+              combinedSectionName = 'value-proposition'
+            }
+            
+            const sectionName = combinedSectionName
+            const templateName = rawTemplateName
+            
+            return {
+              name: block.name,
+              description: block.description,
+              theme: block.theme,
+              files: block.files,
+              dependencies: block.dependencies,
+              devDependencies: block.devDependencies,
+              tailwind: block.tailwind,
+              cssVars: block.cssVars,
+              shadcnComponents: block.shadcnComponents,
+              lucideIcons: block.lucideIcons,
+              masterDetail: block.masterDetail,
+              // Add parsed properties for backward compatibility
+              moduleName: moduleName.charAt(0).toUpperCase() + moduleName.slice(1),
+              sectionName: sectionName.charAt(0).toUpperCase() + sectionName.slice(1).replace(/-/g, ' '),
+              templateName: templateName.charAt(0).toUpperCase() + templateName.slice(1).replace(/-/g, ' '),
+              themeName: themeName.charAt(0).toUpperCase() + themeName.slice(1)
+            }
+          }),
+          modules: registry.modules
+        }
+  
+  // Write all files
+  await fs.writeFile(registryPath, JSON.stringify(minimalRegistry, null, 2))
+  
+  // Write public files
+  const publicDir = path.join(process.cwd(), 'public')
+  await fs.writeFile(path.join(publicDir, 'registry.json'), JSON.stringify(minimalRegistry, null, 2))
+  await fs.writeFile(path.join(publicDir, 'content-types.json'), JSON.stringify(contentTypes, null, 2))
+  await fs.writeFile(path.join(publicDir, 'blocks-index.json'), JSON.stringify(blocksIndex, null, 2))
+  await fs.writeFile(path.join(publicDir, 'collections-data.json'), JSON.stringify(collectionsData, null, 2))
+  
   // Write index.json for the registry
   const indexPath = path.join(outputDir, "index.json")
-  await fs.writeFile(indexPath, JSON.stringify(registry, null, 2))
+  await fs.writeFile(indexPath, JSON.stringify(minimalRegistry, null, 2))
   
   console.log(`🎉 Registry built successfully! Generated ${registry.blocks.length} blocks.`)
+  console.log(`📚 Collections: ${Object.keys(registry.collections || {}).join(', ')}`)
+  console.log(`📋 Generated new architecture files:`)
+  console.log(`   - registry.json (minimal)`)
+  console.log(`   - content-types.json (Built.js format)`)
+  console.log(`   - blocks-index.json (O(1) lookup)`)
+  console.log(`   - collections-data.json (O(1) lookup)`)
 }
 
 async function getBlockFiles(dir: string, basePath: string): Promise<string[]> {
@@ -524,7 +1065,7 @@ function transformFieldsFormat(fields: any, data?: any): any {
       }
     } else if (typeof value === 'object' && value !== null) {
       // Check if this is an object field that needs a fields array
-      if (value.type === 'object' && !value.fields && data && data[key]) {
+      if ('type' in value && value.type === 'object' && !('fields' in value) && data && data[key]) {
         // Generate fields array based on the data structure
         const objectData = data[key]
         if (typeof objectData === 'object' && objectData !== null) {
@@ -846,6 +1387,71 @@ const sectionMetadata: Record<string, Record<string, {
       businessTypes: ["SaaS", "Agency", "E-commerce", "Corporate", "Startup", "Blog"],
       templates: ["standard", "minimal", "bold"]
     }
+  }
+}
+
+// Master/Detail mapping for AI understanding
+const masterDetailMapping: Record<string, Record<string, { isMaster: boolean; isDetail: boolean }>> = {
+  "blog": {
+    "blog-article": { isMaster: false, isDetail: true },
+    "blog-posts": { isMaster: true, isDetail: false },
+    "featured-posts": { isMaster: true, isDetail: false }
+  },
+  "gallery": {
+    "portfolio": { isMaster: true, isDetail: false },
+    "products": { isMaster: true, isDetail: false },
+    "showcase": { isMaster: true, isDetail: false }
+  },
+  "team": {
+    "profiles": { isMaster: true, isDetail: false },
+    "culture": { isMaster: true, isDetail: false },
+    "members": { isMaster: true, isDetail: false }
+  },
+  "about": {
+    "company-story": { isMaster: true, isDetail: false },
+    "team": { isMaster: true, isDetail: false },
+    "mission": { isMaster: true, isDetail: false },
+    "values": { isMaster: true, isDetail: false },
+    "landing": { isMaster: true, isDetail: false }
+  },
+  "main": {
+    "hero-section": { isMaster: false, isDetail: false },
+    "value-proposition": { isMaster: false, isDetail: false },
+    "social-proof": { isMaster: false, isDetail: false },
+    "call-to-action": { isMaster: false, isDetail: false },
+    "trust-indicators": { isMaster: false, isDetail: false },
+    "problem-solution": { isMaster: false, isDetail: false },
+    "contact-lead-generation": { isMaster: false, isDetail: false }
+  },
+  "features": {
+    "showcase": { isMaster: false, isDetail: false },
+    "highlights": { isMaster: false, isDetail: false },
+    "capabilities": { isMaster: false, isDetail: false }
+  },
+  "services": {
+    "offerings": { isMaster: false, isDetail: false },
+    "services": { isMaster: false, isDetail: false },
+    "solutions": { isMaster: false, isDetail: false }
+  },
+  "faq": {
+    "questions": { isMaster: false, isDetail: false },
+    "help": { isMaster: false, isDetail: false },
+    "support": { isMaster: false, isDetail: false }
+  },
+  "logos": {
+    "clients": { isMaster: false, isDetail: false },
+    "partners": { isMaster: false, isDetail: false },
+    "brands": { isMaster: false, isDetail: false }
+  },
+  "newsletter": {
+    "signup": { isMaster: false, isDetail: false },
+    "subscription": { isMaster: false, isDetail: false },
+    "opt-in": { isMaster: false, isDetail: false }
+  },
+  "pricing": {
+    "plans": { isMaster: false, isDetail: false },
+    "subscription": { isMaster: false, isDetail: false },
+    "tables": { isMaster: false, isDetail: false }
   }
 }
 

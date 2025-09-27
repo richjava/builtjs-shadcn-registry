@@ -91,31 +91,31 @@ export default function Capabilities({ content }: CapabilitiesProps) {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+      <div className="container px-4 mx-auto">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-3xl font-semibold text-gray-900">
             {data.title}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto text-lg text-gray-600">
             {data.subtitle}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <div className="grid grid-cols-1 gap-8 mb-10 md:grid-cols-2 lg:grid-cols-4">
           {capabilities.map((capability, index) => {
             const IconComponent = iconMap[capability.icon as keyof typeof iconMap] || BarChart
             return (
               <div key={capability._id || index} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-gray-100 rounded-lg mb-4">
-                  <IconComponent className="h-6 w-6 text-gray-600" />
+                <div className="inline-flex items-center justify-center w-12 h-12 mb-4 bg-gray-100 rounded-lg">
+                  <IconComponent className="w-6 h-6 text-gray-600" />
                 </div>
-                <h3 className="text-lg font-medium text-gray-900 mb-4">
+                <h3 className="mb-4 text-lg font-medium text-gray-900">
                   {capability.category}
                 </h3>
                 <ul className="space-y-2 text-left">
                   {capability.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm">
-                      <Check className="h-3 w-3 text-gray-400 mr-2 flex-shrink-0" />
+                      <Check className="flex-shrink-0 w-3 h-3 mr-2 text-gray-400" />
                       <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
@@ -128,7 +128,7 @@ export default function Capabilities({ content }: CapabilitiesProps) {
         <div className="text-center">
           <Button variant="outline" size="lg">
             {data.ctaText}
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
         </div>
       </div>

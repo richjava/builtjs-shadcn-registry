@@ -50,7 +50,9 @@ export const getStaticProps: GetStaticProps = async () => {
   // Map modules to categories for backward compatibility
   const registryData = {
     ...registry,
-    categories: registry.modules || []
+    categories: Array.isArray(registry.modules) ? registry.modules : [],
+    blocks: Array.isArray(registry.blocks) ? registry.blocks : [],
+    themes: Array.isArray(registry.themes) ? registry.themes : []
   }
   
   return { props: { registry: registryData } }

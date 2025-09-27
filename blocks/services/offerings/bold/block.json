@@ -3,11 +3,23 @@
   "description": "Service offerings and packages",
   "theme": "bold",
   "fields": {
-    "title": "string",
-    "subtitle": "string",
-    "offerings": "array",
-    "ctaText": "string",
-    "ctaLink": "url"
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "url"
+    }
+  },
+  "collections": {
+    "serviceItem": {
+      "limit": 3
+    }
   },
   "data": {
     "title": "Premium Service Packages",

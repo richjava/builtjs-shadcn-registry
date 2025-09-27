@@ -48,6 +48,12 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
 
   // Filter blocks based on selected theme
   useEffect(() => {
+    if (!Array.isArray(blocks)) {
+      console.error('Blocks is not an array:', blocks)
+      setFilteredBlocks([])
+      return
+    }
+    
     if (selectedTheme === "all") {
       setFilteredBlocks(blocks)
     } else {
@@ -63,7 +69,7 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
 
   // Filter modules to only show those that have templates
   const modulesWithTemplates = categories.filter(module => 
-    filteredBlocks.some(block => block.moduleName.toLowerCase() === module.name)
+    Array.isArray(filteredBlocks) && filteredBlocks.some(block => block.moduleName.toLowerCase() === module.name)
   )
 
   return (

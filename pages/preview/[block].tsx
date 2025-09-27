@@ -4,10 +4,11 @@ import * as path from 'path'
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowLeft, Download, Code, Check } from 'lucide-react'
+import { ArrowLeft, Download, Check } from 'lucide-react'
 import Header from '@/components/header'
 import TemplateNavigation from '@/components/template-navigation'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { resolveBlockCollections, debugCollectionResolution } from '@/lib/collection-resolver'
 
 // Import all block components
 import AboutLandingImage from '@/blocks/about/about-landing/image/component'
@@ -392,8 +393,17 @@ interface Props {
 export default function BlockPreview({ block, componentName, navigation }: Props) {
   const router = useRouter()
   const Component = blockComponents[componentName]
-  const isThumbnail = router.query.thumbnail === 'true'
   const [copied, setCopied] = useState(false)
+  const [isThumbnail, setIsThumbnail] = useState(false)
+  const [isClient, setIsClient] = useState(false)
+
+  // Check if we're on the client side
+  useEffect(() => {
+    setIsClient(true)
+    // Check for thumbnail parameter on client side
+    const urlParams = new URLSearchParams(window.location.search)
+    setIsThumbnail(urlParams.get('thumbnail') === 'true')
+  }, [])
 
   const handleCopyCode = async () => {
     try {
@@ -435,6 +445,18 @@ export default function BlockPreview({ block, componentName, navigation }: Props
     )
   }
 
+  // Show loading state during SSR and initial client render to prevent hydration mismatch
+  if (!isClient) {
+    return (
+      <div className="w-full h-full bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mx-auto mb-2"></div>
+          <p className="text-xs text-gray-500">Loading preview...</p>
+        </div>
+      </div>
+    )
+  }
+
   // Thumbnail mode - just render the component
   if (isThumbnail) {
     return (
@@ -467,12 +489,6 @@ export default function BlockPreview({ block, componentName, navigation }: Props
               </div>
             </div>
             <div className="flex items-center space-x-2">
-              <Button variant="outline" size="sm" asChild>
-                <a href={`/registry/${componentName}.json`} target="_blank">
-                  <Code className="mr-2 h-4 w-4" />
-                  View JSON
-                </a>
-              </Button>
               <Button size="sm" onClick={handleCopyCode}>
                 {copied ? (
                   <>
@@ -562,11 +578,24 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     }
   }
 
+  // Resolve collections for the block
+  const { collections: resolvedCollections, data: blockData } = await resolveBlockCollections(blockId)
+  
+  // Debug collection resolution in development
+  debugCollectionResolution(
+    blockId,
+    resolvedCollections
+  )
+
   return { 
     props: { 
-      block,
+      block: {
+        ...block,
+        data: blockData, // Pass the data field from blocks-index.json
+        collectionsData: resolvedCollections // Pass resolved collections as collectionsData for compatibility
+      },
       componentName: blockId,
       navigation
-    } 
+    }
   }
 }

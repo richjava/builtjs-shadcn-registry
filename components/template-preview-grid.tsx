@@ -125,7 +125,7 @@ export default function TemplatePreviewGrid() {
     // Group blocks by theme
     const themeMap = new Map<string, Block>()
     section.blocks.forEach(block => {
-      themeMap.set(block.themeName.toLowerCase(), block)
+      themeMap.set(block.theme, block)
     })
     
     return Array.from(themeMap.values())
@@ -203,7 +203,7 @@ export default function TemplatePreviewGrid() {
       {currentBlocks.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {themes.map(theme => {
-            const block = currentBlocks.find(b => b.themeName.toLowerCase() === theme.name)
+            const block = currentBlocks.find(b => b.theme === theme.name)
             
             if (!block) {
               return (

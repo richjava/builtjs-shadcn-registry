@@ -22,8 +22,17 @@
     "Read more buttons"
   ],
   "fields": {
-    "title": "string",
-    "subtitle": "string"
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  },
+  "collections": {
+    "blogItem": {
+      "limit": 3
+    }
   },
   "data": {
     "title": "Latest Blog Posts",

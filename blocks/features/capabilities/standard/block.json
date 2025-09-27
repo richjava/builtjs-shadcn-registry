@@ -3,57 +3,27 @@
   "description": "Comprehensive capability overview",
   "theme": "standard",
   "fields": {
-    "title": "string",
-    "subtitle": "string",
-    "capabilities": "array",
-    "ctaText": "string",
-    "ctaLink": "url"
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "url"
+    }
+  },
+  "collections": {
+    "capabilityItem": {
+      "limit": 4
+    }
   },
   "data": {
     "title": "Complete Solution",
     "subtitle": "Everything you need to succeed, all in one powerful platform.",
-    "capabilities": [
-      {
-        "category": "Analytics & Insights",
-        "features": [
-          "Real-time dashboards",
-          "Custom reporting",
-          "Data visualization",
-          "Performance metrics"
-        ],
-        "icon": "bar-chart"
-      },
-      {
-        "category": "Collaboration Tools",
-        "features": [
-          "Team workspaces",
-          "Real-time editing",
-          "Comment system",
-          "Version control"
-        ],
-        "icon": "users"
-      },
-      {
-        "category": "Security & Compliance",
-        "features": [
-          "End-to-end encryption",
-          "SSO integration",
-          "Audit logs",
-          "GDPR compliance"
-        ],
-        "icon": "shield"
-      },
-      {
-        "category": "Integration & APIs",
-        "features": [
-          "RESTful APIs",
-          "Webhook support",
-          "Third-party apps",
-          "Custom connectors"
-        ],
-        "icon": "plug"
-      }
-    ],
     "ctaText": "Start Building",
     "ctaLink": "/get-started"
   },

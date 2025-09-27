@@ -6,15 +6,20 @@ interface OfferingsProps {
     data?: {
       title: string
       subtitle: string
-      offerings: Array<{
+      ctaText: string
+      ctaLink: string
+    }
+    collections?: {
+      serviceItem?: {
+        _id: string
+        _type: string
+        slug: string
         name: string
         description: string
         price: string
         features: string[]
         icon: string
-      }>
-      ctaText: string
-      ctaLink: string
+      }[]
     }
   }
 }
@@ -29,44 +34,54 @@ export default function Offerings({ content }: OfferingsProps) {
   const data = content.data || {
     title: "Service Packages",
     subtitle: "Choose the right package for your business needs.",
-    offerings: [
-      {
-        name: "Web Development",
-        description: "Custom websites and applications built with modern technologies.",
-        price: "From $5,000",
-        features: [
-          "Responsive design",
-          "SEO optimization",
-          "Content management"
-        ],
-        icon: "code"
-      },
-      {
-        name: "Digital Marketing",
-        description: "Strategic marketing campaigns to grow your online presence.",
-        price: "From $2,500",
-        features: [
-          "Social media management",
-          "Content creation",
-          "Analytics tracking"
-        ],
-        icon: "trending-up"
-      },
-      {
-        name: "Brand Design",
-        description: "Complete brand identity and visual design solutions.",
-        price: "From $3,000",
-        features: [
-          "Logo design",
-          "Brand guidelines",
-          "Marketing materials"
-        ],
-        icon: "palette"
-      }
-    ],
     ctaText: "Get Quote",
     ctaLink: "/quote"
   }
+  
+  const offerings = content.collections?.serviceItem || [
+    {
+      _id: "fallback-1",
+      _type: "serviceItem",
+      slug: "web-development",
+      name: "Web Development",
+      description: "Custom websites and applications built with modern technologies.",
+      price: "From $5,000",
+      features: [
+        "Responsive design",
+        "SEO optimization",
+        "Content management"
+      ],
+      icon: "code"
+    },
+    {
+      _id: "fallback-2",
+      _type: "serviceItem",
+      slug: "digital-marketing",
+      name: "Digital Marketing",
+      description: "Strategic marketing campaigns to grow your online presence.",
+      price: "From $2,500",
+      features: [
+        "Social media management",
+        "Content creation",
+        "Analytics tracking"
+      ],
+      icon: "trending-up"
+    },
+    {
+      _id: "fallback-3",
+      _type: "serviceItem",
+      slug: "brand-design",
+      name: "Brand Design",
+      description: "Complete brand identity and visual design solutions.",
+      price: "From $3,000",
+      features: [
+        "Logo design",
+        "Brand guidelines",
+        "Marketing materials"
+      ],
+      icon: "palette"
+    }
+  ]
 
   return (
     <section className="py-16 bg-white">
@@ -81,7 +96,7 @@ export default function Offerings({ content }: OfferingsProps) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-          {data.offerings.map((offering, index) => {
+          {offerings.map((offering, index) => {
             const IconComponent = iconMap[offering.icon as keyof typeof iconMap] || Code
             return (
               <div key={index} className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">

@@ -129,11 +129,6 @@ export default function SectionPreviewClient({ category, categoryLabel, section,
                       Preview
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="sm">
-                    <Link href={`/registry/${template.name}.json`}>
-                      View JSON
-                    </Link>
-                  </Button>
                 </div>
               </div>
             </div>

@@ -6,13 +6,19 @@ interface CapabilitiesProps {
     data?: {
       title: string
       subtitle: string
-      capabilities: Array<{
-        category: string
-        features: string[]
-        icon: string
-      }>
       ctaText: string
       ctaLink: string
+    }
+    collections?: {
+      capabilityItem?: {
+        _id: string
+        _type: string
+        slug: string
+        category: string
+        features: string[]
+        icon?: string
+        description?: string
+      }[]
     }
   }
 }
@@ -28,51 +34,64 @@ export default function CapabilitiesNeobrutalism({ content }: CapabilitiesProps)
   const data = content.data || {
     title: "Complete Solution",
     subtitle: "Everything you need to succeed, all in one powerful platform.",
-    capabilities: [
-      {
-        category: "Analytics & Insights",
-        features: [
-          "Real-time dashboards",
-          "Custom reporting",
-          "Data visualization",
-          "Performance metrics"
-        ],
-        icon: "bar-chart"
-      },
-      {
-        category: "Collaboration Tools",
-        features: [
-          "Team workspaces",
-          "Real-time editing",
-          "Comment system",
-          "Version control"
-        ],
-        icon: "users"
-      },
-      {
-        category: "Security & Compliance",
-        features: [
-          "End-to-end encryption",
-          "SOC 2 compliance",
-          "Access controls",
-          "Audit logs"
-        ],
-        icon: "shield"
-      },
-      {
-        category: "Integrations",
-        features: [
-          "API connections",
-          "Third-party apps",
-          "Webhook support",
-          "Custom plugins"
-        ],
-        icon: "plug"
-      }
-    ],
     ctaText: "Explore Capabilities",
     ctaLink: "/capabilities"
   }
+  
+  const capabilities = content.collections?.capabilityItem || [
+    {
+      _id: "fallback-1",
+      _type: "capabilityItem",
+      slug: "analytics-insights",
+      category: "Analytics & Insights",
+      features: [
+        "Real-time dashboards",
+        "Custom reporting",
+        "Data visualization",
+        "Performance metrics"
+      ],
+      icon: "bar-chart"
+    },
+    {
+      _id: "fallback-2",
+      _type: "capabilityItem",
+      slug: "collaboration-tools",
+      category: "Collaboration Tools",
+      features: [
+        "Team workspaces",
+        "Real-time editing",
+        "Comment system",
+        "Version control"
+      ],
+      icon: "users"
+    },
+    {
+      _id: "fallback-3",
+      _type: "capabilityItem",
+      slug: "security-compliance",
+      category: "Security & Compliance",
+      features: [
+        "End-to-end encryption",
+        "SOC 2 compliance",
+        "Access controls",
+        "Audit logs"
+      ],
+      icon: "shield"
+    },
+    {
+      _id: "fallback-4",
+      _type: "capabilityItem",
+      slug: "integrations",
+      category: "Integrations",
+      features: [
+        "API connections",
+        "Third-party apps",
+        "Webhook support",
+        "Custom plugins"
+      ],
+      icon: "plug"
+    }
+  ]
 
   return (
     <section className="py-20 bg-white">
@@ -87,10 +106,10 @@ export default function CapabilitiesNeobrutalism({ content }: CapabilitiesProps)
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {data.capabilities.map((capability, index) => {
+          {capabilities.map((capability, index) => {
             const IconComponent = iconMap[capability.icon as keyof typeof iconMap] || BarChart
             return (
-              <div key={index} className="border-4 border-black p-6 bg-white shadow-[8px_8px_0px_#000000]">
+              <div key={capability._id || index} className="border-4 border-black p-6 bg-white shadow-[8px_8px_0px_#000000]">
                 <div className="flex items-center mb-6">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-electric-blue border-4 border-black rounded-full mr-4 shadow-[4px_4px_0px_#000000]">
                     <IconComponent className="h-6 w-6 text-black" />

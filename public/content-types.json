@@ -1,0 +1,200 @@
+{
+  "contentTypes": [
+    {
+      "name": "capabilityItem",
+      "title": "Capability Item",
+      "dataPosition": 1,
+      "fields": {
+        "_id": {
+          "type": "string",
+          "required": true
+        },
+        "_type": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "category",
+          "required": true
+        },
+        "category": {
+          "type": "string",
+          "required": true
+        },
+        "features": {
+          "type": "array",
+          "required": true
+        },
+        "icon": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "blogItem",
+      "title": "Blog Item",
+      "dataPosition": 2,
+      "fields": {
+        "_id": {
+          "type": "string",
+          "required": true
+        },
+        "_type": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "title",
+          "required": true
+        },
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "excerpt": {
+          "type": "text",
+          "required": true
+        },
+        "author": {
+          "type": "string",
+          "required": true
+        },
+        "publishedDate": {
+          "type": "date",
+          "required": true
+        },
+        "readTime": {
+          "type": "string",
+          "required": false
+        },
+        "image": {
+          "type": "image",
+          "required": false
+        },
+        "tags": {
+          "type": "array",
+          "required": false
+        }
+      }
+    },
+    {
+      "name": "serviceItem",
+      "title": "Service Item",
+      "dataPosition": 3,
+      "fields": {
+        "_id": {
+          "type": "string",
+          "required": true
+        },
+        "_type": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "name",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "text",
+          "required": true
+        },
+        "price": {
+          "type": "string",
+          "required": false
+        },
+        "features": {
+          "type": "array",
+          "required": false
+        },
+        "icon": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "featureItem",
+      "title": "Feature Item",
+      "dataPosition": 4,
+      "fields": {
+        "_id": {
+          "type": "string",
+          "required": true
+        },
+        "_type": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "title",
+          "required": true
+        },
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "type": "text",
+          "required": true
+        },
+        "icon": {
+          "type": "string",
+          "required": true
+        },
+        "benefit": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    {
+      "name": "teamMemberItem",
+      "title": "Team Member Item",
+      "dataPosition": 5,
+      "fields": {
+        "_id": {
+          "type": "string",
+          "required": true
+        },
+        "_type": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "name",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "role": {
+          "type": "string",
+          "required": true
+        },
+        "bio": {
+          "type": "text",
+          "required": true
+        },
+        "image": {
+          "type": "image",
+          "required": false
+        },
+        "social": {
+          "type": "object",
+          "required": false
+        }
+      }
+    }
+  ]
+}

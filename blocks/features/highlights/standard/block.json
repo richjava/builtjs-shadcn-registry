@@ -14,46 +14,6 @@
     "ctaText": "Get Started Today",
     "ctaLink": "/signup"
   },
-  "collectionsData": {
-    "featureItem": [
-      {
-        "_id": "featureItem-1",
-        "_type": "featureItem",
-        "slug": "lightning-fast-performance",
-        "title": "Lightning Fast Performance",
-        "description": "Built for speed with optimized code and modern architecture patterns.",
-        "icon": "zap",
-        "benefit": "3x faster loading times"
-      },
-      {
-        "_id": "featureItem-2",
-        "_type": "featureItem",
-        "slug": "enterprise-security",
-        "title": "Enterprise Security",
-        "description": "Bank-level security with end-to-end encryption and compliance.",
-        "icon": "shield-check",
-        "benefit": "SOC 2 Type II certified"
-      },
-      {
-        "_id": "featureItem-3",
-        "_type": "featureItem",
-        "slug": "24-7-support",
-        "title": "24/7 Support",
-        "description": "Round-the-clock assistance from our expert team.",
-        "icon": "headphones",
-        "benefit": "Average 2min response time"
-      },
-      {
-        "_id": "featureItem-4",
-        "_type": "featureItem",
-        "slug": "scalable-infrastructure",
-        "title": "Scalable Infrastructure",
-        "description": "Grows with your business from startup to enterprise scale.",
-        "icon": "trending-up",
-        "benefit": "Handles 10M+ requests/day"
-      }
-    ]
-  },
   "dependencies": [
     "lucide-react"
   ],

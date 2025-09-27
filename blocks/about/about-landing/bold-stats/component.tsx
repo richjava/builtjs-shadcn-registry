@@ -58,7 +58,7 @@ export default function AboutLanding({ content }: AboutLandingProps) {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-purple-900 px-16 py-6 text-xl font-bold tracking-wide backdrop-blur-sm"
+              className="border-2 border-white bg-white/10 text-white hover:bg-white hover:text-purple-900 px-16 py-6 text-xl font-bold tracking-wide backdrop-blur-sm"
             >
               Learn Our Story
             </Button>

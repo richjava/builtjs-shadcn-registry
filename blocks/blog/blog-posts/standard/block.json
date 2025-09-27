@@ -5,49 +5,41 @@
   "template": "standard",
   "description": "Standard blog posts listing with professional card layout.",
   "useCase": "Blog post previews, post listings, and blog homepage layouts.",
-  "businessTypes": ["Agency", "SaaS", "Corporate", "Startup", "E-commerce"],
-  "scenarios": ["Blog homepage", "Post listings", "Category pages", "Professional blog"],
-  "keyFeatures": ["Post cards", "Metadata display", "Responsive grid", "Professional styling"],
+  "businessTypes": [
+    "Agency",
+    "SaaS",
+    "Corporate",
+    "Startup",
+    "E-commerce"
+  ],
+  "scenarios": [
+    "Blog homepage",
+    "Post listings",
+    "Category pages",
+    "Professional blog"
+  ],
+  "keyFeatures": [
+    "Post cards",
+    "Metadata display",
+    "Responsive grid",
+    "Professional styling"
+  ],
   "fields": {
-    "title": "string",
-    "subtitle": "string",
-    "posts": "array"
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  },
+  "collections": {
+    "blogItem": {
+      "limit": 3
+    }
   },
   "data": {
     "title": "Latest Blog Posts",
-    "subtitle": "Stay updated with our latest insights, tutorials, and industry news.",
-    "posts": [
-      {
-        "title": "The Future of Web Development: Trends to Watch in 2024",
-        "excerpt": "Explore the latest trends and technologies shaping the future of web development.",
-        "author": "Sarah Johnson",
-        "publishedDate": "2024-01-15",
-        "readingTime": "5 min read",
-        "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-        "tags": ["Web Development", "Technology"],
-        "slug": "future-web-development-2024"
-      },
-      {
-        "title": "Getting Started with Modern JavaScript",
-        "excerpt": "Learn the fundamentals of modern JavaScript and best practices for development.",
-        "author": "Alex Chen",
-        "publishedDate": "2024-01-10",
-        "readingTime": "3 min read",
-        "image": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=600&h=400&fit=crop",
-        "tags": ["JavaScript", "Tutorial"],
-        "slug": "modern-javascript-guide"
-      },
-      {
-        "title": "Building Scalable React Applications",
-        "excerpt": "Best practices for creating maintainable and scalable React applications.",
-        "author": "Maria Rodriguez",
-        "publishedDate": "2024-01-05",
-        "readingTime": "8 min read",
-        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
-        "tags": ["React", "Best Practices"],
-        "slug": "scalable-react-applications"
-      }
-    ]
+    "subtitle": "Stay updated with our latest insights, tutorials, and industry news."
   },
   "dependencies": [
     "next/image",
