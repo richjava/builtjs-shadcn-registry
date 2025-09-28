@@ -742,7 +742,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Article",
-      "themeName": "Blog"
+      "themeName": "Blog",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-blog-article-blog-article-minimal",
@@ -767,7 +768,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Article",
-      "themeName": "Blog"
+      "themeName": "Blog",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-blog-article-blog-article-neobrutalism",
@@ -799,7 +801,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Article",
-      "themeName": "Blog"
+      "themeName": "Blog",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-blog-article-blog-article-standard",
@@ -831,7 +834,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Article",
-      "themeName": "Blog"
+      "themeName": "Blog",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-blog-posts-blog-posts-bold",
@@ -864,7 +868,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Posts",
-      "themeName": "Blog"
+      "themeName": "Blog",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-blog-posts-blog-posts-minimal",
@@ -890,7 +895,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Posts",
-      "themeName": "Blog"
+      "themeName": "Blog",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-blog-posts-blog-posts-neobrutalism",
@@ -922,7 +928,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Posts",
-      "themeName": "Blog"
+      "themeName": "Blog",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-blog-posts-blog-posts-standard",
@@ -954,7 +961,8 @@
       "moduleName": "Blog",
       "sectionName": "Blog",
       "templateName": "Posts",
-      "themeName": "Blog"
+      "themeName": "Blog",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-featured-posts-featured-posts-bold",
@@ -988,7 +996,8 @@
       "moduleName": "Blog",
       "sectionName": "Featured",
       "templateName": "Posts",
-      "themeName": "Featured"
+      "themeName": "Featured",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-featured-posts-featured-posts-minimal",
@@ -1015,7 +1024,8 @@
       "moduleName": "Blog",
       "sectionName": "Featured",
       "templateName": "Posts",
-      "themeName": "Featured"
+      "themeName": "Featured",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-featured-posts-featured-posts-neobrutalism",
@@ -1048,7 +1058,8 @@
       "moduleName": "Blog",
       "sectionName": "Featured",
       "templateName": "Posts",
-      "themeName": "Featured"
+      "themeName": "Featured",
+      "contentType": "blogItem"
     },
     {
       "name": "blog-featured-posts-featured-posts-standard",
@@ -1081,7 +1092,8 @@
       "moduleName": "Blog",
       "sectionName": "Featured",
       "templateName": "Posts",
-      "themeName": "Featured"
+      "themeName": "Featured",
+      "contentType": "blogItem"
     },
     {
       "name": "faq-help-help-bold",
@@ -4592,7 +4604,8 @@
       "moduleName": "Team",
       "sectionName": "Culture",
       "templateName": "Culture",
-      "themeName": "Bold"
+      "themeName": "Bold",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-culture-culture-minimal",
@@ -4624,7 +4637,8 @@
       "moduleName": "Team",
       "sectionName": "Culture",
       "templateName": "Culture",
-      "themeName": "Minimal"
+      "themeName": "Minimal",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-culture-culture-neobrutalism",
@@ -4656,7 +4670,8 @@
       "moduleName": "Team",
       "sectionName": "Culture",
       "templateName": "Culture",
-      "themeName": "Neobrutalism"
+      "themeName": "Neobrutalism",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-culture-culture-standard",
@@ -4688,7 +4703,8 @@
       "moduleName": "Team",
       "sectionName": "Culture",
       "templateName": "Culture",
-      "themeName": "Standard"
+      "themeName": "Standard",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-members-members-bold",
@@ -4720,7 +4736,8 @@
       "moduleName": "Team",
       "sectionName": "Members",
       "templateName": "Members",
-      "themeName": "Bold"
+      "themeName": "Bold",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-members-members-minimal",
@@ -4748,7 +4765,8 @@
       "moduleName": "Team",
       "sectionName": "Members",
       "templateName": "Members",
-      "themeName": "Minimal"
+      "themeName": "Minimal",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-members-members-neobrutalism",
@@ -4776,7 +4794,8 @@
       "moduleName": "Team",
       "sectionName": "Members",
       "templateName": "Members",
-      "themeName": "Neobrutalism"
+      "themeName": "Neobrutalism",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-members-members-standard",
@@ -4804,7 +4823,8 @@
       "moduleName": "Team",
       "sectionName": "Members",
       "templateName": "Members",
-      "themeName": "Standard"
+      "themeName": "Standard",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-profiles-profiles-bold",
@@ -4839,7 +4859,8 @@
       "moduleName": "Team",
       "sectionName": "Profiles",
       "templateName": "Profiles",
-      "themeName": "Bold"
+      "themeName": "Bold",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-profiles-profiles-minimal",
@@ -4871,7 +4892,8 @@
       "moduleName": "Team",
       "sectionName": "Profiles",
       "templateName": "Profiles",
-      "themeName": "Minimal"
+      "themeName": "Minimal",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-profiles-profiles-neobrutalism",
@@ -4903,7 +4925,8 @@
       "moduleName": "Team",
       "sectionName": "Profiles",
       "templateName": "Profiles",
-      "themeName": "Neobrutalism"
+      "themeName": "Neobrutalism",
+      "contentType": "teamMemberItem"
     },
     {
       "name": "team-profiles-profiles-standard",
@@ -4935,7 +4958,8 @@
       "moduleName": "Team",
       "sectionName": "Profiles",
       "templateName": "Profiles",
-      "themeName": "Standard"
+      "themeName": "Standard",
+      "contentType": "teamMemberItem"
     }
   ],
   "modules": [
