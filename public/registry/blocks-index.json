@@ -996,105 +996,42 @@
     "collections": {}
   },
   "blog-blog-article-blog-article-bold": {
-    "fields": {
-      "entry": {
-        "type": "object",
-        "fields": [
-          {
-            "name": "_type",
-            "title": "_type",
-            "type": "string"
-          },
-          {
-            "name": "slug",
-            "title": "Slug",
-            "type": "string"
-          }
-        ]
+    "fields": {},
+    "data": {},
+    "collections": {},
+    "entry": {
+      "blogItem": {
+        "slug": "building-scalable-react-applications"
       }
-    },
-    "data": {
-      "entry": {
-        "blogItem": {
-          "slug": "building-scalable-react-applications"
-        }
-      }
-    },
-    "collections": {}
+    }
   },
   "blog-blog-article-blog-article-minimal": {
-    "fields": {
-      "entry": {
-        "type": "object",
-        "fields": [
-          {
-            "name": "_type",
-            "title": "_type",
-            "type": "string"
-          },
-          {
-            "name": "slug",
-            "title": "Slug",
-            "type": "string"
-          }
-        ]
+    "fields": {},
+    "data": {},
+    "collections": {},
+    "entry": {
+      "blogItem": {
+        "slug": "getting-started-modern-javascript"
       }
-    },
-    "data": {
-      "entry": {
-        "blogItem": {
-          "slug": "getting-started-modern-javascript"
-        }
-      }
-    },
-    "collections": {}
+    }
   },
   "blog-blog-article-blog-article-neobrutalism": {
-    "fields": {
-      "entry": {
-        "type": "object",
-        "fields": [
-          {
-            "name": "blogItem",
-            "title": "Blog Item",
-            "type": "object"
-          }
-        ]
-      }
-    },
-    "data": {
-      "entry": {
-        "blogItem": {}
-      }
-    },
-    "collections": {}
+    "fields": {},
+    "data": {},
+    "collections": {},
+    "entry": {
+      "blogItem": {}
+    }
   },
   "blog-blog-article-blog-article-standard": {
-    "fields": {
-      "entry": {
-        "type": "object",
-        "fields": [
-          {
-            "name": "_type",
-            "title": "_type",
-            "type": "string"
-          },
-          {
-            "name": "slug",
-            "title": "Slug",
-            "type": "string"
-          }
-        ]
+    "fields": {},
+    "data": {},
+    "collections": {},
+    "entry": {
+      "blogItem": {
+        "slug": "css-grid-vs-flexbox"
       }
-    },
-    "data": {
-      "entry": {
-        "blogItem": {
-          "slug": "css-grid-vs-flexbox"
-        }
-      }
-    },
-    "collections": {}
+    }
   },
   "blog-blog-posts-blog-posts-bold": {
     "fields": {
