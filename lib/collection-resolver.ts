@@ -88,7 +88,7 @@ async function loadBlockDefinition(blockName: string): Promise<any> {
 /**
  * Resolves entry references from collection data
  * 
- * @param entryRef - Entry reference object (e.g., { blogItem: { slug: "post-slug" } })
+ * @param entryRef - Entry reference object (new format: { contentType: "blogItem", slug: "post-slug" } or old format: { blogItem: { slug: "post-slug" } })
  * @param collectionsData - Available collections data
  * @returns Resolved entry object or null if not found
  */
@@ -97,11 +97,29 @@ function resolveEntryReference(entryRef: any, collectionsData: RegistryCollectio
     return null
   }
 
-  // Get the collection type and config (e.g., blogItem: { slug: "..." })
-  const [collectionType] = Object.keys(entryRef)
-  const config = entryRef[collectionType]
+  let collectionType: string
+  let slug: string
 
-  if (!collectionType || !collectionsData[collectionType]) {
+  // Check if it's the new format: { contentType: "blogItem", slug: "post-slug" }
+  if (entryRef.contentType && entryRef.slug) {
+    collectionType = entryRef.contentType
+    slug = entryRef.slug
+  }
+  // Check if it's the old format: { blogItem: { slug: "post-slug" } }
+  else {
+    const [firstKey] = Object.keys(entryRef)
+    const config = entryRef[firstKey]
+    
+    if (!firstKey || !config?.slug) {
+      console.warn(`⚠️  Invalid entry reference format:`, entryRef)
+      return null
+    }
+    
+    collectionType = firstKey
+    slug = config.slug
+  }
+
+  if (!collectionsData[collectionType]) {
     console.warn(`⚠️  Collection type '${collectionType}' not found for entry resolution`)
     return null
   }
@@ -109,15 +127,15 @@ function resolveEntryReference(entryRef: any, collectionsData: RegistryCollectio
   const collection = collectionsData[collectionType]
   
   // If no slug provided, return the first item
-  if (!config?.slug) {
+  if (!slug) {
     return collection[0] || null
   }
 
   // Find entry by slug
-  const entry = collection.find((item: any) => item.slug === config.slug)
+  const entry = collection.find((item: any) => item.slug === slug)
   
   if (!entry) {
-    console.warn(`⚠️  Entry with slug '${config.slug}' not found in collection '${collectionType}'`)
+    console.warn(`⚠️  Entry with slug '${slug}' not found in collection '${collectionType}'`)
     return null
   }
 

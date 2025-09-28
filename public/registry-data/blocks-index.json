@@ -1000,9 +1000,8 @@
     "data": {},
     "collections": {},
     "entry": {
-      "blogItem": {
-        "slug": "building-scalable-react-applications"
-      }
+      "contentType": "blogItem",
+      "slug": "building-scalable-react-applications"
     }
   },
   "blog-blog-article-blog-article-minimal": {
@@ -1010,9 +1009,8 @@
     "data": {},
     "collections": {},
     "entry": {
-      "blogItem": {
-        "slug": "getting-started-modern-javascript"
-      }
+      "contentType": "blogItem",
+      "slug": "getting-started-modern-javascript"
     }
   },
   "blog-blog-article-blog-article-neobrutalism": {
@@ -1028,9 +1026,8 @@
     "data": {},
     "collections": {},
     "entry": {
-      "blogItem": {
-        "slug": "css-grid-vs-flexbox"
-      }
+      "contentType": "blogItem",
+      "slug": "css-grid-vs-flexbox"
     }
   },
   "blog-blog-posts-blog-posts-bold": {
