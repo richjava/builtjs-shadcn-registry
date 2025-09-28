@@ -31,7 +31,7 @@ async function loadCollectionsData(): Promise<RegistryCollections> {
   if (typeof window === 'undefined') {
     try {
       // Server-side: read from filesystem
-      const collectionsPath = path.join(process.cwd(), 'public', 'registry', 'collections-data.json')
+      const collectionsPath = path.join(process.cwd(), 'public', 'registry-data', 'collections-data.json')
       const collectionsContent = fs.readFileSync(collectionsPath, 'utf-8')
       return JSON.parse(collectionsContent)
     } catch (error) {
@@ -41,7 +41,7 @@ async function loadCollectionsData(): Promise<RegistryCollections> {
   } else {
     try {
       // Client-side: fetch from public URL
-      const response = await fetch('/registry/collections-data.json')
+      const response = await fetch('/registry-data/collections-data.json')
       if (!response.ok) {
         throw new Error(`Failed to load collections data: ${response.status}`)
       }
@@ -61,7 +61,7 @@ async function loadBlockDefinition(blockName: string): Promise<any> {
   if (typeof window === 'undefined') {
     try {
       // Server-side: read from filesystem
-      const blocksPath = path.join(process.cwd(), 'public', 'registry', 'blocks-index.json')
+      const blocksPath = path.join(process.cwd(), 'public', 'registry-data', 'blocks-index.json')
       const blocksContent = fs.readFileSync(blocksPath, 'utf-8')
       const blocksIndex = JSON.parse(blocksContent)
       return blocksIndex[blockName] || {}
@@ -72,7 +72,7 @@ async function loadBlockDefinition(blockName: string): Promise<any> {
   } else {
     try {
       // Client-side: fetch from public URL
-      const response = await fetch('/registry/blocks-index.json')
+      const response = await fetch('/registry-data/blocks-index.json')
       if (!response.ok) {
         throw new Error(`Failed to load blocks index: ${response.status}`)
       }
