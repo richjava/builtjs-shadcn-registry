@@ -716,20 +716,7 @@
       "slug": "sarah-chen",
       "name": "Sarah Chen",
       "role": "CEO & Co-Founder",
-      "bio": [
-        {
-          "_type": "block",
-          "_key": "bio1",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "_key": "bio1-text",
-              "text": "Visionary leader with 15+ years in tech, passionate about building products that make a difference."
-            }
-          ]
-        }
-      ],
+      "bio": "Visionary leader with 15+ years in tech, passionate about building products that make a difference.",
       "image": {
         "url": "https://placehold.co/400x400/000000/FFFFFF?text=SC",
         "alt": "Sarah Chen profile photo"
@@ -745,20 +732,7 @@
       "slug": "mike-rodriguez",
       "name": "Mike Rodriguez",
       "role": "CTO & Co-Founder",
-      "bio": [
-        {
-          "_type": "block",
-          "_key": "bio2",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "_key": "bio2-text",
-              "text": "Technical architect and full-stack developer with expertise in scalable systems and modern frameworks."
-            }
-          ]
-        }
-      ],
+      "bio": "Technical architect and full-stack developer with expertise in scalable systems and modern frameworks.",
       "image": {
         "url": "https://placehold.co/400x400/000000/FFFFFF?text=MR",
         "alt": "Mike Rodriguez profile photo"
@@ -774,20 +748,7 @@
       "slug": "alex-kim",
       "name": "Alex Kim",
       "role": "Head of Design",
-      "bio": [
-        {
-          "_type": "block",
-          "_key": "bio3",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "_key": "bio3-text",
-              "text": "Creative director focused on user experience and visual design that drives engagement and conversion."
-            }
-          ]
-        }
-      ],
+      "bio": "Creative director focused on user experience and visual design that drives engagement and conversion.",
       "image": {
         "url": "https://placehold.co/400x400/000000/FFFFFF?text=AK",
         "alt": "Alex Kim profile photo"

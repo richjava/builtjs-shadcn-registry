@@ -76,30 +76,30 @@ export default function AboutTeam({ content }: AboutTeamProps) {
 
   return (
     <section className="py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">{finalData.title}</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+      <div className="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-3xl font-bold">{finalData.title}</h2>
+          <p className="max-w-2xl mx-auto text-xl text-muted-foreground">
             {finalData.subtitle}
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid max-w-4xl gap-8 mx-auto md:grid-cols-3">
           {teamMembers.map((member) => (
             <Card key={member._id} className="text-center">
               <CardContent className="pt-6">
-                <div className="w-32 h-32 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center">
+                <div className="flex items-center justify-center w-32 h-32 mx-auto mb-4 rounded-full bg-muted">
                   {member.image ? (
                     <img 
                       src={member.image.url} 
                       alt={member.image.alt}
-                      className="w-full h-full rounded-full object-cover"
+                      className="object-cover w-full h-full rounded-full"
                     />
                   ) : (
                     <div className="text-4xl">👤</div>
                   )}
                 </div>
-                <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                <p className="text-primary font-medium mb-3">{member.role}</p>
+                <h3 className="mb-1 text-xl font-semibold">{member.name}</h3>
+                <p className="mb-3 font-medium text-primary">{member.role}</p>
                 {member.bio && (
                   <p className="text-sm text-muted-foreground">{member.bio}</p>
                 )}
