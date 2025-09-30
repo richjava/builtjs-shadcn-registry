@@ -2329,48 +2329,6 @@
     "data": {
       "title": "Complete Platform",
       "subtitle": "Everything you need to build, scale, and succeed in one powerful ecosystem.",
-      "capabilities": [
-        {
-          "category": "Advanced Analytics",
-          "features": [
-            "Real-time dashboards",
-            "Custom reporting",
-            "Data visualization",
-            "Performance metrics"
-          ],
-          "icon": "bar-chart"
-        },
-        {
-          "category": "Team Collaboration",
-          "features": [
-            "Team workspaces",
-            "Real-time editing",
-            "Comment system",
-            "Version control"
-          ],
-          "icon": "users"
-        },
-        {
-          "category": "Enterprise Security",
-          "features": [
-            "End-to-end encryption",
-            "SSO integration",
-            "Audit logs",
-            "GDPR compliance"
-          ],
-          "icon": "shield"
-        },
-        {
-          "category": "API & Integrations",
-          "features": [
-            "RESTful APIs",
-            "Webhook support",
-            "Third-party apps",
-            "Custom connectors"
-          ],
-          "icon": "plug"
-        }
-      ],
       "ctaText": "Start Building Today",
       "ctaLink": "/contact"
     },
