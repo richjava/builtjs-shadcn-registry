@@ -4,8 +4,13 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 import Header from '@/components/header'
-import ThemeSelector from '@/components/theme-selector'
+import DesignSystemSelector from '@/components/design-system-selector'
 import { useState, useEffect } from 'react'
+
+// Helper function to convert camelCase to Title Case
+function toTitleCase(str: string): string {
+  return str.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())
+}
 
 interface Template {
   name: string
@@ -13,11 +18,10 @@ interface Template {
   moduleName: string
   sectionName: string
   templateName: string
-  themeName: string
-  theme?: string
+  designSystem: string
 }
 
-interface Theme {
+interface DesignSystem {
   name: string
   label: string
   description: string
@@ -25,38 +29,38 @@ interface Theme {
 
 interface SectionPreviewClientProps {
   category: string
-  categoryLabel?: string
+  categoryLabel: string
   section: string
-  sectionName?: string
+  sectionName: string
   templates: Template[]
-  themes: Theme[]
+  designSystems: DesignSystem[]
 }
 
-export default function SectionPreviewClient({ category, categoryLabel, section, sectionName, templates, themes }: SectionPreviewClientProps) {
-  const [selectedTheme, setSelectedTheme] = useState("all")
+export default function SectionPreviewClient({ category, categoryLabel, section, sectionName, templates, designSystems }: SectionPreviewClientProps) {
+  const [selectedDesignSystem, setSelectedTheme] = useState("all")
   const [filteredTemplates, setFilteredTemplates] = useState(templates)
 
-  // Load theme from localStorage on mount
+  // Load designSystem from localStorage on mount
   useEffect(() => {
-    const savedTheme = localStorage.getItem("selectedTheme")
+    const savedTheme = localStorage.getItem("selectedDesignSystem")
     if (savedTheme) {
       setSelectedTheme(savedTheme)
     }
   }, [])
 
-  // Filter templates based on selected theme
+  // Filter templates based on selected designSystem
   useEffect(() => {
-    if (selectedTheme === "all") {
+    if (selectedDesignSystem === "all") {
       setFilteredTemplates(templates)
     } else {
-      setFilteredTemplates(templates.filter(template => template.theme === selectedTheme))
+      setFilteredTemplates(templates.filter(template => template.designSystem === selectedDesignSystem))
     }
-  }, [selectedTheme, templates])
+  }, [selectedDesignSystem, templates])
 
-  // Save theme to localStorage when changed
-  const handleThemeChange = (theme: string) => {
-    setSelectedTheme(theme)
-    localStorage.setItem("selectedTheme", theme)
+  // Save designSystem to localStorage when changed
+  const handleThemeChange = (designSystem: string) => {
+    setSelectedTheme(designSystem)
+    localStorage.setItem("selectedDesignSystem", designSystem)
   }
 
   return (
@@ -84,14 +88,14 @@ export default function SectionPreviewClient({ category, categoryLabel, section,
               </p>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-sm font-medium text-muted-foreground">Filter by theme:</span>
-              <ThemeSelector
-                themes={[
+              <span className="text-sm font-medium text-muted-foreground">Filter by designSystem:</span>
+              <DesignSystemSelector
+                designSystems={[
                   { name: "all", label: "All Themes", description: "Show all template variations" },
-                  ...themes
+                  ...designSystems
                 ]}
-                selectedTheme={selectedTheme}
-                onThemeChange={handleThemeChange}
+                selectedDesignSystem={selectedDesignSystem}
+                onDesignSystemChange={handleThemeChange}
               />
             </div>
           </div>
@@ -119,7 +123,7 @@ export default function SectionPreviewClient({ category, categoryLabel, section,
               
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2">{template.templateName} {template.themeName}</h3>
+                <h3 className="text-lg font-semibold mb-2">{toTitleCase(template.templateName)} {toTitleCase(template.designSystem)}</h3>
                 {template.description ? (
                   <p className="text-sm text-muted-foreground mb-4">{template.description}</p>
                 ) : null}

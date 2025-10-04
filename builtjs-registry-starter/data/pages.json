@@ -1,0 +1,27 @@
+{
+  "pages": [
+    {
+      "title": "Home",
+      "name": "home",
+      "demoSections": [{ "name": "homeLanding" }]
+    },
+    {
+      "title": "Product Article",
+      "name": "productArticle",
+      "demoSections": [{ "name": "productArticleLanding" }],
+      "contentType": {
+        "name": "product",
+        "config": { "populate": [{
+          "name": "category"
+        }] }
+      }
+    },
+    {
+      "title": "Product Category List",
+      "name": "productCategoryList",
+      "demoSections": [{ "name": "productCategoryListLanding" }],
+      "path": "/products",
+      "routeParams": ["category"]
+    }
+  ]
+}

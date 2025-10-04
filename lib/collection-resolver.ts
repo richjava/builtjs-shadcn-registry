@@ -31,7 +31,7 @@ async function loadCollectionsData(): Promise<RegistryCollections> {
   if (typeof window === 'undefined') {
     try {
       // Server-side: read from filesystem
-      const collectionsPath = path.join(process.cwd(), 'public', 'registry-data', 'collections-data.json')
+      const collectionsPath = path.join(process.cwd(), 'registry-data', 'collections-data.json')
       const collectionsContent = fs.readFileSync(collectionsPath, 'utf-8')
       return JSON.parse(collectionsContent)
     } catch (error) {
@@ -61,7 +61,7 @@ async function loadBlockDefinition(blockName: string): Promise<any> {
   if (typeof window === 'undefined') {
     try {
       // Server-side: read from filesystem
-      const blocksPath = path.join(process.cwd(), 'public', 'registry-data', 'blocks-index.json')
+      const blocksPath = path.join(process.cwd(), 'registry-data', 'blocks-index.json')
       const blocksContent = fs.readFileSync(blocksPath, 'utf-8')
       const blocksIndex = JSON.parse(blocksContent)
       return blocksIndex[blockName] || {}

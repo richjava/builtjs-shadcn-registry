@@ -1,0 +1,802 @@
+{
+  "about-company-story-narrative-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-company-story-narrative-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-company-story-narrative-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-company-story-narrative-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-landing-image-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-landing-stats-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-landing-image-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-landing-image-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-landing-stats-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-landing-image-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-landing-stats-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-landing-stats-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-mission-statement-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-mission-statement-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-mission-statement-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-mission-statement-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-team-cards-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-team-cards-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-team-cards-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-team-cards-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-values-grid-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-values-grid-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-values-grid-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "about-values-grid-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-blog-article-blog-article-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-blog-article-blog-article-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-blog-article-blog-article-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-blog-article-blog-article-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-blog-posts-blog-posts-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-blog-posts-blog-posts-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-blog-posts-blog-posts-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-blog-posts-blog-posts-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-featured-posts-featured-posts-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-featured-posts-featured-posts-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-featured-posts-featured-posts-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "blog-featured-posts-featured-posts-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-help-help-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-help-help-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-help-help-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-help-help-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-questions-questions-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-questions-questions-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-questions-questions-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-questions-questions-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-support-support-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-support-support-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-support-support-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "faq-support-support-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-capabilities-capabilities-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-capabilities-capabilities-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-capabilities-capabilities-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-capabilities-capabilities-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-highlights-highlights-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-highlights-highlights-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-highlights-highlights-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-highlights-highlights-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-showcase-showcase-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-showcase-showcase-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-showcase-showcase-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "features-showcase-showcase-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-portfolio-portfolio-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-portfolio-portfolio-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-portfolio-portfolio-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-portfolio-portfolio-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-products-products-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-products-products-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-products-products-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-products-products-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-showcase-showcase-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-showcase-showcase-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-showcase-showcase-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "gallery-showcase-showcase-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-brands-brands-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-brands-brands-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-brands-brands-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-brands-brands-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-clients-clients-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-clients-clients-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-clients-clients-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-clients-clients-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-partners-partners-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-partners-partners-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-partners-partners-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "logos-partners-partners-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-call-to-action-call-to-action-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-call-to-action-call-to-action-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-call-to-action-call-to-action-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-call-to-action-call-to-action-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-contact-lead-generation-contact-lead-generation-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-contact-lead-generation-contact-lead-generation-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-contact-lead-generation-contact-lead-generation-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-contact-lead-generation-contact-lead-generation-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-hero-section-hero-section-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-hero-section-hero-section-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-hero-section-hero-section-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-hero-section-hero-section-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-problem-solution-problem-solution-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-problem-solution-problem-solution-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-problem-solution-problem-solution-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-problem-solution-problem-solution-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-social-proof-social-proof-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-social-proof-social-proof-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-social-proof-social-proof-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-social-proof-social-proof-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-trust-indicators-trust-indicators-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-trust-indicators-trust-indicators-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-trust-indicators-trust-indicators-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-trust-indicators-trust-indicators-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-value-proposition-value-proposition-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-value-proposition-value-proposition-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-value-proposition-value-proposition-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "main-value-proposition-value-proposition-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-opt-in-opt-in-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-opt-in-opt-in-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-opt-in-opt-in-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-opt-in-opt-in-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-signup-signup-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-signup-signup-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-signup-signup-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-signup-signup-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-subscription-subscription-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-subscription-subscription-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-subscription-subscription-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "newsletter-subscription-subscription-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-plans-plans-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-plans-plans-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-plans-plans-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-plans-plans-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-subscription-subscription-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-subscription-subscription-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-subscription-subscription-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-subscription-subscription-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-tables-tables-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-tables-tables-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-tables-tables-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "pricing-tables-tables-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-offerings-offerings-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-offerings-offerings-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-offerings-offerings-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-offerings-offerings-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-services-services-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-services-services-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-services-services-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-services-services-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-solutions-solutions-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-solutions-solutions-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-solutions-solutions-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "services-solutions-solutions-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-culture-culture-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-culture-culture-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-culture-culture-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-culture-culture-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-members-members-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-members-members-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-members-members-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-members-members-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-profiles-profiles-bold": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-profiles-profiles-minimal": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-profiles-profiles-neobrutalism": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  },
+  "team-profiles-profiles-standard": {
+    "fields": {},
+    "data": {},
+    "collections": {}
+  }
+}

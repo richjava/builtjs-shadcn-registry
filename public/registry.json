@@ -7,7 +7,7 @@
     "clsx",
     "tailwind-merge"
   ],
-  "themes": [
+  "designSystems": [
     {
       "name": "bold",
       "label": "Bold",
@@ -33,7 +33,7 @@
     {
       "name": "about-company-story-narrative-bold",
       "description": "About Company Story Narrative template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/about/about-company-story/bold-narrative/component.tsx"
       ],
@@ -53,15 +53,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Company",
-      "templateName": "Story",
-      "themeName": "Narrative"
+      "moduleName": "about",
+      "sectionName": "company",
+      "templateName": "story"
     },
     {
       "name": "about-company-story-narrative-minimal",
       "description": "About Company Story Narrative template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/about/about-company-story/minimal-narrative/component.tsx"
       ],
@@ -81,15 +80,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Company",
-      "templateName": "Story",
-      "themeName": "Narrative"
+      "moduleName": "about",
+      "sectionName": "company",
+      "templateName": "story"
     },
     {
       "name": "about-company-story-narrative-standard",
       "description": "About Company Story Narrative template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/about/about-company-story/narrative/component.tsx"
       ],
@@ -109,15 +107,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Company",
-      "templateName": "Story",
-      "themeName": "Narrative"
+      "moduleName": "about",
+      "sectionName": "company",
+      "templateName": "story"
     },
     {
       "name": "about-company-story-narrative-neobrutalism",
       "description": "About Company Story Narrative template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/about/about-company-story/neobrutalism-narrative/component.tsx"
       ],
@@ -137,15 +134,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Company",
-      "templateName": "Story",
-      "themeName": "Narrative"
+      "moduleName": "about",
+      "sectionName": "company",
+      "templateName": "story"
     },
     {
       "name": "about-landing-image-bold",
       "description": "About Landing Image template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/about/about-landing/bold-image/component.tsx"
       ],
@@ -166,15 +162,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Landing",
-      "templateName": "Image",
-      "themeName": "Bold"
+      "moduleName": "about",
+      "sectionName": "landing",
+      "templateName": "image"
     },
     {
       "name": "about-landing-stats-bold",
       "description": "About Landing Stats template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/about/about-landing/bold-stats/component.tsx"
       ],
@@ -194,15 +189,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Landing",
-      "templateName": "Stats",
-      "themeName": "Bold"
+      "moduleName": "about",
+      "sectionName": "landing",
+      "templateName": "stats"
     },
     {
       "name": "about-landing-image-standard",
       "description": "About Landing Image template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/about/about-landing/image/component.tsx"
       ],
@@ -223,15 +217,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Landing",
-      "templateName": "Image",
-      "themeName": "Standard"
+      "moduleName": "about",
+      "sectionName": "landing",
+      "templateName": "image"
     },
     {
       "name": "about-landing-image-minimal",
       "description": "About Landing Image template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/about/about-landing/minimal-image/component.tsx"
       ],
@@ -252,15 +245,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Landing",
-      "templateName": "Image",
-      "themeName": "Minimal"
+      "moduleName": "about",
+      "sectionName": "landing",
+      "templateName": "image"
     },
     {
       "name": "about-landing-stats-minimal",
       "description": "About Landing Stats template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/about/about-landing/minimal-stats/component.tsx"
       ],
@@ -280,15 +272,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Landing",
-      "templateName": "Stats",
-      "themeName": "Minimal"
+      "moduleName": "about",
+      "sectionName": "landing",
+      "templateName": "stats"
     },
     {
       "name": "about-landing-image-neobrutalism",
       "description": "About Landing Image template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/about/about-landing/neobrutalism-image/component.tsx"
       ],
@@ -309,15 +300,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Landing",
-      "templateName": "Image",
-      "themeName": "Neobrutalism"
+      "moduleName": "about",
+      "sectionName": "landing",
+      "templateName": "image"
     },
     {
       "name": "about-landing-stats-neobrutalism",
       "description": "About Landing Stats template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/about/about-landing/neobrutalism-stats/component.tsx"
       ],
@@ -337,15 +327,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Landing",
-      "templateName": "Stats",
-      "themeName": "Neobrutalism"
+      "moduleName": "about",
+      "sectionName": "landing",
+      "templateName": "stats"
     },
     {
       "name": "about-landing-stats-standard",
       "description": "About Landing Stats template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/about/about-landing/stats/component.tsx"
       ],
@@ -365,15 +354,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Landing",
-      "templateName": "Stats",
-      "themeName": "Standard"
+      "moduleName": "about",
+      "sectionName": "landing",
+      "templateName": "stats"
     },
     {
       "name": "about-mission-statement-bold",
       "description": "About Mission Statement template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/about/about-mission/bold-statement/component.tsx"
       ],
@@ -393,15 +381,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Mission",
-      "templateName": "Statement",
-      "themeName": "Bold"
+      "moduleName": "about",
+      "sectionName": "mission",
+      "templateName": "statement"
     },
     {
       "name": "about-mission-statement-minimal",
       "description": "About Mission Statement template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/about/about-mission/minimal-statement/component.tsx"
       ],
@@ -421,15 +408,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Mission",
-      "templateName": "Statement",
-      "themeName": "Minimal"
+      "moduleName": "about",
+      "sectionName": "mission",
+      "templateName": "statement"
     },
     {
       "name": "about-mission-statement-neobrutalism",
       "description": "About Mission Statement template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/about/about-mission/neobrutalism-statement/component.tsx"
       ],
@@ -449,15 +435,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Mission",
-      "templateName": "Statement",
-      "themeName": "Neobrutalism"
+      "moduleName": "about",
+      "sectionName": "mission",
+      "templateName": "statement"
     },
     {
       "name": "about-mission-statement-standard",
       "description": "About Mission Statement template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/about/about-mission/statement/component.tsx"
       ],
@@ -477,15 +462,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Mission",
-      "templateName": "Statement",
-      "themeName": "Standard"
+      "moduleName": "about",
+      "sectionName": "mission",
+      "templateName": "statement"
     },
     {
       "name": "about-team-cards-bold",
       "description": "About Team Cards template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/about/about-team/bold-cards/component.tsx"
       ],
@@ -501,15 +485,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Team",
-      "templateName": "Cards",
-      "themeName": "Bold"
+      "moduleName": "about",
+      "sectionName": "team",
+      "templateName": "cards"
     },
     {
       "name": "about-team-cards-standard",
       "description": "About Team Cards template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/about/about-team/cards/component.tsx"
       ],
@@ -525,15 +508,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Team",
-      "templateName": "Cards",
-      "themeName": "Standard"
+      "moduleName": "about",
+      "sectionName": "team",
+      "templateName": "cards"
     },
     {
       "name": "about-team-cards-minimal",
       "description": "About Team Cards template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/about/about-team/minimal-cards/component.tsx"
       ],
@@ -549,15 +531,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Team",
-      "templateName": "Cards",
-      "themeName": "Minimal"
+      "moduleName": "about",
+      "sectionName": "team",
+      "templateName": "cards"
     },
     {
       "name": "about-team-cards-neobrutalism",
       "description": "About Team Cards template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/about/about-team/neobrutalism-cards/component.tsx"
       ],
@@ -573,15 +554,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Team",
-      "templateName": "Cards",
-      "themeName": "Neobrutalism"
+      "moduleName": "about",
+      "sectionName": "team",
+      "templateName": "cards"
     },
     {
       "name": "about-values-grid-bold",
       "description": "About Values Grid template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/about/about-values/bold-grid/component.tsx"
       ],
@@ -606,15 +586,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Values",
-      "templateName": "Grid",
-      "themeName": "Bold"
+      "moduleName": "about",
+      "sectionName": "values",
+      "templateName": "grid"
     },
     {
       "name": "about-values-grid-standard",
       "description": "About Values Grid template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/about/about-values/grid/component.tsx"
       ],
@@ -639,15 +618,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Values",
-      "templateName": "Grid",
-      "themeName": "Standard"
+      "moduleName": "about",
+      "sectionName": "values",
+      "templateName": "grid"
     },
     {
       "name": "about-values-grid-minimal",
       "description": "About Values Grid template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/about/about-values/minimal-grid/component.tsx"
       ],
@@ -672,15 +650,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Values",
-      "templateName": "Grid",
-      "themeName": "Minimal"
+      "moduleName": "about",
+      "sectionName": "values",
+      "templateName": "grid"
     },
     {
       "name": "about-values-grid-neobrutalism",
       "description": "About Values Grid template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/about/about-values/neobrutalism-grid/component.tsx"
       ],
@@ -705,17 +682,15 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "About",
-      "sectionName": "Values",
-      "templateName": "Grid",
-      "themeName": "Neobrutalism"
+      "moduleName": "about",
+      "sectionName": "values",
+      "templateName": "grid"
     },
     {
       "name": "blog-blog-article-blog-article-bold",
       "description": "Blog Blog Article Blog Article template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
-        "blocks/blog/blog-article/bold/block.json",
         "blocks/blog/blog-article/bold/component.tsx"
       ],
       "dependencies": [
@@ -739,16 +714,14 @@
         "isMaster": false,
         "isDetail": true
       },
-      "moduleName": "Blog",
-      "sectionName": "Blog",
-      "templateName": "Article",
-      "themeName": "Blog",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "blog",
+      "templateName": "article"
     },
     {
       "name": "blog-blog-article-blog-article-minimal",
       "description": "Blog Blog Article Blog Article template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/blog/blog-article/minimal/component.tsx"
       ],
@@ -765,16 +738,14 @@
         "isMaster": false,
         "isDetail": true
       },
-      "moduleName": "Blog",
-      "sectionName": "Blog",
-      "templateName": "Article",
-      "themeName": "Blog",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "blog",
+      "templateName": "article"
     },
     {
       "name": "blog-blog-article-blog-article-neobrutalism",
       "description": "Blog Blog Article Blog Article template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/blog/blog-article/neobrutalism/component.tsx"
       ],
@@ -798,16 +769,14 @@
         "isMaster": false,
         "isDetail": true
       },
-      "moduleName": "Blog",
-      "sectionName": "Blog",
-      "templateName": "Article",
-      "themeName": "Blog",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "blog",
+      "templateName": "article"
     },
     {
       "name": "blog-blog-article-blog-article-standard",
       "description": "Blog Blog Article Blog Article template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/blog/blog-article/standard/component.tsx"
       ],
@@ -831,16 +800,14 @@
         "isMaster": false,
         "isDetail": true
       },
-      "moduleName": "Blog",
-      "sectionName": "Blog",
-      "templateName": "Article",
-      "themeName": "Blog",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "blog",
+      "templateName": "article"
     },
     {
       "name": "blog-blog-posts-blog-posts-bold",
       "description": "Blog Blog Posts Blog Posts template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/blog/blog-posts/bold/component.tsx"
       ],
@@ -865,16 +832,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Blog",
-      "sectionName": "Blog",
-      "templateName": "Posts",
-      "themeName": "Blog",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "blog",
+      "templateName": "posts"
     },
     {
       "name": "blog-blog-posts-blog-posts-minimal",
       "description": "Blog Blog Posts Blog Posts template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/blog/blog-posts/minimal/component.tsx"
       ],
@@ -892,16 +857,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Blog",
-      "sectionName": "Blog",
-      "templateName": "Posts",
-      "themeName": "Blog",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "blog",
+      "templateName": "posts"
     },
     {
       "name": "blog-blog-posts-blog-posts-neobrutalism",
       "description": "Blog Blog Posts Blog Posts template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/blog/blog-posts/neobrutalism/component.tsx"
       ],
@@ -925,16 +888,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Blog",
-      "sectionName": "Blog",
-      "templateName": "Posts",
-      "themeName": "Blog",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "blog",
+      "templateName": "posts"
     },
     {
       "name": "blog-blog-posts-blog-posts-standard",
       "description": "Blog Blog Posts Blog Posts template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/blog/blog-posts/standard/component.tsx"
       ],
@@ -958,16 +919,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Blog",
-      "sectionName": "Blog",
-      "templateName": "Posts",
-      "themeName": "Blog",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "blog",
+      "templateName": "posts"
     },
     {
       "name": "blog-featured-posts-featured-posts-bold",
       "description": "Blog Featured Posts Featured Posts template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/blog/featured-posts/bold/component.tsx"
       ],
@@ -993,16 +952,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Blog",
-      "sectionName": "Featured",
-      "templateName": "Posts",
-      "themeName": "Featured",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "featured",
+      "templateName": "posts"
     },
     {
       "name": "blog-featured-posts-featured-posts-minimal",
       "description": "Blog Featured Posts Featured Posts template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/blog/featured-posts/minimal/component.tsx"
       ],
@@ -1021,16 +978,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Blog",
-      "sectionName": "Featured",
-      "templateName": "Posts",
-      "themeName": "Featured",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "featured",
+      "templateName": "posts"
     },
     {
       "name": "blog-featured-posts-featured-posts-neobrutalism",
       "description": "Blog Featured Posts Featured Posts template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/blog/featured-posts/neobrutalism/component.tsx"
       ],
@@ -1055,16 +1010,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Blog",
-      "sectionName": "Featured",
-      "templateName": "Posts",
-      "themeName": "Featured",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "featured",
+      "templateName": "posts"
     },
     {
       "name": "blog-featured-posts-featured-posts-standard",
       "description": "Blog Featured Posts Featured Posts template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/blog/featured-posts/standard/component.tsx"
       ],
@@ -1089,16 +1042,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Blog",
-      "sectionName": "Featured",
-      "templateName": "Posts",
-      "themeName": "Featured",
-      "contentType": "blogItem"
+      "moduleName": "blog",
+      "sectionName": "featured",
+      "templateName": "posts"
     },
     {
       "name": "faq-help-help-bold",
       "description": "Faq Help Help template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/faq/help/bold/component.tsx"
       ],
@@ -1125,15 +1076,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Help",
-      "templateName": "Help",
-      "themeName": "Bold"
+      "moduleName": "faq",
+      "sectionName": "help",
+      "templateName": "help"
     },
     {
       "name": "faq-help-help-minimal",
       "description": "Faq Help Help template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/faq/help/minimal/component.tsx"
       ],
@@ -1157,15 +1107,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Help",
-      "templateName": "Help",
-      "themeName": "Minimal"
+      "moduleName": "faq",
+      "sectionName": "help",
+      "templateName": "help"
     },
     {
       "name": "faq-help-help-neobrutalism",
       "description": "Faq Help Help template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/faq/help/neobrutalism/component.tsx"
       ],
@@ -1191,15 +1140,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Help",
-      "templateName": "Help",
-      "themeName": "Neobrutalism"
+      "moduleName": "faq",
+      "sectionName": "help",
+      "templateName": "help"
     },
     {
       "name": "faq-help-help-standard",
       "description": "Faq Help Help template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/faq/help/standard/component.tsx"
       ],
@@ -1225,15 +1173,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Help",
-      "templateName": "Help",
-      "themeName": "Standard"
+      "moduleName": "faq",
+      "sectionName": "help",
+      "templateName": "help"
     },
     {
       "name": "faq-questions-questions-bold",
       "description": "Faq Questions Questions template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/faq/questions/bold/component.tsx"
       ],
@@ -1256,15 +1203,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Questions",
-      "templateName": "Questions",
-      "themeName": "Bold"
+      "moduleName": "faq",
+      "sectionName": "questions",
+      "templateName": "questions"
     },
     {
       "name": "faq-questions-questions-minimal",
       "description": "Faq Questions Questions template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/faq/questions/minimal/component.tsx"
       ],
@@ -1285,15 +1231,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Questions",
-      "templateName": "Questions",
-      "themeName": "Minimal"
+      "moduleName": "faq",
+      "sectionName": "questions",
+      "templateName": "questions"
     },
     {
       "name": "faq-questions-questions-neobrutalism",
       "description": "Faq Questions Questions template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/faq/questions/neobrutalism/component.tsx"
       ],
@@ -1315,15 +1260,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Questions",
-      "templateName": "Questions",
-      "themeName": "Neobrutalism"
+      "moduleName": "faq",
+      "sectionName": "questions",
+      "templateName": "questions"
     },
     {
       "name": "faq-questions-questions-standard",
       "description": "Faq Questions Questions template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/faq/questions/standard/component.tsx"
       ],
@@ -1345,15 +1289,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Questions",
-      "templateName": "Questions",
-      "themeName": "Standard"
+      "moduleName": "faq",
+      "sectionName": "questions",
+      "templateName": "questions"
     },
     {
       "name": "faq-support-support-bold",
       "description": "Faq Support Support template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/faq/support/bold/component.tsx"
       ],
@@ -1382,15 +1325,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Support",
-      "templateName": "Support",
-      "themeName": "Bold"
+      "moduleName": "faq",
+      "sectionName": "support",
+      "templateName": "support"
     },
     {
       "name": "faq-support-support-minimal",
       "description": "Faq Support Support template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/faq/support/minimal/component.tsx"
       ],
@@ -1414,15 +1356,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Support",
-      "templateName": "Support",
-      "themeName": "Minimal"
+      "moduleName": "faq",
+      "sectionName": "support",
+      "templateName": "support"
     },
     {
       "name": "faq-support-support-neobrutalism",
       "description": "Faq Support Support template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/faq/support/neobrutalism/component.tsx"
       ],
@@ -1448,15 +1389,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Support",
-      "templateName": "Support",
-      "themeName": "Neobrutalism"
+      "moduleName": "faq",
+      "sectionName": "support",
+      "templateName": "support"
     },
     {
       "name": "faq-support-support-standard",
       "description": "Faq Support Support template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/faq/support/standard/component.tsx"
       ],
@@ -1482,15 +1422,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Faq",
-      "sectionName": "Support",
-      "templateName": "Support",
-      "themeName": "Standard"
+      "moduleName": "faq",
+      "sectionName": "support",
+      "templateName": "support"
     },
     {
       "name": "features-capabilities-capabilities-bold",
       "description": "Features Capabilities Capabilities template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/features/capabilities/bold/component.tsx"
       ],
@@ -1515,15 +1454,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Capabilities",
-      "templateName": "Capabilities",
-      "themeName": "Bold"
+      "moduleName": "features",
+      "sectionName": "capabilities",
+      "templateName": "capabilities"
     },
     {
       "name": "features-capabilities-capabilities-minimal",
       "description": "Features Capabilities Capabilities template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/features/capabilities/minimal/component.tsx"
       ],
@@ -1548,15 +1486,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Capabilities",
-      "templateName": "Capabilities",
-      "themeName": "Minimal"
+      "moduleName": "features",
+      "sectionName": "capabilities",
+      "templateName": "capabilities"
     },
     {
       "name": "features-capabilities-capabilities-neobrutalism",
       "description": "Features Capabilities Capabilities template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/features/capabilities/neobrutalism/component.tsx"
       ],
@@ -1581,15 +1518,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Capabilities",
-      "templateName": "Capabilities",
-      "themeName": "Neobrutalism"
+      "moduleName": "features",
+      "sectionName": "capabilities",
+      "templateName": "capabilities"
     },
     {
       "name": "features-capabilities-capabilities-standard",
       "description": "Features Capabilities Capabilities template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/features/capabilities/standard/component.tsx"
       ],
@@ -1614,15 +1550,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Capabilities",
-      "templateName": "Capabilities",
-      "themeName": "Standard"
+      "moduleName": "features",
+      "sectionName": "capabilities",
+      "templateName": "capabilities"
     },
     {
       "name": "features-highlights-highlights-bold",
       "description": "Features Highlights Highlights template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/features/highlights/bold/component.tsx"
       ],
@@ -1646,15 +1581,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Highlights",
-      "templateName": "Highlights",
-      "themeName": "Bold"
+      "moduleName": "features",
+      "sectionName": "highlights",
+      "templateName": "highlights"
     },
     {
       "name": "features-highlights-highlights-minimal",
       "description": "Features Highlights Highlights template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/features/highlights/minimal/component.tsx"
       ],
@@ -1678,15 +1612,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Highlights",
-      "templateName": "Highlights",
-      "themeName": "Minimal"
+      "moduleName": "features",
+      "sectionName": "highlights",
+      "templateName": "highlights"
     },
     {
       "name": "features-highlights-highlights-neobrutalism",
       "description": "Features Highlights Highlights template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/features/highlights/neobrutalism/component.tsx"
       ],
@@ -1710,15 +1643,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Highlights",
-      "templateName": "Highlights",
-      "themeName": "Neobrutalism"
+      "moduleName": "features",
+      "sectionName": "highlights",
+      "templateName": "highlights"
     },
     {
       "name": "features-highlights-highlights-standard",
       "description": "Features Highlights Highlights template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/features/highlights/standard/component.tsx"
       ],
@@ -1742,15 +1674,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Highlights",
-      "templateName": "Highlights",
-      "themeName": "Standard"
+      "moduleName": "features",
+      "sectionName": "highlights",
+      "templateName": "highlights"
     },
     {
       "name": "features-showcase-showcase-bold",
       "description": "Features Showcase Showcase template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/features/showcase/bold/component.tsx"
       ],
@@ -1773,15 +1704,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Showcase",
-      "templateName": "Showcase",
-      "themeName": "Bold"
+      "moduleName": "features",
+      "sectionName": "showcase",
+      "templateName": "showcase"
     },
     {
       "name": "features-showcase-showcase-minimal",
       "description": "Features Showcase Showcase template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/features/showcase/minimal/component.tsx"
       ],
@@ -1804,15 +1734,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Showcase",
-      "templateName": "Showcase",
-      "themeName": "Minimal"
+      "moduleName": "features",
+      "sectionName": "showcase",
+      "templateName": "showcase"
     },
     {
       "name": "features-showcase-showcase-neobrutalism",
       "description": "Features Showcase Showcase template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/features/showcase/neobrutalism/component.tsx"
       ],
@@ -1835,15 +1764,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Showcase",
-      "templateName": "Showcase",
-      "themeName": "Neobrutalism"
+      "moduleName": "features",
+      "sectionName": "showcase",
+      "templateName": "showcase"
     },
     {
       "name": "features-showcase-showcase-standard",
       "description": "Features Showcase Showcase template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/features/showcase/standard/component.tsx"
       ],
@@ -1866,15 +1794,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Features",
-      "sectionName": "Showcase",
-      "templateName": "Showcase",
-      "themeName": "Standard"
+      "moduleName": "features",
+      "sectionName": "showcase",
+      "templateName": "showcase"
     },
     {
       "name": "gallery-portfolio-portfolio-bold",
       "description": "Gallery Portfolio Portfolio template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/gallery/portfolio/bold/component.tsx"
       ],
@@ -1897,15 +1824,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Portfolio",
-      "templateName": "Portfolio",
-      "themeName": "Bold"
+      "moduleName": "gallery",
+      "sectionName": "portfolio",
+      "templateName": "portfolio"
     },
     {
       "name": "gallery-portfolio-portfolio-minimal",
       "description": "Gallery Portfolio Portfolio template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/gallery/portfolio/minimal/component.tsx"
       ],
@@ -1922,15 +1848,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Portfolio",
-      "templateName": "Portfolio",
-      "themeName": "Minimal"
+      "moduleName": "gallery",
+      "sectionName": "portfolio",
+      "templateName": "portfolio"
     },
     {
       "name": "gallery-portfolio-portfolio-neobrutalism",
       "description": "Gallery Portfolio Portfolio template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/gallery/portfolio/neobrutalism/component.tsx"
       ],
@@ -1952,15 +1877,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Portfolio",
-      "templateName": "Portfolio",
-      "themeName": "Neobrutalism"
+      "moduleName": "gallery",
+      "sectionName": "portfolio",
+      "templateName": "portfolio"
     },
     {
       "name": "gallery-portfolio-portfolio-standard",
       "description": "Gallery Portfolio Portfolio template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/gallery/portfolio/standard/component.tsx"
       ],
@@ -1982,15 +1906,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Portfolio",
-      "templateName": "Portfolio",
-      "themeName": "Standard"
+      "moduleName": "gallery",
+      "sectionName": "portfolio",
+      "templateName": "portfolio"
     },
     {
       "name": "gallery-products-products-bold",
       "description": "Gallery Products Products template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/gallery/products/bold/component.tsx"
       ],
@@ -2014,15 +1937,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Products",
-      "templateName": "Products",
-      "themeName": "Bold"
+      "moduleName": "gallery",
+      "sectionName": "products",
+      "templateName": "products"
     },
     {
       "name": "gallery-products-products-minimal",
       "description": "Gallery Products Products template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/gallery/products/minimal/component.tsx"
       ],
@@ -2039,15 +1961,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Products",
-      "templateName": "Products",
-      "themeName": "Minimal"
+      "moduleName": "gallery",
+      "sectionName": "products",
+      "templateName": "products"
     },
     {
       "name": "gallery-products-products-neobrutalism",
       "description": "Gallery Products Products template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/gallery/products/neobrutalism/component.tsx"
       ],
@@ -2070,15 +1991,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Products",
-      "templateName": "Products",
-      "themeName": "Neobrutalism"
+      "moduleName": "gallery",
+      "sectionName": "products",
+      "templateName": "products"
     },
     {
       "name": "gallery-products-products-standard",
       "description": "Gallery Products Products template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/gallery/products/standard/component.tsx"
       ],
@@ -2101,15 +2021,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Products",
-      "templateName": "Products",
-      "themeName": "Standard"
+      "moduleName": "gallery",
+      "sectionName": "products",
+      "templateName": "products"
     },
     {
       "name": "gallery-showcase-showcase-bold",
       "description": "Gallery Showcase Showcase template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/gallery/showcase/bold/component.tsx"
       ],
@@ -2134,15 +2053,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Showcase",
-      "templateName": "Showcase",
-      "themeName": "Bold"
+      "moduleName": "gallery",
+      "sectionName": "showcase",
+      "templateName": "showcase"
     },
     {
       "name": "gallery-showcase-showcase-minimal",
       "description": "Gallery Showcase Showcase template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/gallery/showcase/minimal/component.tsx"
       ],
@@ -2159,15 +2077,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Showcase",
-      "templateName": "Showcase",
-      "themeName": "Minimal"
+      "moduleName": "gallery",
+      "sectionName": "showcase",
+      "templateName": "showcase"
     },
     {
       "name": "gallery-showcase-showcase-neobrutalism",
       "description": "Gallery Showcase Showcase template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/gallery/showcase/neobrutalism/component.tsx"
       ],
@@ -2190,15 +2107,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Showcase",
-      "templateName": "Showcase",
-      "themeName": "Neobrutalism"
+      "moduleName": "gallery",
+      "sectionName": "showcase",
+      "templateName": "showcase"
     },
     {
       "name": "gallery-showcase-showcase-standard",
       "description": "Gallery Showcase Showcase template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/gallery/showcase/standard/component.tsx"
       ],
@@ -2221,15 +2137,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Gallery",
-      "sectionName": "Showcase",
-      "templateName": "Showcase",
-      "themeName": "Standard"
+      "moduleName": "gallery",
+      "sectionName": "showcase",
+      "templateName": "showcase"
     },
     {
       "name": "logos-brands-brands-bold",
       "description": "Logos Brands Brands template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/logos/brands/bold/component.tsx"
       ],
@@ -2253,15 +2168,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Brands",
-      "templateName": "Brands",
-      "themeName": "Bold"
+      "moduleName": "logos",
+      "sectionName": "brands",
+      "templateName": "brands"
     },
     {
       "name": "logos-brands-brands-minimal",
       "description": "Logos Brands Brands template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/logos/brands/minimal/component.tsx"
       ],
@@ -2281,15 +2195,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Brands",
-      "templateName": "Brands",
-      "themeName": "Minimal"
+      "moduleName": "logos",
+      "sectionName": "brands",
+      "templateName": "brands"
     },
     {
       "name": "logos-brands-brands-neobrutalism",
       "description": "Logos Brands Brands template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/logos/brands/neobrutalism/component.tsx"
       ],
@@ -2311,15 +2224,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Brands",
-      "templateName": "Brands",
-      "themeName": "Neobrutalism"
+      "moduleName": "logos",
+      "sectionName": "brands",
+      "templateName": "brands"
     },
     {
       "name": "logos-brands-brands-standard",
       "description": "Logos Brands Brands template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/logos/brands/standard/component.tsx"
       ],
@@ -2341,15 +2253,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Brands",
-      "templateName": "Brands",
-      "themeName": "Standard"
+      "moduleName": "logos",
+      "sectionName": "brands",
+      "templateName": "brands"
     },
     {
       "name": "logos-clients-clients-bold",
       "description": "Logos Clients Clients template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/logos/clients/bold/component.tsx"
       ],
@@ -2372,15 +2283,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Clients",
-      "templateName": "Clients",
-      "themeName": "Bold"
+      "moduleName": "logos",
+      "sectionName": "clients",
+      "templateName": "clients"
     },
     {
       "name": "logos-clients-clients-minimal",
       "description": "Logos Clients Clients template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/logos/clients/minimal/component.tsx"
       ],
@@ -2400,15 +2310,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Clients",
-      "templateName": "Clients",
-      "themeName": "Minimal"
+      "moduleName": "logos",
+      "sectionName": "clients",
+      "templateName": "clients"
     },
     {
       "name": "logos-clients-clients-neobrutalism",
       "description": "Logos Clients Clients template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/logos/clients/neobrutalism/component.tsx"
       ],
@@ -2429,15 +2338,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Clients",
-      "templateName": "Clients",
-      "themeName": "Neobrutalism"
+      "moduleName": "logos",
+      "sectionName": "clients",
+      "templateName": "clients"
     },
     {
       "name": "logos-clients-clients-standard",
       "description": "Logos Clients Clients template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/logos/clients/standard/component.tsx"
       ],
@@ -2458,15 +2366,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Clients",
-      "templateName": "Clients",
-      "themeName": "Standard"
+      "moduleName": "logos",
+      "sectionName": "clients",
+      "templateName": "clients"
     },
     {
       "name": "logos-partners-partners-bold",
       "description": "Logos Partners Partners template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/logos/partners/bold/component.tsx"
       ],
@@ -2490,15 +2397,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Partners",
-      "templateName": "Partners",
-      "themeName": "Bold"
+      "moduleName": "logos",
+      "sectionName": "partners",
+      "templateName": "partners"
     },
     {
       "name": "logos-partners-partners-minimal",
       "description": "Logos Partners Partners template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/logos/partners/minimal/component.tsx"
       ],
@@ -2518,15 +2424,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Partners",
-      "templateName": "Partners",
-      "themeName": "Minimal"
+      "moduleName": "logos",
+      "sectionName": "partners",
+      "templateName": "partners"
     },
     {
       "name": "logos-partners-partners-neobrutalism",
       "description": "Logos Partners Partners template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/logos/partners/neobrutalism/component.tsx"
       ],
@@ -2548,15 +2453,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Partners",
-      "templateName": "Partners",
-      "themeName": "Neobrutalism"
+      "moduleName": "logos",
+      "sectionName": "partners",
+      "templateName": "partners"
     },
     {
       "name": "logos-partners-partners-standard",
       "description": "Logos Partners Partners template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/logos/partners/standard/component.tsx"
       ],
@@ -2578,15 +2482,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Logos",
-      "sectionName": "Partners",
-      "templateName": "Partners",
-      "themeName": "Standard"
+      "moduleName": "logos",
+      "sectionName": "partners",
+      "templateName": "partners"
     },
     {
       "name": "main-call-to-action-call-to-action-bold",
       "description": "Main Call To Action Call To Action template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/main/call-to-action/bold/component.tsx"
       ],
@@ -2608,15 +2511,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Call to action",
-      "templateName": "To",
-      "themeName": "Action"
+      "moduleName": "main",
+      "sectionName": "call-to-action",
+      "templateName": "to"
     },
     {
       "name": "main-call-to-action-call-to-action-minimal",
       "description": "Main Call To Action Call To Action template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/main/call-to-action/minimal/component.tsx"
       ],
@@ -2637,15 +2539,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Call to action",
-      "templateName": "To",
-      "themeName": "Action"
+      "moduleName": "main",
+      "sectionName": "call-to-action",
+      "templateName": "to"
     },
     {
       "name": "main-call-to-action-call-to-action-neobrutalism",
       "description": "Main Call To Action Call To Action template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/main/call-to-action/neobrutalism/component.tsx"
       ],
@@ -2666,15 +2567,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Call to action",
-      "templateName": "To",
-      "themeName": "Action"
+      "moduleName": "main",
+      "sectionName": "call-to-action",
+      "templateName": "to"
     },
     {
       "name": "main-call-to-action-call-to-action-standard",
       "description": "Main Call To Action Call To Action template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/main/call-to-action/standard/component.tsx"
       ],
@@ -2695,15 +2595,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Call to action",
-      "templateName": "To",
-      "themeName": "Action"
+      "moduleName": "main",
+      "sectionName": "call-to-action",
+      "templateName": "to"
     },
     {
       "name": "main-contact-lead-generation-contact-lead-generation-bold",
       "description": "Main Contact Lead Generation Contact Lead Generation template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/main/contact-lead-generation/bold/component.tsx"
       ],
@@ -2728,15 +2627,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Contact lead generation",
-      "templateName": "Lead",
-      "themeName": "Generation"
+      "moduleName": "main",
+      "sectionName": "contact-lead-generation",
+      "templateName": "lead"
     },
     {
       "name": "main-contact-lead-generation-contact-lead-generation-minimal",
       "description": "Main Contact Lead Generation Contact Lead Generation template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/main/contact-lead-generation/minimal/component.tsx"
       ],
@@ -2759,15 +2657,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Contact lead generation",
-      "templateName": "Lead",
-      "themeName": "Generation"
+      "moduleName": "main",
+      "sectionName": "contact-lead-generation",
+      "templateName": "lead"
     },
     {
       "name": "main-contact-lead-generation-contact-lead-generation-neobrutalism",
       "description": "Main Contact Lead Generation Contact Lead Generation template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/main/contact-lead-generation/neobrutalism/component.tsx"
       ],
@@ -2790,15 +2687,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Contact lead generation",
-      "templateName": "Lead",
-      "themeName": "Generation"
+      "moduleName": "main",
+      "sectionName": "contact-lead-generation",
+      "templateName": "lead"
     },
     {
       "name": "main-contact-lead-generation-contact-lead-generation-standard",
       "description": "Main Contact Lead Generation Contact Lead Generation template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/main/contact-lead-generation/standard/component.tsx"
       ],
@@ -2821,15 +2717,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Contact lead generation",
-      "templateName": "Lead",
-      "themeName": "Generation"
+      "moduleName": "main",
+      "sectionName": "contact-lead-generation",
+      "templateName": "lead"
     },
     {
       "name": "main-hero-section-hero-section-bold",
       "description": "Main Hero Section Hero Section template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/main/hero-section/bold/component.tsx"
       ],
@@ -2852,15 +2747,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Hero section",
-      "templateName": "Section",
-      "themeName": "Hero"
+      "moduleName": "main",
+      "sectionName": "hero-section",
+      "templateName": "section"
     },
     {
       "name": "main-hero-section-hero-section-minimal",
       "description": "Main Hero Section Hero Section template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/main/hero-section/minimal/component.tsx"
       ],
@@ -2881,15 +2775,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Hero section",
-      "templateName": "Section",
-      "themeName": "Hero"
+      "moduleName": "main",
+      "sectionName": "hero-section",
+      "templateName": "section"
     },
     {
       "name": "main-hero-section-hero-section-neobrutalism",
       "description": "Main Hero Section Hero Section template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/main/hero-section/neobrutalism/component.tsx"
       ],
@@ -2910,15 +2803,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Hero section",
-      "templateName": "Section",
-      "themeName": "Hero"
+      "moduleName": "main",
+      "sectionName": "hero-section",
+      "templateName": "section"
     },
     {
       "name": "main-hero-section-hero-section-standard",
       "description": "Main Hero Section Hero Section template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/main/hero-section/standard/component.tsx"
       ],
@@ -2939,15 +2831,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Hero section",
-      "templateName": "Section",
-      "themeName": "Hero"
+      "moduleName": "main",
+      "sectionName": "hero-section",
+      "templateName": "section"
     },
     {
       "name": "main-problem-solution-problem-solution-bold",
       "description": "Main Problem Solution Problem Solution template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/main/problem-solution/bold/component.tsx"
       ],
@@ -2974,15 +2865,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Problem solution",
-      "templateName": "Solution",
-      "themeName": "Problem"
+      "moduleName": "main",
+      "sectionName": "problem-solution",
+      "templateName": "solution"
     },
     {
       "name": "main-problem-solution-problem-solution-minimal",
       "description": "Main Problem Solution Problem Solution template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/main/problem-solution/minimal/component.tsx"
       ],
@@ -3008,15 +2898,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Problem solution",
-      "templateName": "Solution",
-      "themeName": "Problem"
+      "moduleName": "main",
+      "sectionName": "problem-solution",
+      "templateName": "solution"
     },
     {
       "name": "main-problem-solution-problem-solution-neobrutalism",
       "description": "Main Problem Solution Problem Solution template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/main/problem-solution/neobrutalism/component.tsx"
       ],
@@ -3042,15 +2931,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Problem solution",
-      "templateName": "Solution",
-      "themeName": "Problem"
+      "moduleName": "main",
+      "sectionName": "problem-solution",
+      "templateName": "solution"
     },
     {
       "name": "main-problem-solution-problem-solution-standard",
       "description": "Main Problem Solution Problem Solution template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/main/problem-solution/standard/component.tsx"
       ],
@@ -3076,15 +2964,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Problem solution",
-      "templateName": "Solution",
-      "themeName": "Problem"
+      "moduleName": "main",
+      "sectionName": "problem-solution",
+      "templateName": "solution"
     },
     {
       "name": "main-social-proof-social-proof-bold",
       "description": "Main Social Proof Social Proof template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/main/social-proof/bold/component.tsx"
       ],
@@ -3106,15 +2993,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Social proof",
-      "templateName": "Proof",
-      "themeName": "Social"
+      "moduleName": "main",
+      "sectionName": "social-proof",
+      "templateName": "proof"
     },
     {
       "name": "main-social-proof-social-proof-minimal",
       "description": "Main Social Proof Social Proof template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/main/social-proof/minimal/component.tsx"
       ],
@@ -3131,15 +3017,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Social proof",
-      "templateName": "Proof",
-      "themeName": "Social"
+      "moduleName": "main",
+      "sectionName": "social-proof",
+      "templateName": "proof"
     },
     {
       "name": "main-social-proof-social-proof-neobrutalism",
       "description": "Main Social Proof Social Proof template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/main/social-proof/neobrutalism/component.tsx"
       ],
@@ -3156,15 +3041,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Social proof",
-      "templateName": "Proof",
-      "themeName": "Social"
+      "moduleName": "main",
+      "sectionName": "social-proof",
+      "templateName": "proof"
     },
     {
       "name": "main-social-proof-social-proof-standard",
       "description": "Main Social Proof Social Proof template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/main/social-proof/standard/component.tsx"
       ],
@@ -3181,15 +3065,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Social proof",
-      "templateName": "Proof",
-      "themeName": "Social"
+      "moduleName": "main",
+      "sectionName": "social-proof",
+      "templateName": "proof"
     },
     {
       "name": "main-trust-indicators-trust-indicators-bold",
       "description": "Main Trust Indicators Trust Indicators template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/main/trust-indicators/bold/component.tsx"
       ],
@@ -3211,15 +3094,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Trust indicators",
-      "templateName": "Indicators",
-      "themeName": "Trust"
+      "moduleName": "main",
+      "sectionName": "trust-indicators",
+      "templateName": "indicators"
     },
     {
       "name": "main-trust-indicators-trust-indicators-minimal",
       "description": "Main Trust Indicators Trust Indicators template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/main/trust-indicators/minimal/component.tsx"
       ],
@@ -3240,15 +3122,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Trust indicators",
-      "templateName": "Indicators",
-      "themeName": "Trust"
+      "moduleName": "main",
+      "sectionName": "trust-indicators",
+      "templateName": "indicators"
     },
     {
       "name": "main-trust-indicators-trust-indicators-neobrutalism",
       "description": "Main Trust Indicators Trust Indicators template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/main/trust-indicators/neobrutalism/component.tsx"
       ],
@@ -3269,15 +3150,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Trust indicators",
-      "templateName": "Indicators",
-      "themeName": "Trust"
+      "moduleName": "main",
+      "sectionName": "trust-indicators",
+      "templateName": "indicators"
     },
     {
       "name": "main-trust-indicators-trust-indicators-standard",
       "description": "Main Trust Indicators Trust Indicators template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/main/trust-indicators/standard/component.tsx"
       ],
@@ -3298,15 +3178,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Trust indicators",
-      "templateName": "Indicators",
-      "themeName": "Trust"
+      "moduleName": "main",
+      "sectionName": "trust-indicators",
+      "templateName": "indicators"
     },
     {
       "name": "main-value-proposition-value-proposition-bold",
       "description": "Main Value Proposition Value Proposition template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/main/value-proposition/bold/component.tsx"
       ],
@@ -3331,15 +3210,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Value proposition",
-      "templateName": "Proposition",
-      "themeName": "Value"
+      "moduleName": "main",
+      "sectionName": "value-proposition",
+      "templateName": "proposition"
     },
     {
       "name": "main-value-proposition-value-proposition-minimal",
       "description": "Main Value Proposition Value Proposition template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/main/value-proposition/minimal/component.tsx"
       ],
@@ -3363,15 +3241,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Value proposition",
-      "templateName": "Proposition",
-      "themeName": "Value"
+      "moduleName": "main",
+      "sectionName": "value-proposition",
+      "templateName": "proposition"
     },
     {
       "name": "main-value-proposition-value-proposition-neobrutalism",
       "description": "Main Value Proposition Value Proposition template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/main/value-proposition/neobrutalism/component.tsx"
       ],
@@ -3395,15 +3272,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Value proposition",
-      "templateName": "Proposition",
-      "themeName": "Value"
+      "moduleName": "main",
+      "sectionName": "value-proposition",
+      "templateName": "proposition"
     },
     {
       "name": "main-value-proposition-value-proposition-standard",
       "description": "Main Value Proposition Value Proposition template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/main/value-proposition/standard/component.tsx"
       ],
@@ -3427,15 +3303,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Main",
-      "sectionName": "Value proposition",
-      "templateName": "Proposition",
-      "themeName": "Value"
+      "moduleName": "main",
+      "sectionName": "value-proposition",
+      "templateName": "proposition"
     },
     {
       "name": "newsletter-opt-in-opt-in-bold",
       "description": "Newsletter Opt In Opt In template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/newsletter/opt-in/bold/component.tsx"
       ],
@@ -3462,15 +3337,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Opt",
-      "templateName": "In",
-      "themeName": "Opt"
+      "moduleName": "newsletter",
+      "sectionName": "opt",
+      "templateName": "in"
     },
     {
       "name": "newsletter-opt-in-opt-in-minimal",
       "description": "Newsletter Opt In Opt In template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/newsletter/opt-in/minimal/component.tsx"
       ],
@@ -3493,15 +3367,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Opt",
-      "templateName": "In",
-      "themeName": "Opt"
+      "moduleName": "newsletter",
+      "sectionName": "opt",
+      "templateName": "in"
     },
     {
       "name": "newsletter-opt-in-opt-in-neobrutalism",
       "description": "Newsletter Opt In Opt In template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/newsletter/opt-in/neobrutalism/component.tsx"
       ],
@@ -3526,15 +3399,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Opt",
-      "templateName": "In",
-      "themeName": "Opt"
+      "moduleName": "newsletter",
+      "sectionName": "opt",
+      "templateName": "in"
     },
     {
       "name": "newsletter-opt-in-opt-in-standard",
       "description": "Newsletter Opt In Opt In template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/newsletter/opt-in/standard/component.tsx"
       ],
@@ -3559,15 +3431,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Opt",
-      "templateName": "In",
-      "themeName": "Opt"
+      "moduleName": "newsletter",
+      "sectionName": "opt",
+      "templateName": "in"
     },
     {
       "name": "newsletter-signup-signup-bold",
       "description": "Newsletter Signup Signup template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/newsletter/signup/bold/component.tsx"
       ],
@@ -3592,15 +3463,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Signup",
-      "templateName": "Signup",
-      "themeName": "Bold"
+      "moduleName": "newsletter",
+      "sectionName": "signup",
+      "templateName": "signup"
     },
     {
       "name": "newsletter-signup-signup-minimal",
       "description": "Newsletter Signup Signup template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/newsletter/signup/minimal/component.tsx"
       ],
@@ -3623,15 +3493,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Signup",
-      "templateName": "Signup",
-      "themeName": "Minimal"
+      "moduleName": "newsletter",
+      "sectionName": "signup",
+      "templateName": "signup"
     },
     {
       "name": "newsletter-signup-signup-neobrutalism",
       "description": "Newsletter Signup Signup template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/newsletter/signup/neobrutalism/component.tsx"
       ],
@@ -3655,15 +3524,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Signup",
-      "templateName": "Signup",
-      "themeName": "Neobrutalism"
+      "moduleName": "newsletter",
+      "sectionName": "signup",
+      "templateName": "signup"
     },
     {
       "name": "newsletter-signup-signup-standard",
       "description": "Newsletter Signup Signup template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/newsletter/signup/standard/component.tsx"
       ],
@@ -3687,15 +3555,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Signup",
-      "templateName": "Signup",
-      "themeName": "Standard"
+      "moduleName": "newsletter",
+      "sectionName": "signup",
+      "templateName": "signup"
     },
     {
       "name": "newsletter-subscription-subscription-bold",
       "description": "Newsletter Subscription Subscription template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/newsletter/subscription/bold/component.tsx"
       ],
@@ -3721,15 +3588,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Subscription",
-      "templateName": "Subscription",
-      "themeName": "Bold"
+      "moduleName": "newsletter",
+      "sectionName": "subscription",
+      "templateName": "subscription"
     },
     {
       "name": "newsletter-subscription-subscription-minimal",
       "description": "Newsletter Subscription Subscription template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/newsletter/subscription/minimal/component.tsx"
       ],
@@ -3751,15 +3617,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Subscription",
-      "templateName": "Subscription",
-      "themeName": "Minimal"
+      "moduleName": "newsletter",
+      "sectionName": "subscription",
+      "templateName": "subscription"
     },
     {
       "name": "newsletter-subscription-subscription-neobrutalism",
       "description": "Newsletter Subscription Subscription template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/newsletter/subscription/neobrutalism/component.tsx"
       ],
@@ -3786,15 +3651,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Subscription",
-      "templateName": "Subscription",
-      "themeName": "Neobrutalism"
+      "moduleName": "newsletter",
+      "sectionName": "subscription",
+      "templateName": "subscription"
     },
     {
       "name": "newsletter-subscription-subscription-standard",
       "description": "Newsletter Subscription Subscription template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/newsletter/subscription/standard/component.tsx"
       ],
@@ -3821,15 +3685,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Newsletter",
-      "sectionName": "Subscription",
-      "templateName": "Subscription",
-      "themeName": "Standard"
+      "moduleName": "newsletter",
+      "sectionName": "subscription",
+      "templateName": "subscription"
     },
     {
       "name": "pricing-plans-plans-bold",
       "description": "Pricing Plans Plans template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/pricing/plans/bold/component.tsx"
       ],
@@ -3852,15 +3715,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Plans",
-      "templateName": "Plans",
-      "themeName": "Bold"
+      "moduleName": "pricing",
+      "sectionName": "plans",
+      "templateName": "plans"
     },
     {
       "name": "pricing-plans-plans-minimal",
       "description": "Pricing Plans Plans template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/pricing/plans/minimal/component.tsx"
       ],
@@ -3871,21 +3733,21 @@
       "shadcnComponents": [],
       "lucideIcons": [
         "Check",
-        "ArrowRight"
+        "ArrowRight",
+        "Star"
       ],
       "masterDetail": {
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Plans",
-      "templateName": "Plans",
-      "themeName": "Minimal"
+      "moduleName": "pricing",
+      "sectionName": "plans",
+      "templateName": "plans"
     },
     {
       "name": "pricing-plans-plans-neobrutalism",
       "description": "Pricing Plans Plans template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/pricing/plans/neobrutalism/component.tsx"
       ],
@@ -3906,15 +3768,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Plans",
-      "templateName": "Plans",
-      "themeName": "Neobrutalism"
+      "moduleName": "pricing",
+      "sectionName": "plans",
+      "templateName": "plans"
     },
     {
       "name": "pricing-plans-plans-standard",
       "description": "Pricing Plans Plans template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/pricing/plans/standard/component.tsx"
       ],
@@ -3935,15 +3796,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Plans",
-      "templateName": "Plans",
-      "themeName": "Standard"
+      "moduleName": "pricing",
+      "sectionName": "plans",
+      "templateName": "plans"
     },
     {
       "name": "pricing-subscription-subscription-bold",
       "description": "Pricing Subscription Subscription template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/pricing/subscription/bold/component.tsx"
       ],
@@ -3968,15 +3828,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Subscription",
-      "templateName": "Subscription",
-      "themeName": "Bold"
+      "moduleName": "pricing",
+      "sectionName": "subscription",
+      "templateName": "subscription"
     },
     {
       "name": "pricing-subscription-subscription-minimal",
       "description": "Pricing Subscription Subscription template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/pricing/subscription/minimal/component.tsx"
       ],
@@ -3994,15 +3853,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Subscription",
-      "templateName": "Subscription",
-      "themeName": "Minimal"
+      "moduleName": "pricing",
+      "sectionName": "subscription",
+      "templateName": "subscription"
     },
     {
       "name": "pricing-subscription-subscription-neobrutalism",
       "description": "Pricing Subscription Subscription template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/pricing/subscription/neobrutalism/component.tsx"
       ],
@@ -4025,15 +3883,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Subscription",
-      "templateName": "Subscription",
-      "themeName": "Neobrutalism"
+      "moduleName": "pricing",
+      "sectionName": "subscription",
+      "templateName": "subscription"
     },
     {
       "name": "pricing-subscription-subscription-standard",
       "description": "Pricing Subscription Subscription template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/pricing/subscription/standard/component.tsx"
       ],
@@ -4056,15 +3913,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Subscription",
-      "templateName": "Subscription",
-      "themeName": "Standard"
+      "moduleName": "pricing",
+      "sectionName": "subscription",
+      "templateName": "subscription"
     },
     {
       "name": "pricing-tables-tables-bold",
       "description": "Pricing Tables Tables template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/pricing/tables/bold/component.tsx"
       ],
@@ -4088,15 +3944,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Tables",
-      "templateName": "Tables",
-      "themeName": "Bold"
+      "moduleName": "pricing",
+      "sectionName": "tables",
+      "templateName": "tables"
     },
     {
       "name": "pricing-tables-tables-minimal",
       "description": "Pricing Tables Tables template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/pricing/tables/minimal/component.tsx"
       ],
@@ -4114,15 +3969,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Tables",
-      "templateName": "Tables",
-      "themeName": "Minimal"
+      "moduleName": "pricing",
+      "sectionName": "tables",
+      "templateName": "tables"
     },
     {
       "name": "pricing-tables-tables-neobrutalism",
       "description": "Pricing Tables Tables template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/pricing/tables/neobrutalism/component.tsx"
       ],
@@ -4144,15 +3998,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Tables",
-      "templateName": "Tables",
-      "themeName": "Neobrutalism"
+      "moduleName": "pricing",
+      "sectionName": "tables",
+      "templateName": "tables"
     },
     {
       "name": "pricing-tables-tables-standard",
       "description": "Pricing Tables Tables template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/pricing/tables/standard/component.tsx"
       ],
@@ -4174,15 +4027,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Pricing",
-      "sectionName": "Tables",
-      "templateName": "Tables",
-      "themeName": "Standard"
+      "moduleName": "pricing",
+      "sectionName": "tables",
+      "templateName": "tables"
     },
     {
       "name": "services-offerings-offerings-bold",
       "description": "Services Offerings Offerings template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/services/offerings/bold/component.tsx"
       ],
@@ -4207,15 +4059,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Offerings",
-      "templateName": "Offerings",
-      "themeName": "Bold"
+      "moduleName": "services",
+      "sectionName": "offerings",
+      "templateName": "offerings"
     },
     {
       "name": "services-offerings-offerings-minimal",
       "description": "Services Offerings Offerings template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/services/offerings/minimal/component.tsx"
       ],
@@ -4239,15 +4090,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Offerings",
-      "templateName": "Offerings",
-      "themeName": "Minimal"
+      "moduleName": "services",
+      "sectionName": "offerings",
+      "templateName": "offerings"
     },
     {
       "name": "services-offerings-offerings-neobrutalism",
       "description": "Services Offerings Offerings template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/services/offerings/neobrutalism/component.tsx"
       ],
@@ -4271,15 +4121,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Offerings",
-      "templateName": "Offerings",
-      "themeName": "Neobrutalism"
+      "moduleName": "services",
+      "sectionName": "offerings",
+      "templateName": "offerings"
     },
     {
       "name": "services-offerings-offerings-standard",
       "description": "Services Offerings Offerings template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/services/offerings/standard/component.tsx"
       ],
@@ -4303,15 +4152,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Offerings",
-      "templateName": "Offerings",
-      "themeName": "Standard"
+      "moduleName": "services",
+      "sectionName": "offerings",
+      "templateName": "offerings"
     },
     {
       "name": "services-services-services-bold",
       "description": "Services Services Services template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/services/services/bold/component.tsx"
       ],
@@ -4338,15 +4186,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Services",
-      "templateName": "Services",
-      "themeName": "Bold"
+      "moduleName": "services",
+      "sectionName": "services",
+      "templateName": "services"
     },
     {
       "name": "services-services-services-minimal",
       "description": "Services Services Services template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/services/services/minimal/component.tsx"
       ],
@@ -4371,15 +4218,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Services",
-      "templateName": "Services",
-      "themeName": "Minimal"
+      "moduleName": "services",
+      "sectionName": "services",
+      "templateName": "services"
     },
     {
       "name": "services-services-services-neobrutalism",
       "description": "Services Services Services template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/services/services/neobrutalism/component.tsx"
       ],
@@ -4403,15 +4249,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Services",
-      "templateName": "Services",
-      "themeName": "Neobrutalism"
+      "moduleName": "services",
+      "sectionName": "services",
+      "templateName": "services"
     },
     {
       "name": "services-services-services-standard",
       "description": "Services Services Services template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/services/services/standard/component.tsx"
       ],
@@ -4435,15 +4280,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Services",
-      "templateName": "Services",
-      "themeName": "Standard"
+      "moduleName": "services",
+      "sectionName": "services",
+      "templateName": "services"
     },
     {
       "name": "services-solutions-solutions-bold",
       "description": "Services Solutions Solutions template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/services/solutions/bold/component.tsx"
       ],
@@ -4470,15 +4314,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Solutions",
-      "templateName": "Solutions",
-      "themeName": "Bold"
+      "moduleName": "services",
+      "sectionName": "solutions",
+      "templateName": "solutions"
     },
     {
       "name": "services-solutions-solutions-minimal",
       "description": "Services Solutions Solutions template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/services/solutions/minimal/component.tsx"
       ],
@@ -4503,15 +4346,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Solutions",
-      "templateName": "Solutions",
-      "themeName": "Minimal"
+      "moduleName": "services",
+      "sectionName": "solutions",
+      "templateName": "solutions"
     },
     {
       "name": "services-solutions-solutions-neobrutalism",
       "description": "Services Solutions Solutions template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/services/solutions/neobrutalism/component.tsx"
       ],
@@ -4535,15 +4377,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Solutions",
-      "templateName": "Solutions",
-      "themeName": "Neobrutalism"
+      "moduleName": "services",
+      "sectionName": "solutions",
+      "templateName": "solutions"
     },
     {
       "name": "services-solutions-solutions-standard",
       "description": "Services Solutions Solutions template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/services/solutions/standard/component.tsx"
       ],
@@ -4567,15 +4408,14 @@
         "isMaster": false,
         "isDetail": false
       },
-      "moduleName": "Services",
-      "sectionName": "Solutions",
-      "templateName": "Solutions",
-      "themeName": "Standard"
+      "moduleName": "services",
+      "sectionName": "solutions",
+      "templateName": "solutions"
     },
     {
       "name": "team-culture-culture-bold",
       "description": "Team Culture Culture template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/team/culture/bold/component.tsx"
       ],
@@ -4601,16 +4441,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Culture",
-      "templateName": "Culture",
-      "themeName": "Bold",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "culture",
+      "templateName": "culture"
     },
     {
       "name": "team-culture-culture-minimal",
       "description": "Team Culture Culture template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/team/culture/minimal/component.tsx"
       ],
@@ -4634,16 +4472,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Culture",
-      "templateName": "Culture",
-      "themeName": "Minimal",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "culture",
+      "templateName": "culture"
     },
     {
       "name": "team-culture-culture-neobrutalism",
       "description": "Team Culture Culture template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/team/culture/neobrutalism/component.tsx"
       ],
@@ -4667,16 +4503,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Culture",
-      "templateName": "Culture",
-      "themeName": "Neobrutalism",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "culture",
+      "templateName": "culture"
     },
     {
       "name": "team-culture-culture-standard",
       "description": "Team Culture Culture template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/team/culture/standard/component.tsx"
       ],
@@ -4700,16 +4534,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Culture",
-      "templateName": "Culture",
-      "themeName": "Standard",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "culture",
+      "templateName": "culture"
     },
     {
       "name": "team-members-members-bold",
       "description": "Team Members Members template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/team/members/bold/component.tsx"
       ],
@@ -4733,16 +4565,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Members",
-      "templateName": "Members",
-      "themeName": "Bold",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "members",
+      "templateName": "members"
     },
     {
       "name": "team-members-members-minimal",
       "description": "Team Members Members template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/team/members/minimal/component.tsx"
       ],
@@ -4762,16 +4592,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Members",
-      "templateName": "Members",
-      "themeName": "Minimal",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "members",
+      "templateName": "members"
     },
     {
       "name": "team-members-members-neobrutalism",
       "description": "Team Members Members template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/team/members/neobrutalism/component.tsx"
       ],
@@ -4791,16 +4619,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Members",
-      "templateName": "Members",
-      "themeName": "Neobrutalism",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "members",
+      "templateName": "members"
     },
     {
       "name": "team-members-members-standard",
       "description": "Team Members Members template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/team/members/standard/component.tsx"
       ],
@@ -4820,16 +4646,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Members",
-      "templateName": "Members",
-      "themeName": "Standard",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "members",
+      "templateName": "members"
     },
     {
       "name": "team-profiles-profiles-bold",
       "description": "Team Profiles Profiles template with bold colors, strong typography, and high visual impact.",
-      "theme": "bold",
+      "designSystem": "bold",
       "files": [
         "blocks/team/profiles/bold/component.tsx"
       ],
@@ -4856,16 +4680,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Profiles",
-      "templateName": "Profiles",
-      "themeName": "Bold",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "profiles",
+      "templateName": "profiles"
     },
     {
       "name": "team-profiles-profiles-minimal",
       "description": "Team Profiles Profiles template with clean, minimalist design and subtle styling.",
-      "theme": "minimal",
+      "designSystem": "minimal",
       "files": [
         "blocks/team/profiles/minimal/component.tsx"
       ],
@@ -4889,16 +4711,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Profiles",
-      "templateName": "Profiles",
-      "themeName": "Minimal",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "profiles",
+      "templateName": "profiles"
     },
     {
       "name": "team-profiles-profiles-neobrutalism",
       "description": "Team Profiles Profiles template with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.",
-      "theme": "neobrutalism",
+      "designSystem": "neobrutalism",
       "files": [
         "blocks/team/profiles/neobrutalism/component.tsx"
       ],
@@ -4922,16 +4742,14 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Profiles",
-      "templateName": "Profiles",
-      "themeName": "Neobrutalism",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "profiles",
+      "templateName": "profiles"
     },
     {
       "name": "team-profiles-profiles-standard",
       "description": "Team Profiles Profiles template with professional styling and balanced design.",
-      "theme": "standard",
+      "designSystem": "standard",
       "files": [
         "blocks/team/profiles/standard/component.tsx"
       ],
@@ -4955,11 +4773,9 @@
         "isMaster": true,
         "isDetail": false
       },
-      "moduleName": "Team",
-      "sectionName": "Profiles",
-      "templateName": "Profiles",
-      "themeName": "Standard",
-      "contentType": "teamMemberItem"
+      "moduleName": "team",
+      "sectionName": "profiles",
+      "templateName": "profiles"
     }
   ],
   "modules": [

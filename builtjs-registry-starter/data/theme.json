@@ -1,0 +1,13 @@
+{
+  "theme": {
+    "title": "E-Commerce",
+    "description": "A shadcn/ui theme for e-commerce websites",
+    "designSystems": [
+      {
+        "name": "skeleton",
+        "title": "Skeleton",
+        "description": "Minimal styling, focus on structure. Use default Tailwind colors. Clean, functional appearance. No decorative elements."
+      }
+    ]
+  }
+}

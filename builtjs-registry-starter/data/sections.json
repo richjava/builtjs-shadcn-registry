@@ -1,0 +1,100 @@
+{
+  "sections": [
+    {
+      "name": "header",
+      "title": "Header",
+      "type": "layout",
+      "data": {},
+      "templates": ["header1"],
+      "defaultTemplate": { "name": "header1" },
+      "collections": { "primaryMenuItem": {} }
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "type": "layout",
+      "templates": ["footer1"],
+      "defaultTemplate": { "name": "footer1" },
+      "collections": {}
+    },
+    {
+      "name": "homeSeo",
+      "title": "Home SEO",
+      "data": {
+        "pageTitle": "Home | E-Commerce ShadCN Built.js Theme",
+        "description": "Home page for a site built with the E-Commerce ShadCN Built.js Theme.",
+        "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
+          "path": "/images/image.png",
+          "width": 1280,
+          "height": 768,
+          "type": "image"
+        },
+        "twitterCardType": "summary"
+      },
+      "templates": ["seo"],
+      "type": "head",
+      "defaultTemplate": { "name": "seo" },
+      "collections": {}
+    },
+    {
+      "name": "homeLanding",
+      "title": "Home Landing",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1737712661/builtjs/theme/richjava_e-commerce-shadcn/home-cover1.png",
+      "data": {
+        "image1": {
+          "url": "https://images.unsplash.com/photo-1518459031867-a89b944bffe4?w=500&h=500&fit=crop&q=80",
+          "width": 500,
+          "height": 500,
+          "type": "image"
+        },
+        "image2":  {
+          "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&h=500&fit=crop&q=80",
+          "width": 500,
+          "height": 500,
+          "type": "image"
+        },
+        "heading": "Elevate Your Style with Premium Sportswear",
+        "blurb": "Discover our collection of premium athletic wear designed for performance and style. From innovative footwear to comfortable apparel, find your perfect fit."
+      },
+      "templates": ["cover1"],
+      "defaultTemplate": { "name": "cover1" },
+      "collections": {
+        "category": {},
+        "product": {}
+      }
+    },
+    {
+      "name": "productArticleLanding",
+      "title": "Product Article Landing",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1738142416/builtjs/theme/richjava_e-commerce-shadcn/product-article-article1.png",
+      "templates": ["article1"],
+      "defaultTemplate": { "name": "article1" }
+    },
+    {
+      "name": "productCategoryListLanding",
+      "title": "Product Category List Landing",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1737713769/productCategoryListLanding_gddyei.png",
+      "templates": ["list1"],
+      "defaultTemplate": { "name": "list1" },   
+      "collections": { "product": {
+        "config": {
+          "populate": [
+            {
+              "name": "category"
+            }
+          ]
+        },
+        "params": ["category"]
+      } }
+    },
+    {
+      "name": "benefitList",
+      "title": "Benefit List",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1738142376/builtjs/theme/richjava_e-commerce-shadcn/home-list2.png",
+      "templates": ["list2"],
+      "defaultTemplate": { "name": "list2" },   
+      "collections": { "benefit": {} }
+    }
+  ]
+}

@@ -8,7 +8,7 @@ import { useEffect } from 'react'
 interface NavigationTemplate {
   name: string
   templateName?: string
-  themeName?: string
+  designSystem?: string
 }
 
 interface TemplateNavigationProps {
@@ -76,7 +76,7 @@ export default function TemplateNavigation({
                   <div className="text-sm font-medium">Previous</div>
                   <div className="text-xs text-muted-foreground">
                     {previous.templateName}
-                    {previous.themeName && ` (${previous.themeName})`}
+                    {previous.designSystem && ` (${previous.designSystem})`}
                   </div>
                 </div>
               </Button>
@@ -108,7 +108,7 @@ export default function TemplateNavigation({
                   <div className="text-sm font-medium">Next</div>
                   <div className="text-xs text-muted-foreground">
                     {next.templateName}
-                    {next.themeName && ` (${next.themeName})`}
+                    {next.designSystem && ` (${next.designSystem})`}
                   </div>
                 </div>
                 <ChevronRight className="ml-2 h-4 w-4" />

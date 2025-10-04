@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import type { GetStaticPaths, GetStaticProps } from 'next'
+import type { GetServerSideProps } from 'next'
 import SectionPreviewClient from '@/components/section-preview-client'
 
 interface Template {
@@ -9,24 +9,23 @@ interface Template {
   moduleName: string
   sectionName: string
   templateName: string
-  themeName: string
-  theme?: string
+  designSystem: string
 }
 
 interface Props {
   category: string
-  categoryLabel?: string
+  categoryLabel: string
   section: string
-  sectionName?: string
+  sectionName: string
   templates: Template[]
-  themes: Array<{
+  designSystems: Array<{
     name: string
     label: string
     description: string
   }>
 }
 
-export default function SectionPreviewPage({ category, categoryLabel, section, sectionName, templates, themes }: Props) {
+export default function SectionPreviewPage({ category, categoryLabel, section, sectionName, templates, designSystems }: Props) {
   return (
     <SectionPreviewClient 
       category={category}
@@ -34,42 +33,20 @@ export default function SectionPreviewPage({ category, categoryLabel, section, s
       section={section}
       sectionName={sectionName}
       templates={templates}
-      themes={themes}
+      designSystems={designSystems}
     />
   )
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const registryPath = path.join(process.cwd(), 'registry.json')
-  const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
-  
-  const paths: { params: { category: string; section: string } }[] = []
-  
-  // Group blocks by module and section
-  const sectionsMap = new Map<string, Set<string>>()
-  registry.blocks.forEach((block: any) => {
-    if (block.moduleName && block.sectionName) {
-      const moduleKey = block.moduleName.toLowerCase()
-      const sectionKey = block.sectionName.toLowerCase().replace(/\s+/g, '-')
-      if (!sectionsMap.has(moduleKey)) {
-        sectionsMap.set(moduleKey, new Set())
-      }
-      sectionsMap.get(moduleKey)!.add(sectionKey)
-    }
-  })
-  
-  sectionsMap.forEach((sections, category) => {
-    sections.forEach((section) => {
-      paths.push({ params: { category, section } })
-    })
-  })
-  
-  return { paths, fallback: false }
-}
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const category = params?.category as string
   const section = params?.section as string
+  
+  if (!category || !section) {
+    return {
+      notFound: true,
+    }
+  }
   
   const registryPath = path.join(process.cwd(), 'registry.json')
   const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
@@ -78,11 +55,17 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     block.moduleName.toLowerCase() === category && block.sectionName.toLowerCase().replace(/\s+/g, '-') === section
   )
   
-  // Get section name from the first template (they should all have the same sectionName)
-  const sectionName = templates.length > 0 ? templates[0].sectionName : undefined
+  const sectionName = templates.length > 0 ? templates[0].sectionName : 'Unknown'
+  const categoryLabel = category.charAt(0).toUpperCase() + category.slice(1)
   
-  // Get module label from registry
-  const categoryLabel = (registry.modules || []).find((c: any) => c.name === category)?.label
-  
-  return { props: { category, categoryLabel, section, sectionName, templates, themes: registry.themes || [] } }
+  return { 
+    props: { 
+      category, 
+      categoryLabel, 
+      section, 
+      sectionName, 
+      templates, 
+      designSystems: registry.designSystems || [] 
+    } 
+  }
 }

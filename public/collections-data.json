@@ -1,0 +1,243 @@
+{
+  "capabilityItem": [
+    {
+      "_id": "capability-1",
+      "_type": "capabilityItem",
+      "slug": "analytics",
+      "category": "Analytics",
+      "features": [
+        "Real-time dashboards",
+        "Custom reporting",
+        "Data visualization"
+      ],
+      "icon": "bar-chart"
+    },
+    {
+      "_id": "capability-2",
+      "_type": "capabilityItem",
+      "slug": "collaboration",
+      "category": "Collaboration",
+      "features": [
+        "Team workspaces",
+        "Real-time editing",
+        "Comment system"
+      ],
+      "icon": "users"
+    },
+    {
+      "_id": "capability-3",
+      "_type": "capabilityItem",
+      "slug": "security",
+      "category": "Security",
+      "features": [
+        "End-to-end encryption",
+        "SSO integration",
+        "Audit logs"
+      ],
+      "icon": "shield"
+    },
+    {
+      "_id": "capability-4",
+      "_type": "capabilityItem",
+      "slug": "integration",
+      "category": "Integration",
+      "features": [
+        "RESTful APIs",
+        "Webhook support",
+        "Third-party apps"
+      ],
+      "icon": "plug"
+    }
+  ],
+  "blogItem": [
+    {
+      "_id": "blog-post-1",
+      "_type": "blogItem",
+      "slug": "getting-started-modern-javascript",
+      "title": "Getting Started with Modern JavaScript",
+      "excerpt": "Learn the fundamentals of modern JavaScript and best practices.",
+      "author": "Alex Chen",
+      "publishedDate": "2024-01-10",
+      "readTime": "5 min read",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800&h=400&fit=crop",
+        "alt": "JavaScript code on computer screen"
+      },
+      "tags": [
+        "JavaScript",
+        "Tutorial"
+      ],
+      "content": "<p>JavaScript has evolved significantly over the years. Modern JavaScript brings powerful features that make development more efficient and code more maintainable.</p><h2>ES6+ Features</h2><p>Modern JavaScript includes many powerful features like arrow functions, destructuring, template literals, and async/await that make code more readable and efficient.</p><h2>Module System</h2><p>The introduction of ES6 modules has revolutionized how we organize and structure JavaScript code, making it easier to create maintainable applications.</p><h2>Best Practices</h2><p>Following modern JavaScript best practices helps create more reliable, performant, and maintainable applications.</p>"
+    },
+    {
+      "_id": "blog-post-2",
+      "_type": "blogItem",
+      "slug": "building-scalable-react-applications",
+      "title": "Building Scalable React Applications",
+      "excerpt": "Best practices for creating maintainable React applications.",
+      "author": "Maria Rodriguez",
+      "publishedDate": "2024-01-05",
+      "readTime": "7 min read",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop",
+        "alt": "React development workspace with code"
+      },
+      "tags": [
+        "React",
+        "Best Practices"
+      ],
+      "content": "<p>In today's fast-paced development environment, building scalable React applications is crucial for long-term success. This comprehensive guide will walk you through the essential patterns and practices that will help you create maintainable, performant, and scalable React applications.</p><h2>Understanding Scalability in React</h2><p>Scalability in React applications refers to the ability to handle increasing complexity, user load, and feature requirements without significant performance degradation or code maintainability issues.</p><h2>Key Principles for Scalable React Applications</h2><p>Here are the fundamental principles that will guide you in building scalable React applications:</p><h3>1. Component Architecture</h3><p>Design your components with single responsibility in mind. Each component should have a clear purpose and minimal dependencies.</p><h3>2. State Management</h3><p>Choose the right state management solution for your application's complexity. For simple apps, React's built-in state might be sufficient, while complex applications may benefit from Redux or Zustand.</p><h3>3. Performance Optimization</h3><p>Implement proper memoization, lazy loading, and code splitting to ensure your application remains performant as it scales.</p><h2>Best Practices</h2><p>Follow these best practices to ensure your React application scales effectively:</p><ul><li>Use TypeScript for better type safety</li><li>Implement proper error boundaries</li><li>Write comprehensive tests</li><li>Follow consistent coding standards</li><li>Document your components and APIs</li></ul><p>By following these guidelines, you'll be well on your way to building React applications that can scale with your business needs.</p>"
+    },
+    {
+      "_id": "blog-post-3",
+      "_type": "blogItem",
+      "slug": "css-grid-vs-flexbox",
+      "title": "CSS Grid vs Flexbox: When to Use What",
+      "excerpt": "A comprehensive guide to choosing the right layout method.",
+      "author": "David Kim",
+      "publishedDate": "2024-01-01",
+      "readTime": "6 min read",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop",
+        "alt": "CSS Grid and Flexbox layout examples"
+      },
+      "tags": [
+        "CSS",
+        "Layout"
+      ],
+      "content": "<p>CSS Grid and Flexbox are two powerful layout systems in CSS, each with its own strengths and use cases. Understanding when to use each can significantly improve your web development workflow and create better user experiences.</p><h2>CSS Grid: Two-Dimensional Layout</h2><p>CSS Grid is designed for two-dimensional layouts, allowing you to create complex grid-based designs with rows and columns. It's perfect for overall page layouts, card grids, and complex component arrangements.</p><h2>Flexbox: One-Dimensional Layout</h2><p>Flexbox is designed for one-dimensional layouts, making it ideal for aligning items in a single direction - either horizontally or vertically. It's perfect for navigation bars, button groups, and centering content.</p><h2>When to Use Each</h2><p>Use CSS Grid when you need to create layouts with both rows and columns. Use Flexbox when you need to align items in a single direction or create flexible components that need to adapt to their content.</p><h2>Combining Both</h2><p>Often, the best approach is to combine both: use CSS Grid for the overall page layout and Flexbox for individual components within the grid.</p>"
+    }
+  ],
+  "serviceItem": [
+    {
+      "_id": "service-1",
+      "_type": "serviceItem",
+      "slug": "web-development",
+      "name": "Web Development",
+      "description": "Custom websites and applications built with modern technologies.",
+      "price": "From $5,000",
+      "features": [
+        "Responsive design",
+        "SEO optimization",
+        "Content management"
+      ],
+      "icon": "code"
+    },
+    {
+      "_id": "service-2",
+      "_type": "serviceItem",
+      "slug": "digital-marketing",
+      "name": "Digital Marketing",
+      "description": "Strategic marketing campaigns to grow your online presence.",
+      "price": "From $2,500",
+      "features": [
+        "Social media management",
+        "Content creation",
+        "Analytics tracking"
+      ],
+      "icon": "trending-up"
+    },
+    {
+      "_id": "service-3",
+      "_type": "serviceItem",
+      "slug": "brand-design",
+      "name": "Brand Design",
+      "description": "Complete brand identity and visual design solutions.",
+      "price": "From $3,000",
+      "features": [
+        "Logo design",
+        "Brand guidelines",
+        "Marketing materials"
+      ],
+      "icon": "palette"
+    }
+  ],
+  "featureItem": [
+    {
+      "_id": "featureItem-1",
+      "_type": "featureItem",
+      "slug": "lightning-fast-performance",
+      "title": "Lightning Fast Performance",
+      "description": "Built for speed with optimized code and modern architecture patterns.",
+      "icon": "zap",
+      "benefit": "3x faster loading times"
+    },
+    {
+      "_id": "featureItem-2",
+      "_type": "featureItem",
+      "slug": "enterprise-security",
+      "title": "Enterprise Security",
+      "description": "Bank-level security with end-to-end encryption and compliance standards.",
+      "icon": "shield",
+      "benefit": "SOC 2 compliant"
+    },
+    {
+      "_id": "featureItem-3",
+      "_type": "featureItem",
+      "slug": "24-7-support",
+      "title": "24/7 Support",
+      "description": "Round-the-clock assistance from our dedicated support team.",
+      "icon": "headphones",
+      "benefit": "Always available"
+    },
+    {
+      "_id": "featureItem-4",
+      "_type": "featureItem",
+      "slug": "scalable-infrastructure",
+      "title": "Scalable Infrastructure",
+      "description": "Grows with your business using cloud-native architecture.",
+      "icon": "trending-up",
+      "benefit": "Unlimited scaling"
+    }
+  ],
+  "teamMemberItem": [
+    {
+      "_id": "teamMemberItem-1",
+      "_type": "teamMemberItem",
+      "slug": "sarah-chen",
+      "name": "Sarah Chen",
+      "role": "CEO & Co-Founder",
+      "bio": "Visionary leader with 15+ years in tech, passionate about building products that make a difference.",
+      "image": {
+        "url": "https://placehold.co/400x400/000000/FFFFFF?text=SC",
+        "alt": "Sarah Chen profile photo"
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/in/sarahchen",
+        "twitter": "https://twitter.com/sarahchen"
+      }
+    },
+    {
+      "_id": "teamMemberItem-2",
+      "_type": "teamMemberItem",
+      "slug": "mike-rodriguez",
+      "name": "Mike Rodriguez",
+      "role": "CTO & Co-Founder",
+      "bio": "Technical architect and full-stack developer with expertise in scalable systems and modern frameworks.",
+      "image": {
+        "url": "https://placehold.co/400x400/000000/FFFFFF?text=MR",
+        "alt": "Mike Rodriguez profile photo"
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/in/mikerodriguez",
+        "github": "https://github.com/mikerodriguez"
+      }
+    },
+    {
+      "_id": "teamMemberItem-3",
+      "_type": "teamMemberItem",
+      "slug": "alex-kim",
+      "name": "Alex Kim",
+      "role": "Head of Design",
+      "bio": "Creative director focused on user experience and visual design that drives engagement and conversion.",
+      "image": {
+        "url": "https://placehold.co/400x400/000000/FFFFFF?text=AK",
+        "alt": "Alex Kim profile photo"
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/in/alexkim",
+        "dribbble": "https://dribbble.com/alexkim"
+      }
+    }
+  ]
+}

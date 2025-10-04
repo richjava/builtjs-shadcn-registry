@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "header": { "name": "header", "type": "layout" },
+    "footer": { "name": "footer", "type": "layout" },
+    "homeLanding": {
+      "name": "homeLanding",
+      "type": "body",
+      "fields": {
+        "heading": { "type": "string" },
+        "blurb": { "type": "text" },
+        "image1": { "type": "image" },
+        "image2": { "type": "image" }
+      }
+    },
+    "productArticleLanding": {
+      "name": "productArticleLanding",
+      "type": "body",
+      "fields": {}
+    },
+    "productCategoryListLanding": {
+      "name": "productCategoryListLanding",
+      "type": "body"
+    },
+    "benefitList": {
+      "name": "benefitList",
+      "type": "body"
+    }
+  }
+}

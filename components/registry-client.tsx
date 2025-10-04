@@ -4,8 +4,14 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 import Header from '@/components/header'
-import ThemeSelector from '@/components/theme-selector'
+import DesignSystemSelector from '@/components/design-system-selector'
 import { useState, useEffect } from 'react'
+
+// Helper function to convert camelCase to Title Case
+function toTitleCase(str: string | undefined): string {
+  if (!str) return ''
+  return str.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())
+}
 
 interface Module {
   name: string
@@ -18,11 +24,10 @@ interface RegistryItem {
   moduleName: string
   sectionName: string
   templateName: string
-  themeName: string
-  theme?: string
+  designSystem: string
 }
 
-interface Theme {
+interface DesignSystem {
   name: string
   label: string
   description: string
@@ -31,22 +36,22 @@ interface Theme {
 interface RegistryClientProps {
   categories: Module[]
   blocks: RegistryItem[]
-  themes: Theme[]
+  designSystems: DesignSystem[]
 }
 
-export default function RegistryClient({ categories, blocks, themes }: RegistryClientProps) {
-  const [selectedTheme, setSelectedTheme] = useState("all")
+export default function RegistryClient({ categories, blocks, designSystems }: RegistryClientProps) {
+  const [selectedDesignSystem, setSelectedDesignSystem] = useState("all")
   const [filteredBlocks, setFilteredBlocks] = useState(blocks)
 
-  // Load theme from localStorage on mount
+  // Load designSystem from localStorage on mount
   useEffect(() => {
-    const savedTheme = localStorage.getItem("selectedTheme")
+    const savedTheme = localStorage.getItem("selectedDesignSystem")
     if (savedTheme) {
-      setSelectedTheme(savedTheme)
+      setSelectedDesignSystem(savedTheme)
     }
   }, [])
 
-  // Filter blocks based on selected theme
+  // Filter blocks based on selected designSystem
   useEffect(() => {
     if (!Array.isArray(blocks)) {
       console.error('Blocks is not an array:', blocks)
@@ -54,17 +59,17 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
       return
     }
     
-    if (selectedTheme === "all") {
+    if (selectedDesignSystem === "all") {
       setFilteredBlocks(blocks)
     } else {
-      setFilteredBlocks(blocks.filter(block => block.theme === selectedTheme))
+      setFilteredBlocks(blocks.filter(block => block.designSystem === selectedDesignSystem))
     }
-  }, [selectedTheme, blocks])
+  }, [selectedDesignSystem, blocks])
 
-  // Save theme to localStorage when changed
-  const handleThemeChange = (theme: string) => {
-    setSelectedTheme(theme)
-    localStorage.setItem("selectedTheme", theme)
+  // Save designSystem to localStorage when changed
+  const handleThemeChange = (designSystem: string) => {
+    setSelectedDesignSystem(designSystem)
+    localStorage.setItem("selectedDesignSystem", designSystem)
   }
 
   // Filter modules to only show those that have templates
@@ -75,46 +80,46 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container mx-auto px-4 py-12">
+      <main className="container px-4 py-12 mx-auto">
         <div className="mb-8">
           <Button variant="outline" size="sm" asChild>
             <Link href="/">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Link>
           </Button>
         </div>
         
         <div className="mb-8">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+          <div className="flex flex-col gap-4 mb-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <h1 className="text-3xl font-bold mb-2">All Templates</h1>
+              <h1 className="mb-2 text-3xl font-bold">All Templates</h1>
               <p className="text-muted-foreground">
                 Browse {filteredBlocks.length} template{filteredBlocks.length !== 1 ? 's' : ''} across {modulesWithTemplates.length} module{modulesWithTemplates.length !== 1 ? 's' : ''}.
               </p>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-sm font-medium text-muted-foreground">Filter by theme:</span>
-              <ThemeSelector
-                themes={[
+              <span className="text-sm font-medium text-muted-foreground">Filter by designSystem:</span>
+              <DesignSystemSelector
+                designSystems={[
                   { name: "all", label: "All Themes", description: "Show all template variations" },
-                  ...themes
+                  ...designSystems
                 ]}
-                selectedTheme={selectedTheme}
-                onThemeChange={handleThemeChange}
+                selectedDesignSystem={selectedDesignSystem}
+                onDesignSystemChange={handleThemeChange}
               />
             </div>
           </div>
         </div>
 
         {/* Modules with templates */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-2 lg:grid-cols-3">
           {modulesWithTemplates.map((module) => {
             const moduleBlocks = filteredBlocks.filter(block => block.moduleName.toLowerCase() === module.name)
             return (
-              <div key={module.name} className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-semibold mb-2">{module.label}</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+              <div key={module.name} className="p-6 transition-shadow border rounded-lg hover:shadow-lg">
+                <h3 className="mb-2 text-lg font-semibold">{module.label}</h3>
+                <p className="mb-4 text-sm text-muted-foreground">
                   {moduleBlocks.length} template{moduleBlocks.length !== 1 ? 's' : ''}
                 </p>
                 <Button variant="outline" size="sm" asChild>
@@ -132,31 +137,26 @@ export default function RegistryClient({ categories, blocks, themes }: RegistryC
           <h2 className="text-2xl font-bold">All Templates</h2>
           <div className="grid gap-4">
             {filteredBlocks.map((block) => (
-              <div key={block.name} className="border rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div key={block.name} className="p-6 transition-shadow border rounded-lg hover:shadow-md">
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-1">
-                      {block.sectionName} - {block.templateName} ({block.themeName})
+                    <h3 className="mb-1 text-lg font-semibold">
+                      {toTitleCase(block.sectionName)} - {toTitleCase(block.templateName)} ({toTitleCase(block.designSystem)})
                     </h3>
                     {block.description && (
-                      <p className="text-sm text-muted-foreground mb-2">{block.description}</p>
+                      <p className="mb-2 text-sm text-muted-foreground">{block.description}</p>
                     )}
                     <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                      <span className="bg-muted px-2 py-1 rounded">Module: {block.moduleName}</span>
-                      <span className="bg-muted px-2 py-1 rounded">Section: {block.sectionName}</span>
-                      <span className="bg-muted px-2 py-1 rounded">Template: {block.templateName}</span>
-                      <span className="bg-muted px-2 py-1 rounded">Theme: {block.themeName}</span>
+                      <span className="px-2 py-1 rounded bg-muted">Module: {toTitleCase(block.moduleName)}</span>
+                      <span className="px-2 py-1 rounded bg-muted">Section: {toTitleCase(block.sectionName)}</span>
+                      <span className="px-2 py-1 rounded bg-muted">Template: {toTitleCase(block.templateName)}</span>
+                      <span className="px-2 py-1 rounded bg-muted">Design System: {toTitleCase(block.designSystem)}</span>
                     </div>
                   </div>
-                  <div className="flex space-x-2 ml-4">
+                  <div className="flex ml-4 space-x-2">
                     <Button asChild variant="outline" size="sm">
                       <Link href={`/preview/${block.name}`}>
                         Preview
-                      </Link>
-                    </Button>
-                    <Button asChild variant="outline" size="sm">
-                      <Link href={`/registry/${block.name}.json`}>
-                        View JSON
                       </Link>
                     </Button>
                   </div>

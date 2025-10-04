@@ -63,7 +63,7 @@ interface RegistryItem {
   moduleName: string
   sectionName: string
   templateName: string
-  themeName: string
+  designSystem: string
   theme?: string
   fields?: Record<string, string>
   data?: Record<string, any>
@@ -91,7 +91,7 @@ interface Registry {
   version: string
   baseUrl: string
   dependencies: string[]
-  themes?: Array<{
+  designSystems?: Array<{
     name: string
     label: string
     description: string
@@ -728,32 +728,32 @@ async function buildRegistry() {
           const componentPath = path.join(templatePath, "component.tsx")
           const { shadcnComponents, lucideIcons, radixDependencies } = await extractComponentsFromFile(componentPath)
           
-          // Extract theme from template directory name
-          const theme = extractThemeFromTemplateName(templateDir.name)
+          // Extract design system from template directory name
+          const designSystem = extractDesignSystemFromTemplateName(templateDir.name)
           
           // Get template metadata for AI decision-making
-          const templateMeta = templateMetadata[theme] || templateMetadata["standard"]
+          const templateMeta = templateMetadata[designSystem] || templateMetadata["standard"]
           
           // Generate human-readable names
           const moduleName = getModuleName(moduleDir.name)
           const sectionName = getSectionName(sectionDir.name)
-          let templateName = getTemplateName(templateDir.name, theme)
+          let templateName = getTemplateName(templateDir.name, designSystem)
           // If template name is null, use section name as template name
           if (templateName === null) {
             templateName = sectionName
           }
-          const themeName = getThemeName(theme)
+          const designSystemName = getDesignSystemName(designSystem)
           
           
           // Generate the block slug dynamically
-          const blockName = generateBlockSlug(moduleName, sectionName, themeName, templateName)
+          const blockName = generateBlockSlug(moduleName, sectionName, designSystemName, templateName)
           
           const { registryDependencies, ...blockConfigWithoutOldFields } = blockConfig as any
           
-          // Generate theme-specific description
-          const themeSpecificDescription = generateThemeSpecificDescription(
+          // Generate design system-specific description
+          const designSystemSpecificDescription = generateDesignSystemSpecificDescription(
             blockConfig.description || `${moduleName} ${sectionName} ${templateName} template`,
-            theme,
+            designSystem,
             templateMeta
           )
           
@@ -766,12 +766,11 @@ async function buildRegistry() {
             ...blockConfigWithoutOldFields,
             name: blockName,
             type: "registry:block",
-            description: themeSpecificDescription,
+            description: designSystemSpecificDescription,
             moduleName,
             sectionName,
             templateName,
-            themeName,
-            theme: theme,
+            designSystem: designSystem,
             // Enhanced metadata for AI decision-making
             useCase: templateMeta.useCase,
             businessTypes: templateMeta.businessTypes,
@@ -800,8 +799,8 @@ async function buildRegistry() {
     }
   }
 
-  // Validate theme implementation and directory structure
-  validateThemeImplementation(registry.blocks)
+  // Validate design system implementation and directory structure
+  validateDesignSystemImplementation(registry.blocks)
   validateDirectoryStructure(registry.blocks)
   
   // Extract collections data and create top-level collections
@@ -821,18 +820,19 @@ async function buildRegistry() {
           version: registry.version,
           baseUrl: registry.baseUrl,
           dependencies: registry.dependencies,
-          themes: THEME_CONFIG.themes.map(theme => ({
-            name: theme,
-            label: THEME_CONFIG.themeNames[theme as keyof typeof THEME_CONFIG.themeNames],
-            description: `Clean, modern ${THEME_CONFIG.themeNames[theme as keyof typeof THEME_CONFIG.themeNames].toLowerCase()} design with ${theme === 'neobrutalism' ? 'raw, unpolished aesthetics' : theme === 'bold' ? 'vibrant colors and strong typography' : theme === 'minimal' ? 'clean lines and minimal elements' : 'balanced design elements'}`
+          designSystems: DESIGN_SYSTEM_CONFIG.designSystems.map(designSystem => ({
+            name: designSystem,
+            label: DESIGN_SYSTEM_CONFIG.designSystemNames[designSystem as keyof typeof DESIGN_SYSTEM_CONFIG.designSystemNames],
+            description: `Clean, modern ${DESIGN_SYSTEM_CONFIG.designSystemNames[designSystem as keyof typeof DESIGN_SYSTEM_CONFIG.designSystemNames].toLowerCase()} design with ${designSystem === 'neobrutalism' ? 'raw, unpolished aesthetics' : designSystem === 'bold' ? 'vibrant colors and strong typography' : designSystem === 'minimal' ? 'clean lines and minimal elements' : 'balanced design elements'}`
           })),
           blocks: registry.blocks.map(block => {
-            // Parse block name to extract module, section, template, theme info
+            // Parse block name to extract module, section, template info
             const nameParts = block.name.split('-')
             const moduleName = nameParts[0] || 'unknown'
             const rawSectionName = nameParts[1] || 'unknown'
             const rawTemplateName = nameParts[2] || 'unknown'
-            const themeName = nameParts[3] || 'unknown'
+            // Use the design system property directly instead of parsing from name
+            const designSystemName = block.designSystem || 'unknown'
             
             // Create meaningful section names by combining section and template parts
             let combinedSectionName = rawSectionName
@@ -858,7 +858,7 @@ async function buildRegistry() {
             return {
               name: block.name,
               description: block.description,
-              theme: block.theme,
+              designSystem: block.designSystem,
               files: block.files,
               dependencies: block.dependencies,
               devDependencies: block.devDependencies,
@@ -868,10 +868,9 @@ async function buildRegistry() {
               lucideIcons: block.lucideIcons,
               masterDetail: block.masterDetail,
               // Add parsed properties for backward compatibility
-              moduleName: moduleName.charAt(0).toUpperCase() + moduleName.slice(1),
-              sectionName: sectionName.charAt(0).toUpperCase() + sectionName.slice(1).replace(/-/g, ' '),
-              templateName: templateName.charAt(0).toUpperCase() + templateName.slice(1).replace(/-/g, ' '),
-              themeName: themeName.charAt(0).toUpperCase() + themeName.slice(1)
+              moduleName: moduleName,
+              sectionName: sectionName,
+              templateName: templateName
             }
           }),
           modules: registry.modules
@@ -934,17 +933,17 @@ function getModuleName(moduleSlug: string): string {
 }
 
 // Helper function to get template name from template slug
-function getTemplateName(templateSlug: string, theme: string): string | null {
-  // If template slug is just the theme name (e.g., "bold", "minimal", "standard"),
+function getTemplateName(templateSlug: string, designSystem: string): string | null {
+  // If template slug is just the design system name (e.g., "bold", "minimal", "standard"),
   // then the template name should be derived from the section name
-  if (templateSlug === theme) {
+  if (templateSlug === designSystem) {
     return null // Will be set to section name in the main loop
   }
   
-  // Remove theme prefix if present (e.g., "bold-narrative" -> "narrative", "minimal-stats" -> "stats")
+  // Remove design system prefix if present (e.g., "bold-narrative" -> "narrative", "minimal-stats" -> "stats")
   let baseTemplate = templateSlug
-  if (theme !== "standard") {
-    baseTemplate = templateSlug.replace(`${theme}-`, '')
+  if (designSystem !== "standard") {
+    baseTemplate = templateSlug.replace(`${designSystem}-`, '')
   }
   
   return slugToName(baseTemplate)
@@ -961,10 +960,10 @@ function getSectionName(sectionSlug: string): string {
   return slugToName(sectionSlug)
 }
 
-// Centralized theme configuration
-const THEME_CONFIG = {
-  themes: ['bold', 'minimal', 'standard', 'neobrutalism'],
-  themeNames: {
+// Centralized design system configuration
+const DESIGN_SYSTEM_CONFIG = {
+  designSystems: ['bold', 'minimal', 'standard', 'neobrutalism'],
+  designSystemNames: {
     'standard': 'Standard',
     'minimal': 'Minimal',
     'bold': 'Bold',
@@ -972,29 +971,29 @@ const THEME_CONFIG = {
   }
 }
 
-// Theme validation function
-function validateThemeImplementation(blocks: RegistryItem[]): void {
-  const themeCounts: Record<string, number> = {}
-  const missingThemes: string[] = []
-  
-  // Count blocks by theme
+// Design system validation function
+function validateDesignSystemImplementation(blocks: RegistryItem[]): void {
+  const designSystemCounts: Record<string, number> = {}
+  const missingDesignSystems: string[] = []
+
+  // Count blocks by design system
   blocks.forEach(block => {
-    const theme = block.theme || 'standard'
-    themeCounts[theme] = (themeCounts[theme] || 0) + 1
+    const designSystem = block.designSystem || 'standard'
+    designSystemCounts[designSystem] = (designSystemCounts[designSystem] || 0) + 1
   })
-  
-  // Check if all themes are represented
-  THEME_CONFIG.themes.forEach(theme => {
-    if (!themeCounts[theme]) {
-      missingThemes.push(theme)
+
+  // Check if all design systems are represented
+  DESIGN_SYSTEM_CONFIG.designSystems.forEach(designSystem => {
+    if (!designSystemCounts[designSystem]) {
+      missingDesignSystems.push(designSystem)
     }
   })
-  
-  if (missingThemes.length > 0) {
-    console.warn(`⚠️  Warning: Missing theme implementations: ${missingThemes.join(', ')}`)
+
+  if (missingDesignSystems.length > 0) {
+    console.warn(`⚠️  Warning: Missing design system implementations: ${missingDesignSystems.join(', ')}`)
   }
-  
-  console.log(`📊 Theme distribution:`, themeCounts)
+
+  console.log(`📊 Design system distribution:`, designSystemCounts)
 }
 
 // Directory structure validation function
@@ -1025,39 +1024,39 @@ function validateDirectoryStructure(blocks: RegistryItem[]): void {
   }
 }
 
-// Helper function to extract theme from template directory name
-function extractThemeFromTemplateName(templateName: string): string {
-  // Check for theme prefixes first (e.g., "bold-image", "minimal-stats")
-  for (const theme of THEME_CONFIG.themes) {
-    if (templateName.startsWith(`${theme}-`)) {
-      return theme
+// Helper function to extract design system from template directory name
+function extractDesignSystemFromTemplateName(templateName: string): string {
+  // Check for design system prefixes first (e.g., "bold-image", "minimal-stats")
+  for (const designSystem of DESIGN_SYSTEM_CONFIG.designSystems) {
+    if (templateName.startsWith(`${designSystem}-`)) {
+      return designSystem
     }
   }
-  
-  // Check for exact theme matches (e.g., "bold", "minimal", "standard")
-  if (THEME_CONFIG.themes.includes(templateName)) {
+
+  // Check for exact design system matches (e.g., "bold", "minimal", "standard")
+  if (DESIGN_SYSTEM_CONFIG.designSystems.includes(templateName)) {
     return templateName
   }
-  
-  // Default to standard theme
+
+  // Default to standard design system
   return 'standard'
 }
 
-// Helper function to get theme name from theme slug
-function getThemeName(themeSlug: string): string {
-  return THEME_CONFIG.themeNames[themeSlug as keyof typeof THEME_CONFIG.themeNames] || 'Standard'
+// Helper function to get design system name from design system slug
+function getDesignSystemName(designSystemSlug: string): string {
+  return DESIGN_SYSTEM_CONFIG.designSystemNames[designSystemSlug as keyof typeof DESIGN_SYSTEM_CONFIG.designSystemNames] || 'Standard'
 }
 
-// Helper function to generate theme-specific descriptions
-function generateThemeSpecificDescription(baseDescription: string, theme: string, templateMeta: any): string {
-  const themeDescriptions: Record<string, string> = {
+// Helper function to generate design system-specific descriptions
+function generateDesignSystemSpecificDescription(baseDescription: string, designSystem: string, templateMeta: any): string {
+  const designSystemDescriptions: Record<string, string> = {
     'standard': `${baseDescription} with professional styling and balanced design.`,
     'minimal': `${baseDescription} with clean, minimalist design and subtle styling.`,
     'bold': `${baseDescription} with bold colors, strong typography, and high visual impact.`,
     'neobrutalism': `${baseDescription} with raw, unpolished aesthetics, thick borders, stark shadows, and high-contrast colors.`
   }
-  
-  return themeDescriptions[theme] || baseDescription
+
+  return designSystemDescriptions[designSystem] || baseDescription
 }
 
 // Transform fields format from simple strings to structured objects

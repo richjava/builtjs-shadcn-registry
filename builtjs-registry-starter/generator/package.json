@@ -1,0 +1,31 @@
+{
+  "name": "builtjs-registry-generator",
+  "version": "1.0.0",
+  "description": "Generator for converting Built.js theme configuration to ShadCN registry format",
+  "main": "index.js",
+  "bin": {
+    "generate-registry": "./index.js"
+  },
+  "scripts": {
+    "generate": "node index.js",
+    "test": "node index.js ./data"
+  },
+  "keywords": [
+    "builtjs",
+    "shadcn",
+    "registry",
+    "generator",
+    "theme"
+  ],
+  "author": "BuiltJS Registry Generator",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "openai": "^4.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

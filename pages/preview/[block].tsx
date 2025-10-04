@@ -10,7 +10,14 @@ import TemplateNavigation from '@/components/template-navigation'
 import { useState, useEffect } from 'react'
 import { resolveBlockCollections, debugCollectionResolution } from '@/lib/collection-resolver'
 
-// Import all block components
+// Import generated components
+import MainHomeSeoSkeleton from '@/builtjs-registry-starter/generator/output/generated-registry/blocks/main/home-seo/skeleton/component'
+import MainHomeLandingSkeleton from '@/builtjs-registry-starter/generator/output/generated-registry/blocks/main/home-landing/skeleton/component'
+import MainBenefitListSkeleton from '@/builtjs-registry-starter/generator/output/generated-registry/blocks/main/benefit-list/skeleton/component'
+import ShopProductArticleLandingSkeleton from '@/builtjs-registry-starter/generator/output/generated-registry/blocks/shop/product-article-landing/skeleton/component'
+import ShopProductCategoryListLandingSkeleton from '@/builtjs-registry-starter/generator/output/generated-registry/blocks/shop/product-category-list-landing/skeleton/component'
+import HeaderHeader1 from '@/builtjs-registry-starter/generator/output/generated-registry/blocks/header/header1/component'
+import FooterFooter1 from '@/builtjs-registry-starter/generator/output/generated-registry/blocks/footer/footer1/component'
 import AboutLandingImage from '@/blocks/about/about-landing/image/component'
 import AboutLandingMinimalImage from '@/blocks/about/about-landing/minimal-image/component'
 import AboutLandingBoldImage from '@/blocks/about/about-landing/bold-image/component'
@@ -190,8 +197,16 @@ import PricingSubscriptionBold from '@/blocks/pricing/subscription/bold/componen
 import PricingSubscriptionNeobrutalism from '@/blocks/pricing/subscription/neobrutalism/component'
 
 const blockComponents: Record<string, React.ComponentType<any>> = {
+  // Generated components
+  'main-home-seo-skeleton': MainHomeSeoSkeleton,
+  'main-home-landing-skeleton': MainHomeLandingSkeleton,
+  'main-benefit-list-skeleton': MainBenefitListSkeleton,
+  'shop-product-article-landing-skeleton': ShopProductArticleLandingSkeleton,
+  'shop-product-category-list-landing-skeleton': ShopProductCategoryListLandingSkeleton,
+  'header-header1': HeaderHeader1,
+  'footer-footer1': FooterFooter1,
+  // Original components
   'about-landing-image-standard': AboutLandingImage,
-  'about-landing-image-minimal': AboutLandingMinimalImage,
   'about-landing-image-bold': AboutLandingBoldImage,
   'about-landing-image-neobrutalism': AboutLandingNeobrutalismImage,
   'about-landing-stats-standard': AboutLandingStats,
@@ -363,7 +378,7 @@ interface BlockData {
   moduleName: string
   sectionName: string
   templateName: string
-  themeName: string
+  designSystem: string
   theme?: string
   files: string[]
   dependencies: string[]
@@ -376,7 +391,7 @@ interface BlockData {
 interface NavigationTemplate {
   name: string
   templateName?: string
-  themeName?: string
+  designSystem?: string
 }
 
 interface Props {
@@ -481,7 +496,7 @@ export default function BlockPreview({ block, componentName, navigation }: Props
               </Button>
               <div>
                 <h1 className="text-lg font-semibold">
-                  {block.templateName} - {block.themeName}
+                  {block.templateName} - {block.designSystem}
                 </h1>
                 <p className="text-sm text-muted-foreground">
                   {block.moduleName} Module
@@ -565,12 +580,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         previous: currentIndex > 0 ? {
           name: sectionTemplates[currentIndex - 1].name,
           templateName: sectionTemplates[currentIndex - 1].templateName,
-          themeName: sectionTemplates[currentIndex - 1].themeName
+          designSystem: sectionTemplates[currentIndex - 1].designSystem
         } : null,
         next: currentIndex < sectionTemplates.length - 1 ? {
           name: sectionTemplates[currentIndex + 1].name,
           templateName: sectionTemplates[currentIndex + 1].templateName,
-          themeName: sectionTemplates[currentIndex + 1].themeName
+          designSystem: sectionTemplates[currentIndex + 1].designSystem
         } : null,
         currentIndex,
         totalTemplates: sectionTemplates.length

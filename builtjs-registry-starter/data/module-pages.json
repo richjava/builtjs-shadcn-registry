@@ -1,0 +1,26 @@
+{
+  "modulePages": [
+    {
+      "title": "Home Base",
+      "name": "homeBase",
+      "page": { "name": "home" },
+      "sections": [
+        { "name": "homeSeo", "position": 1 },
+        { "name": "homeLanding", "position": 2 },
+        { "name": "benefitList", "position": 3 }
+      ]
+    },
+    {
+      "title": "Shop Product Article",
+      "name": "shopProductArticle",
+      "page": { "name": "productArticle" },
+      "sections": [{ "name": "productArticleLanding" }]
+    },
+    {
+      "title": "Shop Product Category List",
+      "name": "shopProductCategoryList",
+      "page": { "name": "productCategoryList" },
+      "sections": [{ "name": "productCategoryListLanding" }]
+    }
+  ]
+}
