@@ -8,6 +8,12 @@
         "title": "Skeleton",
         "description": "Minimal styling, focus on structure. Use default Tailwind colors. Clean, functional appearance. No decorative elements."
       }
-    ]
+    ],
+    "registry": {
+      "repository": {
+        "provider": "GitHub",
+        "url": "https://github.com/richjava/e-commerce-registry"
+      }
+    }
   }
 }

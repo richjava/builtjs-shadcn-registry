@@ -21,12 +21,12 @@ export default function FooterFooter1({ content }: FooterFooter1Props) {
   const collections = content?.collections || {}
   
   return (
-    <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <div className="h-6 w-6 bg-primary rounded flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xs">L</span>
+    <footer className="border-t bg-background">
+      <div className="container px-4 py-8 mx-auto">
+        <div className="flex flex-col items-center justify-between md:flex-row">
+          <div className="flex items-center mb-4 space-x-2 md:mb-0">
+            <div className="flex items-center justify-center w-6 h-6 rounded bg-primary">
+              <span className="text-xs font-bold text-primary-foreground">L</span>
             </div>
             <span className="font-semibold">Logo</span>
           </div>

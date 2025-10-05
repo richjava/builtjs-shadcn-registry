@@ -22,21 +22,21 @@ export default function HeaderHeader1({ content }: HeaderHeader1Props) {
   
   return (
     <header className="border-b bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">L</span>
+            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary">
+              <span className="text-sm font-bold text-primary-foreground">L</span>
             </div>
-            <span className="font-bold text-xl">Logo</span>
+            <span className="text-xl font-bold">Logo</span>
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Home</a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">About</a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
+          <nav className="items-center hidden space-x-6 md:flex">
+            <a href="#" className="text-sm font-medium transition-colors hover:text-primary">Home</a>
+            <a href="#" className="text-sm font-medium transition-colors hover:text-primary">About</a>
+            <a href="#" className="text-sm font-medium transition-colors hover:text-primary">Contact</a>
           </nav>
           <Button variant="outline" size="sm">
-            <Menu className="h-4 w-4" />
+            <Menu className="w-4 h-4" />
           </Button>
         </div>
       </div>

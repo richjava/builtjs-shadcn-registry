@@ -26,13 +26,13 @@ export default function TemplateNavigation({
 }: Props) {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container px-4 py-4 mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             {previous ? (
               <Button variant="outline" size="sm" asChild>
                 <Link href={`/preview/${previous.name}`}>
-                  <ChevronLeft className="mr-2 h-4 w-4" />
+                  <ChevronLeft className="w-4 h-4 mr-2" />
                   Previous
                 </Link>
               </Button>
@@ -53,7 +53,7 @@ export default function TemplateNavigation({
               <Button variant="outline" size="sm" asChild>
                 <Link href={`/preview/${next.name}`}>
                   Next
-                  <ChevronRight className="ml-2 h-4 w-4" />
+                  <ChevronRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
             ) : (

@@ -1,1 +1,8 @@
-{"/_app":"pages/_app.js","/api/component/[block]":"pages/api/component/[block].js","/api/registry":"pages/api/registry.js","/api/thumbnail/[block]":"pages/api/thumbnail/[block].js","/_error":"pages/_error.js","/category/[name]":"pages/category/[name].js","/registry":"pages/registry.js","/preview/[block]":"pages/preview/[block].js","/":"pages/index.js","/_document":"pages/_document.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/api/registry": "pages/api/registry.js",
+  "/preview/[block]": "pages/preview/[block].js",
+  "/": "pages/index.js"
+}

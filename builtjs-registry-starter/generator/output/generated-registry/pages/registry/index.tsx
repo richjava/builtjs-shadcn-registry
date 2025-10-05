@@ -32,12 +32,13 @@ interface RegistryData {
   designSystems: DesignSystem[]
 }
 
-export default function RegistryPage({ registry }: { registry: RegistryData }) {
+export default function RegistryPage({ registry, registryName }: { registry: RegistryData, registryName: string }) {
   return (
     <RegistryClient 
       categories={registry.categories}
       blocks={registry.blocks}
       designSystems={registry.designSystems}
+      registryName={registryName}
     />
   )
 }
@@ -54,5 +55,10 @@ export const getStaticProps: GetStaticProps = async () => {
     designSystems: Array.isArray(registry.designSystems) ? registry.designSystems : []
   }
   
-  return { props: { registry: registryData } }
+  // Convert registry name to title case and append " Built.js Registry"
+  const registryName = registry.name 
+    ? registry.name.charAt(0).toUpperCase() + registry.name.slice(1) + ' Built.js Registry'
+    : 'Built.js Registry'
+  
+  return { props: { registry: registryData, registryName } }
 }

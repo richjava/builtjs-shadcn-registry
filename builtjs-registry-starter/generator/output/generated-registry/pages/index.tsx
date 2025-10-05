@@ -6,17 +6,31 @@ import fs from 'fs'
 import path from 'path'
 import type { GetStaticProps } from 'next'
 
-export default function Home() {
+interface Category {
+  name: string
+  label: string
+}
+
+interface Props {
+  categories: Category[]
+  registryName: string
+  repository: {
+    provider: string
+    url: string
+  }
+}
+
+export default function Home({ categories, registryName, repository }: Props) {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header registryName={registryName} />
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="flex min-h-[60vh] flex-col items-center justify-center p-24">
           <div className="w-full max-w-5xl text-center">
-            <h1 className="mb-4 text-4xl font-bold">BuiltJS Shadcn Registry</h1>
+            <h1 className="mb-4 text-4xl font-bold">{registryName}</h1>
             <p className="mb-8 text-xl text-muted-foreground">
-              A collection of reusable React templates and blocks built with shadcn/ui
+              A collection of reusable Built.js React templates
             </p>
             
             <div className="space-x-4">
@@ -26,8 +40,8 @@ export default function Home() {
                 </Link>
               </Button>
               <Button variant="outline" asChild>
-                <Link href="https://github.com/richjava/builtjs-shadcn-registry" target="_blank">
-                  GitHub
+                <Link href={repository.url} target="_blank">
+                  {repository.provider}
                 </Link>
               </Button>
             </div>
@@ -45,7 +59,7 @@ export default function Home() {
         <section className="px-4 py-16 bg-gray-50">
           <div className="max-w-6xl mx-auto">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold">Browse by Category</h2>
+              <h2 className="mb-4 text-3xl font-bold">Browse by Module</h2>
               <p className="text-lg text-muted-foreground">
                 Explore templates organized by use case and purpose
               </p>
@@ -73,23 +87,41 @@ export default function Home() {
   )
 }
 
-const categories = [
-  { name: "main", label: "Main" },
-  { name: "shop", label: "Shop" },
-  { name: "about", label: "About" },
-  { name: "blog", label: "Blog" },
-  { name: "faq", label: "FAQ" },
-  { name: "features", label: "Features" },
-  { name: "gallery", label: "Gallery" },
-  { name: "newsletter", label: "Newsletter" },
-  { name: "logos", label: "Logos" },
-  { name: "pricing", label: "Pricing" },
-  { name: "services", label: "Services" },
-  { name: "team", label: "Team" },
-]
-
 export const getStaticProps: GetStaticProps = async () => {
+  const registryPath = path.join(process.cwd(), 'registry.json')
+  const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
+  
+  // Extract unique modules from blocks
+  const moduleMap = new Map()
+  if (registry.blocks) {
+    registry.blocks.forEach((block: any) => {
+      if (block.moduleName && !moduleMap.has(block.moduleName)) {
+        moduleMap.set(block.moduleName, {
+          name: block.moduleName.toLowerCase(),
+          label: block.moduleName.charAt(0).toUpperCase() + block.moduleName.slice(1)
+        })
+      }
+    })
+  }
+  
+  const categories = Array.from(moduleMap.values())
+  
+  // Convert registry name to title case and append " Built.js Registry"
+  const registryName = registry.name 
+    ? registry.name.charAt(0).toUpperCase() + registry.name.slice(1) + ' Built.js Registry'
+    : 'Built.js Registry'
+  
+  // Extract repository information
+  const repository = {
+    provider: registry.repository?.provider || 'GitHub',
+    url: registry.repository?.url || 'https://github.com/richjava/builtjs-shadcn-registry'
+  }
+  
   return { 
-    props: {} 
+    props: { 
+      categories,
+      registryName,
+      repository
+    } 
   }
 }

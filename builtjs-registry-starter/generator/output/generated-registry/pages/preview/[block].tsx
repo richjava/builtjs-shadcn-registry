@@ -9,8 +9,21 @@ import Header from '@/components/header'
 import TemplateNavigation from '@/components/template-navigation'
 import { useState, useEffect } from 'react'
 
-// Import all block components dynamically
-const blockComponents: Record<string, React.ComponentType<any>> = {}
+// Import all block components
+import Mainhomeseoseoskeleton from '@/blocks/main/home-seo/seo-skeleton/component'
+import Mainhomelandingcover1skeleton from '@/blocks/main/home-landing/cover1-skeleton/component'
+import Shopproductarticlelandingarticle1skeleton from '@/blocks/shop/product-article-landing/article1-skeleton/component'
+import Shopproductcategorylistlandinglist1skeleton from '@/blocks/shop/product-category-list-landing/list1-skeleton/component'
+import Mainbenefitlistlist2skeleton from '@/blocks/main/benefit-list/list2-skeleton/component'
+
+// Component mapping
+const blockComponents: Record<string, React.ComponentType<any>> = {
+  'main-home-seo-seo-skeleton': Mainhomeseoseoskeleton,
+  'main-home-landing-cover1-skeleton': Mainhomelandingcover1skeleton,
+  'shop-product-article-landing-article1-skeleton': Shopproductarticlelandingarticle1skeleton,
+  'shop-product-category-list-landing-list1-skeleton': Shopproductcategorylistlandinglist1skeleton,
+  'main-benefit-list-list2-skeleton': Mainbenefitlistlist2skeleton
+}
 
 interface BlockData {
   name: string
@@ -82,15 +95,15 @@ export default function BlockPreview({ block, componentName, navigation }: Props
 
   if (!Component) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Template Not Found</h1>
-          <p className="text-muted-foreground mb-4">
+          <h1 className="mb-4 text-2xl font-bold">Template Not Found</h1>
+          <p className="mb-4 text-muted-foreground">
             The template "{componentName}" could not be loaded.
           </p>
-          <Button asChild>
+          <Button variant="ghost" asChild>
             <Link href="/">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Link>
           </Button>
@@ -102,9 +115,9 @@ export default function BlockPreview({ block, componentName, navigation }: Props
   // Show loading state during SSR and initial client render to prevent hydration mismatch
   if (!isClient) {
     return (
-      <div className="w-full h-full bg-background flex items-center justify-center">
+      <div className="flex items-center justify-center w-full h-full bg-background">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mx-auto mb-2"></div>
+          <div className="w-6 h-6 mx-auto mb-2 border-b-2 border-blue-600 rounded-full animate-spin"></div>
           <p className="text-xs text-gray-500">Loading preview...</p>
         </div>
       </div>
@@ -124,14 +137,12 @@ export default function BlockPreview({ block, componentName, navigation }: Props
     <div className="min-h-screen bg-background">
       {/* Custom Header for Preview */}
       <div className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container px-4 py-4 mx-auto">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm" asChild>
-                <Link href={`/section/${block.moduleName.toLowerCase()}/${block.sectionName.toLowerCase().replace(/\s+/g, '-')}`}>
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Section
-                </Link>
+              <Button variant="ghost" size="sm" onClick={() => router.back()}>
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back
               </Button>
               <div>
                 <h1 className="text-lg font-semibold">
@@ -146,12 +157,12 @@ export default function BlockPreview({ block, componentName, navigation }: Props
               <Button size="sm" onClick={handleCopyCode}>
                 {copied ? (
                   <>
-                    <Check className="mr-2 h-4 w-4" />
+                    <Check className="w-4 h-4 mr-2" />
                     Copied!
                   </>
                 ) : (
                   <>
-                    <Download className="mr-2 h-4 w-4" />
+                    <Download className="w-4 h-4 mr-2" />
                     Copy Code
                   </>
                 )}

@@ -14,8 +14,15 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   }
 
   try {
-    // Read the component file
-    const componentPath = path.join(process.cwd(), 'blocks', block.replace(/-/g, '/'), 'component.tsx')
+    // Map block name to actual file path
+    // Block names like "main-home-landing-cover1-skeleton" should map to 
+    // "blocks/main/home-landing/cover1-skeleton/component.tsx"
+    const blockParts = block.split('-')
+    let moduleName = blockParts[0]
+    let sectionName = blockParts.slice(1, -2).join('-') // Everything except last 2 parts
+    let templateDesignSystem = blockParts.slice(-2).join('-') // Last 2 parts
+    
+    const componentPath = path.join(process.cwd(), 'blocks', moduleName, sectionName, templateDesignSystem, 'component.tsx')
     
     if (!fs.existsSync(componentPath)) {
       return res.status(404).json({ message: 'Component not found' })

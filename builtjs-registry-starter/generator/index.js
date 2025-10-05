@@ -294,6 +294,10 @@ module.exports = {
   async generatePagesStructure() {
     const outputDir = path.join(this.outputPath, 'generated-registry');
     
+    // Read the generated registry file
+    const registryPath = path.join(outputDir, 'registry.json');
+    const registry = JSON.parse(await fs.promises.readFile(registryPath, 'utf-8'));
+    
     // Create pages directory
     const pagesDir = path.join(outputDir, 'pages');
     await fs.promises.mkdir(pagesDir, { recursive: true });
@@ -319,17 +323,31 @@ import fs from 'fs'
 import path from 'path'
 import type { GetStaticProps } from 'next'
 
-export default function Home() {
+interface Category {
+  name: string
+  label: string
+}
+
+interface Props {
+  categories: Category[]
+  registryName: string
+  repository: {
+    provider: string
+    url: string
+  }
+}
+
+export default function Home({ categories, registryName, repository }: Props) {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header registryName={registryName} />
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="flex min-h-[60vh] flex-col items-center justify-center p-24">
           <div className="w-full max-w-5xl text-center">
-            <h1 className="mb-4 text-4xl font-bold">BuiltJS Shadcn Registry</h1>
+            <h1 className="mb-4 text-4xl font-bold">{registryName}</h1>
             <p className="mb-8 text-xl text-muted-foreground">
-              A collection of reusable React templates and blocks built with shadcn/ui
+              A collection of reusable Built.js React templates
             </p>
             
             <div className="space-x-4">
@@ -339,8 +357,8 @@ export default function Home() {
                 </Link>
               </Button>
               <Button variant="outline" asChild>
-                <Link href="https://github.com/richjava/builtjs-shadcn-registry" target="_blank">
-                  GitHub
+                <Link href={repository.url} target="_blank">
+                  {repository.provider}
                 </Link>
               </Button>
             </div>
@@ -358,7 +376,7 @@ export default function Home() {
         <section className="px-4 py-16 bg-gray-50">
           <div className="max-w-6xl mx-auto">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold">Browse by Category</h2>
+              <h2 className="mb-4 text-3xl font-bold">Browse by Module</h2>
               <p className="text-lg text-muted-foreground">
                 Explore templates organized by use case and purpose
               </p>
@@ -386,24 +404,42 @@ export default function Home() {
   )
 }
 
-const categories = [
-  { name: "main", label: "Main" },
-  { name: "shop", label: "Shop" },
-  { name: "about", label: "About" },
-  { name: "blog", label: "Blog" },
-  { name: "faq", label: "FAQ" },
-  { name: "features", label: "Features" },
-  { name: "gallery", label: "Gallery" },
-  { name: "newsletter", label: "Newsletter" },
-  { name: "logos", label: "Logos" },
-  { name: "pricing", label: "Pricing" },
-  { name: "services", label: "Services" },
-  { name: "team", label: "Team" },
-]
-
 export const getStaticProps: GetStaticProps = async () => {
+  const registryPath = path.join(process.cwd(), 'registry.json')
+  const registry = JSON.parse(fs.readFileSync(registryPath, 'utf-8'))
+  
+  // Extract unique modules from blocks
+  const moduleMap = new Map()
+  if (registry.blocks) {
+    registry.blocks.forEach((block: any) => {
+      if (block.moduleName && !moduleMap.has(block.moduleName)) {
+        moduleMap.set(block.moduleName, {
+          name: block.moduleName.toLowerCase(),
+          label: block.moduleName.charAt(0).toUpperCase() + block.moduleName.slice(1)
+        })
+      }
+    })
+  }
+  
+  const categories = Array.from(moduleMap.values())
+  
+  // Convert registry name to title case and append " Built.js Registry"
+  const registryName = registry.name 
+    ? registry.name.charAt(0).toUpperCase() + registry.name.slice(1) + ' Built.js Registry'
+    : 'Built.js Registry'
+  
+  // Extract repository information
+  const repository = {
+    provider: registry.repository?.provider || 'Github',
+    url: registry.repository?.url || '#'
+  }
+  
   return { 
-    props: {} 
+    props: { 
+      categories,
+      registryName,
+      repository
+    } 
   }
 }`;
 
@@ -461,12 +497,13 @@ interface RegistryData {
   designSystems: DesignSystem[]
 }
 
-export default function RegistryPage({ registry }: { registry: RegistryData }) {
+export default function RegistryPage({ registry, registryName }: { registry: RegistryData, registryName: string }) {
   return (
     <RegistryClient 
       categories={registry.categories}
       blocks={registry.blocks}
       designSystems={registry.designSystems}
+      registryName={registryName}
     />
   )
 }
@@ -483,7 +520,12 @@ export const getStaticProps: GetStaticProps = async () => {
     designSystems: Array.isArray(registry.designSystems) ? registry.designSystems : []
   }
   
-  return { props: { registry: registryData } }
+  // Convert registry name to title case and append " Built.js Registry"
+  const registryName = registry.name 
+    ? registry.name.charAt(0).toUpperCase() + registry.name.slice(1) + ' Built.js Registry'
+    : 'Built.js Registry'
+  
+  return { props: { registry: registryData, registryName } }
 }`;
 
     await fs.promises.writeFile(
@@ -523,15 +565,16 @@ interface Section {
 interface Props {
   category: Module
   sections: Section[]
+  registryName: string
 }
 
-export default function CategoryPage({ category, sections }: Props) {
+export default function CategoryPage({ category, sections, registryName }: Props) {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header registryName={registryName} />
       <main className="container px-4 py-12 mx-auto">
         <div className="mb-8">
-          <Button variant="outline" size="sm" asChild>
+          <Button size="sm" variant="ghost" asChild>
             <Link href="/">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
@@ -595,7 +638,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     templates
   }))
   
-  return { props: { category, sections } }
+  // Convert registry name to title case and append " Built.js Registry"
+  const registryName = registry.name 
+    ? registry.name.charAt(0).toUpperCase() + registry.name.slice(1) + ' Built.js Registry'
+    : 'Built.js Registry'
+  
+  return { props: { category, sections, registryName } }
 }`;
 
     await fs.promises.writeFile(
@@ -629,9 +677,10 @@ interface Props {
     label: string
     description: string
   }>
+  registryName: string
 }
 
-export default function SectionPreviewPage({ category, categoryLabel, section, sectionName, templates, designSystems }: Props) {
+export default function SectionPreviewPage({ category, categoryLabel, section, sectionName, templates, designSystems, registryName }: Props) {
   return (
     <SectionPreviewClient 
       category={category}
@@ -640,6 +689,7 @@ export default function SectionPreviewPage({ category, categoryLabel, section, s
       sectionName={sectionName}
       templates={templates}
       designSystems={designSystems}
+      registryName={registryName}
     />
   )
 }
@@ -687,15 +737,41 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const sectionName = templates.length > 0 ? templates[0].sectionName : undefined
   
   // Get module label from registry
-  const categoryLabel = (registry.modules || []).find((c: any) => c.name === category)?.label
+  const categoryLabel = category
   
-  return { props: { category, categoryLabel, section, sectionName, templates, designSystems: registry.designSystems || [] } }
+  // Convert registry name to title case and append " Built.js Registry"
+  const registryName = registry.name 
+    ? registry.name.charAt(0).toUpperCase() + registry.name.slice(1) + ' Built.js Registry'
+    : 'Built.js Registry'
+  
+  return { props: { category, categoryLabel, section, sectionName, templates, designSystems: registry.designSystems || [], registryName } }
 }`;
 
     await fs.promises.writeFile(
       path.join(pagesDir, 'section', '[category]', '[section].tsx'),
       sectionPage
     );
+
+    // Generate component imports and mapping
+    const generateComponentImports = (blocks) => {
+      const imports = []
+      const mappings = []
+      
+      blocks.forEach(block => {
+        const componentName = block.name.replace(/-/g, '').replace(/([A-Z])/g, '$1').replace(/^./, str => str.toUpperCase())
+        const importPath = `@/blocks/${block.moduleName}/${block.sectionName}/${block.templateName}-${block.designSystem}/component`
+        
+        imports.push(`import ${componentName} from '${importPath}'`)
+        mappings.push(`  '${block.name}': ${componentName}`)
+      })
+      
+      return {
+        imports: imports.join('\n'),
+        mappings: mappings.join(',\n')
+      }
+    }
+
+    const componentData = generateComponentImports(registry.blocks || [])
 
     // Create preview page
     const previewPage = `import { useRouter } from 'next/router'
@@ -709,8 +785,13 @@ import Header from '@/components/header'
 import TemplateNavigation from '@/components/template-navigation'
 import { useState, useEffect } from 'react'
 
-// Import all block components dynamically
-const blockComponents: Record<string, React.ComponentType<any>> = {}
+// Import all block components
+${componentData.imports}
+
+// Component mapping
+const blockComponents: Record<string, React.ComponentType<any>> = {
+${componentData.mappings}
+}
 
 interface BlockData {
   name: string
@@ -782,15 +863,15 @@ export default function BlockPreview({ block, componentName, navigation }: Props
 
   if (!Component) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Template Not Found</h1>
-          <p className="text-muted-foreground mb-4">
+          <h1 className="mb-4 text-2xl font-bold">Template Not Found</h1>
+          <p className="mb-4 text-muted-foreground">
             The template "{componentName}" could not be loaded.
           </p>
-          <Button asChild>
+          <Button variant="ghost" asChild>
             <Link href="/">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Link>
           </Button>
@@ -802,9 +883,9 @@ export default function BlockPreview({ block, componentName, navigation }: Props
   // Show loading state during SSR and initial client render to prevent hydration mismatch
   if (!isClient) {
     return (
-      <div className="w-full h-full bg-background flex items-center justify-center">
+      <div className="flex items-center justify-center w-full h-full bg-background">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mx-auto mb-2"></div>
+          <div className="w-6 h-6 mx-auto mb-2 border-b-2 border-blue-600 rounded-full animate-spin"></div>
           <p className="text-xs text-gray-500">Loading preview...</p>
         </div>
       </div>
@@ -824,14 +905,12 @@ export default function BlockPreview({ block, componentName, navigation }: Props
     <div className="min-h-screen bg-background">
       {/* Custom Header for Preview */}
       <div className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container px-4 py-4 mx-auto">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm" asChild>
-                <Link href={\`/section/\${block.moduleName.toLowerCase()}/\${block.sectionName.toLowerCase().replace(/\\s+/g, '-')}\`}>
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Section
-                </Link>
+              <Button variant="ghost" size="sm" onClick={() => router.back()}>
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back
               </Button>
               <div>
                 <h1 className="text-lg font-semibold">
@@ -846,12 +925,12 @@ export default function BlockPreview({ block, componentName, navigation }: Props
               <Button size="sm" onClick={handleCopyCode}>
                 {copied ? (
                   <>
-                    <Check className="mr-2 h-4 w-4" />
+                    <Check className="w-4 h-4 mr-2" />
                     Copied!
                   </>
                 ) : (
                   <>
-                    <Download className="mr-2 h-4 w-4" />
+                    <Download className="w-4 h-4 mr-2" />
                     Copy Code
                   </>
                 )}
@@ -992,8 +1071,15 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   }
 
   try {
-    // Read the component file
-    const componentPath = path.join(process.cwd(), 'blocks', block.replace(/-/g, '/'), 'component.tsx')
+    // Map block name to actual file path
+    // Block names like "main-home-landing-cover1-skeleton" should map to 
+    // "blocks/main/home-landing/cover1-skeleton/component.tsx"
+    const blockParts = block.split('-')
+    let moduleName = blockParts[0]
+    let sectionName = blockParts.slice(1, -2).join('-') // Everything except last 2 parts
+    let templateDesignSystem = blockParts.slice(-2).join('-') // Last 2 parts
+    
+    const componentPath = path.join(process.cwd(), 'blocks', moduleName, sectionName, templateDesignSystem, 'component.tsx')
     
     if (!fs.existsSync(componentPath)) {
       return res.status(404).json({ message: 'Component not found' })
@@ -1146,7 +1232,7 @@ const SelectTrigger = React.forwardRef<
   >
     {children}
     <SelectPrimitive.Icon asChild>
-      <ChevronDown className="h-4 w-4 opacity-50" />
+      <ChevronDown className="w-4 h-4 opacity-50" />
     </SelectPrimitive.Icon>
   </SelectPrimitive.Trigger>
 ))
@@ -1164,7 +1250,7 @@ const SelectScrollUpButton = React.forwardRef<
     )}
     {...props}
   >
-    <ChevronUp className="h-4 w-4" />
+    <ChevronUp className="w-4 h-4" />
   </SelectPrimitive.ScrollUpButton>
 ))
 SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName
@@ -1181,7 +1267,7 @@ const SelectScrollDownButton = React.forwardRef<
     )}
     {...props}
   >
-    <ChevronDown className="h-4 w-4" />
+    <ChevronDown className="w-4 h-4" />
   </SelectPrimitive.ScrollDownButton>
 ))
 SelectScrollDownButton.displayName =
@@ -1245,7 +1331,7 @@ const SelectItem = React.forwardRef<
   >
     <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
       <SelectPrimitive.ItemIndicator>
-        <Check className="h-4 w-4" />
+        <Check className="w-4 h-4" />
       </SelectPrimitive.ItemIndicator>
     </span>
 
@@ -1287,27 +1373,31 @@ export {
     // Create Header component
     const headerComponent = `import Link from "next/link"
 
-export default function Header() {
+interface HeaderProps {
+  registryName: string
+}
+
+export default function Header({ registryName }: HeaderProps) {
   return (
     <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+      <div className="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">B</span>
+              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary">
+                <span className="text-sm font-bold text-primary-foreground">B</span>
               </div>
-              <span className="font-bold text-xl">BuiltJS Registry</span>
+              <span className="text-xl font-bold">{registryName}</span>
             </Link>
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <nav className="items-center hidden space-x-6 md:flex">
+            <Link href="/" className="text-sm font-medium transition-colors text-muted-foreground hover:text-foreground">
               Home
             </Link>
-            <Link href="/registry" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/registry" className="text-sm font-medium transition-colors text-muted-foreground hover:text-foreground">
               Registry
             </Link>
           </nav>
@@ -1633,6 +1723,10 @@ export default dynamic(() => Promise.resolve(TemplatePreviewGrid), { ssr: false 
 
     // Create placeholder components for other required components
     const registryClientComponent = `import React from 'react'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { ArrowLeft } from 'lucide-react'
+import Header from '@/components/header'
 
 interface RegistryItem {
   name: string
@@ -1661,26 +1755,45 @@ interface Props {
   categories: Module[]
   blocks: RegistryItem[]
   designSystems: DesignSystem[]
+  registryName: string
 }
 
-export default function RegistryClient({ categories, blocks, designSystems }: Props) {
+export default function RegistryClient({ categories, blocks, designSystems, registryName }: Props) {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-12">
+      <Header registryName={registryName} />
+      <div className="container px-4 py-12 mx-auto">
+        <div className="mb-6">
+          <Button variant="ghost" size="sm" asChild>
+            <Link href="/">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back
+            </Link>
+          </Button>
+        </div>
         <h1 className="mb-6 text-3xl font-bold">Registry</h1>
         <p className="mb-8 text-muted-foreground">
           Browse all available templates and components.
         </p>
         
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="space-y-4">
           {blocks.map((block) => (
-            <div key={block.name} className="p-6 border rounded-lg">
-              <h3 className="mb-2 text-lg font-semibold">{block.templateName}</h3>
-              <p className="mb-2 text-sm text-muted-foreground">{block.description}</p>
-              <div className="text-xs text-gray-500">
-                <p>Module: {block.moduleName}</p>
-                <p>Section: {block.sectionName}</p>
-                <p>Design System: {block.designSystem}</p>
+            <div key={block.name} className="flex items-center justify-between p-4 border rounded-lg">
+              <div className="flex-1">
+                <h3 className="mb-1 text-lg font-semibold">{block.templateName}</h3>
+                <p className="mb-2 text-sm text-muted-foreground">{block.description}</p>
+                <div className="text-xs text-gray-500">
+                  <span className="mr-4">Module: {block.moduleName}</span>
+                  <span className="mr-4">Section: {block.sectionName}</span>
+                  <span>Design System: {block.designSystem}</span>
+                </div>
+              </div>
+              <div className="ml-4">
+                <Button asChild size="sm" variant="outline">
+                  <Link href={\`/preview/\${block.name}\`}>
+                    Preview Template
+                  </Link>
+                </Button>
               </div>
             </div>
           ))}
@@ -1696,6 +1809,10 @@ export default function RegistryClient({ categories, blocks, designSystems }: Pr
     );
 
     const sectionPreviewClientComponent = `import React from 'react'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { ArrowLeft } from 'lucide-react'
+import Header from '@/components/header'
 
 interface Template {
   name: string
@@ -1717,6 +1834,7 @@ interface Props {
     label: string
     description: string
   }>
+  registryName: string
 }
 
 export default function SectionPreviewClient({ 
@@ -1725,11 +1843,21 @@ export default function SectionPreviewClient({
   section, 
   sectionName, 
   templates, 
-  designSystems 
+  designSystems,
+  registryName
 }: Props) {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-12">
+      <Header registryName={registryName} />
+      <div className="container px-4 py-12 mx-auto">
+        <div className="mb-6">
+          <Button variant="ghost" size="sm" asChild>
+            <Link href={\`/category/\${category}\`}>
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back
+            </Link>
+          </Button>
+        </div>
         <h1 className="mb-6 text-3xl font-bold">{sectionName || section}</h1>
         <p className="mb-8 text-muted-foreground">
           Browse templates in the {categoryLabel || category} module.
@@ -1740,8 +1868,15 @@ export default function SectionPreviewClient({
             <div key={template.name} className="p-6 border rounded-lg">
               <h3 className="mb-2 text-lg font-semibold">{template.templateName}</h3>
               <p className="mb-2 text-sm text-muted-foreground">{template.description}</p>
-              <div className="text-xs text-gray-500">
+              <div className="mb-4 text-xs text-gray-500">
                 <p>Design System: {template.designSystem}</p>
+              </div>
+              <div className="flex gap-2">
+                <Button asChild size="sm" variant="outline">
+                  <Link href={\`/preview/\${template.name}\`}>
+                    Preview Template
+                  </Link>
+                </Button>
               </div>
             </div>
           ))}
@@ -1784,13 +1919,13 @@ export default function TemplateNavigation({
 }: Props) {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-t">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container px-4 py-4 mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             {previous ? (
               <Button variant="outline" size="sm" asChild>
                 <Link href={\`/preview/\${previous.name}\`}>
-                  <ChevronLeft className="mr-2 h-4 w-4" />
+                  <ChevronLeft className="w-4 h-4 mr-2" />
                   Previous
                 </Link>
               </Button>
@@ -1811,7 +1946,7 @@ export default function TemplateNavigation({
               <Button variant="outline" size="sm" asChild>
                 <Link href={\`/preview/\${next.name}\`}>
                   Next
-                  <ChevronRight className="ml-2 h-4 w-4" />
+                  <ChevronRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
             ) : (

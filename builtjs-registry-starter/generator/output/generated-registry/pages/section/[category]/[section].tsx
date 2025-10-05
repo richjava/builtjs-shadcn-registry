@@ -23,9 +23,10 @@ interface Props {
     label: string
     description: string
   }>
+  registryName: string
 }
 
-export default function SectionPreviewPage({ category, categoryLabel, section, sectionName, templates, designSystems }: Props) {
+export default function SectionPreviewPage({ category, categoryLabel, section, sectionName, templates, designSystems, registryName }: Props) {
   return (
     <SectionPreviewClient 
       category={category}
@@ -34,6 +35,7 @@ export default function SectionPreviewPage({ category, categoryLabel, section, s
       sectionName={sectionName}
       templates={templates}
       designSystems={designSystems}
+      registryName={registryName}
     />
   )
 }
@@ -81,7 +83,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const sectionName = templates.length > 0 ? templates[0].sectionName : undefined
   
   // Get module label from registry
-  const categoryLabel = (registry.modules || []).find((c: any) => c.name === category)?.label
+  const categoryLabel = category
   
-  return { props: { category, categoryLabel, section, sectionName, templates, designSystems: registry.designSystems || [] } }
+  // Convert registry name to title case and append " Built.js Registry"
+  const registryName = registry.name 
+    ? registry.name.charAt(0).toUpperCase() + registry.name.slice(1) + ' Built.js Registry'
+    : 'Built.js Registry'
+  
+  return { props: { category, categoryLabel, section, sectionName, templates, designSystems: registry.designSystems || [], registryName } }
 }

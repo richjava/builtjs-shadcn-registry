@@ -1,1 +1,0 @@
-export { createPortableTextComponents } from './portable-text-components'

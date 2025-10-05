@@ -45,6 +45,10 @@ class RegistryGenerator {
       name: this.config.theme.title.toLowerCase().replace(/\s+/g, '-'),
       version: "1.0.0",
       baseUrl: `https://${this.config.theme.title.toLowerCase().replace(/\s+/g, '-')}.vercel.app`,
+      repository: {
+        provider: this.config.theme.registry?.repository?.provider || 'Github',
+        url: this.config.theme.registry?.repository?.url || '#'
+      },
       dependencies: [
         "class-variance-authority",
         "clsx",

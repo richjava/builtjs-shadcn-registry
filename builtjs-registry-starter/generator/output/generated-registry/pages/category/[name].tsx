@@ -29,15 +29,16 @@ interface Section {
 interface Props {
   category: Module
   sections: Section[]
+  registryName: string
 }
 
-export default function CategoryPage({ category, sections }: Props) {
+export default function CategoryPage({ category, sections, registryName }: Props) {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header registryName={registryName} />
       <main className="container px-4 py-12 mx-auto">
         <div className="mb-8">
-          <Button variant="outline" size="sm" asChild>
+          <Button size="sm" variant="ghost" asChild>
             <Link href="/">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
@@ -101,5 +102,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     templates
   }))
   
-  return { props: { category, sections } }
+  // Convert registry name to title case and append " Built.js Registry"
+  const registryName = registry.name 
+    ? registry.name.charAt(0).toUpperCase() + registry.name.slice(1) + ' Built.js Registry'
+    : 'Built.js Registry'
+  
+  return { props: { category, sections, registryName } }
 }

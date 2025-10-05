@@ -159,21 +159,21 @@ export default function ${componentName}({ content }: ${interfaceName}) {
 
   generateHeaderLayoutJSX(section, template) {
     return `<header className="border-b bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">L</span>
+            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary">
+              <span className="text-sm font-bold text-primary-foreground">L</span>
             </div>
-            <span className="font-bold text-xl">Logo</span>
+            <span className="text-xl font-bold">Logo</span>
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Home</a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">About</a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
+          <nav className="items-center hidden space-x-6 md:flex">
+            <a href="#" className="text-sm font-medium transition-colors hover:text-primary">Home</a>
+            <a href="#" className="text-sm font-medium transition-colors hover:text-primary">About</a>
+            <a href="#" className="text-sm font-medium transition-colors hover:text-primary">Contact</a>
           </nav>
           <Button variant="outline" size="sm">
-            <Menu className="h-4 w-4" />
+            <Menu className="w-4 h-4" />
           </Button>
         </div>
       </div>
@@ -181,12 +181,12 @@ export default function ${componentName}({ content }: ${interfaceName}) {
   }
 
   generateFooterLayoutJSX(section, template) {
-    return `<footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <div className="h-6 w-6 bg-primary rounded flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xs">L</span>
+    return `<footer className="border-t bg-background">
+      <div className="container px-4 py-8 mx-auto">
+        <div className="flex flex-col items-center justify-between md:flex-row">
+          <div className="flex items-center mb-4 space-x-2 md:mb-0">
+            <div className="flex items-center justify-center w-6 h-6 rounded bg-primary">
+              <span className="text-xs font-bold text-primary-foreground">L</span>
             </div>
             <span className="font-semibold">Logo</span>
           </div>
@@ -200,8 +200,8 @@ export default function ${componentName}({ content }: ${interfaceName}) {
 
   generateDefaultLayoutJSX(section, template) {
     return `<div className="layout-component">
-      <div className="container mx-auto px-4 py-8">
-        <h2 className="text-2xl font-bold mb-4">${section.title}</h2>
+      <div className="container px-4 py-8 mx-auto">
+        <h2 className="mb-4 text-2xl font-bold">${section.title}</h2>
         <p className="text-muted-foreground">${section.title} layout component</p>
       </div>
     </div>`;
@@ -332,21 +332,21 @@ export default function ${componentName}({ content }: ${interfaceName}) {
 
   generateHeaderJSX(section, designSystem) {
     return `      <header className="${this.getHeaderClasses(designSystem)}">
-        <div className="container mx-auto px-4">
+        <div className="container px-4 mx-auto">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">L</span>
+              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary">
+                <span className="text-sm font-bold text-primary-foreground">L</span>
               </div>
-              <span className="font-bold text-xl">Logo</span>
+              <span className="text-xl font-bold">Logo</span>
             </div>
-            <nav className="hidden md:flex items-center space-x-6">
-              <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Home</a>
-              <a href="#" className="text-sm font-medium hover:text-primary transition-colors">About</a>
-              <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
+            <nav className="items-center hidden space-x-6 md:flex">
+              <a href="#" className="text-sm font-medium transition-colors hover:text-primary">Home</a>
+              <a href="#" className="text-sm font-medium transition-colors hover:text-primary">About</a>
+              <a href="#" className="text-sm font-medium transition-colors hover:text-primary">Contact</a>
             </nav>
             <Button variant="outline" size="sm">
-              <Menu className="h-4 w-4" />
+              <Menu className="w-4 h-4" />
             </Button>
           </div>
         </div>
@@ -355,8 +355,8 @@ export default function ${componentName}({ content }: ${interfaceName}) {
 
   generateCoverJSX(section, designSystem) {
     return `      <div className="${this.getCoverClasses(designSystem)}">
-        <div className="container mx-auto px-4 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="container px-4 py-20 mx-auto">
+          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
               <h1 className="${this.getHeadingClasses(designSystem)}">
                 {data.heading}
@@ -367,12 +367,12 @@ export default function ${componentName}({ content }: ${interfaceName}) {
               <div className="mt-8">
                 <Button size="lg" className="gap-2">
                   Get Started
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="w-4 h-4" />
                 </Button>
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-muted rounded-lg"></div>
+              <div className="rounded-lg aspect-square bg-muted"></div>
             </div>
           </div>
         </div>
@@ -381,19 +381,19 @@ export default function ${componentName}({ content }: ${interfaceName}) {
 
   generateCardsJSX(section, designSystem) {
     return `      <div className="${this.getCardsClasses(designSystem)}">
-        <div className="container mx-auto px-4 py-20">
-          <div className="text-center mb-12">
+        <div className="container px-4 py-20 mx-auto">
+          <div className="mb-12 text-center">
             <h2 className="${this.getHeadingClasses(designSystem)}">
               {data.heading || 'Our Team'}
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {collections.teamMember?.slice(0, 3).map((member, index) => (
               <Card key={index} className="${this.getCardClasses(designSystem)}">
-                <div className="aspect-square bg-muted rounded-t-lg"></div>
+                <div className="rounded-t-lg aspect-square bg-muted"></div>
                 <div className="p-6">
-                  <h3 className="font-semibold text-lg mb-2">{member.name}</h3>
-                  <p className="text-muted-foreground text-sm mb-4">{member.role}</p>
+                  <h3 className="mb-2 text-lg font-semibold">{member.name}</h3>
+                  <p className="mb-4 text-sm text-muted-foreground">{member.role}</p>
                   <p className="text-sm">{member.bio}</p>
                 </div>
               </Card>
@@ -405,20 +405,20 @@ export default function ${componentName}({ content }: ${interfaceName}) {
 
   generateListJSX(section, designSystem) {
     return `      <div className="${this.getListClasses(designSystem)}">
-        <div className="container mx-auto px-4 py-20">
-          <div className="text-center mb-12">
+        <div className="container px-4 py-20 mx-auto">
+          <div className="mb-12 text-center">
             <h2 className="${this.getHeadingClasses(designSystem)}">
               {data.heading || 'Features'}
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {collections.benefit?.slice(0, 6).map((benefit, index) => (
               <div key={index} className="${this.getListItemClasses(designSystem)}">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                    <Check className="h-4 w-4 text-primary-foreground" />
+                <div className="flex items-center mb-4 space-x-3">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary">
+                    <Check className="w-4 h-4 text-primary-foreground" />
                   </div>
-                  <h3 className="font-semibold text-lg">{benefit.title}</h3>
+                  <h3 className="text-lg font-semibold">{benefit.title}</h3>
                 </div>
                 <p className="text-muted-foreground">{benefit.description}</p>
               </div>
@@ -430,7 +430,7 @@ export default function ${componentName}({ content }: ${interfaceName}) {
 
   generateBlockJSX(section, designSystem) {
     return `      <div className="${this.getBlockClasses(designSystem)}">
-        <div className="container mx-auto px-4 py-20">
+        <div className="container px-4 py-20 mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="${this.getHeadingClasses(designSystem)}">
               {data.heading || 'Our Mission'}
@@ -441,7 +441,7 @@ export default function ${componentName}({ content }: ${interfaceName}) {
             <div className="mt-8">
               <Button size="lg" className="gap-2">
                 Learn More
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
@@ -451,7 +451,7 @@ export default function ${componentName}({ content }: ${interfaceName}) {
 
   generateDefaultJSX(section, designSystem) {
     return `      <div className="${this.getDefaultClasses(designSystem)}">
-        <div className="container mx-auto px-4 py-20">
+        <div className="container px-4 py-20 mx-auto">
           <div className="text-center">
             <h2 className="${this.getHeadingClasses(designSystem)}">
               {data.heading || 'Section Title'}

@@ -2,6 +2,10 @@
   "name": "e-commerce",
   "version": "1.0.0",
   "baseUrl": "https://e-commerce.vercel.app",
+  "repository": {
+    "provider": "GitHub",
+    "url": "https://github.com/richjava/e-commerce-registry"
+  },
   "dependencies": [
     "class-variance-authority",
     "clsx",

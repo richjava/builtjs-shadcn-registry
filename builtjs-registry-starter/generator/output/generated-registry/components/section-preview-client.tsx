@@ -1,4 +1,8 @@
 import React from 'react'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { ArrowLeft } from 'lucide-react'
+import Header from '@/components/header'
 
 interface Template {
   name: string
@@ -20,6 +24,7 @@ interface Props {
     label: string
     description: string
   }>
+  registryName: string
 }
 
 export default function SectionPreviewClient({ 
@@ -28,11 +33,21 @@ export default function SectionPreviewClient({
   section, 
   sectionName, 
   templates, 
-  designSystems 
+  designSystems,
+  registryName
 }: Props) {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-12">
+      <Header registryName={registryName} />
+      <div className="container px-4 py-12 mx-auto">
+        <div className="mb-6">
+          <Button variant="ghost" size="sm" asChild>
+            <Link href={`/category/${category}`}>
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back
+            </Link>
+          </Button>
+        </div>
         <h1 className="mb-6 text-3xl font-bold">{sectionName || section}</h1>
         <p className="mb-8 text-muted-foreground">
           Browse templates in the {categoryLabel || category} module.
@@ -43,8 +58,15 @@ export default function SectionPreviewClient({
             <div key={template.name} className="p-6 border rounded-lg">
               <h3 className="mb-2 text-lg font-semibold">{template.templateName}</h3>
               <p className="mb-2 text-sm text-muted-foreground">{template.description}</p>
-              <div className="text-xs text-gray-500">
+              <div className="mb-4 text-xs text-gray-500">
                 <p>Design System: {template.designSystem}</p>
+              </div>
+              <div className="flex gap-2">
+                <Button asChild size="sm" variant="outline">
+                  <Link href={`/preview/${template.name}`}>
+                    Preview Template
+                  </Link>
+                </Button>
               </div>
             </div>
           ))}
